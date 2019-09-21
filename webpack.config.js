@@ -5,10 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: {
-        index: './src/js'
+        index: './src/components/landing/landing.js'
     },
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'public/'),
         filename: '[name].js'
     },
     module: {
@@ -30,9 +30,10 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                use: [
-                    "pug-loader",  
-                ]
+                loader:  "pug-loader",
+                  options: {
+                      name: "[name].pug"       
+                  }
             },
             {
                 test: /\.(gif|png|jpeg|svg|jpg)$/,
@@ -52,15 +53,15 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: `style.css`,
+            filename: `[name].css`,
         }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/pug/index.pug`
+            template: `./src/components/landing/landing.pug`,
            }),
         new CopyWebpackPlugin([
-            { from: './src/img', to: './img' },
-            { from: './src/fonts', to: './fonts' },
+            { from: './src/assets/img', to: './assets/img' },
+            { from: './src/assets/fonts', to: './assets/fonts' },
           ]),
     ]
 }

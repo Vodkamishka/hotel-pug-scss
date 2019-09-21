@@ -1,0 +1,22 @@
+@import '../../../../assets/utils/vars.scss';
+
+.srtBtn {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    &.purple {
+        background: $gradient;
+        color: $white;
+    }
+    &.purple05 {
+        background: $gradient;
+        color: $white;
+        opacity: 0.5;
+    }
+}
