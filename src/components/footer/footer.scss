@@ -1,0 +1,42 @@
+@import '../../assets/utils/mixin.scss';
+@import '../../assets/utils/vars.scss';
+
+.footer {
+    border: 1px solid black;
+        .footer__nav {
+            @include justify-content;
+            height: 372px;
+            .footer__nav-inside {
+                height: 168px;
+                margin-top: 104px;
+                display: flex;
+                justify-content: space-between;
+                width: calc(100% - 140px - 140px);
+                border: 1px solid black;
+                    ul {
+                            &:first-child {
+                                flex-basis: 260px;
+                                @include Montserrat(14px);
+                                line-height: 24px;
+                                font-family: 'Montserrat', sans-serif;
+                                color: $shade75;
+                            }
+                            li {
+                                line-height: 17px;
+                                margin-bottom: 21px;
+                                    &:nth-child(1){
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                            a {
+                                                color: $shade100;
+                                            }
+                                    }
+                            }
+                            &:last-child {
+                                flex-basis: 260px;
+                            }
+                    
+                    }
+            }
+        }
+}

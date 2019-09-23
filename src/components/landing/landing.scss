@@ -1,6 +1,5 @@
 @import "../../assets/utils/vars.scss";
-
-
+@import "../../assets/utils/mixin.scss";
 
 body {
     position: relative;
@@ -9,4 +8,16 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                @include Montserrat(14px)
+            }
+        }
+    }
+    
+
 }

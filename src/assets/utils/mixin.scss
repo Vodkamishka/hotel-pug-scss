@@ -1,11 +1,14 @@
 @import "./vars.scss";
 
-@mixin align {
+@mixin align-items {
     display: flex;
     align-items: center;
 }
+@mixin justify-content {
+    display: flex;
+    justify-content: center;
+}
 @mixin Montserrat($size) {
     font-size: $size;
-    font-family: Montserrat;
     color: $shade50;
 }
