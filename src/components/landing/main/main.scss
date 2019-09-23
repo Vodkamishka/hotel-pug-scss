@@ -1,0 +1,10 @@
+.main {
+    height: 830px;
+    position: relative;
+    .main__image-wrapper {
+        position: absolute;
+        bottom: 0;
+        height: 900px;
+        z-index: -1;
+    }
+}

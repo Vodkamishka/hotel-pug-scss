@@ -1,0 +1,20 @@
+include ../elements/buttons/long-btn/long-btn.pug
+include ../elements/buttons/short-btn/short-btn.pug
+
+header  
+    .header
+        .header__image
+            img(src="assets/img/logo.svg", alt="logo")
+        .header__navbar
+            ul  
+                li О нас
+                li Услуги
+                    img(src="assets/img/icons/expand.svg", alt="expand")    
+                li Вакансии
+                li Новости
+                li Соглашения
+                    img(src="assets/img/icons/expand.svg", alt="expand")     
+        .header__button-srt
+            +srtBtn("войти","purple")
+        .header__button-long
+            +longBtn("зарегистрироваться","purple")
