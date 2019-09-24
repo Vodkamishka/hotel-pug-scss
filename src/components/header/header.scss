@@ -7,12 +7,13 @@
     box-shadow: 0px 10px 20px #1f20410d;
     @include align-items;
         &__image {
-            margin-left: calc(140*100%/1440);
+            margin-left: 140px;
             height: 40px;
         }
         &__navbar {
-            margin-left: calc(285.31*100%/1440);
+            margin-left: 285.31px;
             width: 446px;
+            
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -25,11 +26,17 @@
                         img {
                             padding-left: 6px;
                         }
+                    &:nth-child(2) {
+                        width: 74px;
+                    }
+                    &:nth-child(5) {
+                        width:116px;
+                    }
                 }
             }
         }
         &__button-srt {
-           margin-left: calc(20*100%/1440);
+           margin-left: 20px;
                 .srtBtn {
                     width: 87px;
                     height: 34px;
@@ -38,7 +45,7 @@
                 }
         }
         &__button-long {
-            margin-left: calc(20*100%/1440);
+            margin-left: 20px;
             font-family: 'Montserrat', sans-serif;
                 .longBtn {
                     width: 196px;

@@ -1,15 +1,17 @@
 @import "../../assets/utils/vars.scss";
 @import "../../assets/utils/mixin.scss";
 
-body {
+body, input {
     position: relative;
     max-width: 1440px;
     height: 1343px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
     ul {
         padding: 0;
+        margin: 0;
         li {
             list-style-type: none;
             a {
