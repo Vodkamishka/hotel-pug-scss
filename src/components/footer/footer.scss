@@ -2,7 +2,6 @@
 @import '../../assets/utils/vars.scss';
 
 .footer {
-   
         .footer__nav {
             @include justify-content;
             height: 372px;
@@ -13,7 +12,6 @@
                 width: 1160px;
                 border: 1px solid black;
                     ul {
-                        margin-right: 40px;
                             &:first-child {
                                 width: 260px;
                                 margin-right: 40px;

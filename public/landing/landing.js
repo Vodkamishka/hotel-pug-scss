@@ -321,7 +321,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/components/landing/main/main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/landing/main/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/components/landing/main/main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _elements_buttons_long_btn_long_btn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../elements/buttons/long-btn/long-btn */ \"./src/components/elements/buttons/long-btn/long-btn.js\");\n\n\n\n//# sourceURL=webpack:///./src/components/landing/main/main.js?");
 
 /***/ }),
 

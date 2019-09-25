@@ -1,0 +1,50 @@
+@import "../../../assets/utils/vars.scss";
+
+.block {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+        &__squere {
+            width: 70px;
+            height: 70px;
+            border-radius: 6px;
+           
+        }
+        &__text {
+            width: 159px;
+            height: 57px;
+            margin-left: 40px;
+            font-family: "Quicksand";
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 18px;
+            font-weight: bold;
+            color: $shade100;
+        }
+        &__text2 {
+            font-weight: normal;
+        }
+}
+
+.shade {
+    background: $shade100;
+}
+.shade75 {
+    background: $shade75;
+}
+.shade50 {
+    background: $shade50;
+}
+.shade25 {
+    background: $shade25;
+}
+.shade05 {
+    background: $shade05;
+}
+.purple {
+    background: $purple;
+}
+.green {
+    background: $green;
+}

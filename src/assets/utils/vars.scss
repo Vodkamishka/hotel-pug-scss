@@ -4,7 +4,7 @@ $shade100: #1f2041;
 $shade75: rgba(#1f2041, .75);
 $shade50: rgba(#1f2041, .5);
 $shade25: rgba(#1f2041, .25);
-$shade5: rgba(#1f2041, .05);
+$shade05: rgba(#1f2041, .05);
 $purple: #bc9cff;
 $green: #6fcf97;
 $white: #ffffff;
@@ -14,15 +14,18 @@ $gradient: linear-gradient(180deg, $purple 0%, $blue 100%);
 //fonts
 
 @font-face {
-    font-family: "Montserrat";
-         src: url('/assets/fonts/montserrat/montserrat.woff'), 
-         url('/assets/fonts/montserrat/montserrat.ttf'),
-         url('/assets/fonts/montserrat/montserrat.svg');
+     font-family: 'Montserrat';
+          src: url('/assets/fonts/montserrat/montserrat.ttf') , 
+          url('/assets/fonts/montserrat/montserrat.woff') ,
+          url('/assets/fonts/montserrat/montserrat.svg');
+ }
+
+@font-face {    
     font-family: "Quicksand";
          src: url('/assets/fonts/quicksand/quicksand.woff'), 
          url('/assets/fonts/quicksand/quicksand.ttf'),
          url('/assets/fonts/quicksand/quicksand.svg');
-  }
+}
  
   
 

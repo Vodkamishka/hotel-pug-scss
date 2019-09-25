@@ -3,8 +3,44 @@
 .main {
     height: 830px;
     position: relative;
-        &__calendar {
+        &__frame {
             position: absolute;
+            top: 70px;
+            left: 140px;
+            background: $white;
+            width: 380px;
+            height: 374px;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            width: 320px;
+            height: 60px;
+            margin: 40px 0 20px 0;
+                p {
+                    color: $shade100;                
+                    font-family: "Quicksand";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 30px;
+                    margin: 0;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+        }
+        &__date {
+            width: 320px;
+            height: 64px;
+            border: 1px solid blue;
+            margin-bottom: 20.56px;
+        }
+        &__guests {
+            width: 320px;
+            height: 64px;
+            border: 1px solid lightgreen; 
+            margin-bottom: 31px;
         }
         &__text {
             position: absolute;
@@ -17,7 +53,5 @@
             text-align: right;
             line-height: 24px;
             padding-bottom: 2px;
-            
-            
         }
 }

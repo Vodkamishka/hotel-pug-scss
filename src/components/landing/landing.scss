@@ -1,7 +1,7 @@
 @import "../../assets/utils/vars.scss";
 @import "../../assets/utils/mixin.scss";
 
-body, input {
+body {
     position: relative;
     max-width: 1440px;
     height: 1343px;
@@ -20,6 +20,8 @@ body, input {
             }
         }
     }
-    
-
+    input {
+        box-sizing: border-box;
+    }
 }
+

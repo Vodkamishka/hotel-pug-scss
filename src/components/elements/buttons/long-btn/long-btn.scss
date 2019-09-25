@@ -3,11 +3,12 @@
 .longBtn {
     width: 320px;
     height: 44px;
-    background: $gradient;
     border-radius: 22px;
     border: none;
     text-align: center;
     text-transform: uppercase;
+    background: url('/assets/img/icons/arrow_forward_white.svg') no-repeat  280px,
+    $gradient;
         span {
             color: $white;
             font-family:"Montserrat";

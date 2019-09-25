@@ -5,7 +5,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: {
-        index: './src/components/landing/landing.js'
+        'landing/landing': './src/components/landing/landing.js',
+        'ui-kit/colors-type/colors-type': './src/ui-kit/colors-type/colors-type.js'
     },
     output: {
         path: path.resolve(__dirname, 'public/'),
@@ -57,11 +58,12 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/components/landing/landing.pug`,
+            template: `./src/ui-kit/colors-type/colors-type.pug`,
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
             { from: './src/assets/fonts', to: './assets/fonts' },
+            { from: './src/plugins', to: './assets/plugins' },
           ]),
     ]
 }
