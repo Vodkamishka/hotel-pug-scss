@@ -2,12 +2,8 @@
 
 .like-button {
     .like-button__title {
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: $shade100;
-        margin: 0 0 16px 0;
+        @include inputTitle;
+        margin-bottom: 16px;
     }
     &__like {
         display: flex;   
@@ -19,8 +15,7 @@
         font-size: 10px;
         line-height: 12px;
         font-weight: normal;
-        display: flex;
-        align-items: center;
+        @include align-items;
             img {
                 margin: 0 7px 0 5px;
             }
@@ -32,7 +27,6 @@
     }
     &__right {
         border: 1px solid $purple;
-       
         color: $purple;
     }
 

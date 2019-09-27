@@ -2,20 +2,15 @@
 
 .radio-buttons {
     &__title {
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: $shade100;
-        margin: 0 0 16px 0;
+        @include inputTitle;
+        margin-bottom: 16px;
     }
     &__radio {
         display: flex;
     }
     &__right, &__left {
-        display: flex;
         margin-right: 20px;
-        align-items: center;
+        @include align-items;
              input[type="radio"] {
                  margin: 0 10px 0 0;
                  background: purple;

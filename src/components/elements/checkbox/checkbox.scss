@@ -3,16 +3,11 @@
 .checkbox-buttons {
     
         &__title {
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: $shade100;
+            @include inputTitle;
             margin-bottom: 16.56px; 
         }
         &__row {
-            display: flex;
-            align-items: center;
+            @include align-items;
             margin-top: 10.56px;
                 label {
                     margin-left: 9.74px;
@@ -23,7 +18,7 @@
                     color: $shade50;
                 }
                 
-            input {
+            input[type="checkbox"] {
                 margin: 0;
                 width:20px;
             }

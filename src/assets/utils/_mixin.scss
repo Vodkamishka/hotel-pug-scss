@@ -12,5 +12,12 @@
     font-size: $size;
     color: $shade50;
 }
+@mixin inputTitle {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $shade100;
+}
 
 

@@ -2,19 +2,14 @@
 
 .toggle-button {
         &__title {
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: $shade100;
+            @include inputTitle;
             margin-bottom: 16px;
         }
         &__togle {
             margin-bottom: 44.44px;
         }
         &__left, &__right {
-            display: flex;
-            align-items: center;
+            @include align-items;
             margin: 14px 0 0 0;
             font-size: 14px;
             line-height: 24px;

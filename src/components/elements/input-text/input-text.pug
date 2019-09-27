@@ -1,5 +1,5 @@
 include ../label/label.pug
 
-mixin Input (left, right, classLabel, placeholder, classInput)
+mixin Input (leftLabel, rightLabel, classLabel, placeholder, classInput)
     +label(left, right, classLabel)
     input(type="text" placeholder=placeholder class=classInput)

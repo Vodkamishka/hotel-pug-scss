@@ -1,0 +1,12 @@
+- var arrayStars = [{name: 'star'}, {name: 'star'}, {name: 'star'}, {name: 'star'}, {name: 'star_border'}]
+- var arrayStars2 = [{name: 'star'}, {name: 'star'}, {name: 'star'}, {name: 'star'}, {name: 'star'}]
+
+.rate-button
+    .rate-button__title Rate Button
+    .rate-button__rate
+        .rate-button__left
+            for star in arrayStars
+                img(src=`assets/img/icons/${star.name}.svg`, alt="star")
+        .rate-button__right
+            for star2 in arrayStars2
+                img(src=`assets/img/icons/${star2.name}.svg`, alt="star")    

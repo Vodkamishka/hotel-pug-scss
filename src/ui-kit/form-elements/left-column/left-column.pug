@@ -1,18 +1,25 @@
 include ../../../components/elements/input/input.pug
-include ../../../components/elements/dropdowns/dropdown-little-block/dropdown-little-block.pug
+include ../../../components/elements/dropdowns/dropdown-block.pug
 
 .form-elements__column-left
-                .form-elements__wrapper-inputs
-                    +Input("text field", "default", "", "Email", "text-field")
-                    +Input("text field", "hover / focus", "", "This is pretty awesome", "hover")
-                    +Input("dropdown", "default", "", "Сколько гостей", "dropdowns")
-                    +Input("masked text field", "default", "", "ДД.ММ.ГГГГ", "text-field")
-                    .form-elements__date-dropdowns
-                        .form-elements__dropdown-left
-                            +Input("date dropdown", "", "", "ДД.ММ.ГГГГ","small")
-                        .form-elements__dropdown-right
-                            +Input("date dropdown", "", "", "19.08.2019","small")
-                    +Input("filter date dropdown", "", "", "19 авг - 23 авг","little-expand")
-                    +Input("subscription text field", "", "", "Email", "little-arrow")
-                    +Input("dropdown", "default", 'little', "2 спальни, 2 кровати", "little-expand")
-                +dropdown-little-block ( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius", "спальни", "кровати", "ванные комнаты", "visibble") 
+    .form-elements__container-text-field
+        +Input("text field", "default", "", "Email", "text-field")
+    .form-elements__container-text-field2    
+        +Input("text field", "hover / focus", "", "This is pretty awesome", "hover")
+    .form-elements__container-dropdown
+        +Input("dropdown", "default", "", "Сколько гостей", "dropdowns")
+    .form-elements__container-masked-text-field
+        +Input("masked text field", "default", "", "ДД.ММ.ГГГГ", "text-field")
+    .form-elements__container-date-dropdowns
+        .form-elements__dropdown-left
+            +Input("date dropdown", "", "small", "ДД.ММ.ГГГГ","small")
+        .form-elements__dropdown-right
+            +Input("date dropdown", "", "small", "19.08.2019","small")
+    .form-elements__container-filter-date-dropdown
+        +Input("filter date dropdown", "", "", "19 авг - 23 авг","little-expand")
+    .form-elements__container-subscription-text-field
+        +Input("subscription text field", "", "", "Email", "little-arrow")
+    .form-elements__container-dropdown    
+        +Input("dropdown", "default", 'little', "2 спальни, 2 кровати", "little-expand")
+    .form-elements__container-dropdown
+        +dropdown-little-block ( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius", "спальни", "кровати", "ванные комнаты", "visibble") 

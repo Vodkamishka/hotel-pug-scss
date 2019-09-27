@@ -108,17 +108,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/fields/sub-text-field/sub-text-field.scss":
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/fields/sub-text-field/sub-text-field.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/fields/sub-text-field/sub-text-field.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
@@ -221,29 +210,6 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 
 /***/ }),
 
-/***/ "./src/components/elements/fields/sub-text-field/sub-text-field.js":
-/*!*************************************************************************!*\
-  !*** ./src/components/elements/fields/sub-text-field/sub-text-field.js ***!
-  \*************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub_text_field_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub-text-field.scss */ \"./src/components/elements/fields/sub-text-field/sub-text-field.scss\");\n/* harmony import */ var _sub_text_field_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sub_text_field_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/fields/sub-text-field/sub-text-field.js?");
-
-/***/ }),
-
-/***/ "./src/components/elements/fields/sub-text-field/sub-text-field.scss":
-/*!***************************************************************************!*\
-  !*** ./src/components/elements/fields/sub-text-field/sub-text-field.scss ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./sub-text-field.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/fields/sub-text-field/sub-text-field.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/fields/sub-text-field/sub-text-field.scss?");
-
-/***/ }),
-
 /***/ "./src/components/footer/footer.js":
 /*!*****************************************!*\
   !*** ./src/components/footer/footer.js ***!
@@ -252,7 +218,7 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.scss */ \"./src/components/footer/footer.scss\");\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _elements_fields_sub_text_field_sub_text_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../elements/fields/sub-text-field/sub-text-field */ \"./src/components/elements/fields/sub-text-field/sub-text-field.js\");\n\n\n\n//# sourceURL=webpack:///./src/components/footer/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.scss */ \"./src/components/footer/footer.scss\");\n/* harmony import */ var _footer_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_footer_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/footer/footer.js?");
 
 /***/ }),
 

@@ -1,0 +1,24 @@
+@import '../../../assets/utils/main';
+
+.label {
+    margin-bottom: 5px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $shade100;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+        .label__right {
+            color: $shade50;
+            font-weight: normal;
+        }
+    &.little {
+        width: $little;
+    }
+    &.small {
+        width: $small;
+    }  
+}

@@ -1,1 +1,0 @@
-import './dropdown-little-block.scss'

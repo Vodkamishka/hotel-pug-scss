@@ -6,30 +6,19 @@
         margin-left: 141px;
         background: lightgreen;   
     }
-    &__wrapper-inputs {
-        margin-top: 143px;
-        margin-bottom: 20px;
-            div:nth-child(3) {
-                margin-top: 20.44px;
-            }
-            div:nth-child(5) {
-                margin-top: 20px;
-            }
-            div:nth-child(7) {
-                margin-top: 22.56px;
-            }
-            div:nth-child(12) {
-                margin-top: 41px;
-            }
-            div:nth-child(14) {
-                margin-top: 100px;
-            }  
+    &__container-text-field {
+        margin: 143px 0 20.44px 0;
     }
-    &__date-dropdowns {
+    &__container-dropdown {
+        margin: 20px 0 22.56px 0;
+    }
+    &__container-date-dropdowns {
         margin: 40px 0 40.56px 0;
         display: flex;
         justify-content: space-between;
     }
-    
+    &__container-filter-date-dropdown {
+        margin: 41px 0 100px 0;
+    }
     
 }

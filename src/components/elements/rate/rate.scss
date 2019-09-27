@@ -1,0 +1,14 @@
+@import '../../../assets/utils/main';
+
+.rate-button {
+    &__title {
+        @include inputTitle;
+        margin-bottom: 16px;
+    }
+    &__rate {
+        display: flex;
+    }
+    &__left {
+        margin-right: 20px;
+    }
+}
