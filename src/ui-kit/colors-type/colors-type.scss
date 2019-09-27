@@ -1,19 +1,12 @@
-@import '../../assets/utils/mixin.scss';
-@import '../../assets/utils/vars.scss';
+@import '../../assets/utils/_main.scss';
 
 body {
-    @include body();
     p {
         margin: 0;
     }
     .colors {
         width: 100%;
         height: 100%;
-        &__image {
-            position: absolute;
-            left: 30px;
-            top: 30px;
-        }
         &__squares {        
             position: absolute;
             left: 150px;

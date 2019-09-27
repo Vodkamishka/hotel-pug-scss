@@ -1,0 +1,2 @@
+@font-face{font-family:Montserrat;src:url(/assets/fonts/montserrat/montserrat.ttf),url(/assets/fonts/montserrat/montserrat.woff),url(/assets/fonts/montserrat/montserrat.svg)}@font-face{font-family:Quicksand;src:url(/assets/fonts/quicksand/quicksand.woff),url(/assets/fonts/quicksand/quicksand.ttf),url(/assets/fonts/quicksand/quicksand.svg)}body{position:relative;max-width:1440px;height:1343px;margin:0 auto;padding:0;box-sizing:border-box;font-family:Montserrat}
+.wrapper-logo{position:absolute;left:30px;top:30px}

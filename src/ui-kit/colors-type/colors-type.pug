@@ -9,9 +9,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Colors & type
     body
-        .colors
-            .colors__image
-                img(src="assets/img/logotypes/group.svg", alt="group")
+        include ../../components/elements/logo-wrapper/logo-wrapper.pug 
+        .colors  
             .colors__squares
                 +block("shade", "Dark Shade 100%", "#1F2041")
                 +block("shade75", "Dark Shade 75%", "#1F2041")

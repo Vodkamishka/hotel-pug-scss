@@ -1,0 +1,39 @@
+@import '../../../assets/utils/main';
+
+.like-button {
+    .like-button__title {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $shade100;
+        margin: 0 0 16px 0;
+    }
+    &__like {
+        display: flex;   
+    }
+    &__left, &__right {
+        width: 39.72px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+            img {
+                margin: 0 7px 0 5px;
+            }
+    }
+    &__left {
+        border: 1px solid $shade25;
+        color: $shade25;
+        margin-right: 10px;
+    }
+    &__right {
+        border: 1px solid $purple;
+       
+        color: $purple;
+    }
+
+}

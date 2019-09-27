@@ -6,7 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
     entry: {
         'landing/landing': './src/components/landing/landing.js',
-        'ui-kit/colors-type/colors-type': './src/ui-kit/colors-type/colors-type.js'
+        'ui-kit/colors-type/colors-type': './src/ui-kit/colors-type/colors-type.js',
+        'ui-kit/form-elements/form-elements': './src/ui-kit/form-elements/form-elements.js'
     },
     output: {
         path: path.resolve(__dirname, 'public/'),
@@ -58,7 +59,7 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/colors-type/colors-type.pug`,
+            template: `./src/ui-kit/form-elements/form-elements.pug`,
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },

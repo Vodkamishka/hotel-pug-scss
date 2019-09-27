@@ -1,0 +1,18 @@
+@import '../../../assets/utils/_main.scss';
+
+.form-elements {
+    &__column-center {
+        width: 320px;
+        margin: 0 72px 0 126px;
+        background: orange;
+    }
+    &__center-wrapper {
+        margin-top: 143px;        
+    }
+    &__container-radio {
+        margin: 40.88px 0 36.56px 0;
+    }
+    &__container-like {
+        margin-top: 44.44px;
+    }
+}

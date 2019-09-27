@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/ui-kit/colors-type/colors-type.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/ui-kit/form-elements/form-elements.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,25 +97,14 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/square/square.scss":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/square/square.scss ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/form-elements/form-elements.scss":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/form-elements/form-elements.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/square/square.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/colors-type/colors-type.scss":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/colors-type/colors-type.scss ***!
-  \**********************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/ui-kit/colors-type/colors-type.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/form-elements.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -154,60 +143,26 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 
 /***/ }),
 
-/***/ "./src/components/elements/square/square.js":
-/*!**************************************************!*\
-  !*** ./src/components/elements/square/square.js ***!
-  \**************************************************/
+/***/ "./src/ui-kit/form-elements/form-elements.js":
+/*!***************************************************!*\
+  !*** ./src/ui-kit/form-elements/form-elements.js ***!
+  \***************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _square_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./square.scss */ \"./src/components/elements/square/square.scss\");\n/* harmony import */ var _square_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_square_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/square/square.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-elements.scss */ \"./src/ui-kit/form-elements/form-elements.scss\");\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_form_elements_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_logo_wrapper_logo_wrapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/elements/logo-wrapper/logo-wrapper */ \"./src/components/elements/logo-wrapper/logo-wrapper.js\");\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/form-elements.js?");
 
 /***/ }),
 
-/***/ "./src/components/elements/square/square.scss":
-/*!****************************************************!*\
-  !*** ./src/components/elements/square/square.scss ***!
-  \****************************************************/
+/***/ "./src/ui-kit/form-elements/form-elements.scss":
+/*!*****************************************************!*\
+  !*** ./src/ui-kit/form-elements/form-elements.scss ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./square.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/square/square.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/square/square.scss?");
-
-/***/ }),
-
-/***/ "./src/ui-kit/colors-type/colors-title/colors-title.js":
-/*!*************************************************************!*\
-  !*** ./src/ui-kit/colors-type/colors-title/colors-title.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("\n\n//# sourceURL=webpack:///./src/ui-kit/colors-type/colors-title/colors-title.js?");
-
-/***/ }),
-
-/***/ "./src/ui-kit/colors-type/colors-type.js":
-/*!***********************************************!*\
-  !*** ./src/ui-kit/colors-type/colors-type.js ***!
-  \***********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _colors_type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colors-type.scss */ \"./src/ui-kit/colors-type/colors-type.scss\");\n/* harmony import */ var _colors_type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_colors_type_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_square_square__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/elements/square/square */ \"./src/components/elements/square/square.js\");\n/* harmony import */ var _colors_title_colors_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./colors-title/colors-title */ \"./src/ui-kit/colors-type/colors-title/colors-title.js\");\n/* harmony import */ var _colors_title_colors_title__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_colors_title_colors_title__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_elements_logo_wrapper_logo_wrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/elements/logo-wrapper/logo-wrapper */ \"./src/components/elements/logo-wrapper/logo-wrapper.js\");\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/colors-type/colors-type.js?");
-
-/***/ }),
-
-/***/ "./src/ui-kit/colors-type/colors-type.scss":
-/*!*************************************************!*\
-  !*** ./src/ui-kit/colors-type/colors-type.scss ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./colors-type.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/colors-type/colors-type.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/ui-kit/colors-type/colors-type.scss?");
+eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./form-elements.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/form-elements/form-elements.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/form-elements.scss?");
 
 /***/ })
 

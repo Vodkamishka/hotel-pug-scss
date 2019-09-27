@@ -1,0 +1,35 @@
+@import '../../../assets/utils/_main.scss';
+
+.form-elements {
+    &__column-left {
+        width: 320px;
+        margin-left: 141px;
+        background: lightgreen;   
+    }
+    &__wrapper-inputs {
+        margin-top: 143px;
+        margin-bottom: 20px;
+            div:nth-child(3) {
+                margin-top: 20.44px;
+            }
+            div:nth-child(5) {
+                margin-top: 20px;
+            }
+            div:nth-child(7) {
+                margin-top: 22.56px;
+            }
+            div:nth-child(12) {
+                margin-top: 41px;
+            }
+            div:nth-child(14) {
+                margin-top: 100px;
+            }  
+    }
+    &__date-dropdowns {
+        margin: 40px 0 40.56px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+}

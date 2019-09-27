@@ -1,0 +1,50 @@
+@import '../../../../assets/utils/_main.scss';
+
+.dropdown-little-block {
+        width: 266px;
+        height: 119px;
+        border: 1px solid $shade50;
+        border-radius: 0 0 4px 4px;
+        &__top, &__center, &__bottom {
+                margin-top: 7px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: Montserrat;
+                font-size: 12px;
+                line-height: 15px;
+                        div:nth-child(1) {
+                                width: 167px;
+                                padding-left: 15px;
+                        }
+                        div:nth-child(3) {
+                                width: 32px;
+                                display: flex;
+                                justify-content: center;
+                        }
+        }
+        .plus, .minus {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid $shade50;
+                color: $shade50;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Montserrat;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+        }
+        .without-radius {
+                border: 1px solid transparent;
+        }
+}
+.visible {
+        display: block;
+}
+.hidden {
+        display: none;
+}
