@@ -7,7 +7,13 @@
     }
     &__container-range-slider {
         margin: 143.44px 0 43.56px 0;
-        height: 99.88px;
+        height: 56px;
         border: 1px solid black;
+    }
+    &__container-buttons {
+        margin: 43.56px 0 16px 0;
+    }
+    &__container-pagination {
+        margin: 40px 0 230px 0;
     }
 }

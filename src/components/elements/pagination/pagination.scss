@@ -1,0 +1,38 @@
+@import '../../../assets/utils/main';
+
+.pagination {
+    &__title {
+        @include inputTitle;
+        margin-bottom: 16.44px;
+    }
+    &__pagination {
+        display: flex;
+        margin-bottom: 10.56px;
+        span, .img-container {
+            width: 40px;
+            height: 40px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: $shade50;
+            @include flex-center;
+            border: 1px solid transparent;
+        }
+        span:first-child {
+            border-radius: 50%;
+            color: $white;
+            background: $gradient;
+        }
+
+        .img-container {
+            border-radius: 50%;
+            background: $gradient-green;
+        }
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $shade75;
+    }
+}

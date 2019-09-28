@@ -1,3 +1,18 @@
+include ../../../components/elements/buttons/long-btn/long-btn.pug
+include ../../../components/elements/dropdowns/dropdown-block.pug
+
 .form-elements__column-right
     .form-elements__container-range-slider
     .form-elements__container-buttons
+        include ./container-buttons/container-buttons.pug
+    .form-elements__container-long-button
+        +longBtn("Перейти к оплате")
+    .form-elements__container-pagination
+        include ../../../components/elements/pagination/pagination.pug
+    .form-elements__container-dropdown
+        +dropdown-long-block ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "взрослые", "дети", "младенцы", "visibble") 
+    .form-elements__container-bullet
+        include ../../../components/elements/bullet-list/bullet-list.pug
+
+
+    

@@ -1,0 +1,17 @@
+@import '../../../assets/utils/main';
+
+.bullet-list {
+    &__title {
+        @include inputTitle;
+        margin-bottom: 16px;
+    }
+    ul {
+        width: 271.14px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $shade75;
+        list-style-image: url("/assets/img/icons/ellipse.svg");
+        margin-left: 20px;
+    }
+}

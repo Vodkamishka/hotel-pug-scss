@@ -5,24 +5,22 @@
         height: 119px;
         border: 1px solid $shade50;
         border-radius: 0 0 4px 4px;
-        &__top, &__center, &__bottom {
-                margin-top: 7px;
-                display: flex;
-                align-items: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-family: Montserrat;
-                font-size: 12px;
-                line-height: 15px;
-                        div:nth-child(1) {
+                &__top, &__center, &__bottom {
+                        margin-top: 7px;
+                        @include align-items;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                                div:nth-child(1) {
                                 width: 167px;
                                 padding-left: 15px;
-                        }
-                        div:nth-child(3) {
+                                }
+                                div:nth-child(3) {
                                 width: 32px;
                                 display: flex;
                                 justify-content: center;
-                        }
+                                }
         }
         .plus, .minus {
                 width: 30px;
@@ -30,11 +28,7 @@
                 border-radius: 50%;
                 border: 1px solid $shade50;
                 color: $shade50;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: Montserrat;
-                font-weight: normal;
+                @include flex-center;
                 font-size: 18px;
                 line-height: 22px;
         }
@@ -54,4 +48,21 @@
 .dropdown-long-block {
         @include dropdown-little-block;
         width: 320px;
+        height: 159px;
+                .dropdown-little-block__top,
+                .dropdown-little-block__center,
+                .dropdown-little-block__bottom {
+                        div:nth-child(1) {
+                                width: 221px;
+                                padding-left: 15px;
+                                }
+                }
+                .dropdown-little-block__title {
+                        margin: 19px 0 13px 229px;
+                        font-weight: bold;
+                        color: $purple;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 15px;
+                }
 }

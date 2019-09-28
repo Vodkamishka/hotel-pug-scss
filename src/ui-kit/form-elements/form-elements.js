@@ -10,4 +10,7 @@ import '../../components/elements/radio/radio-buttons';
 import '../../components/elements/toggle/toggle';
 import '../../components/elements/like/like';
 import '../../components/elements/rate/rate';
+import '../../components/elements/pagination/pagination';
 import '../../components/elements/input-text/input-text';
+import '../../components/elements/bullet-list/bullet-list';
+import './right-column/container-buttons/container-buttons';

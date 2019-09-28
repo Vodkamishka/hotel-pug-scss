@@ -1,1 +1,2 @@
-import '../label/label'
+import '../label/label';
+import './input-text.scss';

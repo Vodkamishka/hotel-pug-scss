@@ -1,5 +1,6 @@
 include ../label/label.pug
 
 mixin Input (leftLabel, rightLabel, classLabel, placeholder, classInput)
-    +label(left, right, classLabel)
-    input(type="text" placeholder=placeholder class=classInput)
+    .input-text
+        +label(leftLabel, rightLabel, classLabel)
+        input(type="text" placeholder=placeholder class=classInput)

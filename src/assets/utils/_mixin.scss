@@ -19,5 +19,10 @@
     text-transform: uppercase;
     color: $shade100;
 }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
