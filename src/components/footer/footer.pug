@@ -1,3 +1,5 @@
+include ../elements/input-text/input-text.pug
+
 .footer
     .footer__nav
         .footer__nav-inside
@@ -21,7 +23,7 @@
                 for i in ['Подписка', 'Получайте специальные предложения и новости сервиса']
                     li
                         a(href="#")=i
-                
+                +Input("", "", "", "Your email address ", "text-field") 
                     
     .footer__social
         

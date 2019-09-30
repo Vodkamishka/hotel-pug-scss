@@ -1,0 +1,43 @@
+@import '../../assets/utils/main';
+
+body {
+    height: 1350px;
+}
+.headers-footers {
+    position: absolute;
+    top: 0;
+    &__section {
+        margin: 150px 0  40px 0;
+    }
+    &__section3 {
+        margin-top: 40px;
+    }
+    &__section5 {
+        margin-top: 40px;
+        border: 1px solid black;
+        height: 367px;    
+    }
+    &__inner {
+        height: 367px; 
+    }
+    &__image {
+        div {
+            width: 105.69px;
+            margin: 100px auto 0;
+        }
+    }
+    &__text {
+        width: 560px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $shade75;
+        margin: 20px auto 25px;
+        text-align: center;
+    }
+    &__social {
+        .social {
+            margin: 0 auto;
+        }
+    }
+}
