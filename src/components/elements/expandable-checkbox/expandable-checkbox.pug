@@ -1,0 +1,15 @@
+include ./checkbox-list/checkbox-list.pug
+
+- var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
+
+mixin expandable-checkbox (display)
+    .expandable-checkbox    
+        .expandable-checkbox__mainline
+            .expandable-checkbox__title expandable checkbox
+            .expandable-checkbox__image
+        .expandable-checkbox__list(style=`display: ${display}`)
+            +checkList(list)
+
+           
+
+    

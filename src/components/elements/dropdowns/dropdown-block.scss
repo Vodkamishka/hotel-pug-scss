@@ -5,7 +5,7 @@
         height: 119px;
         border: 1px solid $shade50;
         border-radius: 0 0 4px 4px;
-                &__top, &__center, &__bottom {
+                &__row {
                         margin-top: 7px;
                         @include align-items;
                         text-transform: uppercase;
@@ -49,9 +49,7 @@
         @include dropdown-little-block;
         width: 320px;
         height: 159px;
-                .dropdown-little-block__top,
-                .dropdown-little-block__center,
-                .dropdown-little-block__bottom {
+                .dropdown-little-block__row {
                         div:nth-child(1) {
                                 width: 221px;
                                 padding-left: 15px;

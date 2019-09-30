@@ -1,7 +1,11 @@
+@import '../../assets/utils/main';
 
-.form-elements {
-    width: 100%;
-    height: 100%;
-    background: lightblue;
-    display: flex;   
+body {
+    height: 1853px;
+        .form-elements {
+            width: 100%;
+            height: 100%;
+            background: lightblue;
+            display: flex;   
+        }
 }

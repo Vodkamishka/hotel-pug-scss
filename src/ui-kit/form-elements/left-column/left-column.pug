@@ -1,5 +1,6 @@
 include ../../../components/elements/input-text/input-text.pug
 include ../../../components/elements/dropdowns/dropdown-block.pug
+include ../../../components/elements/expandable-checkbox/expandable-checkbox.pug
 
 .form-elements__column-left
     .form-elements__container-text-field
@@ -22,4 +23,12 @@ include ../../../components/elements/dropdowns/dropdown-block.pug
     .form-elements__container-dropdown    
         +Input("dropdown", "default", 'little', "2 спальни, 2 кровати", "little-expand")
     .form-elements__container-dropdown
-        +dropdown-little-block ( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius", "спальни", "кровати", "ванные комнаты", "visibble") 
+        +dropdown-little-block ( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius", "спальни", "кровати", "ванные комнаты", "visibble")
+    .form-elements__container-checkbox-list
+        +expandable-checkbox('none')
+    .form-elements__container-checkbox-list-expandable
+        +expandable-checkbox('block')
+    .form-elements__container-incert-emotion
+        include ../../../components/elements/incert-emotion/incert-emotion.pug
+    .form-elements__container-location-city
+        include ../../../components/elements/location-city/location-city.pug

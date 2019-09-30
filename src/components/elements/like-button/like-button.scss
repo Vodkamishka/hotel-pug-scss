@@ -1,0 +1,11 @@
+@import '../../../assets/utils/main';
+
+.like-button {
+    .like-button__title {
+        @include inputTitle;
+        margin-bottom: 16px;
+    }
+    &__like {
+        display: flex;   
+    }
+}

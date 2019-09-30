@@ -1,0 +1,10 @@
+mixin like (a)
+    .like
+        if a=== 2
+            .like__left
+                img(src="assets/img/icons/favorite_border.svg", alt="favorite_border")
+                span= a
+        else if a=== 12
+            .like__right
+                img(src="assets/img/icons/favorite.svg", alt="favorite")
+                span= a

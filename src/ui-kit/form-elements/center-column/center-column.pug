@@ -8,8 +8,12 @@ include ../../../components/elements/dropdowns/dropdown-block.pug
     .form-elements__container-toggle
         include ../../../components/elements/toggle/toggle.pug
     .form-elements__container-like
-        include ../../../components/elements/like/like.pug
+        include ../../../components/elements/like-button/like-button.pug
     .form-elements__container-rate
         include ../../../components/elements/rate/rate.pug
     .form-elements__container-dropdown
-        +dropdown-long-block ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "взрослые", "дети", "младенцы", "visibble") 
+        +dropdown-long-block ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "взрослые", "дети", "младенцы", "visibble")
+    .form-elements__container-rich
+        include ../../../components/elements/rich-checkbox/rich-checkbox.pug 
+    .form-elements__container-murad
+        include ./murad/murad.pug

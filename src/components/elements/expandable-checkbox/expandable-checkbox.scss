@@ -1,0 +1,31 @@
+@import '../../../assets/utils/main';
+
+.checkbox-extend {
+    width: 44px;
+    height: 44px;
+    transition: all 1s;
+}
+
+.expandable-checkbox {
+    &__mainline {
+        display: flex;  
+    }
+    &__mainline-expandable {
+        display: flex;
+        margin-bottom: 17px;
+    }
+    &__title {
+        @include inputTitle;
+        margin-right: 30px;
+        @include align-items; 
+    }
+    &__image {
+        background: url(/assets/img/icons/expand.svg) no-repeat center center;
+        @extend .checkbox-extend;
+    }
+    &__image-expandable {
+        background: url(/assets/img/icons/expand_more.svg) no-repeat center center;
+        @extend .checkbox-extend; 
+    }
+    
+}

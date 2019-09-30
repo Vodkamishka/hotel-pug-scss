@@ -25,4 +25,32 @@
     align-items: center;
 }
 
+@mixin textElements {
+    font-size: 14px;
+    line-height: 24px;
+    color: $shade75;
+}
 
+@mixin input-checkbox {
+    .check-list {
+        @include align-items;
+        margin-top: 10px;
+            input[type='checkbox'] {
+                width: 20px;
+                height: 20px;
+                border: 1px solid $shade25;
+                border-radius: 4px;
+                margin: 0 9.7px 0 0;
+            }
+            input[type='checkbox']:checked {
+                border: 1px solid $purple;
+                margin: 0 10px 0 0;
+            }
+            label {
+                font-size: 14px;
+                line-height: 18px;
+                color: $shade50;
+            }
+    }
+   
+}

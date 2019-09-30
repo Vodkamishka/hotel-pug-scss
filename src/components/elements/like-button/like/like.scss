@@ -1,0 +1,28 @@
+@import '../../../../assets/utils/main';
+
+.like-extend {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: normal;
+    @include align-items;
+        img {
+            margin: 0 7px 0 5px;
+        }
+}
+
+.like { 
+        &__left {
+            border: 1px solid $shade25;
+            color: $shade25;
+            margin-right: 10px;
+            @extend .like-extend
+        }
+        &__right {
+            border: 1px solid $purple;
+            color: $purple;
+            @extend .like-extend
+        }
+}

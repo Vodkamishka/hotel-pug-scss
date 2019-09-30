@@ -1,19 +1,21 @@
 include ../input-text/input-text.pug
 
+
+
 mixin dropdown-little-block (leftLabel, rightLabel, classLabel, placeholder, classInput, name, name2, name3, visibility)
     +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
     .dropdown-little-block(class= visibility)
-        .dropdown-little-block__top
+        .dropdown-little-block__row
             .items= name
             .minus -
             .result 2
             .plus +
-        .dropdown-little-block__center
+        .dropdown-little-block__row
             .items= name2
             .minus -
             .result 2
             .plus +
-        .dropdown-little-block__bottom
+        .dropdown-little-block__row
             .items= name3
             .minus.without-radius
             .result 0
@@ -22,17 +24,17 @@ mixin dropdown-little-block (leftLabel, rightLabel, classLabel, placeholder, cla
 mixin dropdown-long-block (leftLabel, rightLabel, classLabel, placeholder, classInput, name, name2, name3, visibility)
     +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
     .dropdown-long-block(class= visibility)
-        .dropdown-little-block__top
+        .dropdown-little-block__row
             .items= name
             .minus.without-radius
             .result 2
             .plus +
-        .dropdown-little-block__center
+        .dropdown-little-block__row
             .items= name2
             .minus.without-radius
             .result 2
             .plus +
-        .dropdown-little-block__bottom
+        .dropdown-little-block__row
             .items= name3
             .minus.without-radius
             .result 0
