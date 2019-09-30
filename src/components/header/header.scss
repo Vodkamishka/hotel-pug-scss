@@ -12,17 +12,16 @@
         }
         &__navbar {
             margin-left: 285.31px;
-            width: 446px;
-            
             ul {
                 display: flex;
                 justify-content: space-between;
                 margin: 0;
                 padding: 0;
+                
                 li {
                     list-style-type: none;
                     @include Montserrat(0.875rem);
-                    font-family: 'Montserrat', sans-serif;
+                    margin-right: 20px;
                         img {
                             padding-left: 6px;
                         }

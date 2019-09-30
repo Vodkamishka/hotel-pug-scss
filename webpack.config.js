@@ -8,7 +8,8 @@ module.exports = {
         'landing/landing': './src/components/landing/landing.js',
         'ui-kit/colors-type/colors-type': './src/ui-kit/colors-type/colors-type.js',
         'ui-kit/form-elements/form-elements': './src/ui-kit/form-elements/form-elements.js',
-        'ui-kit/headers-footers/headers-footers': './src/ui-kit/headers-footers/headers-footers.js'
+        'ui-kit/headers-footers/headers-footers': './src/ui-kit/headers-footers/headers-footers.js',
+        'ui-kit/cards/cards': './src/ui-kit/cards/cards.js'
     },
     output: {
         path: path.resolve(__dirname, 'public/'),
@@ -60,7 +61,7 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/headers-footers/headers-footers.pug`,
+            template: `./src/ui-kit/cards/cards.pug`,
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
