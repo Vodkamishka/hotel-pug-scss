@@ -1,0 +1,12 @@
+@import '../../../assets/utils/main';
+
+.registration-accaunt {
+    height: 646px;
+    @include cards;
+        &__two-fields {
+            margin: 20px 0 0 10px;
+                input[type="text"]:first-child {
+                    margin-bottom: 10px;
+                }
+        }
+}

@@ -1,0 +1,11 @@
+include ../../../components/elements/buttons/long-btn/long-btn.pug
+include ../../../components/elements/input-text/input-text.pug
+
+.search-rooms
+    .search-rooms__title Найдем номера под ваши пожелания
+    .search-rooms__incoming
+        +Input("Прибытие", "", "small", "ДД.ММ.ГГГГ","small")
+        +Input("Выезд", "", "small", "ДД.ММ.ГГГГ","small")
+    .search-rooms__guests
+        +Input("гости", "", "", "Сколько гостей", "dropdowns")
+    +longBtn("Сколько гостей")
