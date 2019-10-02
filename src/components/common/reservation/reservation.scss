@@ -1,0 +1,49 @@
+@import '../../../assets/utils/main';
+
+.reservation {
+    height: 511px;
+    @include cards;
+    &__main-title {
+        @include space-between;
+        margin-bottom: 20px;
+    }
+    &__guests {
+        margin: 20px 0 20.56px 0;
+    }
+    &__incoming {
+        display: flex;
+        margin-top: 20px;
+            input {
+                margin-right: 20px;
+            }
+    }
+    &__list {
+        margin: 20.56px 0 20px 0;
+    }
+    &__price, &__tax, &__fee {
+        @include space-between;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $shade75;
+        margin-bottom: 10px;
+        font-family: Montserrat;
+            p:first-child {
+                width: 214px;
+            }
+    }
+    &__result {
+        margin-top: 30px;
+        @include space-between;
+        color: $shade100;
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    &__dots {
+        width: 182px;
+        border-bottom: 1px dotted $shade25;
+        
+    }
+}

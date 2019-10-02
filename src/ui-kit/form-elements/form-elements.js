@@ -6,7 +6,7 @@ import '../../components/elements/dropdowns/dropdown-block';
 import './center-column/center-column.scss';
 import './right-column/right-column.scss';
 import '../../components/elements/checkbox/checkbox';
-import '../../components/elements/radio/radio-buttons';
+import '../../components/elements/radio-buttons/radio-buttons';
 import '../../components/elements/toggle/toggle';
 import '../../components/elements/like-button/like-button';
 import '../../components/elements/rate/rate';

@@ -25,6 +25,11 @@
     align-items: center;
 }
 
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin textElements {
     font-size: 14px;
     line-height: 24px;
@@ -69,5 +74,17 @@
         }
 }
 
+@mixin toxin {
+    &__toxin {
+        @include align-items;
+        justify-content: space-between;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $black;
+        font-family: Montserrat;
+    }
+}
    
 

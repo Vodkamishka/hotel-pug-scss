@@ -5,41 +5,7 @@
             @include inputTitle;
             margin-bottom: 16px;
         }
-        &__togle {
+        &__toggle {
             margin-bottom: 44.44px;
-        }
-        &__left, &__right {
-            @include align-items;
-            margin: 14px 0 0 0;
-            font-size: 14px;
-            line-height: 24px;
-            color: $shade75;
-                input[type="checkbox"]{
-                    margin: 0  20px 0 0;
-                    -webkit-appearance: none;
-                    width: 40px;
-                    height: 20px;
-                    position: relative;
-                        &:checked[type="checkbox"]{
-                             &:before {
-                                 left: 20px;
-                                 background: linear-gradient(180deg, $purple 0%, $blue 100%);
-                                 border: 1px solid $purple;
-                             } 
-                        }
-                        &:before {
-                            position:absolute;
-                            content: '';
-                            background: $shade25;
-                            width: 12px;
-                            height: 12px;
-                            border-radius: 10px;
-                            left: 4px;
-                            top: 2px;
-                            border: 1px solid $shade25;
-                        }
-                    
-                }
-        }
-        
+        }   
 }

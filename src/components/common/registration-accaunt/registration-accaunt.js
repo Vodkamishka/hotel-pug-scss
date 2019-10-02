@@ -1,2 +1,6 @@
-import './registration-accaunt.scss';
-import '../../../components/elements/input-text/input-text';
+import './registration-accaunt.scss'
+import '../../elements/input-text/input-text'
+import '../../elements/toggle/one-toggle/one-toggle'
+import '../../elements/buttons/long-btn/long-btn'
+import '../../elements/buttons/short-btn/short-btn'
+import '../../elements/radio-buttons/radio/radio'

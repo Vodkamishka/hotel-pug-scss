@@ -1,0 +1,13 @@
+include ../../elements/input-text/input-text.pug
+include ../../elements/buttons/long-btn/long-btn
+
+.login
+    .login__title Войти
+    .login__fields
+        +Input("", "", "", "Email", "text-field")
+        +Input("", "", "", "Пароль", "text-field")
+    .login__button
+        +longBtn("Войти")
+    .login__toxin
+        .login__text Нет аккаунта на Toxin?
+        +srtBtn("Создать", "white")

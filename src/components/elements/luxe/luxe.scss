@@ -1,0 +1,41 @@
+@import '../../../assets/utils/main';
+
+.luxe {
+    @include space-between;
+    &__luxe {
+        @include align-items;
+        font-family: Montserrat;
+            p:first-child {
+            font-family: Quicksand;
+            color: $shade100;
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        p:nth-child(2) {
+            align-self: flex-start;
+            padding-right: 5px;
+        }
+        p:last-child {
+            font-size: 12px;
+            line-height: 15px;
+            color: $purple;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    &__price {
+    @include align-items;
+    color: $shade50;
+    p:first-child {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+    p:last-child {
+        font-weight: normal;
+    }
+}
+}

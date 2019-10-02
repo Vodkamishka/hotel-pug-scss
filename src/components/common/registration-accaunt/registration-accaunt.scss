@@ -3,10 +3,17 @@
 .registration-accaunt {
     height: 646px;
     @include cards;
+        &__bithday {
+            margin: 19.56px 0 20px 0;
+        }   
         &__two-fields {
-            margin: 20px 0 0 10px;
+            margin: 20px 0 10px 0;
                 input[type="text"]:first-child {
                     margin-bottom: 10px;
                 }
         }
+        &__button {
+            margin:24px 0 30px 0;
+        }
+        @include toxin;
 }

@@ -10,6 +10,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+    
     &.purple {
         background: $gradient;
         color: $white;
@@ -18,5 +19,15 @@
         background: $gradient;
         color: $white;
         opacity: 0.5;
+    }
+    &.white {
+        color: $purple;
+        background: $white;
+        border: 1px solid $purple;   
+    }
+    &.white05 {
+        color: $purple;
+        background: $white;
+        border: 1px solid $blue; 
     }
 }

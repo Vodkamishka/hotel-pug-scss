@@ -1,0 +1,16 @@
+@import '../../../assets/utils/main';
+
+.login {
+    height: 358px;
+    @include cards;
+        &__fields {
+            margin: 20px 0;
+                input:first-child {
+                    margin-bottom: 10px;
+                }
+        }
+        &__button {
+            margin-bottom: 30px;
+        }
+        @include toxin;
+}
