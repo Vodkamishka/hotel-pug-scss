@@ -28,8 +28,22 @@
         color: $shade75;
         margin-bottom: 10px;
         font-family: Montserrat;
+        position: relative;
             p:first-child {
                 width: 214px;
+            }
+            .round {
+                position: absolute;
+                left: 219px;
+                width: 20px;
+                height: 20px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 14px;
+                border-radius: 50%;
+                border: 1px solid $shade25;
+                color: $shade25;
+                @include flex-center;
             }
     }
     &__result {

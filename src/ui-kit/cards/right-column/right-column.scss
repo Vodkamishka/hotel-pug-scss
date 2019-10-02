@@ -1,0 +1,10 @@
+.cards {
+    &__right-column {
+        width: 320px;
+        background: lightgreen;
+        height: 100%;     
+    }
+    &__middleware-card {
+        margin: 40px 0 39.5px 0;
+    }
+}

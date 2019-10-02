@@ -1,0 +1,33 @@
+@import '../../../assets/utils/main';
+
+.card-room {
+    width: 270px;
+    height: 257px;
+    box-shadow: 0px 10px 20px $shade05;
+    background: $white;
+        &__image {
+            margin-bottom: 31px;
+            width: 270px;
+            height: 151.38px;
+                img {
+                    border-radius: 4px 4px 0px 0px
+                }
+        }
+        &__luxe {
+            margin-bottom: 19px;
+            .luxe__luxe {
+                margin-left: 20px;
+            }
+            .luxe__price {
+                margin-right: 17px;
+            }
+        }
+        &__stars {
+            .stars {
+                margin-left: 20px;
+            }
+            .comments-stars__comments {
+                margin-right: 20px;
+            }
+        }
+}

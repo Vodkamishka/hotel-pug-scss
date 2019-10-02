@@ -1,0 +1,17 @@
+@import '../../../assets/utils/main';
+
+.comments-stars {
+    @include space-between;
+    &__comments {
+        display: flex;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $shade50;
+            p:first-child {
+                font-weight: bold;
+                margin-right: 2px;
+            }
+    }
+
+}

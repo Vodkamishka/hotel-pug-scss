@@ -1,0 +1,7 @@
+mixin stars (stars)
+    .stars
+        - var emptyStars = 5 - stars
+        - for (var i=0; i < stars; i++) 
+            .stars__image
+        - for (var j=0; j < emptyStars; j++)
+            .stars__image2 
