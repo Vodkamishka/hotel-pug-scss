@@ -1,0 +1,25 @@
+@import '../../../assets/utils/main';
+
+.navbar {
+    ul {
+        @include space-between;
+        padding: 0;
+        li {
+            list-style-type: none; 
+            font-size: 14px;
+            line-height: 17px;
+            color: $shade50;
+            font-family: 'Montserrat';
+            white-space: nowrap;
+            @include align-items;
+                .image {
+                    width: 24px;
+                    height: 21px;
+                    background: url(/assets/img/icons/expand.svg) no-repeat center center;
+                }  
+                &:nth-child(3){
+                    margin-right: 20px;
+                }
+        }
+    }
+}

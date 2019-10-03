@@ -1,38 +1,50 @@
-@import "../../assets/utils/vars.scss";
-@import "../../assets/utils/mixin.scss";
+@import "../../assets/utils/main.scss";
 
-.header {
+.extends-header {
     height: 70px;
     background: #FFFFFF;
-    box-shadow: 0px 10px 20px #1f20410d;
-    @include align-items;
+    box-shadow: 0px 10px 20px$shade05;
+    border: 1px solid black;
+    padding: 0 140px;
+    @include space-between;
         &__image {
-            margin-left: 140px;
             height: 40px;
-        }
-        &__navbar {
-            margin-left: 285.31px;
-            ul {
-                display: flex;
-                justify-content: space-between;
-                margin: 0;
-                padding: 0;
-                
-                li {
-                    list-style-type: none;
-                    @include Montserrat(0.875rem);
-                    margin-right: 20px;
-                        img {
-                            padding-left: 6px;
-                        }
-                    &:nth-child(2) {
-                        width: 74px;
-                    }
-                    &:nth-child(5) {
-                        width:116px;
-                    }
-                }
+        } 
+        &__third-element {
+            button:last-child {
+                margin-left: 20px;
             }
+        } 
+}
+
+.header-eng {
+    @extend .extends-header;
+        &__navbar {
+            margin-left: 25.63%;
         }
-        
+        li {
+            margin-right: 30px;
+                &:first-child {
+                    font-weight: bold;
+                    color: $shade75;
+                    }
+            }    
+}
+.header-eng2 {
+    @extend .extends-header;
+        &__navbar {
+            margin-left: 30.11%;
+        }
+        li {
+            margin-right: 30px;
+                &:first-child {
+                    font-weight: bold;
+                    color: $shade75;
+                    }
+            }  
+        span {
+            font-size: 14px;
+            line-height: 17px;
+            color: $shade50;
+        }  
 }

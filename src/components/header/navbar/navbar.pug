@@ -1,0 +1,12 @@
+mixin navbar (list)
+    .navbar
+        ul
+            for el in list
+                if el.image
+                    li 
+                        span= el.item
+                        .image
+                else 
+                    li 
+                        span= el.item
+

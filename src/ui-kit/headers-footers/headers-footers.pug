@@ -1,28 +1,21 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Headers & footers
-    body
-        include ../../components/elements/logo-wrapper/logo-wrapper
-        .headers-footers
-            .headers-footers__section
-                include ../../components/header/header.pug
-            .headers-footers__section2
-            .headers-footers__section3
-                include ../../components/footer/footer.pug
-            .headers-footers__section4
-                include ../../components/common/copyright/copyright.pug
-            .headers-footers__section5
-                .headers-footers__inner
-                    .headers-footers__image
-                        div
-                            img(src="assets/img/logotypes/logo.svg", alt="logotypes")
-                    .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-                    .headers-footers__social 
-                        include ../../components/elements/social/social.pug
+include ../../components/body/body
 
-
-                
++body("Headers and footers")
+include ../../components/elements/logo-wrapper/logo-wrapper.pug 
+.headers-footers
+    .headers-footers__section
+        include ../../components/header/header-eng.pug
+    .headers-footers__section2
+        include ../../components/header/header-eng2.pug
+    .headers-footers__section3
+        include ../../components/footer/footer.pug
+    .headers-footers__section4
+        include ../../components/common/copyright/copyright.pug
+    .headers-footers__section5
+        .headers-footers__inner
+            .headers-footers__image
+                div
+                    img(src="assets/img/logotypes/logo.svg", alt="logotypes")
+            .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+            .headers-footers__social 
+                    include ../../components/elements/social/social.pug                
