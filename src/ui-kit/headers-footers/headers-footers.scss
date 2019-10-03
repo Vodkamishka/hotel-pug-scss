@@ -16,15 +16,14 @@ body {
     &__section5 {
         margin-top: 40px;
         border: 1px solid black;
-        height: 367px;    
-    }
-    &__inner {
-        height: 367px; 
+        padding: 100px 440px 110px;
+        height: 367px;
+        box-sizing: border-box;   
     }
     &__image {
         div {
             width: 105.69px;
-            margin: 100px auto 0;
+            margin: 0 auto;
         }
     }
     &__text {

@@ -1,12 +1,12 @@
 @import '../../../assets/utils/main';
 
 .copyright {
+    padding: 0 140px;
     height: 70px;
-    @include align-items;
+    @include space-between;
         &__text {
             font-size: 14px;
             line-height: 17px;
             color: $shade75;
-            margin: 0 49.7222% 0 9.72222%; 
         }   
 }
