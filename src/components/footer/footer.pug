@@ -1,14 +1,17 @@
 include ../elements/input-text/input-text.pug
 
-- var array = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашение', 'Сообщества', 'Связь с нами']]
+- var array1 = [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']]
+- var text1 = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
 
-.footer
-    .footer__nav
-        .footer__nav-inside
+- var array2 = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
+- var text2 = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
+
+mixin Footer (list, clas, text)
+    div(class = clas)
+        .inner-footer
             ul   
                 img(src="assets/img/logotypes/logo.svg", alt="")
-                p. 
-                    Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                p= text 
             for el in array
                 ul
                     for i in el
@@ -19,7 +22,7 @@ include ../elements/input-text/input-text.pug
                 for i in ['Подписка', 'Получайте специальные предложения и новости сервиса']
                     li
                         a(href="#")=i
-                +Input("", "", "", "Your email address ", "text-field") 
+                +Input("", "", "", "Email", "little-arrow") 
                     
-    .footer__social
+ 
         

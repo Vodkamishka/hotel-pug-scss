@@ -1,8 +1,7 @@
 @import '../../assets/utils/mixin.scss';
 @import '../../assets/utils/vars.scss';
 
-.footer {
-    border: 1px solid black;
+@mixin innerFooter {
     .inner-footer {
         padding: 100px 140px;
         box-sizing: border-box;
@@ -45,7 +44,9 @@
                     li:nth-child(2) {
                         width: 208px;
                         line-height: 24px;
-                        color: $shade75;
+                            a {
+                                color: $shade75;
+                            }
                     }
                 }
                 li {
@@ -72,4 +73,38 @@
             }
     }
 }
-                  
+
+.footer-eng {
+    @include innerFooter;
+}   
+.footer {
+    @include innerFooter;
+        .inner-footer {
+            ul {
+                &:nth-child(2){
+                    margin: 0 57px 0 40px;
+                    li {
+                        width: 143px;
+                    } 
+                }
+                &:nth-child(3) {
+                    white-space: nowrap;
+                    li {
+                        width: 108px;
+                    }
+                }
+                &:nth-child(4) {
+                    margin: 0 51px 0 92px;
+                    li {
+                        width: 149px;
+                    }
+                }
+                &:last-child {
+                    li:nth-child(2) {
+                        width: 260px;
+                    }
+                }
+            }
+        }
+     
+} 
