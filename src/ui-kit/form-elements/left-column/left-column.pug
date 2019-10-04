@@ -1,6 +1,6 @@
-include ../../../components/elements/input-text/input-text.pug
-include ../../../components/elements/dropdowns/dropdown-block.pug
-include ../../../components/elements/expandable-checkbox/expandable-checkbox.pug
+include ../../../components/elements/input-text/input-text
+include ../../../components/elements/expandable-checkbox/expandable-checkbox
+include ../../../components/elements/dropdowns/dropdown
 
 .form-elements__column-left
     .form-elements__container-text-field
@@ -21,9 +21,9 @@ include ../../../components/elements/expandable-checkbox/expandable-checkbox.pug
     .form-elements__container-subscription-text-field
         +Input("subscription text field", "", "", "Email", "little-arrow")
     .form-elements__container-dropdown    
-        +Input("dropdown", "default", 'little', "2 спальни, 2 кровати", "little-expand")
+        +shortDropdown( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius")
     .form-elements__container-dropdown
-        +dropdown-little-block ( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius", "спальни", "кровати", "ванные комнаты", "visibble")
+        +shortDropdown( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius")
     .form-elements__container-checkbox-list
         +expandable-checkbox('none')
     .form-elements__container-checkbox-list-expandable

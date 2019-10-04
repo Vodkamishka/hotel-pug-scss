@@ -1,0 +1,33 @@
+include ../input-text/input-text
+include ./execute-panel/execute-panel
+
+
+mixin shortDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput)
+    .short-dropdowns
+        +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
+        .short-dropdown
+            for el in ["Спальни", "Кровати"]
+                .short-dropdown__row
+                    div= el
+                    +execute-panel('-', 2, "+")
+            .short-dropdown__row
+                div Ванные комнаты
+                +execute-panel('', 0, "+")
+
+mixin longDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput)
+    .long-dropdowns
+        +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
+        .short-dropdown
+            for el in ["взрослые", "дети"]
+                .short-dropdown__row
+                    div= el
+                    +execute-panel('', 2, "+")
+            .short-dropdown__row
+                div Ванные комнаты
+                +execute-panel('', 0, "+")
+            .short-dropdown__button Применить
+                
+
+
+        
+            

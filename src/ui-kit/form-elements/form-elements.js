@@ -1,10 +1,9 @@
 import './form-elements.scss';
 import '../../assets/utils/_main.scss';
 import '../../components/elements/logo-wrapper/logo-wrapper.scss';
-import './left-column/left-column.scss';
-import '../../components/elements/dropdowns/dropdown-block';
-import './center-column/center-column.scss';
-import './right-column/right-column.scss';
+import './left-column/left-column.js';
+import './center-column/center-column.js'
+import './right-column/right-column.js';
 import '../../components/elements/checkbox/checkbox';
 import '../../components/elements/radio-buttons/radio-buttons';
 import '../../components/elements/toggle/toggle';
@@ -19,3 +18,4 @@ import './center-column/murad/murad';
 import '../../components/elements/expandable-checkbox/expandable-checkbox';
 import '../../components/elements/incert-emotion/incert-emotion';
 import '../../components/elements/location-city/location-city';
+import './left-column/left-column';

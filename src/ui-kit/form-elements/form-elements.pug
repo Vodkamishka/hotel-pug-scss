@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Form elements
-    body
-        include ../../components/elements/logo-wrapper/logo-wrapper
-        .form-elements
-            include ./left-column/left-column.pug
-            include ./center-column/center-column.pug
-            include ./right-column/right-column.pug
+include ../../components/body/body
+
++body("Form elements")
+include ../../components/elements/logo-wrapper/logo-wrapper
+.form-elements
+    include ./left-column/left-column.pug
+    include ./center-column/center-column.pug
+    include ./right-column/right-column.pug

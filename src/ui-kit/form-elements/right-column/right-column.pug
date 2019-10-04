@@ -1,5 +1,5 @@
-include ../../../components/elements/buttons/long-btn/long-btn.pug
-include ../../../components/elements/dropdowns/dropdown-block.pug
+include ../../../components/elements/buttons/long-btn/long-btn
+include ../../../components/elements/dropdowns/dropdown
 
 .form-elements__column-right
     .form-elements__container-range-slider
@@ -10,7 +10,7 @@ include ../../../components/elements/dropdowns/dropdown-block.pug
     .form-elements__container-pagination
         include ../../../components/elements/pagination/pagination.pug
     .form-elements__container-dropdown
-        +dropdown-long-block ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "взрослые", "дети", "младенцы", "visibble") 
+        +longDropdown ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius")
     .form-elements__container-bullet
         include ../../../components/elements/bullet-list/bullet-list.pug
 

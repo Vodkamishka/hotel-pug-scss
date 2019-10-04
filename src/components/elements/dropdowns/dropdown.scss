@@ -1,0 +1,46 @@
+@import '../../../assets/utils/_main.scss';
+
+@mixin short-dropdown {
+        .short-dropdown {
+                box-sizing: border-box;
+                border: 1px solid $shade50;
+                border-top: transparent;
+                width: 266px;
+                height: 119px;
+                padding: 7px 7px 8px 15px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                background: $white;
+                color: $shade100;
+                text-transform: uppercase;
+                font-family: Montserrat;
+                        &__row {
+                                @include space-between;
+                                margin-bottom: 7px;
+                        }
+        }
+        .will-hide {
+                display: none;
+                padding-bottom: 15px;
+        }  
+}
+
+
+.short-dropdowns {
+        @include short-dropdown;
+}
+
+.long-dropdowns {
+        @include short-dropdown;
+        .short-dropdown {
+                width: 320px;
+                height: 159px;
+                &__button {
+                        color: $purple;
+                        text-align: right;
+                        margin-top: 19px;;
+                }
+        }
+        
+}
