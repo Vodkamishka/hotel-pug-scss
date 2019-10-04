@@ -2,4 +2,12 @@
 
 .checkList {
     @include input-checkbox;
+    input[type='checkbox']{
+        -webkit-appearance: none;
+        background: $white;
+        &:checked {
+            background: url(/assets/img/icons/vector.svg) no-repeat center center, $white;
+        }
+    }
+    
 }

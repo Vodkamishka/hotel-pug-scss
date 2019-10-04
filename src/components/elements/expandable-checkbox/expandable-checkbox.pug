@@ -5,9 +5,9 @@ include ./checkbox-list/checkbox-list.pug
 mixin expandable-checkbox (display)
     .expandable-checkbox    
         .expandable-checkbox__mainline
-            .expandable-checkbox__title expandable checkbox
-            .expandable-checkbox__image
-        .expandable-checkbox__list(style=`display: ${display}`)
+            .expandable-checkbox__title expandable checkbox list
+            .expandable-checkbox__image(style=`background: ${display} ? 'red' : 'blue' `)
+        .expandable-checkbox__list
             +checkList(list)
 
            

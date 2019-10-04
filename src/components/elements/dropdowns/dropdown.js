@@ -1,7 +1,7 @@
 import './dropdown.scss'
 import './execute-panel/execute-panel'
 
-window.onload = function() {
+(function() {
 
 let input = document.querySelectorAll(".without-border-radius");
 let shortDropdown = document.querySelectorAll(".short-dropdown");
@@ -28,11 +28,10 @@ for (let i=0; i < result.length; i++) {
 }
 
 
+})()
 
 
 
 
 
 
-
-}
