@@ -1,8 +1,9 @@
-include ../../../components/elements/dropdowns/dropdown.pug
+include ../../../components/elements/dropdowns/dropdown
+
 
 .form-elements__column-center
     .form-elements__container-checkbox
-        include ../../../components/elements/checkbox/checkbox.pug
+        include ../../../components/elements/checkbox/checkbox-classic/checkbox.pug
     .form-elements__container-radio
         include ../../../components/elements/radio-buttons/radio-buttons.pug
     .form-elements__container-toggle
@@ -14,6 +15,6 @@ include ../../../components/elements/dropdowns/dropdown.pug
     .form-elements__container-dropdown
         +longDropdown ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius")
     .form-elements__container-rich
-        include ../../../components/elements/rich-checkbox/rich-checkbox.pug 
+        include ../../../components/elements/checkbox/rich-checkbox/rich-checkbox.pug 
     .form-elements__container-murad
         include ./murad/murad.pug

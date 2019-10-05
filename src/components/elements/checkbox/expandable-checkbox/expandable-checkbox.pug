@@ -1,0 +1,13 @@
+include ./checkbox-list/checkbox-list.pug
+
+mixin expandable-checkbox (list, display)
+    .expandable-checkbox    
+        .expandable-checkbox__mainline
+            .expandable-checkbox__title expandable checkbox list
+            .expandable-checkbox__image
+        .expandable-checkbox__list
+            +checkList(list)
+
+           
+
+    

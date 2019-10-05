@@ -1,0 +1,10 @@
+@import '../../../../assets/utils/main';
+
+.checkbox-buttons {
+    
+        &__title {
+            @include inputTitle;
+            margin-bottom: 16.56px; 
+        }
+        @include input-checkbox;     
+}

@@ -1,6 +1,8 @@
 include ../../../components/elements/input-text/input-text
-include ../../../components/elements/expandable-checkbox/expandable-checkbox
+include ../../../components/elements/checkbox/expandable-checkbox/expandable-checkbox
 include ../../../components/elements/dropdowns/dropdown
+
+- var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
 
 .form-elements__column-left
     .form-elements__container-text-field
@@ -25,9 +27,9 @@ include ../../../components/elements/dropdowns/dropdown
     .form-elements__container-dropdown
         +shortDropdown( "dropdown", "default", "little", "2 спальни, 2 кровати", "little-expand without-border-radius")
     .form-elements__container-checkbox-list
-        +expandable-checkbox('none')
+        +expandable-checkbox(list,'none')
     .form-elements__container-checkbox-list-expandable
-        +expandable-checkbox('block')
+        +expandable-checkbox(list,'block')
     .form-elements__container-incert-emotion
         include ../../../components/elements/incert-emotion/incert-emotion.pug
     .form-elements__container-location-city

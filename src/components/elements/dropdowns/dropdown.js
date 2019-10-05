@@ -1,13 +1,15 @@
 import './dropdown.scss'
 import './execute-panel/execute-panel'
 
-(function() {
+function ready () {
 
 let input = document.querySelectorAll(".without-border-radius");
 let shortDropdown = document.querySelectorAll(".short-dropdown");
 let increment = document.querySelectorAll('.execute-panel__circle-increment');
 let decrement = document.querySelectorAll('.execute-panel__circle-decrement');
 let result = document.querySelectorAll('.execute-panel__result')
+
+
 
 
 for (let i=0; i < input.length; i++) {
@@ -27,11 +29,12 @@ for (let i=0; i < result.length; i++) {
     })
 }
 
-
-})()
-
+}
 
 
 
 
 
+
+
+document.addEventListener("DOMContentLoaded", ready);

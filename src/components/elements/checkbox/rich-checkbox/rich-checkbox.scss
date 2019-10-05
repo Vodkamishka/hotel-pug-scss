@@ -1,4 +1,4 @@
-@import "../../../assets/utils/main";
+@import "../../../../assets/utils/main";
 
 .rich-checkbox {
     &__title {
@@ -13,6 +13,13 @@
                 height: 20px;
                 border-radius: 4px;
                 border: 1px solid $shade25;
+                -webkit-appearance: none;
+                background: $white;
+                outline: none;
+            }
+            input[type='checkbox']:checked {
+                border: 1px solid $purple;
+                background: url(/assets/img/icons/vector.svg) no-repeat center center, $white;
             }
             span {
                 font-weight: bold;

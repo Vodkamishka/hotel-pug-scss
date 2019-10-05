@@ -48,10 +48,13 @@
                 border-radius: 4px;
                 margin: 0 9.7px 0 0;
                 outline: none;
+                -webkit-appearance: none;
+                background: $white;
             }
             input[type='checkbox']:checked {
                 border: 1px solid $purple;
                 margin: 0 10px 0 0;
+                background: url(/assets/img/icons/vector.svg) no-repeat center center, $white;
             }
             label {
                 font-size: 14px;
