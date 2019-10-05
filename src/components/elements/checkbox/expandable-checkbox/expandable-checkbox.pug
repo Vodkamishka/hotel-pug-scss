@@ -4,8 +4,11 @@ mixin expandable-checkbox (list, display)
     .expandable-checkbox    
         .expandable-checkbox__mainline
             .expandable-checkbox__title expandable checkbox list
-            .expandable-checkbox__image
-        .expandable-checkbox__list
+            if display === 'none'
+                .expandable-checkbox__image
+            else
+                .expandable-checkbox__image-expandable    
+        .expandable-checkbox__list(style=`display: ${display}`)
             +checkList(list)
 
            

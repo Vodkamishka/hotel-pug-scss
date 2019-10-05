@@ -2,10 +2,10 @@ include ../input-text/input-text
 include ./execute-panel/execute-panel
 
 
-mixin shortDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput)
+mixin shortDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput, clas)
     .short-dropdowns
         +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
-        .short-dropdown
+        .short-dropdown(class=clas)
             for el in ["Спальни", "Кровати"]
                 .short-dropdown__row
                     div= el

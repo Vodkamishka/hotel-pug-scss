@@ -2,3 +2,8 @@ import './center-column.scss'
 import '../../../components/elements/dropdowns/dropdown'
 import '../../../components/elements/checkbox/checkbox-classic/checkbox'
 import '../../../components/elements/checkbox/rich-checkbox/rich-checkbox'
+import '../../../components/elements/radio-buttons/radio-buttons'
+import '../../../components/elements/toggle/toggle'
+import '../../../components/elements/like-button/like-button'
+import '../../../components/elements/rate/rate'
+import './murad/murad';
