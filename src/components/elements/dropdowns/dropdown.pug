@@ -14,18 +14,23 @@ mixin shortDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput,
                 div Ванные комнаты
                 +execute-panel('', 0, "+")
 
-mixin longDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput)
+mixin longDropdown (leftLabel, rightLabel, classLabel, placeholder, classInput, display)
     .long-dropdowns
         +Input(leftLabel, rightLabel, classLabel, placeholder, classInput)
         .short-dropdown
-            for el in ["взрослые", "дети"]
-                .short-dropdown__row
-                    div= el
-                    +execute-panel('', 2, "+")
             .short-dropdown__row
-                div Ванные комнаты
+                div Взрослые
                 +execute-panel('', 0, "+")
-            .short-dropdown__button Применить
+            .short-dropdown__row
+                div Дети
+                +execute-panel('', 0, "+")
+            .short-dropdown__row
+                div Младенцы
+                +execute-panel('', 0, "+")
+            .short-dropdown__buttons
+                if display === 'block'
+                    .short-dropdown__clear Очистить
+                .short-dropdown__apply Применить
                 
 
 

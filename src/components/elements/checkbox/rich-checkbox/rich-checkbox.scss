@@ -5,22 +5,8 @@
         @include inputTitle;
         margin-bottom: 16px;
     }
-    &__checkbox {
-        @include align-items;
-            input[type="checkbox"] {
-                margin: 10px 10px 4px 0;
-                width: 20px;
-                height: 20px;
-                border-radius: 4px;
-                border: 1px solid $shade25;
-                -webkit-appearance: none;
-                background: $white;
-                outline: none;
-            }
-            input[type='checkbox']:checked {
-                border: 1px solid $purple;
-                background: url(/assets/img/icons/vector.svg) no-repeat center center, $white;
-            }
+    @include input-checkbox;
+        .check-list {
             span {
                 font-weight: bold;
                 font-size: 14px;

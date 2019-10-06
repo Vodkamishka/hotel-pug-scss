@@ -36,10 +36,18 @@
         .short-dropdown {
                 width: 320px;
                 height: 159px;
-                &__button {
+                padding-bottom: 13px;
+                &__buttons {
+                        margin-top: 19px;
+                }
+                &__apply {
                         color: $purple;
                         text-align: right;
-                        margin-top: 19px;;
+                        float: right;
+                }
+                &__clear {
+                        color: $shade50;
+                        float: left;
                 }
         }
         

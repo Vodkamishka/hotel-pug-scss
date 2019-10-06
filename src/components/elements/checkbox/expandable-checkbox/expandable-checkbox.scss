@@ -8,23 +8,22 @@
 
 .expandable-checkbox {
     &__mainline {
-        display: flex;  
+        @include align-items; 
     }
     &__mainline-expandable {
-        display: flex;
-        margin-bottom: 17px;
+        margin-bottom: 2.44px;
     }
     &__title {
         @include inputTitle;
         margin-right: 30px;
-        @include align-items; 
+        
     }
     &__image {
-        background: url(/assets/img/icons/expand.svg) no-repeat center center;
+        background: url(/assets/img/icons/expand.svg) no-repeat center;
         @extend .checkbox-extend;
     }
     &__image-expandable {
-        background: url(/assets/img/icons/expand_more.svg) no-repeat center center;
+        background: url(/assets/img/icons/expand_more.svg) no-repeat center;
         @extend .checkbox-extend; 
     }
     

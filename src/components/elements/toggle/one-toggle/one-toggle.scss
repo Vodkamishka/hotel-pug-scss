@@ -3,7 +3,7 @@
 .toggle-button {
     &__item {
         @include align-items;
-        margin: 14px 0 0 0;
+        margin: 10px 0 0 0;
         font-size: 14px;
         line-height: 24px;
         color: $shade75;

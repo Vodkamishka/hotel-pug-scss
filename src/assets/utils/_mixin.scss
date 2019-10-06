@@ -39,8 +39,9 @@
 
 @mixin input-checkbox {
     .check-list {
-        @include align-items;
-        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
             input[type='checkbox'] {
                 width: 20px;
                 height: 20px;
@@ -60,6 +61,7 @@
                 font-size: 14px;
                 line-height: 18px;
                 color: $shade50;
+                width: 192px;
             }
     }
 }

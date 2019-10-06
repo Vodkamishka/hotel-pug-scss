@@ -6,13 +6,15 @@
     }
     &__container-range-slider {
         margin: 143.44px 0 43.56px 0;
-        height: 56px;
-        border: 1px solid black;
+        height:44px;
     }
     &__container-buttons {
-        margin: 43.56px 0 16px 0;
+        margin: 43.56px 0 30px 0;
     }
     &__container-pagination {
         margin: 40px 0 230px 0;
+    }
+    &__container-bullet {
+        margin-top: 98.44px;
     }
 }
