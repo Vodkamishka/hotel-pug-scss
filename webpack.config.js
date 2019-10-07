@@ -12,6 +12,8 @@ module.exports = {
         'website-pages/landing-page/landing': './src/website-pages/landing-page/landing.js',
         'website-pages/registration/registration': './src/website-pages/registration/registration.js',
         'website-pages/sign-in/sign-in': './src/website-pages/sign-in/sign-in.js',
+        'website-pages/room-details/room-details': './src/website-pages/room-details/room-details.js',
+        'website-pages/search-room-filter/search-room-filter': './src/website-pages/search-room-filter/search-room-filter.js'
     },
     output: {
         path: path.resolve(__dirname, 'public/'),
