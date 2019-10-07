@@ -15,7 +15,9 @@
             }
         } 
 }
-
+.header {
+    @extend .extends-header;    
+}
 .header-eng {
     @extend .extends-header;
         &__navbar {

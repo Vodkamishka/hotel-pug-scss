@@ -1,0 +1,22 @@
+include ../../components/body/body
+include ../../components/footer/footer
+
+- var array = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
+- var text = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
+- var text2 = ['Подписка', 'Получайте специальные предложения и новости сервиса']
+
++body("Landing page")
+.landing
+    include ../../components/header/header
+    include ./main/main
+    +Footer (array, 'footer', text, text2)
+    include ../../components/common/copyright/copyright
+
+        
+        
+
+        
+        
+
+        
+        

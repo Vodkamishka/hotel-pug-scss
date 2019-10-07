@@ -7,7 +7,8 @@
     text-align: center;
     text-transform: uppercase; 
     background: $gradient;
-    width: 101.34px;
+    padding: 0 20px;
+    box-sizing: border-box;
         span {
             color: $white;
             font-family:"Montserrat";
