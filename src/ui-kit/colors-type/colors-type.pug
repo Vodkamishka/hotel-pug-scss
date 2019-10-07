@@ -1,28 +1,21 @@
-include ../../components/elements/square/square.pug
-include ./colors-title/colors-title.pug
+include ../../components/body/body
+include ../../components/elements/square/square
+include ../../components/elements/logo-wrapper/logo-wrapper
+include ./colors-title/colors-title
 
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Colors & type
-    body
-        include ../../components/elements/logo-wrapper/logo-wrapper.pug 
-        .colors  
-            .colors__squares
-                +block("shade", "Dark Shade 100%", "#1F2041")
-                +block("shade75", "Dark Shade 75%", "#1F2041")
-                +block("shade50", "Dark Shade 50%", "#1F2041")
-                +block("shade25", "Dark Shade 25%", "#1F2041")
-                +block("shade05", "Dark Shade 5%", "#1F2041")
-                +block("purple", "Purple", "#BC9CFF")
-                +block("green", "Green", "#6FCF97")
-            .colors__title
-                +colorsTitle("H1", "This one is the sub-section or widget title", "h1")
-                +colorsTitle("H2", "Next one is the item title inside widget", "h2")
-                +colorsTitle("H3", "This is a label or CTA text", "h3")
-                +colorsTitle("Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc", "h4")
-
-
++body("Colors and types")
+include ../../components/elements/logo-wrapper/logo-wrapper.pug 
+.colors  
+    .colors__squares
+        +block("shade", "Dark Shade 100%", "#1F2041")
+        +block("shade75", "Dark Shade 75%", "#1F2041")
+        +block("shade50", "Dark Shade 50%", "#1F2041")
+        +block("shade25", "Dark Shade 25%", "#1F2041")
+        +block("shade05", "Dark Shade 5%", "#1F2041")
+        +block("purple", "Purple", "#BC9CFF")
+        +block("green", "Green", "#6FCF97")
+    .colors__title
+        +colorsTitle("H1", "This one is the sub-section or widget title", "h1")
+        +colorsTitle("H2", "Next one is the item title inside widget", "h2")
+        +colorsTitle("H3", "This is a label or CTA text", "h3")
+        +colorsTitle("Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc", "h4")

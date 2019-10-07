@@ -1,12 +1,14 @@
 include ../elements/input-text/input-text.pug
 
 - var array1 = [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']]
-- var text1 = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
+- var textTop = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
+- var textBottom = ['Подписка', 'Получайте специальные предложения и новости сервиса']
 
 - var array2 = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
-- var text2 = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
+- var textTop = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
+- var textBottom = ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!']
 
-mixin Footer (list, clas, text)
+mixin Footer (list, clas, text, text2)
     div(class = clas)
         .inner-footer
             ul   
@@ -19,7 +21,7 @@ mixin Footer (list, clas, text)
                             a(href="#")=i
 
             ul
-                for i in ['Подписка', 'Получайте специальные предложения и новости сервиса']
+                for i in text2
                     li
                         a(href="#")=i
                 +Input("", "", "", "Email", "little-arrow") 
