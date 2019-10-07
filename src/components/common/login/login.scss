@@ -2,6 +2,7 @@
 
 .login {
     height: 358px;
+    background: $white;
     @include cards;
         &__fields {
             margin: 20px 0;

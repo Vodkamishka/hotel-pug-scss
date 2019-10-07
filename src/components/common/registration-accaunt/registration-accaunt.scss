@@ -2,6 +2,8 @@
 
 .registration-accaunt {
     height: 646px;
+    background: $white;
+    width: 380px;
     @include cards;
         &__bithday {
             margin: 19.56px 0 20px 0;

@@ -1,0 +1,10 @@
+.registration {
+    height: 1211px;
+        &__image-wrapper {
+            padding-top: 30px;
+            height: 702px;
+            background: url(/assets/img/rooms/registration.jpg) left bottom;
+            display: flex;
+            justify-content: center;
+        }
+}

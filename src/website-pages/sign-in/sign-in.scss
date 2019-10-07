@@ -1,0 +1,10 @@
+@import '../../assets/utils/main';
+
+.sign-in {
+    height: 1211px;
+        &__image-wrapper {
+            height: 702px;
+            background: url(/assets/img/rooms/registration.jpg) left bottom;
+            @include flex-center;
+        }
+}
