@@ -4,6 +4,7 @@
 .search-rooms {
     height: 374px;
     @include cards;
+    box-sizing: border-box;
         &__guests {
             margin: 20px 0 31px 0;
         }

@@ -6,7 +6,7 @@
     box-shadow: 0px 10px 20px $shade05;
     background: $white;
         &__image {
-            margin-bottom: 31px;
+            margin-bottom: 20px;
             width: 270px;
             height: 151.38px;
                 img {
@@ -14,9 +14,12 @@
                 }
         }
         &__luxe {
-            margin-bottom: 19px;
+            margin-bottom: 20px;
             .luxe__luxe {
                 margin-left: 20px;
+                    p:nth-child(2){
+                        font-size: 18px;
+                    }
             }
             .luxe__price {
                 margin-right: 17px;

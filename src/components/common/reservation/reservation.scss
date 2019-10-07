@@ -21,10 +21,11 @@
         margin: 20.56px 0 20px 0;
     }
     &__price, &__tax, &__fee {
-        @include space-between;
+        display: flex;
+        justify-content: space-between;
         font-weight: normal;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 22px;
         color: $shade75;
         margin-bottom: 10px;
         font-family: Montserrat;
@@ -45,6 +46,7 @@
                 color: $shade25;
                 @include flex-center;
             }
+            
     }
     &__result {
         margin-top: 30px;

@@ -61,7 +61,7 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/form-elements/form-elements.pug`,
+            template: `./src/ui-kit/cards/cards.pug`,
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },

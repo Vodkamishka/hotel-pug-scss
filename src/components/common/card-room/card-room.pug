@@ -1,11 +1,11 @@
 include ../../elements/luxe/luxe
 include ../../elements/comments-stars/comments-stars
 
-mixin cardRoom (img, price, stars, emptyStars, comments)
+mixin cardRoom (img, price, stars, comments, clas)
     .card-room
         .card-room__image
             img(src=`assets/img/rooms/${img}.jpg`, alt="room")
         .card-room__luxe
-            +luxe(img, price)
+            +luxe(img, price, clas)
         .card-room__stars
             +commentsStars (stars, emptyStars, comments)

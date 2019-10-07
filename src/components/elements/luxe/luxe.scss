@@ -1,40 +1,48 @@
 @import '../../../assets/utils/main';
 
 .luxe {
-    @include space-between;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     &__luxe {
-        @include align-items;
+        display: flex;
+        align-items: flex-end;
+        font-weight: bold;
         font-family: Montserrat;
+        text-transform: uppercase;
             p:first-child {
-            font-family: Quicksand;
             color: $shade100;
             font-size: 14px;
             line-height: 17px;
             margin-right: 5px;
-            font-weight: bold;
         }
         p:nth-child(2) {
-            align-self: flex-start;
             padding-right: 5px;
+            font-size: 22px;
+            
         }
         p:last-child {
             font-size: 12px;
             line-height: 15px;
-            color: $purple;
-            text-transform: uppercase;
-            font-weight: bold;
+            color: $purple;   
+        }
+        .notShowLuxe {
+            opacity: 0;
         }
     }
     &__price {
-    @include align-items;
+    display: flex;
+    align-items: flex-end;
     color: $shade50;
     p:first-child {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 18px;
         font-weight: bold;
+        letter-spacing: 1px;
     }
     p:last-child {
         font-weight: normal;
+        font-size: 12px;
     }
 }
 }

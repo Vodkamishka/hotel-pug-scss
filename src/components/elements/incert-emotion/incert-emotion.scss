@@ -12,9 +12,16 @@
         @include inputTitle;
         text-transform: none;
         font-weight: bold;
-        
+        font-size: 14px;  
     }
     &__text {
         @include textElements;
+    }
+    &__right {
+        width: 233px;
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
