@@ -1,0 +1,60 @@
+@import '../../../assets/utils/main';
+
+.room-details {
+    &__main {
+        padding: 70px 140px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 24px;
+        color: $shade75;
+    }
+    &__left {
+        width: 295px;
+        margin-right: 67px;
+    }
+    &__title {
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        color: $shade100;
+    }
+    &__room-information {
+            .info-room:first-child {
+                margin: 20px 0 41px;
+            }
+            .info-room:last-child {
+                margin: 41px 0 30px;
+            }
+    }
+    &__room-impressions {
+        margin-bottom: 474px;
+    }
+    &__diagramma {
+        width: 120px; 
+        height: 120px;
+        border-top: 3px solid yellow;
+        
+        border-bottom: 3px solid $green;
+        border-left: 3px solid orange;
+        margin-top: 21px;
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-45deg);
+    }
+    &__room-escape {
+        p {
+            color: $shade75;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 20px;
+            width: 341px;
+            height: 96px;
+        }
+    }
+    &__comments-consumer {
+        .consumer-comments:first-child {
+            margin: 23px 0;
+        }
+    }
+}

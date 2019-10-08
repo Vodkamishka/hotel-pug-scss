@@ -22,9 +22,9 @@ mixin Footer (list, clas, text, text2)
                             a(href="#")=i
 
             ul
-                for i in text2
+                for el in text2
                     li
-                        a(href="#")=i
+                        a(href="#")=el
                 +Input("", "", "", "Email", "little-arrow") 
                     
  

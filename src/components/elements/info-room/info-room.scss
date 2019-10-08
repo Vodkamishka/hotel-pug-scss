@@ -1,11 +1,10 @@
 @import '../../../assets/utils/main';
 
-.location-city {
+.info-room {
     @include align-items;
     &__image {
         width: 48px;
         height: 48px;
-        background: url(/assets/img/logotypes/location_city.svg) no-repeat center;
         margin-right: 10px;
     }
     &__title {

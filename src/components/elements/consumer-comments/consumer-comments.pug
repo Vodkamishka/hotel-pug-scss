@@ -1,0 +1,17 @@
+include ../../elements/like-button/like/like
+
+mixin consumer-comments(img, name, term, like, text)
+    .consumer-comments
+        .consumer-comments__top
+            .consumer-comments__img(style= `background: url(/assets/img/photo/${img}.jpg) -20px -10px`)
+            .consumer-comments__right
+                .consumer-comments__name= name
+                .consumer-comments__term= term
+        .consumer-comments__bottom
+            if like === 12
+                +like(12)
+            else 
+                +like(2)
+            .consumer-comments__text
+                p= text
+                    

@@ -1,0 +1,40 @@
+@import '../../../assets/utils/main';
+
+.consumer-comments {
+        &__top {
+            @include align-items;
+            margin-bottom: 12px; 
+        }
+        &__right {
+            height: 48px;
+            font-size: 14px;
+            line-height: 24px;    
+        }
+        &__img {
+            width: 47.67px;
+            height: 48px;
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+            border-radius: 32px;
+            margin-right: 9px;
+        }
+        &__name {
+            font-weight: bold;
+            color: $shade75;
+        }
+        &__term {
+            font-weight: normal
+        }
+        &__bottom {
+            display: flex;
+            width: 707.31px;
+            justify-content: space-between;
+        }
+        &__text {
+            height: 72px;
+            font-size: 14px;
+            line-height: 24px;
+            color: $shade75;
+            width: 653px;
+        }
+        
+}

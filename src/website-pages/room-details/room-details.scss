@@ -1,3 +1,20 @@
 .room-details {
-    height: 1937px;
+        &__images {
+            display: flex;
+        }
+        &__left-container {
+            width: 981px;
+            height: 485px;
+            background: url(/assets/img/rooms/888.jpg) bottom;
+        }
+        &__picture-top {
+            width: 461px;
+            height: 243px;
+            background: url(/assets/img/rooms/picture-top.jpg) no-repeat; 
+        }
+        &__picture-bottom {
+            width: 461px;
+            height: 243px;
+            background: url(/assets/img/rooms/picture-bottom.jpg) no-repeat; 
+        }
 }

@@ -3,5 +3,5 @@ import '../../../components/elements/dropdowns/dropdown'
 import '../../../components/elements/checkbox/expandable-checkbox/expandable-checkbox'
 import '../../../components/elements/input-text/input-text'
 import '../../../components/elements/incert-emotion/incert-emotion'
-import '../../../components/elements/location-city/location-city'
+import '../../../components/elements/info-room/info-room'
 

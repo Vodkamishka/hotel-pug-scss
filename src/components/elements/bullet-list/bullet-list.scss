@@ -1,10 +1,6 @@
 @import '../../../assets/utils/main';
 
 .bullet-list {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 16px;
-    }
     ul {
         width: 271.14px;
         font-weight: normal;

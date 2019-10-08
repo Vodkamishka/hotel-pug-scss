@@ -5,9 +5,14 @@ include ../../components/footer/footer
 - var text = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
 - var text2 = ['Подписка', 'Получайте специальные предложения и новости сервиса']
 
-+body("Registration")
++body("Room details")
 .room-details
     include ../../components/header/header
-    
+    .room-details__images
+        .room-details__left-container
+        .room-details__right-container
+            .room-details__picture-top
+            .room-details__picture-bottom
+    include ./room-details-main/room-details-main
     +Footer (array, 'footer', text, text2)
     include ../../components/common/copyright/copyright

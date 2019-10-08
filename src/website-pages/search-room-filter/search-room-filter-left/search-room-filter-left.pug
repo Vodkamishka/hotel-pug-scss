@@ -8,11 +8,11 @@ include ../../../components/elements/checkbox/expandable-checkbox/expandable-che
 .search-room-filter__left
     +Input("даты пребывания в отеле", "", "", "19 авг - 23 авг","little-expand")
     .search-room-filter__container-shortdropdown
-        +shortDropdown( "гости", "", "little", "Сколько гостей", "little-expand without-border-radius", "will-hide")
+        +shortDropdown( "гости", "", "little", "3 гостя, 1 младенец", "little-expand without-border-radius", "will-hide")
     include ../../../components/elements/checkbox/checkbox-classic/checkbox
     .search-room-filter__container-rich-checkbox
         +richCheckbox("доступность")
-    +shortDropdown( "гости", "", "little", "2 спальни,  2 кровати", "little-expand without-border-radius", "will-hide")
+    +shortDropdown( "удобства номера", "", "little", "2 спальни,  2 кровати", "little-expand without-border-radius", "will-hide")
     .search-room-filter__container-expanded-checkbox 
         +expandable-checkbox (list, "none", "дополнительные удобства")   
     

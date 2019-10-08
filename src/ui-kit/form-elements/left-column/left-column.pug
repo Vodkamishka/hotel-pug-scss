@@ -1,6 +1,7 @@
 include ../../../components/elements/input-text/input-text
 include ../../../components/elements/checkbox/expandable-checkbox/expandable-checkbox
 include ../../../components/elements/dropdowns/dropdown
+include ../../../components/elements/info-room/info-room
 
 - var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
 
@@ -31,6 +32,7 @@ include ../../../components/elements/dropdowns/dropdown
     .form-elements__container-checkbox-list-expandable
         +expandable-checkbox(list,'block')
     .form-elements__container-incert-emotion
-        include ../../../components/elements/incert-emotion/incert-emotion.pug
+        +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+            +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
     .form-elements__container-location-city
-        include ../../../components/elements/location-city/location-city.pug
+            +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
