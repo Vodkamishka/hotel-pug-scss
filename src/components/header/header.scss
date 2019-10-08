@@ -13,10 +13,13 @@
             button:last-child {
                 margin-left: 20px;
             }
-        } 
+        }
 }
 .header {
-    @extend .extends-header;    
+    @extend .extends-header;
+    &__navbar {
+        margin-left: 24.6%;
+    }     
 }
 .header-eng {
     @extend .extends-header;

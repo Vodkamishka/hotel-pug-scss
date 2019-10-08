@@ -1,6 +1,10 @@
 @import '../../../assets/utils/main';
 
 .pagination {
+    &_without_title {
+        display: flex;
+        flex-direction: column;
+    }
     &__title {
         @include inputTitle;
         margin-bottom: 16.44px;

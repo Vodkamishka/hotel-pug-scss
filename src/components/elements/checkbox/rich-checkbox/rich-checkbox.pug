@@ -1,12 +1,13 @@
-.rich-checkbox  
-    .rich-checkbox__title rich checkbox buttons
-    .check-list
-        input(type="checkbox")
-        span Широкий коридор
-    p. 
-        Ширина коридоров в номере не менее 91 см.
-    .check-list
-        input(type="checkbox")
-        span Помошник для инвалидов
-    p. 
-        На 1 этаже вас встретит специалист и проводит до номера.
+mixin richCheckbox(text) 
+    .rich-checkbox  
+        .rich-checkbox__title= text
+        .check-list
+            input(type="checkbox")
+            span Широкий коридор
+        p. 
+            Ширина коридоров в номере не менее 91 см.
+        .check-list
+            input(type="checkbox")
+            span Помошник для инвалидов
+        p. 
+            На 1 этаже вас встретит специалист и проводит до номера.

@@ -1,9 +1,9 @@
 include ./checkbox-list/checkbox-list.pug
 
-mixin expandable-checkbox (list, display)
+mixin expandable-checkbox (list, display, title)
     .expandable-checkbox    
         .expandable-checkbox__mainline
-            .expandable-checkbox__title expandable checkbox list
+            .expandable-checkbox__title= title
             if display === 'none'
                 .expandable-checkbox__image
             else

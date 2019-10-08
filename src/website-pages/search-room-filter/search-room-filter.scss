@@ -1,6 +1,10 @@
 @import '../../assets/utils/main';
 
 .search-room-filter {
-    height: 1880px;
-        
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 140px 0;
+            box-sizing: border-box;
+        }  
 }

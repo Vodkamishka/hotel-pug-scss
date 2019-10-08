@@ -3,9 +3,8 @@ include ../../elements/comments-stars/comments-stars
 
 mixin cardRoom (img, price, stars, comments, clas)
     .card-room
-        .card-room__image
-            img(src=`assets/img/rooms/${img}.jpg`, alt="room")
+        .card-room__image(style=`background: url(/assets/img/rooms/${img}.jpg) no-repeat; background-size: cover `)
         .card-room__luxe
             +luxe(img, price, clas)
         .card-room__stars
-            +commentsStars (stars, emptyStars, comments)
+            +commentsStars (stars,comments)
