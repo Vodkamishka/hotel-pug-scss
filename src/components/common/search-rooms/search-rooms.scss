@@ -12,9 +12,18 @@
         }
         &__incoming {
             display: flex;
-                input {
-                    margin-right: 20px;
+                .input-text{
+                    input[type='text'] {
+                        margin-right: 20px;
+                        width: 150px;
+                        &::placeholder {
+                            color: $shade75;  
+                        }
+                    background: url('/assets/img/icons/expand.svg') no-repeat 120px,
+                    $white
+                    }
                 }
+                
         }
-        
+    
 }

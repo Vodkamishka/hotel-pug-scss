@@ -1,6 +1,13 @@
 include ../label/label.pug
+include ../../common/calendar/calendar-not-expand
 
 mixin Input (leftLabel, rightLabel, classLabel, placeholder, classInput)
     .input-text
         +label(leftLabel, rightLabel, classLabel)
         input(type="text" placeholder=placeholder class=classInput)
+
+mixin InputCalendar (leftLabel, rightLabel, classLabel, placeholder, classInput)
+    .input-text
+        +label(leftLabel, rightLabel, classLabel)
+        +inputCalend(placeholder)  
+        

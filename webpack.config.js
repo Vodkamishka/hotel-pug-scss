@@ -108,6 +108,10 @@ module.exports = {
             hash: false,
             template: `./src/website-pages/sign-in/sign-in.pug`
            }),
+        new HTMLWebpackPlugin({
+            hash: false,
+            template: `./src/website-pages/landing-page/landing.pug`
+           }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
             { from: './src/assets/fonts', to: './assets/fonts' },
