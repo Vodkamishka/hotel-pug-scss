@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/utils/_main.scss":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/assets/utils/_main.scss ***!
-  \**********************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/utils/_main.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/bullet-list/bullet-list.scss":
 /*!***********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/bullet-list/bullet-list.scss ***!
@@ -108,25 +97,69 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox.scss":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox-classic/checkbox.scss":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox-classic/checkbox.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox-classic/checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown-block.scss":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown-block.scss ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown-block.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/comments-stars/stars/stars.scss":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/comments-stars/stars/stars.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/comments-stars/stars/stars.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown.scss":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown.scss ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -141,28 +174,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss":
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/expandable-checkbox.scss":
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/expandable-checkbox.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/expandable-checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/incert-emotion/incert-emotion.scss":
 /*!*****************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/incert-emotion/incert-emotion.scss ***!
@@ -171,6 +182,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/incert-emotion/incert-emotion.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/info-room/info-room.scss":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/info-room/info-room.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/info-room/info-room.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -215,17 +237,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/like-button/like/like.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/location-city/location-city.scss":
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/location-city/location-city.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/location-city/location-city.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -281,17 +292,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/rate/rate.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/rich-checkbox/rich-checkbox.scss":
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/rich-checkbox/rich-checkbox.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/components/elements/rich-checkbox/rich-checkbox.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -395,17 +395,6 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 
 /***/ }),
 
-/***/ "./src/assets/utils/_main.scss":
-/*!*************************************!*\
-  !*** ./src/assets/utils/_main.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./_main.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/utils/_main.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/assets/utils/_main.scss?");
-
-/***/ }),
-
 /***/ "./src/components/elements/bullet-list/bullet-list.js":
 /*!************************************************************!*\
   !*** ./src/components/elements/bullet-list/bullet-list.js ***!
@@ -429,49 +418,118 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 
 /***/ }),
 
-/***/ "./src/components/elements/checkbox/checkbox.js":
-/*!******************************************************!*\
-  !*** ./src/components/elements/checkbox/checkbox.js ***!
-  \******************************************************/
+/***/ "./src/components/elements/checkbox/checkbox-classic/checkbox.js":
+/*!***********************************************************************!*\
+  !*** ./src/components/elements/checkbox/checkbox-classic/checkbox.js ***!
+  \***********************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checkbox.scss */ \"./src/components/elements/checkbox/checkbox.scss\");\n/* harmony import */ var _checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checkbox.scss */ \"./src/components/elements/checkbox/checkbox-classic/checkbox.scss\");\n/* harmony import */ var _checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox-classic/checkbox.js?");
 
 /***/ }),
 
-/***/ "./src/components/elements/checkbox/checkbox.scss":
-/*!********************************************************!*\
-  !*** ./src/components/elements/checkbox/checkbox.scss ***!
-  \********************************************************/
+/***/ "./src/components/elements/checkbox/checkbox-classic/checkbox.scss":
+/*!*************************************************************************!*\
+  !*** ./src/components/elements/checkbox/checkbox-classic/checkbox.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox.scss?");
+eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/checkbox-classic/checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/checkbox-classic/checkbox.scss?");
 
 /***/ }),
 
-/***/ "./src/components/elements/dropdowns/dropdown-block.js":
-/*!*************************************************************!*\
-  !*** ./src/components/elements/dropdowns/dropdown-block.js ***!
-  \*************************************************************/
+/***/ "./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.js":
+/*!*********************************************************************************************!*\
+  !*** ./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.js ***!
+  \*********************************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown-block.scss */ \"./src/components/elements/dropdowns/dropdown-block.scss\");\n/* harmony import */ var _dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _execute_panel_execute_panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./execute-panel/execute-panel */ \"./src/components/elements/dropdowns/execute-panel/execute-panel.js\");\n\n\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown-block.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checkbox-list.scss */ \"./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss\");\n/* harmony import */ var _checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.js?");
 
 /***/ }),
 
-/***/ "./src/components/elements/dropdowns/dropdown-block.scss":
+/***/ "./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss":
+/*!***********************************************************************************************!*\
+  !*** ./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/postcss-loader/src!../../../../../../node_modules/sass-loader/dist/cjs.js!./checkbox-list.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.scss?");
+
+/***/ }),
+
+/***/ "./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.js":
+/*!*************************************************************************************!*\
+  !*** ./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.js ***!
+  \*************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-checkbox.scss */ \"./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss\");\n/* harmony import */ var _expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _checkbox_list_checkbox_list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./checkbox-list/checkbox-list.js */ \"./src/components/elements/checkbox/expandable-checkbox/checkbox-list/checkbox-list.js\");\n\n\n\nfunction ready() {\n  var expandableCheckbox = document.querySelectorAll(\".expandable-checkbox__image\");\n  var checkboxExpandMainline = document.querySelectorAll(\".expandable-checkbox__mainline\");\n  var expandableCheckboxList = document.querySelectorAll(\".expandable-checkbox__list\");\n\n  var _loop = function _loop(i) {\n    expandableCheckbox[i].addEventListener('click', function () {\n      expandableCheckbox[i].classList.toggle('expandable-checkbox__image-expandable');\n      checkboxExpandMainline[i].classList.toggle('expandable-checkbox__mainline-expandable');\n\n      if (expandableCheckboxList[i].style.display === 'none') {\n        expandableCheckboxList[i].style.display = 'block';\n      } else {\n        expandableCheckboxList[i].style.display = 'none';\n      }\n    });\n  };\n\n  for (var i = 0; i <= expandableCheckbox.length; i++) {\n    _loop(i);\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", ready);\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.js?");
+
+/***/ }),
+
+/***/ "./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss":
+/*!***************************************************************************************!*\
+  !*** ./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./expandable-checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.scss?");
+
+/***/ }),
+
+/***/ "./src/components/elements/checkbox/rich-checkbox/rich-checkbox.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/elements/checkbox/rich-checkbox/rich-checkbox.js ***!
+  \*************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rich-checkbox.scss */ \"./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss\");\n/* harmony import */ var _rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/rich-checkbox/rich-checkbox.js?");
+
+/***/ }),
+
+/***/ "./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss":
+/*!***************************************************************************!*\
+  !*** ./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./rich-checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/checkbox/rich-checkbox/rich-checkbox.scss?");
+
+/***/ }),
+
+/***/ "./src/components/elements/comments-stars/stars/stars.js":
 /*!***************************************************************!*\
-  !*** ./src/components/elements/dropdowns/dropdown-block.scss ***!
+  !*** ./src/components/elements/comments-stars/stars/stars.js ***!
   \***************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stars_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stars.scss */ \"./src/components/elements/comments-stars/stars/stars.scss\");\n/* harmony import */ var _stars_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stars_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/comments-stars/stars/stars.js?");
+
+/***/ }),
+
+/***/ "./src/components/elements/comments-stars/stars/stars.scss":
+/*!*****************************************************************!*\
+  !*** ./src/components/elements/comments-stars/stars/stars.scss ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./dropdown-block.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown-block.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown-block.scss?");
+eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./stars.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/comments-stars/stars/stars.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/comments-stars/stars/stars.scss?");
 
 /***/ }),
 
@@ -483,7 +541,18 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown-block.scss */ \"./src/components/elements/dropdowns/dropdown-block.scss\");\n/* harmony import */ var _dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_dropdown_block_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _execute_panel_execute_panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./execute-panel/execute-panel */ \"./src/components/elements/dropdowns/execute-panel/execute-panel.js\");\n\n\nvar input = document.querySelector(\".short-dropdowns\");\nconsole.log(input);\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dropdown_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown.scss */ \"./src/components/elements/dropdowns/dropdown.scss\");\n/* harmony import */ var _dropdown_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_dropdown_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _execute_panel_execute_panel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./execute-panel/execute-panel */ \"./src/components/elements/dropdowns/execute-panel/execute-panel.js\");\n\n\n\nfunction ready() {\n  var input = document.querySelectorAll(\".without-border-radius\");\n  var shortDropdown = document.querySelectorAll(\".short-dropdown\");\n  var increment = document.querySelectorAll('.execute-panel__circle-increment');\n  var decrement = document.querySelectorAll('.execute-panel__circle-decrement');\n  var result = document.querySelectorAll('.execute-panel__result');\n\n  var _loop = function _loop(i) {\n    input[i].addEventListener('click', function () {\n      shortDropdown[i].classList.toggle(\"will-hide\");\n    });\n  };\n\n  for (var i = 0; i < input.length; i++) {\n    _loop(i);\n  }\n\n  var _loop2 = function _loop2(i) {\n    increment[i].addEventListener('click', function () {\n      if (result[i].innerHTML > 0) result[i].innerHTML = result[i].innerHTML - 1;\n    });\n  };\n\n  for (var i = 0; i < result.length; i++) {\n    _loop2(i);\n  }\n\n  var _loop3 = function _loop3(i) {\n    decrement[i].addEventListener('click', function () {\n      result[i].innerHTML = +result[i].innerHTML + 1;\n    });\n  };\n\n  for (var i = 0; i < result.length; i++) {\n    _loop3(i);\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", ready);\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown.js?");
+
+/***/ }),
+
+/***/ "./src/components/elements/dropdowns/dropdown.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/elements/dropdowns/dropdown.scss ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./dropdown.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/dropdowns/dropdown.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/dropdowns/dropdown.scss?");
 
 /***/ }),
 
@@ -510,52 +579,6 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 
 /***/ }),
 
-/***/ "./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.js":
-/*!************************************************************************************!*\
-  !*** ./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.js ***!
-  \************************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./checkbox-list.scss */ \"./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss\");\n/* harmony import */ var _checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_checkbox_list_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.js?");
-
-/***/ }),
-
-/***/ "./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss":
-/*!**************************************************************************************!*\
-  !*** ./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./checkbox-list.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.scss?");
-
-/***/ }),
-
-/***/ "./src/components/elements/expandable-checkbox/expandable-checkbox.js":
-/*!****************************************************************************!*\
-  !*** ./src/components/elements/expandable-checkbox/expandable-checkbox.js ***!
-  \****************************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-checkbox.scss */ \"./src/components/elements/expandable-checkbox/expandable-checkbox.scss\");\n/* harmony import */ var _expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_expandable_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _checkbox_list_checkbox_list_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./checkbox-list/checkbox-list.js */ \"./src/components/elements/expandable-checkbox/checkbox-list/checkbox-list.js\");\n\n\nvar expandableCheckbox = document.querySelectorAll(\".expandable-checkbox__image\");\nvar checkboxExpandMainline = document.querySelectorAll(\".expandable-checkbox__mainline\");\nvar expandableCheckboxList = document.querySelectorAll(\".expandable-checkbox__list\");\n\nvar _loop = function _loop(i) {\n  expandableCheckbox[i].addEventListener('click', function () {\n    expandableCheckbox[i].classList.toggle('expandable-checkbox__image-expandable');\n    checkboxExpandMainline[i].classList.toggle('expandable-checkbox__mainline-expandable');\n\n    if (expandableCheckboxList[i].style.display === 'none') {\n      expandableCheckboxList[i].style.display = 'block';\n    } else {\n      expandableCheckboxList[i].style.display = 'none';\n    }\n  });\n};\n\nfor (var i = 0; i <= expandableCheckbox.length; i++) {\n  _loop(i);\n}\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/expandable-checkbox.js?");
-
-/***/ }),
-
-/***/ "./src/components/elements/expandable-checkbox/expandable-checkbox.scss":
-/*!******************************************************************************!*\
-  !*** ./src/components/elements/expandable-checkbox/expandable-checkbox.scss ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./expandable-checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/expandable-checkbox/expandable-checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/expandable-checkbox/expandable-checkbox.scss?");
-
-/***/ }),
-
 /***/ "./src/components/elements/incert-emotion/incert-emotion.js":
 /*!******************************************************************!*\
   !*** ./src/components/elements/incert-emotion/incert-emotion.js ***!
@@ -576,6 +599,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _inc
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./incert-emotion.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/incert-emotion/incert-emotion.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/incert-emotion/incert-emotion.scss?");
+
+/***/ }),
+
+/***/ "./src/components/elements/info-room/info-room.js":
+/*!********************************************************!*\
+  !*** ./src/components/elements/info-room/info-room.js ***!
+  \********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _info_room_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./info-room.scss */ \"./src/components/elements/info-room/info-room.scss\");\n/* harmony import */ var _info_room_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_info_room_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/info-room/info-room.js?");
+
+/***/ }),
+
+/***/ "./src/components/elements/info-room/info-room.scss":
+/*!**********************************************************!*\
+  !*** ./src/components/elements/info-room/info-room.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./info-room.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/info-room/info-room.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/info-room/info-room.scss?");
 
 /***/ }),
 
@@ -671,26 +717,15 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 
 /***/ }),
 
-/***/ "./src/components/elements/location-city/location-city.js":
-/*!****************************************************************!*\
-  !*** ./src/components/elements/location-city/location-city.js ***!
-  \****************************************************************/
+/***/ "./src/components/elements/logo-wrapper/logo-wrapper.js":
+/*!**************************************************************!*\
+  !*** ./src/components/elements/logo-wrapper/logo-wrapper.js ***!
+  \**************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _location_city_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./location-city.scss */ \"./src/components/elements/location-city/location-city.scss\");\n/* harmony import */ var _location_city_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_location_city_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/location-city/location-city.js?");
-
-/***/ }),
-
-/***/ "./src/components/elements/location-city/location-city.scss":
-/*!******************************************************************!*\
-  !*** ./src/components/elements/location-city/location-city.scss ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./location-city.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/location-city/location-city.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/location-city/location-city.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo-wrapper.scss */ \"./src/components/elements/logo-wrapper/logo-wrapper.scss\");\n/* harmony import */ var _logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/logo-wrapper/logo-wrapper.js?");
 
 /***/ }),
 
@@ -782,7 +817,7 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rate_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rate.scss */ \"./src/components/elements/rate/rate.scss\");\n/* harmony import */ var _rate_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rate_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/rate/rate.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rate_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rate.scss */ \"./src/components/elements/rate/rate.scss\");\n/* harmony import */ var _rate_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rate_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _comments_stars_stars_stars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../comments-stars/stars/stars */ \"./src/components/elements/comments-stars/stars/stars.js\");\n\n\n\n//# sourceURL=webpack:///./src/components/elements/rate/rate.js?");
 
 /***/ }),
 
@@ -794,29 +829,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rat
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./rate.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/rate/rate.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/rate/rate.scss?");
-
-/***/ }),
-
-/***/ "./src/components/elements/rich-checkbox/rich-checkbox.js":
-/*!****************************************************************!*\
-  !*** ./src/components/elements/rich-checkbox/rich-checkbox.js ***!
-  \****************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rich-checkbox.scss */ \"./src/components/elements/rich-checkbox/rich-checkbox.scss\");\n/* harmony import */ var _rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_rich_checkbox_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/components/elements/rich-checkbox/rich-checkbox.js?");
-
-/***/ }),
-
-/***/ "./src/components/elements/rich-checkbox/rich-checkbox.scss":
-/*!******************************************************************!*\
-  !*** ./src/components/elements/rich-checkbox/rich-checkbox.scss ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/src!../../../../node_modules/sass-loader/dist/cjs.js!./rich-checkbox.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/components/elements/rich-checkbox/rich-checkbox.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/components/elements/rich-checkbox/rich-checkbox.scss?");
 
 /***/ }),
 
@@ -866,6 +878,18 @@ eval("var content = __webpack_require__(/*! !../../../../node_modules/mini-css-e
 
 /***/ }),
 
+/***/ "./src/ui-kit/form-elements/center-column/center-column.js":
+/*!*****************************************************************!*\
+  !*** ./src/ui-kit/form-elements/center-column/center-column.js ***!
+  \*****************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _center_column_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./center-column.scss */ \"./src/ui-kit/form-elements/center-column/center-column.scss\");\n/* harmony import */ var _center_column_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_center_column_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_dropdowns_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/elements/dropdowns/dropdown */ \"./src/components/elements/dropdowns/dropdown.js\");\n/* harmony import */ var _components_elements_checkbox_checkbox_classic_checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/elements/checkbox/checkbox-classic/checkbox */ \"./src/components/elements/checkbox/checkbox-classic/checkbox.js\");\n/* harmony import */ var _components_elements_checkbox_rich_checkbox_rich_checkbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/elements/checkbox/rich-checkbox/rich-checkbox */ \"./src/components/elements/checkbox/rich-checkbox/rich-checkbox.js\");\n/* harmony import */ var _components_elements_radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/elements/radio-buttons/radio-buttons */ \"./src/components/elements/radio-buttons/radio-buttons.js\");\n/* harmony import */ var _components_elements_toggle_toggle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/elements/toggle/toggle */ \"./src/components/elements/toggle/toggle.js\");\n/* harmony import */ var _components_elements_like_button_like_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/elements/like-button/like-button */ \"./src/components/elements/like-button/like-button.js\");\n/* harmony import */ var _components_elements_rate_rate__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/elements/rate/rate */ \"./src/components/elements/rate/rate.js\");\n/* harmony import */ var _murad_murad__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./murad/murad */ \"./src/ui-kit/form-elements/center-column/murad/murad.js\");\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/center-column/center-column.js?");
+
+/***/ }),
+
 /***/ "./src/ui-kit/form-elements/center-column/center-column.scss":
 /*!*******************************************************************!*\
   !*** ./src/ui-kit/form-elements/center-column/center-column.scss ***!
@@ -908,7 +932,7 @@ eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-cs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-elements.scss */ \"./src/ui-kit/form-elements/form-elements.scss\");\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_form_elements_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_utils_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/utils/_main.scss */ \"./src/assets/utils/_main.scss\");\n/* harmony import */ var _assets_utils_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_utils_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_elements_logo_wrapper_logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/elements/logo-wrapper/logo-wrapper.scss */ \"./src/components/elements/logo-wrapper/logo-wrapper.scss\");\n/* harmony import */ var _components_elements_logo_wrapper_logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_elements_logo_wrapper_logo_wrapper_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _left_column_left_column_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./left-column/left-column.scss */ \"./src/ui-kit/form-elements/left-column/left-column.scss\");\n/* harmony import */ var _left_column_left_column_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_left_column_left_column_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_elements_dropdowns_dropdown_block__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/elements/dropdowns/dropdown-block */ \"./src/components/elements/dropdowns/dropdown-block.js\");\n/* harmony import */ var _center_column_center_column_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./center-column/center-column.scss */ \"./src/ui-kit/form-elements/center-column/center-column.scss\");\n/* harmony import */ var _center_column_center_column_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_center_column_center_column_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _right_column_right_column_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./right-column/right-column.scss */ \"./src/ui-kit/form-elements/right-column/right-column.scss\");\n/* harmony import */ var _right_column_right_column_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_right_column_right_column_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_elements_checkbox_checkbox__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/elements/checkbox/checkbox */ \"./src/components/elements/checkbox/checkbox.js\");\n/* harmony import */ var _components_elements_radio_buttons_radio_buttons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/elements/radio-buttons/radio-buttons */ \"./src/components/elements/radio-buttons/radio-buttons.js\");\n/* harmony import */ var _components_elements_toggle_toggle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/elements/toggle/toggle */ \"./src/components/elements/toggle/toggle.js\");\n/* harmony import */ var _components_elements_like_button_like_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/elements/like-button/like-button */ \"./src/components/elements/like-button/like-button.js\");\n/* harmony import */ var _components_elements_rate_rate__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/elements/rate/rate */ \"./src/components/elements/rate/rate.js\");\n/* harmony import */ var _components_elements_pagination_pagination__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/elements/pagination/pagination */ \"./src/components/elements/pagination/pagination.js\");\n/* harmony import */ var _components_elements_input_text_input_text__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/elements/input-text/input-text */ \"./src/components/elements/input-text/input-text.js\");\n/* harmony import */ var _components_elements_bullet_list_bullet_list__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/elements/bullet-list/bullet-list */ \"./src/components/elements/bullet-list/bullet-list.js\");\n/* harmony import */ var _components_elements_rich_checkbox_rich_checkbox__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/elements/rich-checkbox/rich-checkbox */ \"./src/components/elements/rich-checkbox/rich-checkbox.js\");\n/* harmony import */ var _right_column_container_buttons_container_buttons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./right-column/container-buttons/container-buttons */ \"./src/ui-kit/form-elements/right-column/container-buttons/container-buttons.js\");\n/* harmony import */ var _center_column_murad_murad__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./center-column/murad/murad */ \"./src/ui-kit/form-elements/center-column/murad/murad.js\");\n/* harmony import */ var _components_elements_expandable_checkbox_expandable_checkbox__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../components/elements/expandable-checkbox/expandable-checkbox */ \"./src/components/elements/expandable-checkbox/expandable-checkbox.js\");\n/* harmony import */ var _components_elements_incert_emotion_incert_emotion__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../components/elements/incert-emotion/incert-emotion */ \"./src/components/elements/incert-emotion/incert-emotion.js\");\n/* harmony import */ var _components_elements_location_city_location_city__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../components/elements/location-city/location-city */ \"./src/components/elements/location-city/location-city.js\");\n/* harmony import */ var _left_column_left_column__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./left-column/left-column */ \"./src/ui-kit/form-elements/left-column/left-column.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/form-elements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-elements.scss */ \"./src/ui-kit/form-elements/form-elements.scss\");\n/* harmony import */ var _form_elements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_form_elements_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_logo_wrapper_logo_wrapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/elements/logo-wrapper/logo-wrapper */ \"./src/components/elements/logo-wrapper/logo-wrapper.js\");\n/* harmony import */ var _left_column_left_column_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./left-column/left-column.js */ \"./src/ui-kit/form-elements/left-column/left-column.js\");\n/* harmony import */ var _center_column_center_column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./center-column/center-column */ \"./src/ui-kit/form-elements/center-column/center-column.js\");\n/* harmony import */ var _right_column_right_column__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./right-column/right-column */ \"./src/ui-kit/form-elements/right-column/right-column.js\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/form-elements.js?");
 
 /***/ }),
 
@@ -931,7 +955,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/mini-css-extr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _left_column_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./left-column.scss */ \"./src/ui-kit/form-elements/left-column/left-column.scss\");\n/* harmony import */ var _left_column_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_left_column_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_dropdowns_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/elements/dropdowns/dropdown */ \"./src/components/elements/dropdowns/dropdown.js\");\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/left-column/left-column.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _left_column_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./left-column.scss */ \"./src/ui-kit/form-elements/left-column/left-column.scss\");\n/* harmony import */ var _left_column_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_left_column_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_dropdowns_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/elements/dropdowns/dropdown */ \"./src/components/elements/dropdowns/dropdown.js\");\n/* harmony import */ var _components_elements_checkbox_expandable_checkbox_expandable_checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/elements/checkbox/expandable-checkbox/expandable-checkbox */ \"./src/components/elements/checkbox/expandable-checkbox/expandable-checkbox.js\");\n/* harmony import */ var _components_elements_input_text_input_text__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/elements/input-text/input-text */ \"./src/components/elements/input-text/input-text.js\");\n/* harmony import */ var _components_elements_incert_emotion_incert_emotion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/elements/incert-emotion/incert-emotion */ \"./src/components/elements/incert-emotion/incert-emotion.js\");\n/* harmony import */ var _components_elements_info_room_info_room__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/elements/info-room/info-room */ \"./src/components/elements/info-room/info-room.js\");\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/left-column/left-column.js?");
 
 /***/ }),
 
@@ -966,6 +990,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var content = __webpack_require__(/*! !../../../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/src!../../../../../node_modules/sass-loader/dist/cjs.js!./container-buttons.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/ui-kit/form-elements/right-column/container-buttons/container-buttons.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/right-column/container-buttons/container-buttons.scss?");
+
+/***/ }),
+
+/***/ "./src/ui-kit/form-elements/right-column/right-column.js":
+/*!***************************************************************!*\
+  !*** ./src/ui-kit/form-elements/right-column/right-column.js ***!
+  \***************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _right_column_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./right-column.scss */ \"./src/ui-kit/form-elements/right-column/right-column.scss\");\n/* harmony import */ var _right_column_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_right_column_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_elements_dropdowns_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/elements/dropdowns/dropdown */ \"./src/components/elements/dropdowns/dropdown.js\");\n/* harmony import */ var _components_elements_pagination_pagination__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/elements/pagination/pagination */ \"./src/components/elements/pagination/pagination.js\");\n/* harmony import */ var _components_elements_bullet_list_bullet_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/elements/bullet-list/bullet-list */ \"./src/components/elements/bullet-list/bullet-list.js\");\n/* harmony import */ var _right_column_container_buttons_container_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../right-column/container-buttons/container-buttons */ \"./src/ui-kit/form-elements/right-column/container-buttons/container-buttons.js\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/ui-kit/form-elements/right-column/right-column.js?");
 
 /***/ }),
 

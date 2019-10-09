@@ -64,8 +64,49 @@ module.exports = {
             filename: `[name].css`,
         }),
         new HTMLWebpackPlugin({
+            filename: 'ui-kit/cards/cards.html',
             hash: false,
-            template: `./src/website-pages/room-details/room-details.pug`,
+            template: `./src/ui-kit/cards/cards.pug`,
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'ui-kit/colors-type/colors-type.html',
+            hash: false,
+            template: `./src/ui-kit/colors-type/colors-type.pug`,
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'ui-kit/form-elements/form-elements.html',
+            hash: false,
+            template: `./src/ui-kit/form-elements/form-elements.pug`,
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'ui-kit/headers-footers/headers-footers.html',
+            hash: false,
+            template: `./src/ui-kit/headers-footers/headers-footers.pug`,
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'website-pages/landing-page/landing.html',
+            hash: false,
+            template: `./src/website-pages/landing-page/landing.pug`
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'website-pages/registration/registration.html',
+            hash: false,
+            template: `./src/website-pages/registration/registration.pug`
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'website-pages/room-details/room-details.html',
+            hash: false,
+            template: `./src/website-pages/room-details/room-details.pug`
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'website-pages/search-room-filter/search-room-filter.html',
+            hash: false,
+            template: `./src/website-pages/search-room-filter/search-room-filter.pug`
+           }),
+        new HTMLWebpackPlugin({
+            filename: 'website-pages/sign-in/sign-in.html',
+            hash: false,
+            template: `./src/website-pages/sign-in/sign-in.pug`
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
