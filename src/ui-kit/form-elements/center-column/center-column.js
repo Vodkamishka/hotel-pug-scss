@@ -6,4 +6,4 @@ import '../../../components/elements/radio-buttons/radio-buttons'
 import '../../../components/elements/toggle/toggle'
 import '../../../components/elements/like-button/like-button'
 import '../../../components/elements/rate/rate'
-import './murad/murad';
+import '../../../components/elements/consumer-comments/consumer-comments'

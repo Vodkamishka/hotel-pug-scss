@@ -1,3 +1,4 @@
+@import '../../../assets/utils/main';
 
 .form-elements {
     &__column-right {
@@ -15,6 +16,9 @@
         margin: 40px 0 230px 0;
     }
     &__container-bullet {
-        margin-top: 98.44px;
+        margin-top: 257.44px;
+    }
+    &__bullet-title {
+        @include inputTitle
     }
 }

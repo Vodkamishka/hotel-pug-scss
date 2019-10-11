@@ -1,8 +1,7 @@
 import './expandable-checkbox.scss';
 import './checkbox-list/checkbox-list.js';
 
-
-function ready() {
+window.onload = function() {
 
 
 let expandableCheckbox = document.querySelectorAll(".expandable-checkbox__image");
@@ -18,10 +17,9 @@ expandableCheckbox[i].addEventListener('click', () => {
     else {expandableCheckboxList[i].style.display = 'none'}
 })}
 
-
-
-
-
 }
 
-document.addEventListener("DOMContentLoaded", ready);
+
+
+
+

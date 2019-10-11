@@ -2,6 +2,7 @@
 
 @mixin short-dropdown {
         .short-dropdown {
+                position: absolute;
                 box-sizing: border-box;
                 border: 1px solid $shade50;
                 border-top: transparent;
@@ -21,8 +22,8 @@
                         }
         }
         .will-hide {
-                display: none;
                 padding-bottom: 15px;
+                opacity: 0;
         }  
 }
 
@@ -49,6 +50,5 @@
                         color: $shade50;
                         float: left;
                 }
-        }
-        
+        }    
 }

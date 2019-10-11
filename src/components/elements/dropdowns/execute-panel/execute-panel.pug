@@ -1,9 +1,6 @@
-mixin execute-panel(first, second, third)
+mixin execute-panel(second)
     .execute-panel
-        if (first !== "")
-            .execute-panel__circle-increment= first
-        else
-            .execute-panel__circle-increment.hide
+        .execute-panel__circle-increment -
         .execute-panel__result= second
-        .execute-panel__circle-decrement= third
+        .execute-panel__circle-decrement +
 

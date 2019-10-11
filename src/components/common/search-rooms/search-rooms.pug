@@ -1,5 +1,6 @@
-include ../../../components/elements/buttons/long-btn/long-btn.pug
-include ../../../components/elements/input-text/input-text.pug
+include ../../../components/elements/buttons/long-btn/long-btn
+include ../../../components/elements/input-text/input-text
+include ../../../components/elements/dropdowns/dropdown
 
 .search-rooms
     .search-rooms__title Найдем номера под ваши пожелания
@@ -7,5 +8,5 @@ include ../../../components/elements/input-text/input-text.pug
         +InputCalendar("Прибытие", "", "small", "ДД.ММ.ГГГГ","small")
         +InputCalendar("Выезд", "", "small", "ДД.ММ.ГГГГ","small")
     .search-rooms__guests
-        +Input("гости", "", "", "Сколько гостей", "dropdowns")
+        +longDropdown ( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "block", "will-hide")
     +longBtn("Сколько гостей")

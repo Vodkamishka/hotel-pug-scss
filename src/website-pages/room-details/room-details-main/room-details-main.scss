@@ -1,5 +1,15 @@
 @import '../../../assets/utils/main';
 
+.circle-template {
+    width: 120px;
+    height: 121px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
 .room-details {
     &__main {
         padding: 70px 140px;
@@ -35,17 +45,52 @@
         display: flex;
         align-items: flex-end;
     }
-    &__circle {
-        width: 120px; 
-        height: 120px;
-        border-top: 3px solid yellow;
-        border-bottom: 3px solid $green;
-        border-left: 3px solid orange;
-        margin-top: 21px;
-        border-radius: 50% 50% 50% 50%;
-        margin-right: 45px;
+    &__wrapper-circles {
+        width: 120px;
+        height: 121px;
+        margin: 21px 35px 0 0;
+        position: relative;
+        @include flex-center;
+        text-align: center;
+    }
+    &__circle-title {
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        color: $purple;
+        font-weight: bold;
+            span:first-child {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            span:last-child {
+                font-size: 12px;
+                line-height: 15px;
+            }
+    }
+    &__circle1 {
+        @extend .circle-template;
+        border-color: $purple transparent transparent transparent;
+        border-width: 10px;
+        transform: rotate(45deg);
+    }
+    &__circle2 {
+        @extend .circle-template;
+        border-color:  transparent $green transparent transparent;
+        transform: rotate(45deg);
+    }
+    &__circle3 {
+        @extend .circle-template;
+        border-color:  transparent  transparent #FFBA9C transparent;
+        transform: rotate(45deg);
+    }
+    &__circle4 {
+        @extend .circle-template;
+        border-color:  transparent  transparent transparent  #FFE39C;
+        transform: rotate(45deg);
     }
     &__list {
+        margin-right: 35px;
         ul {
             list-style-type: none;
                 li {
