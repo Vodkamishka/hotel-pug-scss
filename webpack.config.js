@@ -110,7 +110,7 @@ module.exports = {
            }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/website-pages/room-details/room-details.pug`
+            template: `./src/ui-kit/form-elements/form-elements.pug`
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },

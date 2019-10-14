@@ -806,8 +806,7 @@
 
             this.$datepicker
                 .css({
-                    left: 170 + 'px',
-                    /*left: left,*/
+                    left: left,
                     top: top
                 })
         },

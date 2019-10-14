@@ -1,66 +1,87 @@
 import './dropdown.scss'
 import './execute-panel/execute-panel'
 
-window.onload = function () {
 
-    (function () {
 
-let input = document.querySelectorAll(".without-border-radius")
-let shortDropdown = document.querySelectorAll(".short-dropdown")
-let increment = document.querySelectorAll('.execute-panel__circle-increment')
-let decrement = document.querySelectorAll('.execute-panel__circle-decrement')
-let result = document.querySelectorAll('.execute-panel__result')
-let clear = document.querySelectorAll('.short-dropdown__clear')
-let long = document.querySelectorAll('.long-dropdowns')
-let totalResult = 0;
-console.log(result.length)
+window.onload = function () { 
+    
+            function guests (result, input, made ='') {
+            if (made){
+                let res = 0
+                result.forEach(el => res += +el.innerHTML)
+                    let guest
+                    let num = res
+                    if (num > 20) {num %= 10}
+                        if (num === 0 || num > 4 && num<= 20) {guest = ' гостей'}
+                        else if (num === 1) {guest = ' гость'}
+                        else {guest = ' гостя'}
+                input.value = res + guest
+            }}
+            function beds (result, input) {
+                let array = []
+                let rooms = ['Спальни', 'Кровати']
+                    function a (name, num) {
+                        let bed
+                        if (num > 20) {num %= 10}
+                            if (num === 0 || num > 4 && num<= 20) {bed = (name === 'спальни') ? ' спален' : ' кроватей'}
+                            else if (num === 1) {bed = (name === 'спальни') ?  ' спальня' : ' кровать'}
+                            else {bed = (name === 'спальни') ?  ' спальни' : ' кровати'}
+                        return bed    
+                    }
+                rooms.forEach((el, index) => {
+                    let goods = [a('спальни', result[0].innerHTML), a('кровати', result[1].innerHTML)]
+                    array.push(result[index].innerHTML + ' ' + goods[index])
+                })
+                input.value = array.join(', ') + '...'
+            }  
 
-function checkResult () {
-    for (let i=0; i < result.length; i++) {
+            let long = document.querySelectorAll('.long-dropdowns')
+            let short = document.querySelectorAll('.short-dropdowns')
+
+            function  func (long, place) {
+
+            long.forEach(el => {
+                let input = el.querySelector('input')
+                let shortDropdown = el.querySelector('.short-dropdown')
+                let increment = el.querySelectorAll('.execute-panel__circle-increment')
+                let decrement = el.querySelectorAll('.execute-panel__circle-decrement')
+                let result = el.querySelectorAll('.execute-panel__result')
+                let clear = el.querySelector('.short-dropdown__clear')
+                
+                input.addEventListener("click", function() {
+                    shortDropdown.classList.toggle("will-hide")
+                })
+                function check (made) {
+                    result.forEach((el, index) => {
+                    if (el.innerHTML === '0') {increment[index].style.opacity = 0}
+                    else {increment[index].style.opacity = 1}
+                    })
+                    place(result, input, made)  
+                }
+                check ()
+                increment.forEach(el => {
+                    el.addEventListener('click', function () {
+                        let result = this.nextElementSibling;
+                        if (result.innerHTML>0) result.innerHTML = result.innerHTML - 1
+                        check (true)
+                    })
+                })
+                decrement.forEach(el => {
+                    el.addEventListener('click', function() {
+                        let result = this.previousElementSibling
+                        result.innerHTML = +result.innerHTML + 1
+                        check (true)
+                    })
+                })
+                if (clear) {clear.addEventListener('click', function() {
+                    result.forEach(el => el.innerHTML = '0')
+                    input.placeholder = 'Сколько гостей'
+                    check (true) 
+                })} 
+            })
+
+            }
         
-    if (result[i].innerHTML === '0') {increment[i].style.opacity = 0}
-    else {increment[i].style.opacity = 1
-        
-    }
-    }
-}
-
-    checkResult ()
-
-for (let i=0; i < input.length; i++) {
-input[i].addEventListener('click', () => {
-    shortDropdown[i].classList.toggle("will-hide");
-})
-}
-for (let i=0; i < result.length; i++) {
-    increment[i].addEventListener('click', () => {
-        if (result[i].innerHTML>0) result[i].innerHTML = result[i].innerHTML - 1
-        checkResult ()
-    })
-}
-for (let i=0; i < result.length; i++) {
-    decrement[i].addEventListener('click', () => {
-        result[i].innerHTML = +result[i].innerHTML + 1
-        checkResult ()
-    })
-}
-
-for (let i=0; i < clear.length; i++){
-    clear[i].addEventListener('click', () => {
-        for (let j=0; j < result.length; j++) result[j].innerHTML = '0'
-        checkResult ()
-    })
-}
-
-
-
-})()
-
-}
-
-
-
-
-
-
-
+            func (long, guests)
+            func (short, beds)
+        }
