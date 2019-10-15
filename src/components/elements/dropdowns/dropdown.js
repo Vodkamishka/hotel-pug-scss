@@ -28,8 +28,8 @@ window.onload = function () {
                             else {bed = (name === 'спальни') ?  ' спальни' : ' кровати'}
                         return bed    
                     }
+                    let goods = [a('спальни', +result[0].innerHTML), a('кровати', +result[1].innerHTML)]  
                 rooms.forEach((el, index) => {
-                    let goods = [a('спальни', result[0].innerHTML), a('кровати', result[1].innerHTML)]
                     array.push(result[index].innerHTML + ' ' + goods[index])
                 })
                 input.value = array.join(', ') + '...'
@@ -84,4 +84,18 @@ window.onload = function () {
         
             func (long, guests)
             func (short, beds)
+
+            let exp = document.querySelectorAll('.expandable-checkbox')
+          
+            exp.forEach(el => {
+                let img = el.querySelector('.expandable-checkbox__image')
+                let list = el.querySelector('.expandable-checkbox__list')
+               
+                img.addEventListener("click", function() {
+                    this.classList.toggle('image-exp')
+                    list.classList.toggle('hide')
+                })
+            
+            })
+            
         }

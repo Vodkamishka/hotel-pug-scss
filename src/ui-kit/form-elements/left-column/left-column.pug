@@ -28,9 +28,9 @@ include ../../../components/elements/info-room/info-room
     .form-elements__container-dropdown3
         +shortDropdown( "dropdown", "expanded", "little", "2 спальни, 2 кровати", "little-expand without-border-radius")
     .form-elements__container-checkbox-list
-        +expandable-checkbox(list,'none', 'expandable checkbox list')
+        +expandable-checkbox(list, 'expandable checkbox list', 'hide')
     .form-elements__container-checkbox-list-expandable
-        +expandable-checkbox(list,'block', 'expandable checkbox list')
+        +expandable-checkbox(list, 'expandable checkbox list', '', 'image-exp')
     .form-elements__container-incert-emotion
         +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
             +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
