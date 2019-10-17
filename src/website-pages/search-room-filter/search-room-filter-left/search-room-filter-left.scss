@@ -2,7 +2,7 @@
 
 .search-room-filter {
     &__container-shortdropdown {
-        margin: 20.44px 0 132px;
+        margin: 20.44px 0 30.44px;
     }
     &__container-rich-checkbox {
         margin: 30.88px 0 30.44px;
@@ -10,4 +10,14 @@
     &__container-expanded-checkbox {
         margin-top: 15.5px;
     }
+    &__container-slider {
+        margin-bottom: 30px;
+    }
+    &__slider-text {
+        margin-top: 10.56px;
+        font-size: 12px;
+        line-height: 14px;
+        color: $shade50;
+    }
+   
 }

@@ -3,7 +3,6 @@
 .search-room-filter {
     &__right {
         max-width: 834px;
-        
     }
     &__title {
         color: $shade100;
@@ -15,7 +14,6 @@
     &__rooms-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
             .card-room {
                 margin: 0 0 20px 12px;
             }
@@ -34,5 +32,7 @@
     &__pagination {
         margin: 40.94px 0 70px 290px;
     }
-    
+    .short-dropdown {
+        width: 266px;
+    }
 }

@@ -2,13 +2,17 @@ include ../../../components/elements/input-text/input-text
 include ../../../components/elements/dropdowns/dropdown
 include ../../../components/elements/checkbox/rich-checkbox/rich-checkbox
 include ../../../components/elements/checkbox/expandable-checkbox/expandable-checkbox
+include ../../../components/common/slider/slider
 
 - var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
 
 .search-room-filter__left
     +Input("даты пребывания в отеле", "", "", "19 авг - 23 авг","little-expand")
     .search-room-filter__container-shortdropdown
-        +shortDropdown( "гости", "", "little", "3 гостя, 1 младенец", "little-expand without-border-radius", "will-hide")
+        +longDropdown( "гости", "", "little", "3 гостя, 1 младенец", "little-expand without-border-radius", "block", "will-hide")
+    .search-room-filter__container-slider
+        +slider('Диапазон цены')
+        .search-room-filter__slider-text Стоимость за сутки пребывания в номере
     include ../../../components/elements/checkbox/checkbox-classic/checkbox
     .search-room-filter__container-rich-checkbox
         +richCheckbox("доступность")

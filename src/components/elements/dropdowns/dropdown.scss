@@ -16,6 +16,7 @@
                 color: $shade100;
                 text-transform: uppercase;
                 font-family: Montserrat;
+                z-index: 10000;
                         &__row {
                                 @include space-between;
                                 margin-bottom: 7px;
