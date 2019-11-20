@@ -3,7 +3,7 @@ include ../../elements/comments-stars/comments-stars
 
 mixin cardRoom (img, price, stars, comments, clas)
     .card-room
-        .card-room__image(style=`background: url(/assets/img/rooms/${img}.jpg) no-repeat; background-size: cover `)
+        .card-room__image(style=`background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/${img}.jpg) no-repeat; background-size: cover `)
         .card-room__luxe
             +luxe(img, price, clas)
         .card-room__stars

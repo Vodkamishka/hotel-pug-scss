@@ -176,7 +176,9 @@
 .datepickers-container {
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+ }
+  
   @media print {
     .datepickers-container {
       display: none; } }
@@ -213,15 +215,17 @@
     -webkit-transform: translateY(8px);
             transform: translateY(8px); }
   .datepicker.-from-left- {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px); }
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
   .datepicker.active {
     opacity: 1;
     -webkit-transform: translate(0);
             transform: translate(0);
+   
     transition: opacity 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s, -webkit-transform 0.3s ease; 
+    
   }
 
 .datepicker-inline .datepicker {

@@ -18,16 +18,16 @@ $gradient-green: linear-gradient(180deg, $green 0%, $aqua 100%);
 
 @font-face {
      font-family: 'Montserrat';
-          src: url('/assets/fonts/montserrat/montserrat.ttf') , 
-          url('/assets/fonts/montserrat/montserrat.woff') ,
-          url('/assets/fonts/montserrat/montserrat.svg');
+          src: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/montserrat/montserrat.ttf') , 
+          url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/montserrat/montserrat.woff') ,
+          url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/montserrat/montserrat.svg');
  }
 
 @font-face {    
     font-family: "Quicksand";
-         src: url('/assets/fonts/quicksand/quicksand.woff'), 
-         url('/assets/fonts/quicksand/quicksand.ttf'),
-         url('/assets/fonts/quicksand/quicksand.svg');
+         src: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/quicksand/quicksand.woff'), 
+         url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/quicksand/quicksand.ttf'),
+         url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/fonts/quicksand/quicksand.svg');
 }
 
 //width for text-inputs and labels

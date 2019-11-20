@@ -5,15 +5,21 @@ window.onload = function () {
     
             function guests (result, input, made ='') {
             if (made){
-                let res = 0
-                result.forEach(el => res += +el.innerHTML)
-                    let guest
-                    let num = res
+                function a (name, num) {
+                    let word
                     if (num > 20) {num %= 10}
-                        if (num === 0 || num > 4 && num<= 20) {guest = ' гостей'}
-                        else if (num === 1) {guest = ' гость'}
-                        else {guest = ' гостя'}
-                input.value = res + guest
+                        if (num === 0 || num > 4 && num<= 20) {word = (name === 'guests') ? ' гостей' : ' младенцев'}
+                        else if (num === 1) {word = (name === 'guests') ?  ' гость' : ' младенец'}
+                        else {word = (name === 'guests') ?  ' гостя' : ' младенца'}
+                    return word    
+                }
+                    let one = +result[0].innerHTML
+                    let two = +result[1].innerHTML
+                    let three = +result[2].innerHTML
+                    let guests = one + two + a('guests', one + two)
+                    let baby = three + a("baby", three)
+                if (three > 0) { input.value = guests + ', ' + baby}
+                else { input.value = guests}
             }}
             function beds (result, input) {
                 let array = []
@@ -113,8 +119,8 @@ window.onload = function () {
                 
                     slider.innerHTML = 
                     `<div class="between"></div>
-                    <button class="btn1" style='margin-left: 77px'></button>
-                    <button class="btn2" style='margin-left: 162px'></button>
+                    <div class="btn1" style='margin-left: 75px'></div>
+                    <div class="btn2" style='margin-left: 160px'></div>
                 </div>`
     
                     let between = wrapper.querySelector('.between')
@@ -134,20 +140,21 @@ window.onload = function () {
                             let coorSlider = coor(slider)
                         
                             function moveBtn(e) {
+                                let btnWidth = button1.offsetWidth
                                 let bL = e.pageX  - coorSlider
-                                if (bL > slider.offsetWidth ) {bL = slider.offsetWidth }
-                                else if (bL < 0 ) {bL = 0 }
+                                if (bL > slider.offsetWidth - btnWidth/2) {bL = slider.offsetWidth - btnWidth/2}
+                                else if (bL < 0 - btnWidth/2 ) {bL = 0 - btnWidth/2 }
                                 el1.style.marginLeft = bL + 'px'
-                                
+                               
                                 let bR = coorBtn2 - coorSlider
                         
-                                if (bR > bL) {between.style.marginLeft = el1.style.marginLeft}
-                                else {between.style.marginLeft = el2.style.marginLeft}
+                                if (bR > bL) {between.style.marginLeft = bL + btnWidth/2 + 'px'}
+                                else {between.style.marginLeft = el2.style.marginLeft + btnWidth/2 + 2}
                                 between.style.width = Math.abs(bR - bL) + 'px'
                 
                 
-                                bL *=56.392
-                                bR *=56.392
+                                bL = (bL + btnWidth/2) *56.392 
+                                bR = (bR + btnWidth/2) *56.392
                                 let n;
                                 if (el1 === button1){if (bL > bR) {n = bL; bL = bR; bR = n}}
                                 else {if (bL < bR) {n = bL; bL = bR; bR = n}}

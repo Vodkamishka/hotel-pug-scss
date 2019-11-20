@@ -4,7 +4,7 @@
     height: 1211px;
         &__image-wrapper {
             height: 702px;
-            background: url(/assets/img/rooms/registration.jpg) left bottom;
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/registration.jpg) left bottom;
             @include flex-center;
         }
 }

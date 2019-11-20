@@ -1,8 +1,9 @@
 @import '../../../assets/utils/main';
 
 .copyright {
-    padding: 0 140px;
+    padding: 0 9.72%;
     height: 70px;
+    flex-wrap: wrap;
     @include space-between;
         &__text {
             font-size: 14px;

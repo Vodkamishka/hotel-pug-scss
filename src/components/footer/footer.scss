@@ -3,7 +3,7 @@
 
 @mixin innerFooter {
     .inner-footer {
-        padding: 100px 140px;
+        padding: 100px 9.72%;
         box-sizing: border-box;
         height: 372px;
         display: flex;
@@ -108,3 +108,12 @@
         }
      
 } 
+
+@media (max-width: 1350px) {
+    .footer {
+        .inner-footer {
+            flex-wrap: wrap;
+            height: auto;
+        }
+    }
+}

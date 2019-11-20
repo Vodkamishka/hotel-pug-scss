@@ -12,8 +12,9 @@
 
 .room-details {
     &__main {
-        padding: 70px 140px;
+        padding: 70px 9.72%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         font-size: 14px;
         line-height: 24px;
@@ -40,6 +41,9 @@
     }
     &__room-impressions {
         margin-bottom: 474px;
+    }
+    &__comments-consumer {
+        margin-bottom: 30px;
     }
     &__diagramma {
         display: flex;
@@ -136,6 +140,21 @@
     &__comments-consumer {
         .consumer-comments:first-child {
             margin: 23px 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .room-details {
+        
+        &__room-impressions {
+            margin: 20px 0;
+        }
+        &__room-escape {
+            margin: 20px 0;
+        }
+        &__rules {
+            margin: 20px 0;
         }
     }
 }

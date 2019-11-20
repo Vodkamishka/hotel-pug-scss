@@ -106,7 +106,7 @@
     var Datepicker  = function (el, options) {
         this.el = el;
         this.$el = $(el);
-
+        
         this.opts = $.extend(true, {}, defaults, options, this.$el.data());
 
         if ($body == undefined) {
@@ -265,6 +265,8 @@
 
         _buildDatepickersContainer: function () {
             containerBuilt = true;
+            let datepickerHere = document.querySelector(".datepicker-here")
+            //datepickerHere.append('<div class="datepickers-container" id="datepickers-container"></div>')
             $body.append('<div class="datepickers-container" id="datepickers-container"></div>');
             $datepickersContainer = $('#datepickers-container');
         },
@@ -725,8 +727,7 @@
         },
 
         _getDimensions: function ($el) {
-            var offset = $el.offset();
-
+            var offset = $el.offset();  
             return {
                 width: $el.outerWidth(),
                 height: $el.outerHeight(),
@@ -767,6 +768,7 @@
                 offset = this.opts.offset,
                 main = pos[0],
                 secondary = pos[1];
+                let datepickerHere = document.querySelector('.input-text').offsetLeft
 
             switch (main) {
                 case 'top':
@@ -782,7 +784,7 @@
                     left = dims.left - selfDims.width - offset;
                     break;
             }
-
+           
             switch(secondary) {
                 case 'top':
                     top = dims.top;
@@ -800,7 +802,8 @@
                     if (/left|right/.test(main)) {
                         top = dims.top + dims.height/2 - selfDims.height/2;
                     } else {
-                        left = dims.left + dims.width/2 - selfDims.width/2;
+                        left = datepickerHere /*dims.left + dims.width/2 - selfDims.width*/;
+                        
                     }
             }
 

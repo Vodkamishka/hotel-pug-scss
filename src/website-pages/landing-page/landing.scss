@@ -4,14 +4,14 @@
 .landing {
     height: 1343px;
         &__image-wrapper {
-            background: url(/assets/img/rooms/main-picture.jpg);
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/main-picture.jpg);
             height: 830px;
-            position: relative;
+            overflow: hidden;
         }
         &__search-rooms {
-            position: absolute;
-            top: 70px;
-            left: 140px;
+            margin: 70px 0 0 9.2%;
+            overflow: hidden;
+         
         }
 }
 

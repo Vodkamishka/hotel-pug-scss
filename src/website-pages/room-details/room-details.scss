@@ -5,16 +5,40 @@
         &__left-container {
             width: 981px;
             height: 485px;
-            background: url(/assets/img/rooms/888.jpg) bottom;
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/888.jpg) bottom;
         }
         &__picture-top {
             width: 461px;
             height: 243px;
-            background: url(/assets/img/rooms/picture-top.jpg) no-repeat; 
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/picture-top.jpg) no-repeat;
+            background-size: cover; 
         }
         &__picture-bottom {
             width: 461px;
             height: 243px;
-            background: url(/assets/img/rooms/picture-bottom.jpg) no-repeat; 
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/rooms/picture-bottom.jpg) no-repeat; 
+            background-size: cover; 
         }
+}
+
+@media (max-width: 900px) {
+    .room-details {
+        &__images {
+            flex-wrap: wrap;
+        }
+        &__right-container {
+            display: flex;
+            width: 100%; 
+        } 
+    }
+}
+@media (max-width: 500px) {
+    .room-details {
+        &__right-container {
+            flex-direction: column;
+        }
+        &__picture-top, &__picture-bottom {
+            width: 100%;
+        }
+    }
 }

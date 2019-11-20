@@ -1,9 +1,6 @@
 @import '../../../assets/utils/main';
 
 .search-room-filter {
-    &__right {
-        max-width: 834px;
-    }
     &__title {
         color: $shade100;
         font-weight: bold;
@@ -12,8 +9,9 @@
         margin-bottom: 20.5px;
     }
     &__rooms-wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
             .card-room {
                 margin: 0 0 20px 12px;
             }
@@ -30,9 +28,36 @@
             }
     }
     &__pagination {
-        margin: 40.94px 0 70px 290px;
+        margin: 40.94px 0 70px 20.139%;
     }
     .short-dropdown {
         width: 266px;
+    }
+}
+@media (max-width: 1200px) {
+    .search-room-filter {
+        &__rooms-wrapper {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (max-width: 910px) {
+   
+    .search-room-filter {
+        &__right {
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        &__rooms-wrapper {
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+        }
+        &__pagination {
+            margin: 0 auto;
+        }
     }
 }

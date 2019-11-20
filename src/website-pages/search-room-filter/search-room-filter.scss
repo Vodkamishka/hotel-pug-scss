@@ -4,7 +4,21 @@
         &__main {
             display: flex;
             justify-content: space-between;
-            padding: 30px 140px 0 140px;
+            padding: 30px 9.72% 0 9.72%;
             box-sizing: border-box;
         }  
+}
+@media (max-width: 1250px) {
+    .search-room-filter {
+        &__main {
+            padding-left: 5%;
+        }
+    }
+}
+@media (max-width: 630px) {
+    .search-room-filter {
+        &__main {
+            flex-wrap: wrap;
+        }
+    }
 }
