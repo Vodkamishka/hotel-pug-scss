@@ -36,4 +36,11 @@
             width: 653px;
         }  
 }
-
+@media (max-width: 800px) {
+    .consumer-comments {
+        &__text {
+            width: 300px;
+            margin-right: 353px;
+        }
+    }
+}
