@@ -115,7 +115,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
             { from: './src/assets/fonts', to: './assets/fonts' },
-            { from: './src/plugins', to: './assets/plugins' },
+            { from: './src/README.md', to: './README.md' },
           ]),
     ]
 }
