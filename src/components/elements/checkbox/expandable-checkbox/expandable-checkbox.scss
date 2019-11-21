@@ -17,7 +17,7 @@
         margin-right: 30px;   
     }
     &__image {
-        background: url(/assets/img/icons/expand.svg) no-repeat center;
+        background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg) no-repeat center;
         @extend .checkbox-extend;
     } 
 }
@@ -26,5 +26,5 @@
     z-index: -1;
 }
 .image-exp {
-    background: url(/assets/img/icons/expand_more.svg) no-repeat center;
+    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand_more.svg) no-repeat center;
 }    

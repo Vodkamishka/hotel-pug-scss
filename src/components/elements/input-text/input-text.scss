@@ -27,12 +27,12 @@
                 }
             }
             &.dropdowns {
-                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/icons/expand.svg') no-repeat 290px,
+                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
                 $white;
                 color: $shade75;
             }
             &.dropdowns-long {
-                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/icons/expand.svg') no-repeat 290px,
+                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
                 $white;
                 color: $shade75;
             }
@@ -41,7 +41,7 @@
                     &::placeholder {
                         color: $shade75;  
                     }
-                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/icons/expand.svg') no-repeat 120px,
+                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 120px,
                 $white
             }
             &.little-expand {
@@ -49,7 +49,7 @@
                 &::placeholder {
                     color: $shade75;  
                 }
-                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/icons/expand.svg') no-repeat 240px,
+                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 240px,
                 $white
             }
             &.little-arrow {
@@ -57,7 +57,7 @@
                 &::placeholder {
                     color: $shade25;  
                 }
-                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/src/assets/img/icons/arrow_forward.svg') no-repeat 235px,
+                background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg') no-repeat 235px,
                 $white
             }
             &.without-border-radius {
