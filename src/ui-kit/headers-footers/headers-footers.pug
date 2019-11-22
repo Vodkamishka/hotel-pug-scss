@@ -1,8 +1,10 @@
 include ../../components/body/body
 include ../../components/footer/footer.pug
+include ../../components/common/copyright/copyright.pug
 - var array = [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']]
 - var text = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
 - var text2 = ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!']
+- var email = "Your email address"
 
 +body("Headers and footers")
 include ../../components/elements/logo-wrapper/logo-wrapper.pug 
@@ -12,9 +14,9 @@ include ../../components/elements/logo-wrapper/logo-wrapper.pug
     .headers-footers__section2
         include ../../components/header/header-eng2.pug
     .headers-footers__section3
-        +Footer(array,'footer-eng', text, text2)
+        +Footer(array,'footer-eng', text, text2, email)
     .headers-footers__section4
-        include ../../components/common/copyright/copyright.pug
+        +copyright("Copyright © 2018 Toxin UI Kit. All rights reserved.")
     .headers-footers__section5
         .headers-footers__inner
             .headers-footers__image

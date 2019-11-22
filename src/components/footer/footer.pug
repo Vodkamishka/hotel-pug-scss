@@ -7,9 +7,9 @@ include ../elements/input-text/input-text.pug
 - var array2 = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
 - var textTop = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
 - var textBottom = ['Подписка', 'Получайте специальные предложения и новости сервиса']
+- var email = "email"
 
-
-mixin Footer (list, clas, text, text2)
+mixin Footer (list, clas, text, text2, email)
     div(class = clas)
         .inner-footer
             ul   
@@ -25,7 +25,7 @@ mixin Footer (list, clas, text, text2)
                 for el in text2
                     li
                         a(href="#")=el
-                +Input("", "", "", "Email", "little-arrow") 
+                +Input("", "", "", email, "little-arrow") 
                     
  
         

@@ -129,7 +129,7 @@ window.onload = function () {
                     let size = wrapper.querySelector('.range__size')
                     
                     
-                    size.innerHTML = 10000 + ' &#8381 - ' + 15000 + ' &#8381'
+                    size.innerHTML = 5000 + ' &#8381 - ' + 10000 + ' &#8381'
     
                   
                 
