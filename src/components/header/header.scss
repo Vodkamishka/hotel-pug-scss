@@ -32,8 +32,11 @@
                             &:first-child {
                                 font-weight: bold;
                                 color: $shade75;
-                                }
-                        }  
+                        }
+                    li:last-child {
+                        margin-right: 0;
+                    }  
+                }  
                 }
                  
             }
