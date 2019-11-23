@@ -3,8 +3,8 @@
 .sign-in {
     height: 1211px;
         &__image-wrapper {
-            height: 702px;
-            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg) left bottom;
+            height: 684px;
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg) left bottom no-repeat;
             @include flex-center;
         }
 }

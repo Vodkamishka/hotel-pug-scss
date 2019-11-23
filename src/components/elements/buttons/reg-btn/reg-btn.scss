@@ -18,3 +18,7 @@
             font-style: normal;
         }
 }
+.reg-btn-rus {
+    @extend .reg-btn;
+    width: 196px;
+}

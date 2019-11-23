@@ -1,5 +1,5 @@
-@import "../../assets/utils/vars.scss";
-@import "../../assets/utils/mixin.scss";
+@import "../../assets/utils/main.scss";
+
 
 .landing {
     height: 1343px;
@@ -7,11 +7,22 @@
             background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/main-picture.jpg);
             height: 830px;
             overflow: hidden;
+            position: relative;
         }
         &__search-rooms {
-            margin: 70px 0 0 9.2%;
+            margin: 70px 0 0 9.72%;
             overflow: hidden;
-         
+        }
+        &__text-frame {
+            width: 297px;
+            height: 48px;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: right;
+            color: $shade75;
+            right: 134px;
+            top: 764px;
+            position: absolute;
         }
 }
 

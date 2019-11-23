@@ -11,3 +11,6 @@ mixin InputCalendar (leftLabel, rightLabel, classLabel, placeholder, classInput)
         +label(leftLabel, rightLabel, classLabel)
         +inputCalend(placeholder)  
         
+mixin InputEmptyLabel (placeholder, classInput)
+    .input-text
+        input(type="text" placeholder=placeholder class=classInput)

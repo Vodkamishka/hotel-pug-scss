@@ -1,7 +1,7 @@
 include ../elements/buttons/log-reg/log-reg
 include ./navbar/navbar
 
-- var list = [{item: 'О нас'},{item: 'Услуги'},{item: 'Вакансии', image: true},{item: 'Новости'},{item:'Соглашения', image: true}]
+- var list = [{item: 'О нас'},{item: 'Услуги',image: true},{item: 'Вакансии'},{item: 'Новости'},{item:'Соглашения', image: true}]
 
 header  
     .header
@@ -10,4 +10,4 @@ header
         .header__navbar
             +navbar(list)    
         .header__third-element
-            +LogReg("войти","зарегистрироваться")
+            +LogRegRus("войти","зарегистрироваться")

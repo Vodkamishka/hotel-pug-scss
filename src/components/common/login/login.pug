@@ -5,8 +5,8 @@ include ../../elements/buttons/short-btn/short-btn
 .login
     .login__title Войти
     .login__fields
-        +Input("", "", "", "Email", "text-field")
-        +Input("", "", "", "Пароль", "text-field")
+        +InputEmptyLabel("Email", "text-field")
+        +InputEmptyLabel("Пароль", "text-field")
     .login__button
         +longBtn("Войти")
     .login__toxin

@@ -6,8 +6,10 @@
     @include cards;
         &__fields {
             margin: 20px 0;
-                input:first-child {
-                    margin-bottom: 10px;
+                .input-text:first-child {
+                    input {
+                        margin-bottom: 10px;
+                    }    
                 }
         }
         &__button {
