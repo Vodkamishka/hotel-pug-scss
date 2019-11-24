@@ -6,6 +6,9 @@
             height: 702px;
             background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg);
             background-size: cover;
-            
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            box-sizing: border-box;  
         }
 }
