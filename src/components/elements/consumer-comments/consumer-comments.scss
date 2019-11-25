@@ -3,7 +3,7 @@
 .consumer-comments {
         &__top {
             @include align-items;
-            margin-bottom: 12px; 
+            margin-bottom: 10px; 
         }
         &__right {
             height: 48px;
@@ -27,13 +27,13 @@
         &__bottom {
             display: flex;
             width: 707.31px;
-            justify-content: space-between;
         }
         &__text {
             font-size: 14px;
             line-height: 24px;
             color: $shade75;
             width: 653px;
+            margin-left: 17px;
         }  
 }
 @media (max-width: 800px) {

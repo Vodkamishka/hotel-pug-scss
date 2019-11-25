@@ -5,23 +5,23 @@
     align-items: flex-end;
     justify-content: space-between;
     &__luxe {
-        display: flex;
-        align-items: flex-end;
+        
+        
         font-weight: bold;
         font-family: Montserrat;
         text-transform: uppercase;
-            p:first-child {
+            span:first-child {
             color: $shade100;
             font-size: 14px;
             margin-right: 5px;
         }
 
-        p:nth-child(2) {
+        span:nth-child(2) {
             padding-right: 5px;
             font-size: 22px;
             
         }
-        p:last-child {
+        span:last-child {
             font-size: 12px;
             color: $purple;   
         }
@@ -33,12 +33,12 @@
     display: flex;
     align-items: flex-end;
     color: $shade50;
-    p:first-child {
+    span:first-child {
         font-size: 15px;
         font-weight: bold;
         letter-spacing: 1px;
     }
-    p:last-child {
+    span:last-child {
         font-weight: normal;
         font-size: 12px;
     }

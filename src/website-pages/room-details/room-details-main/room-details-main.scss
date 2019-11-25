@@ -9,27 +9,42 @@
     box-sizing: border-box;
     position: absolute;
 }
-
 .room-details {
     &__main {
         padding: 70px 9.72%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         font-size: 14px;
         line-height: 24px;
         color: $shade75;
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     }
     &__left {
         width: 295px;
         margin-right: 67px;
     }
+    &__center {
+        margin-right: 74px;
+    }
     &__title {
-        font-family: Quicksand;
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
         color: $shade100;
+    }
+    &__title-rules {
+        margin: 0 0 15px 19.86px;
+    }
+    &__reviews {
+        width: 711px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    &__review_right {
+        font-size: 14px;
+        line-height: 14px;
+        color: $shade50;
     }
     &__room-information {
             .info-room:first-child {
@@ -43,7 +58,7 @@
         margin-bottom: 474px;
     }
     &__comments-consumer {
-        margin-bottom: 30px;
+        margin-bottom: 34px;
     }
     &__diagramma {
         display: flex;
@@ -52,23 +67,24 @@
     &__wrapper-circles {
         width: 120px;
         height: 121px;
-        margin: 21px 35px 0 0;
+        margin: 21px 45px 0 0;
         position: relative;
         @include flex-center;
         text-align: center;
     }
     &__circle-title {
-        position: absolute;
+        align-items: center;
         flex-direction: column;
         display: flex;
         color: $purple;
         font-weight: bold;
+        margin-bottom: 13px;
             span:first-child {
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 30px;
             }
             span:last-child {
-                font-size: 12px;
+                font-size: 16px;
                 line-height: 15px;
             }
     }
@@ -132,7 +148,7 @@
             color: $shade75;
             font-size: 14px;
             line-height: 24px;
-            margin-top: 20px;
+            margin-top: 16px;
             width: 341px;
             height: 96px;
         }
@@ -144,9 +160,15 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .room-details {
+        &__main {
+            flex-wrap: wrap;
+        }
+    }
+}
 @media (max-width: 900px) {
     .room-details {
-        
         &__room-impressions {
             margin: 20px 0;
         }

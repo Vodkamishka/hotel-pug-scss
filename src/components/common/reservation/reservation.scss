@@ -31,8 +31,7 @@
         font-size: 14px;
         line-height: 22px;
         color: $shade75;
-        margin-bottom: 10px;
-        font-family: Montserrat;
+        margin-bottom: 12px;
         position: relative;
             p:first-child {
                 width: 214px;
@@ -49,8 +48,12 @@
                 border: 1px solid $shade25;
                 color: $shade25;
                 @include flex-center;
-            }
-            
+            }      
+    }
+    &__fee {
+        p {
+            line-height: 1.3;
+        }
     }
     &__result {
         margin-top: 30px;
