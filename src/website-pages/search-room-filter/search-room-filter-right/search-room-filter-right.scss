@@ -12,8 +12,9 @@
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 12px;
             .card-room {
-                margin: 0 0 20px 12px;
+                margin: 0 0 20px 0;
             }
             .card-room:nth-child(1),
             .card-room:nth-child(4),
@@ -28,7 +29,7 @@
             }
     }
     &__pagination {
-        margin: 40.94px 0 70px 20.139%;
+        margin: 42px 0 77px 289px;
     }
     .short-dropdown {
         width: 266px;

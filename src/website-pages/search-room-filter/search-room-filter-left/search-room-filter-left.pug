@@ -9,7 +9,7 @@ include ../../../components/common/slider/slider
 .search-room-filter__left
     +Input("даты пребывания в отеле", "", "", "19 авг - 23 авг","little-expand")
     .search-room-filter__container-shortdropdown
-        +longDropdown( "гости", "", "little", "Сколько гостей", "little-expand without-border-radius", "block", "will-hide")
+        +longDropdown( "гости", "", "little", "3 гостя, 1 младенец", "little-expand without-border-radius", "block", "will-hide")
     .search-room-filter__container-slider
         +slider('Диапазон цены')
         .search-room-filter__slider-text Стоимость за сутки пребывания в номере
@@ -18,5 +18,5 @@ include ../../../components/common/slider/slider
         +richCheckbox("доступность")
     +shortDropdown( "удобства номера", "", "little", "2 спальни,  2 кровати", "little-expand without-border-radius", "will-hide")
     .search-room-filter__container-expanded-checkbox 
-        +expandable-checkbox(list, 'expandable checkbox list')   
+        +expandable-checkbox(list, 'дополнительные удобства')   
     

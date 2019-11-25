@@ -14,7 +14,8 @@
     }
     &__title {
         @include inputTitle;
-        margin-right: 30px;   
+        margin-right: 30px;
+        white-space: nowrap;   
     }
     &__image {
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg) no-repeat center;
