@@ -55,7 +55,7 @@
             input[type='checkbox']:checked {
                 border: 1px solid $purple;
                 margin: 0 10px 0 0;
-                background: url(/assets/img/icons/vector.svg) no-repeat center center, $white;
+                background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg) no-repeat center center, $white;
             }
             label {
                 font-size: 14px;
@@ -73,7 +73,7 @@
     padding: 40px 30px 30px 30px;
     box-sizing: border-box;
         &__title {
-            font-family: Montserrat;
+            font-family: 'Montserrat', Arial, sans-serif;;
             font-weight: bold;
             font-size: 24px;
             line-height: 30px;
@@ -91,7 +91,7 @@
         font-size: 14px;
         line-height: 18px;
         color: $black;
-        font-family: Montserrat;
+        font-family: 'Montserrat', Arial, sans-serif;;
     }
 }
    

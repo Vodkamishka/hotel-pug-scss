@@ -8,13 +8,12 @@
             width: 70px;
             height: 70px;
             border-radius: 6px;
-           
         }
         &__text {
             width: 159px;
             height: 57px;
             margin-left: 40px;
-            font-family: "Quicksand";
+            font-family: "Quicksand", Arial, sans-serif;;
             display: flex;
             flex-direction: column;
             justify-content: space-around;

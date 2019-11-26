@@ -28,12 +28,9 @@
                 z-index: -1;
         }  
 }
-
-
 .short-dropdowns {
         @include short-dropdown;
 }
-
 .long-dropdowns {
         @include short-dropdown;
         .short-dropdown {

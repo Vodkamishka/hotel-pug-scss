@@ -5,21 +5,16 @@
     align-items: flex-end;
     justify-content: space-between;
     &__luxe {
-        
-        
         font-weight: bold;
-        font-family: Montserrat;
         text-transform: uppercase;
             span:first-child {
             color: $shade100;
             font-size: 14px;
             margin-right: 5px;
         }
-
         span:nth-child(2) {
             padding-right: 5px;
             font-size: 22px;
-            
         }
         span:last-child {
             font-size: 12px;

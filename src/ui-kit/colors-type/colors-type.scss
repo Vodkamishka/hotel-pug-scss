@@ -21,11 +21,9 @@ body {
                     margin-bottom: 50px;
                     p:nth-child(1) {
                         margin-right: 30px;
-                        font-family: "Montserrat";
                         color: $shade25;
                     }
                     p:nth-child(2) {
-                        font-family: "Quicksand";
                         color: $shade100;
                         font-weight: bold;
                     }
@@ -66,7 +64,6 @@ body {
                             line-height: 15px;
                             width: 186px;
                             height: 15px;
-                            font-family: "Montserrat";
                             text-transform: uppercase;
                         }
                     }
@@ -81,13 +78,11 @@ body {
                             line-height: 24px;
                             width: 381px;
                             height: 48px;
-                            font-family: "Montserrat";
                             font-weight: normal;
                             color: $shade75;
                         }
                     }
-                }
-                
+                }     
         }
     }
 }
