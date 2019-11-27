@@ -6,6 +6,9 @@
         margin-bottom: 16px;
     }
     &__like {
-        display: flex;   
+        display: flex;
+            .like:nth-child(1) {
+                margin-right: 10px;
+            }  
     }
 }
