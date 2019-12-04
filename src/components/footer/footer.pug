@@ -1,31 +1,28 @@
 include ../elements/input-text/input-text.pug
 
-- var array1 = [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']]
-- var textTop = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
-- var textBottom = ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!']
+- var footerRus = {class: 'footer', title: [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']], textTop: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"', textBottom: ['Подписка', 'Получайте специальные предложения и новости сервиса'], email: "email"}
+- var footerEng = {class: 'footer-eng', title: [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']], textTop: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', textBottom: ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!'], email: 'Your email address'}
 
-- var array2 = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
-- var textTop = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
-- var textBottom = ['Подписка', 'Получайте специальные предложения и новости сервиса']
-- var email = "email"
-
-mixin Footer (list, clas, text, text2, email)
-    div(class = clas)
+mixin footer (footerClass)
+    if footerClass === 'footer-eng'
+        - var footer = footerEng
+    else
+        - var footer = footerRus
+    div(class = footer.class)
         .inner-footer
             ul   
                 img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="")
-                p= text 
-            for el in array
+                p= footer.textTop 
+            for el in footer.title
                 ul
                     for i in el
                         li
                             a(href="#")=i
-
             ul
-                for el in text2
+                for el in footer.textBottom
                     li
                         a(href="#")=el
-                +Input("", "", "", email, "little-arrow") 
+                +Input("", "", "", footer.email, "little-arrow") 
                     
  
         

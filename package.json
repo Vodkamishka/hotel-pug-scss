@@ -36,6 +36,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "air-datepicker": "^2.2.3"
+    "air-datepicker": "^2.2.3",
+    "chai-jquery": "^2.1.0"
   }
 }

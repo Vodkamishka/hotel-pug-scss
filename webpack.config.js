@@ -9,7 +9,7 @@ module.exports = {
         'ui-kit/form-elements/form-elements': './src/ui-kit/form-elements/form-elements.js',
         'ui-kit/headers-footers/headers-footers': './src/ui-kit/headers-footers/headers-footers.js',
         'ui-kit/cards/cards': './src/ui-kit/cards/cards.js',
-        'website-pages/landing-page/landing': './src/website-pages/landing-page/landing.js',
+        'website-pages/landing/landing': './src/website-pages/landing/landing.js',
         'website-pages/registration/registration': './src/website-pages/registration/registration.js',
         'website-pages/sign-in/sign-in': './src/website-pages/sign-in/sign-in.js',
         'website-pages/room-details/room-details': './src/website-pages/room-details/room-details.js',
@@ -84,9 +84,9 @@ module.exports = {
             template: `./src/ui-kit/headers-footers/headers-footers.pug`,
            }),
         new HTMLWebpackPlugin({
-            filename: 'website-pages/landing-page/landing.html',
+            filename: 'website-pages/landing/landing.html',
             hash: false,
-            template: `./src/website-pages/landing-page/landing.pug`
+            template: `./src/website-pages/landing/landing.pug`
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/registration/registration.html',
@@ -110,7 +110,7 @@ module.exports = {
            }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/website-pages/room-details/room-details.pug`
+            template: `./src/website-pages/registration/registration.pug`
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },

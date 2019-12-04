@@ -14,6 +14,12 @@
                 margin-left: 20px;
             }
         }
+        span {
+            font-size: 14px;
+            line-height: 17px;
+            color: $shade50;
+            white-space: nowrap;
+        }  
 }
 .header {
     @extend .extends-header;
@@ -21,14 +27,14 @@
         margin-left: 24.6%;
     }     
 }
-.header-eng {
+.header-eng, .header-eng2 {
     @extend .extends-header;
         &__navbar {
             margin-left: 25.63%;
             .navbar {
                 ul {
                     li {
-                        margin-right: 30px;
+                        margin-right: 28px;
                             &:first-child {
                                 font-weight: bold;
                                 color: $shade75;
@@ -37,38 +43,14 @@
                         margin-right: 0;
                     }  
                 }  
-                }
-                 
+                }  
             }
         }      
 }
 .header-eng2 {
-    @extend .extends-header;
         &__navbar {
-            margin-left: 30.11%;
-            margin-right: 61px;
-            .navbar {
-                width: auto;
-                ul {
-                    li {
-                        margin-right: 30px;
-                            &:first-child {
-                                font-weight: bold;
-                                color: $shade75;
-                                }
-                        }
-                    li:last-child {
-                        margin-right: 0;
-                    }  
-                }
-                 
-            }
+            margin: 0 0 0 27%;   
         }
-        span {
-            font-size: 14px;
-            line-height: 17px;
-            color: $shade50;
-        }  
 }
 @media (max-width: 1250px) {
     .header {

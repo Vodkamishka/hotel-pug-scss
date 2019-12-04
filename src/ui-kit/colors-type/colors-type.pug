@@ -2,9 +2,10 @@ include ../../components/body/body
 include ../../components/elements/square/square
 include ../../components/elements/logo-wrapper/logo-wrapper
 include ./colors-title/colors-title
+include ../../components/elements/logo-wrapper/logo-wrapper.pug 
 
 +body("Colors and types")
-include ../../components/elements/logo-wrapper/logo-wrapper.pug 
++logo-wrapper
 .colors  
     .colors__squares
         +block("shade", "Dark Shade 100%", "#1F2041")

@@ -1,35 +1,31 @@
 @import '../../../assets/utils/main';
 
 .pagination {
-    &_without_title {
-        display: flex;
-        flex-direction: column;
-    }
     &__title {
         @include inputTitle;
         margin-bottom: 16.44px;
     }
-    &__pagination {
+    &__numbers {
         display: flex;
         margin-bottom: 10.56px;
-        span, .img-container {
-            width: 40px;
-            height: 40px;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 15px;
-            color: $shade50;
-            @include flex-center;
-        }
-        span:first-child {
-            border-radius: 50%;
-            color: $white;
-            background: $gradient;
-        }
-        .img-container {
-            border-radius: 50%;
-            background: $gradient-green;
-        }
+            span, .img-container {
+                width: 40px;
+                height: 40px;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: $shade50;
+                @include flex-center;
+            }
+            span:first-child {
+                border-radius: 50%;
+                color: $white;
+                background: $gradient;
+            }
+            .img-container {
+                border-radius: 50%;
+                background: $gradient-green;
+            }
     }
     &__text {
         font-weight: normal;

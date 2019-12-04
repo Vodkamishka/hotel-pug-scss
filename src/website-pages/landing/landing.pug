@@ -1,0 +1,18 @@
+include ../../components/body/body
+include ../../components/footer/footer
+include ../../components/common/copyright/copyright
+include ../../components/header/header
+include ../../components/common/search-rooms/search-rooms
+
+mixin landing
+    .landing
+        +header('header')
+        .landing__image-wrapper
+            .landing__search-rooms
+                +search-rooms
+            .landing__text-frame Лучшие номера для вашей работы, отдыха и просто вдохновения     
+        +footer ('footer')
+        +copyright('copyright')
+    
++body("Landing page")
++landing               

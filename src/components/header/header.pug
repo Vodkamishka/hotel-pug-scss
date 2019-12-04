@@ -1,13 +1,22 @@
 include ../elements/buttons/log-reg/log-reg
-include ./navbar/navbar
+include ../navbar/navbar
 
 - var list = [{item: 'О нас'},{item: 'Услуги',image: true},{item: 'Вакансии'},{item: 'Новости'},{item:'Соглашения', image: true}]
+- var listEng = [{item: 'Home'},{item: 'About Us'},{item: 'Services', image: true},{item: 'Careers'},{item:'News'},{item:'Documentation'}]
 
-header  
-    .header
-        .header__image
-            img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="logo")
-        .header__navbar
-            +navbar(list)    
-        .header__third-element
-            +LogRegRus("войти","зарегистрироваться")
+mixin header (header)  
+    div(class=header)
+        div(class=`${header}__image`)
+            img(src='https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg', alt='logo')
+        div(class=`${header}__navbar`)
+            if header === 'header'
+                +navbar(list)
+            else
+                +navbar(listEng)
+        div(class=`${header}__third-element`)
+            if header === 'header'    
+                +LogRegRus('войти','зарегистрироваться')
+            else if header === 'header-eng'
+                +LogReg("login","register")
+            else
+                span Cosmin Negoita

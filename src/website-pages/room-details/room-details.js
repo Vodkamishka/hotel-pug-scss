@@ -1,7 +1,6 @@
-import './room-details.scss'
-
 import '../../components/body/body'
 import '../../components/header/header'
 import '../../components/footer/footer'
 import '../../components/common/copyright/copyright'
-import './room-details-main/room-details-main'
+import './room-details__main/room-details__main'
+import './room-details__images/room-details__images'

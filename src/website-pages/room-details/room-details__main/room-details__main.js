@@ -1,4 +1,4 @@
-import './room-details-main.scss'
+import './room-details__main.scss'
 import '../../../components/common/reservation/reservation'
 import '../../../components/elements/info-room/info-room'
 import '../../../components/elements/consumer-comments/consumer-comments'

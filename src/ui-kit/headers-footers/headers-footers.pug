@@ -1,27 +1,29 @@
 include ../../components/body/body
 include ../../components/footer/footer.pug
 include ../../components/common/copyright/copyright.pug
-- var array = [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']]
-- var text = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.'
-- var text2 = ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!']
-- var email = "Your email address"
+include ../../components/header/header.pug
+include ../../components/elements/logo-wrapper/logo-wrapper.pug
+include ../../components/elements/social/social.pug 
+
+mixin headers-footers
+    .headers-footers
+        +logo-wrapper
+        .headers-footers__section
+            +header('header-eng')
+        .headers-footers__section2
+            +header('header-eng2')
+        .headers-footers__section3
+            +footer('footer-eng')
+        .headers-footers__section4
+            +copyright('copyright-eng')
+        .headers-footers__section5
+            .headers-footers__inner
+                .headers-footers__image
+                    div
+                        img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="logotypes")
+                .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+                .headers-footers__social 
+                    +social                        
 
 +body("Headers and footers")
-include ../../components/elements/logo-wrapper/logo-wrapper.pug 
-.headers-footers
-    .headers-footers__section
-        include ../../components/header/header-eng.pug
-    .headers-footers__section2
-        include ../../components/header/header-eng2.pug
-    .headers-footers__section3
-        +Footer(array,'footer-eng', text, text2, email)
-    .headers-footers__section4
-        +copyright("Copyright © 2018 Toxin UI Kit. All rights reserved.")
-    .headers-footers__section5
-        .headers-footers__inner
-            .headers-footers__image
-                div
-                    img(src="assets/img/logotypes/logo.svg", alt="logotypes")
-            .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-            .headers-footers__social 
-                    include ../../components/elements/social/social.pug                
++headers-footers

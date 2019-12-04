@@ -2,11 +2,12 @@ include ../../../components/elements/buttons/long-btn/long-btn
 include ../../../components/elements/input-text/input-text
 include ../../../components/elements/dropdowns/dropdown
 
-.search-rooms
-    .search-rooms__title Найдем номера под ваши пожелания
-    .search-rooms__incoming
-        +InputCalendar("Прибытие", "", "small", "ДД.ММ.ГГГГ","small")
-        +InputCalendar("Выезд", "", "small", "ДД.ММ.ГГГГ","small")
-    .search-rooms__guests
-        +longDropdown ( "гости", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "block", "will-hide")
-    +longBtn("Подобрать номер")
+mixin search-rooms
+    .search-rooms
+        .search-rooms__title Найдем номера под ваши пожелания
+        .search-rooms__incoming
+            +InputCalendar("Прибытие", "", "small", "ДД.ММ.ГГГГ","small")
+            +InputCalendar("Выезд", "", "small", "ДД.ММ.ГГГГ","small")
+        .search-rooms__guests
+            +longDropdown ( "гости", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "block", "will-hide")
+        +longBtn("Подобрать номер")

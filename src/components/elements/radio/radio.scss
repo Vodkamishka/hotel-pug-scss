@@ -1,17 +1,20 @@
-@import '../../../../assets/utils/main';
+@import '../../../assets/utils/main';
 
-.radio-buttons {
-    &__radio {
+.radio {
+    &__title {
+        @include inputTitle;
+        margin-bottom: 16px;
+    }
+    &__buttons {
         display: flex;
     }
-    &__container {
+    &__buttons-container {
         display: block;
         position: relative;
         padding-left: 30px;
         font-size: 14px;
         line-height: 24px;
         color: $shade75;
-        
         margin-right: 20px;
             input {
                 position: absolute;

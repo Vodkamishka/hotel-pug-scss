@@ -1,4 +1,13 @@
-mixin copyright(text)
+include ../../elements/social/social.pug
+
+- var textRus = 'Copyright © 2018 Toxin отель. Все права зачищены.'
+- var textEng = 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
+
+mixin copyright(clas)
+    if clas === 'copyright'
+        - var text = textRus
+    else 
+        -var text = textEng
     .copyright 
         .copyright__text=text
-        include ../../elements/social/social.pug
+        +social

@@ -1,15 +1,16 @@
 include ../../components/body/body
 include ../../components/footer/footer
 include ../../components/common/copyright/copyright
+include ../../components/header/header
+include ../../components/common/login/login 
 
-- var array = [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']]
-- var text = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"'
-- var text2 = ['Подписка', 'Получайте специальные предложения и новости сервиса']
+mixin sign-in
+    .sign-in
+        +header('header')
+        .sign-in__image-wrapper
+            +login 
+        +footer ('footer')
+        +copyright('copyright')
 
 +body("Sign in")
-.sign-in
-    include ../../components/header/header
-    .sign-in__image-wrapper
-        include ../../components/common/login/login   
-    +Footer (array, 'footer', text, text2, "Email")
-    +copyright("Copyright © 2018 Toxin отель. Все права зачищены.")
++sign-in

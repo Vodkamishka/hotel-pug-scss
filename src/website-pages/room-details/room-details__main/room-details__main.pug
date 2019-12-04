@@ -1,0 +1,50 @@
+include ../../../components/elements/info-room/info-room
+include ../../../components/elements/consumer-comments/consumer-comments
+
+- var textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
+- var textTwo = 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент '
+
+mixin room-details__main
+    .room-details__main
+        .room-details__left
+            .room-details__room-information 
+                .room-details__title Сведения о номере
+                    +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+                    +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+                    +info-room('whatshot', 'Уют', 'Номер оснащен камином')
+            .room-details__comments-consumer 
+                .room-details__title 
+                    .room-details__reviews
+                        .room-details__review_left Отзывы посетителей номера
+                        .room-details__review_right 2 отзыва
+                    .room-details__wrapper-consumer-comments
+                        +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)
+                    .room-details__wrapper-consumer-comments
+                        +consumer-comments("girl","Патрисия Стёклышкова", "Неделю назад", 2, textTwo)
+            .room-details__rules 
+                .room-details__title 
+                    .room-details__title-rules Правила
+                    include ../../../components/elements/bullet-list/bullet-list    
+        .room-details__center
+            .room-details__room-impressions
+                .room-details__title Впечатления от номера
+                    .room-details__diagramma
+                        .room-details__circle
+                            .room-details__wrapper-circles
+                                .room-details__circle-title 
+                                    span 260
+                                    span голосов
+                                .room-details__circle1
+                                .room-details__circle2
+                                .room-details__circle3
+                                .room-details__circle4
+                        .room-details__list
+                            ul
+                                for el in ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
+                                    li= el
+            .room-details__room-escape
+                .room-details__title Отмена
+                    p.
+                        Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+        .room-details__right
+            include ../../../components/common/reservation/reservation

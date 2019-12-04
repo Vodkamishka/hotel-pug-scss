@@ -2,13 +2,14 @@ include ../../elements/input-text/input-text.pug
 include ../../elements/buttons/long-btn/long-btn
 include ../../elements/buttons/short-btn/short-btn
 
-.login
-    .login__title Войти
-    .login__fields
-        +InputEmptyLabel("Email", "text-field")
-        +InputEmptyLabel("Пароль", "text-field")
-    .login__button
-        +longBtn("Войти")
-    .login__toxin
-        .login__text Нет аккаунта на Toxin?
-        +srtBtn("Создать", "white")
+mixin login
+    .login
+        .login__title Войти
+        .login__fields
+            +InputEmptyLabel("Email", "text-field")
+            +InputEmptyLabel("Пароль", "text-field")
+        .login__button
+            +longBtn("Войти")
+        .login__toxin
+            .login__text Нет аккаунта на Toxin?
+            +srtBtn("Создать", "white")
