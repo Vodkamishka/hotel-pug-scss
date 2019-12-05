@@ -113,10 +113,9 @@ module.exports = {
             template: `./src/website-pages/landing/landing.pug`
            }),
         new CopyWebpackPlugin([
-            { from: './src/assets/img', to: './assets/img' },
-            { from: './src/assets/fonts', to: './assets/fonts' },
-            { from: './src/README.md', to: './README.md' },
-            { from: './src/favicon.ico', to: './favicon.ico' },
+            {from: './src/assets/img', to: './assets/img'},
+            {from: './src/assets/fonts', to: './assets/fonts'},
+            {from: './src/favicon.ico', to: './favicon.ico'},
           ]),
 
     ]
