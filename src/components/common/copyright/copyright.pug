@@ -1,9 +1,8 @@
 include ../../elements/social/social.pug
 
-- var textRus = 'Copyright © 2018 Toxin отель. Все права зачищены.'
-- var textEng = 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
-
 mixin copyright(clas)
+    - var textRus = 'Copyright © 2018 Toxin отель. Все права зачищены.'
+    - var textEng = 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
     if clas === 'copyright'
         - var text = textRus
     else 

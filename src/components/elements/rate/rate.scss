@@ -1,6 +1,6 @@
 @import '../../../assets/utils/main';
 
-.rate-button {
+.rate {
     &__title {
         @include inputTitle;
         margin-bottom: 16px;
@@ -8,7 +8,7 @@
     &__rate {
         display: flex;
     }
-    &__left {
+    &_left {
         margin-right: 20px;
     }
 }

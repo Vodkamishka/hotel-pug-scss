@@ -1,4 +1,4 @@
-include ../../elements/input-text/input-text.pug
+include ../../elements/input/input.pug
 include ../../elements/buttons/long-btn/long-btn
 include ../../elements/buttons/short-btn/short-btn
 
@@ -6,10 +6,10 @@ mixin login
     .login
         .login__title Войти
         .login__fields
-            +InputEmptyLabel("Email", "text-field")
-            +InputEmptyLabel("Пароль", "text-field")
+            +input("Email", "text-field")
+            +input("Пароль", "text-field")
         .login__button
-            +longBtn("Войти")
+            +long-btn("Войти")
         .login__toxin
             .login__text Нет аккаунта на Toxin?
-            +srtBtn("Создать", "white")
+            +srt-btn("Создать", "white")

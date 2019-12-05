@@ -1,9 +1,15 @@
 include ../../components/body/body
-include ../../components/elements/logo-wrapper/logo-wrapper.pug 
+include ../../components/elements/logo-wrapper/logo-wrapper.pug
+include ./cards__column_left/cards__column_left.pug
+include ./cards__column_center/cards__column_center.pug
+include ./cards__column_right/cards__column_right.pug 
+
+mixin cards
+    .cards
+        +logo-wrapper
+        +cards__column_left
+        +cards__column_center
+        +cards__column_right
 
 +body("Cards")
-+logo-wrapper
-.cards
-    include ./left-column/left-column.pug
-    include ./center-column/center-column.pug
-    include ./right-column/right-column.pug
++cards

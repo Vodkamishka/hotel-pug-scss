@@ -1,2 +1,2 @@
 import './rate.scss'
-import '../comments-stars/stars/stars'
+import '../stars/stars'

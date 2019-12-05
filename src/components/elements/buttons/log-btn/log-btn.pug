@@ -1,8 +1,10 @@
-mixin logBtn (text)
-    button.log-btn
-        span=text
+mixin log-btn (text)
+    if text === 'войти'
+        button.log-btn-rus
+            span=text 
+    else
+        button.log-btn
+            span=text   
 
-mixin logBtnRus (text)
-    button.log-btn-rus
-        span=text    
+  
         

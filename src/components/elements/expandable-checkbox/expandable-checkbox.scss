@@ -1,0 +1,31 @@
+@import '../../../assets/utils/main';
+
+.checkbox-extend {
+    width: 44px;
+    height: 44px;
+    transition: all 1s;
+}
+.expandable-checkbox {
+    &__mainline {
+        @include align-items; 
+    }
+    &__mainline-expandable {
+        margin-bottom: 2.44px;
+    }
+    &__title {
+        @include inputTitle;
+        margin-right: 30px;
+        white-space: nowrap;   
+    }
+    &__image {
+        background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg) no-repeat center;
+        @extend .checkbox-extend;
+    } 
+}
+.hide {
+    display: none;
+    z-index: -1;
+}
+.image-exp {
+    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand_more.svg) no-repeat center;
+}    

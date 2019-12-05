@@ -1,0 +1,9 @@
+include ../label/label.pug
+
+mixin input (placeholder, classInput, leftLabel, rightLabel, classLabel)
+    .input
+        if leftLabel
+            +label(leftLabel, rightLabel, classLabel)
+        input(type="text" placeholder=placeholder class=classInput)
+
+   

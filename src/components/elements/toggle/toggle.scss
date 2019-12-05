@@ -1,11 +1,11 @@
 @import '../../../assets/utils/main';
 
-.toggle-button {
-        &__title {
-            @include inputTitle;
-            margin-bottom: 16px;
-        }
-        &__toggle {
-            margin-bottom: 44.44px;
-        }   
+.toggle {
+    &__title {
+        @include inputTitle;
+        margin-bottom: 16px;
+    }
+    &__buttons {
+        margin-bottom: 44.44px;
+    }
 }

@@ -1,5 +1,5 @@
 import './reservation.scss'
 import '../../elements/buttons/long-btn/long-btn'
 import '../../elements/luxe/luxe'
-import '../../elements/input-text/input-text'
-import '../../elements/dropdowns/dropdown'
+import '../../elements/input-calendar/input-calendar'
+import '../../elements/long-dropdowns/long-dropdowns'

@@ -1,8 +1,0 @@
-@import '../../../assets/utils/main';
-
-.radio-buttons {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 16px;
-    }
-}

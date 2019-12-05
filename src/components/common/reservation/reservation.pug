@@ -1,30 +1,30 @@
 include ../../elements/luxe/luxe.pug
 include ../../elements/buttons/long-btn/long-btn
-include ../../elements/input-text/input-text
-include ../../elements/dropdowns/dropdown
+include ../../elements/input-calendar/input-calendar
+include ../../elements/long-dropdowns/long-dropdowns
 
-.reservation
-    +luxe('888','9990')
-    .reservation__incoming
-        +InputCalendar("Прибытие", "", "small", "18.08.2019","small")
-        +InputCalendar("Выезд", "", "small", "23.08.2019","small")
-    .reservation__guests
-        +longDropdown ( "гости", "", "", "3 гостя", "dropdowns-long without-border-radius", "block", "will-hide")
-    .reservation__list
-        .reservation__price
-            p 9990&#8381 x 4 суток
-            p 39960&#8381
-        .reservation__tax
-            p Сбор за услуги: скидка 2179&#8381
-            .round i
-            p 0&#8381
-        .reservation__fee
-            p Сбор за дополнительные услуги
-            .round i
-            p 300&#8381
-        .reservation__result
-            p Итого
-            .reservation__dots
-            p 38081&#8381
-
-    +longBtn("Забронировать")
+mixin reservation
+    .reservation
+        +luxe('888','9990','', 22)
+        .reservation__incoming
+            +input-calendar('18.08.2019','small', 'Прибытие')
+            +input-calendar('23.08.2019','small', 'Выезд')
+        .reservation__guests
+            +long-dropdowns ('гости', '', '', '3 гостя', 'dropdowns-long without-border-radius', 'block', 'will-hide')
+        .reservation__list
+            .reservation__price
+                p 9990&#8381 x 4 суток
+                p 39960&#8381
+            .reservation__tax
+                p Сбор за услуги: скидка 2179&#8381
+                .round i
+                p 0&#8381
+            .reservation__fee
+                p Сбор за дополнительные услуги
+                .round i
+                p 300&#8381
+            .reservation__result
+                p Итого
+                .reservation__dots
+                p 38081&#8381
+        +long-btn('Забронировать')

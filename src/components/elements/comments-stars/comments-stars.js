@@ -1,2 +1,2 @@
 import './comments-stars.scss'
-import './stars/stars'
+import '../stars/stars'

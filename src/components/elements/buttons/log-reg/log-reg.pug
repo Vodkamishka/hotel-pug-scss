@@ -1,12 +1,7 @@
 include ../log-btn/log-btn
 include ../reg-btn/reg-btn
 
-mixin LogReg(log, reg)
+mixin log-reg (log, reg)
     .log-reg
-        +logBtn(log)
-        +regBtn(reg)
-
-mixin LogRegRus(log, reg)
-    .log-reg
-        +logBtnRus(log)
-        +regBtnRus(reg)
+        +log-btn(log)
+        +reg-btn(reg)

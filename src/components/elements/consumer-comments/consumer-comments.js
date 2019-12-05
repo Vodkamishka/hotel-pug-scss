@@ -1,2 +1,2 @@
 import './consumer-comments.scss';
-import '../../elements/like-button/like/like'
+import '../../elements/like/like'

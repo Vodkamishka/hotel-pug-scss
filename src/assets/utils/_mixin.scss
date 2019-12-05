@@ -4,14 +4,17 @@
     display: flex;
     align-items: center;
 }
+
 @mixin justify-content {
     display: flex;
     justify-content: center;
 }
+
 @mixin Montserrat($size) {
     font-size: $size;
     color: $shade50;
 }
+
 @mixin inputTitle {
     font-weight: bold;
     font-size: 12px;
@@ -19,6 +22,7 @@
     text-transform: uppercase;
     color: $shade100;
 }
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -94,5 +98,98 @@
         font-family: 'Montserrat', Arial, sans-serif;;
     }
 }
-   
 
+@mixin short-dropdown {
+    .short-dropdown {
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid $shade50;
+            border-top: transparent;
+            width: 266px;
+            height: 119px;
+            padding: 7px 7px 8px 15px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            background: $white;
+            color: $shade100;
+            text-transform: uppercase;
+            font-family: Montserrat;
+            z-index: 10000;
+                    &__row {
+                            @include space-between;
+                            margin-bottom: 7px;
+                    }
+    }
+    .will-hide {
+            padding-bottom: 15px;
+            opacity: 0;
+            z-index: -1;
+    }  
+}
+
+@mixin input-text {
+    input[type="text"] {
+        box-sizing: border-box;
+        width: 320px;
+        height: 44px;
+        border: 1px solid rgba($shade25, 0.25);
+        border-radius: 4px;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 18px;
+            &::placeholder {
+                color: $shade50;
+            }
+            &:hover {
+                border: 1px solid rgba($shade50, 0.5);
+                    &::placeholder {
+                    color: $shade75;
+            }
+        }
+        &.hover {
+            border: 1px solid rgba($shade50, 0.5);
+            color: $shade25;
+            &::placeholder {
+                color: $shade75;
+            }
+        }
+        &.dropdowns {
+            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
+            $white;
+            color: $shade75;
+        }
+        &.dropdowns-long {
+            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
+            $white;
+            color: $shade75;
+        }
+        &.small {
+            width: 150px;
+                &::placeholder {
+                    color: $shade75;  
+                }
+            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 120px,
+            $white
+        }
+        &.little-expand {
+            width: 266px;
+            &::placeholder {
+                color: $shade75;  
+            }
+            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 240px,
+            $white
+        }
+        &.little-arrow {
+            width: 266px;
+            &::placeholder {
+                color: $shade25;  
+            }
+            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg') no-repeat 235px,
+            $white
+        }
+        &.without-border-radius {
+            border-radius: 4px 4px 0 0;
+        }
+    }
+}

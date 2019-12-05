@@ -1,0 +1,22 @@
+@import '../../../assets/utils/main';
+
+.long-dropdowns {
+    @include short-dropdown;
+    .short-dropdown {
+            width: 320px;
+            height: 159px;
+            padding-bottom: 13px;
+            &__buttons {
+                    margin-top: 19px;
+            }
+            &__apply {
+                    color: $purple;
+                    text-align: right;
+                    float: right;
+            }
+            &__clear {
+                    color: $shade50;
+                    float: left;
+            }
+    }    
+}

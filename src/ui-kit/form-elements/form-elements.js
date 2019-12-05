@@ -1,8 +1,8 @@
 import './form-elements.scss';
 import '../../components/elements/logo-wrapper/logo-wrapper';
-import './left-column/left-column.js';
-import './center-column/center-column'
-import './right-column/right-column';
+import './form-elements__column_left/form-elements__column_left.js';
+import './form-elements__column_center/form-elements__column_center';
+import './form-elements__column_right/form-elements__column_right';
 
 
 

@@ -1,9 +1,8 @@
 @import '../../assets/utils/main';
 
-body {
-        .form-elements {
-            min-height: 1853px;
-            width: 100%;
-            display: flex;   
-        }
+.form-elements {
+    height: 1853px;
+    width: 100%;
+    display: flex;   
 }
+

@@ -2,18 +2,18 @@
     &__images {
         display: flex;
     }
-    &__left-container {
+    &__container_left {
         width: 981px;
         height: 485px;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/8888.jpg) bottom;
     }
-    &__picture-top {
+    &__picture_top {
         width: 461px;
         height: 243px;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/picture-top.jpg) no-repeat;
         background-size: cover; 
     }
-    &__picture-bottom {
+    &__picture_bottom {
         width: 461px;
         height: 243px;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/picture-bottom.jpg) no-repeat; 

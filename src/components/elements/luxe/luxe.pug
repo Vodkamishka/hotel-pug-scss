@@ -1,8 +1,8 @@
-mixin luxe (number, price, clas)
+mixin luxe (number, price, clas, fontSize)
     .luxe
         .luxe__luxe
             span №
-            span= number
+            span(style={'font-size': `${fontSize}px`})= number
             span(class=clas) люкс
         .luxe__price
             span= price 

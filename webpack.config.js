@@ -110,7 +110,7 @@ module.exports = {
            }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/website-pages/registration/registration.pug`
+            template: `./src/website-pages/landing/landing.pug`
            }),
         new CopyWebpackPlugin([
             { from: './src/assets/img', to: './assets/img' },
@@ -118,5 +118,6 @@ module.exports = {
             { from: './src/README.md', to: './README.md' },
             { from: './src/favicon.ico', to: './favicon.ico' },
           ]),
+
     ]
 }

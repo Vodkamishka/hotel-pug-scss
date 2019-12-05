@@ -1,7 +1,7 @@
 @import '../../../assets/utils/main';
 
 .like-button {
-    .like-button__title {
+    &__title {
         @include inputTitle;
         margin-bottom: 16px;
     }

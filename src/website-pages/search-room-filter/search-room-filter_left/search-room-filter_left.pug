@@ -1,0 +1,24 @@
+include ../../../components/elements/input/input
+include ../../../components/elements/long-dropdowns/long-dropdowns
+include ../../../components/elements/short-dropdowns/short-dropdowns
+include ../../../components/elements/rich-checkbox/rich-checkbox
+include ../../../components/elements/expandable-checkbox/expandable-checkbox
+include ../../../components/common/slider/slider
+include ../../../components/elements/checkbox/checkbox
+
+mixin search-room-filter_left
+    - var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
+    .search-room-filter_left
+        +input('19 авг - 23 авг','little-expand', 'даты пребывания в отеле')
+        .search-room-filter_left-container-LongDropdown
+            +long-dropdowns('гости', '', 'little', '3 гостя, 1 младенец', 'little-expand without-border-radius', 'block', 'will-hide')
+        .search-room-filter_left-container-slider
+            +slider('Диапазон цены')
+            .search-room-filter_left-slider-text Стоимость за сутки пребывания в номере
+        +checkbox
+        .search-room-filter_left-container-rich-checkbox
+            +rich-checkbox('доступность')
+        +short-dropdowns('удобства номера', '', 'little', '2 спальни,  2 кровати', 'little-expand without-border-radius', 'will-hide')
+        .search-room-filter_left-container-expanded-checkbox 
+            +expandable-checkbox(list, 'дополнительные удобства')   
+    

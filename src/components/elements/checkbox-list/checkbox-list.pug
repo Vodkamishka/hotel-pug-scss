@@ -1,0 +1,6 @@
+mixin checkbox-list (list)
+    .checkbox-list
+        for el in list
+            .check-list
+                input(type="checkbox" checked= el.checked)
+                label(for="forText")= el.text

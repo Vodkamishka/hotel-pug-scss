@@ -1,9 +1,8 @@
-include ../elements/input-text/input-text.pug
-
-- var footerRus = {class: 'footer', title: [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']], textTop: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"', textBottom: ['Подписка', 'Получайте специальные предложения и новости сервиса'], email: "email"}
-- var footerEng = {class: 'footer-eng', title: [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']], textTop: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', textBottom: ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!'], email: 'Your email address'}
+include ../elements/input/input.pug
 
 mixin footer (footerClass)
+    - var footerRus = {class: 'footer', title: [['Навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['О нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами']], textTop: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"', textBottom: ['Подписка', 'Получайте специальные предложения и новости сервиса'], email: "email"}
+    - var footerEng = {class: 'footer-eng', title: [['Navigation', 'About us', 'News', 'Support', 'Products'], ['About us', 'Who we are', 'Our team', 'Careers', 'Investors'], ['Support', 'Documentation', 'Community', 'Get in touch']], textTop: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', textBottom: ['subscribes to our newsletter', 'Recieve our latest news and promotions in your inbox!'], email: 'Your email address'}
     if footerClass === 'footer-eng'
         - var footer = footerEng
     else
@@ -22,7 +21,7 @@ mixin footer (footerClass)
                 for el in footer.textBottom
                     li
                         a(href="#")=el
-                +Input("", "", "", footer.email, "little-arrow") 
+                +input(footer.email, "little-arrow") 
                     
  
         

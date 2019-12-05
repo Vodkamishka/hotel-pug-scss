@@ -1,1 +1,1 @@
-import './room-details__images'
+import './room-details__images.scss';

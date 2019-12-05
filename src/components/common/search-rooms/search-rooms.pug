@@ -1,13 +1,13 @@
-include ../../../components/elements/buttons/long-btn/long-btn
-include ../../../components/elements/input-text/input-text
-include ../../../components/elements/dropdowns/dropdown
+include ../../elements/buttons/long-btn/long-btn
+include ../../elements/input-calendar/input-calendar
+include ../../elements/long-dropdowns/long-dropdowns
 
 mixin search-rooms
     .search-rooms
         .search-rooms__title Найдем номера под ваши пожелания
         .search-rooms__incoming
-            +InputCalendar("Прибытие", "", "small", "ДД.ММ.ГГГГ","small")
-            +InputCalendar("Выезд", "", "small", "ДД.ММ.ГГГГ","small")
+            +input-calendar("ДД.ММ.ГГГГ","small","Прибытие")
+            +input-calendar("ДД.ММ.ГГГГ","small","Выезд")
         .search-rooms__guests
-            +longDropdown ( "гости", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "block", "will-hide")
-        +longBtn("Подобрать номер")
+            +long-dropdowns ( "гости", "", "", "Сколько гостей", "dropdowns-long without-border-radius", "block", "will-hide")
+        +long-btn("Подобрать номер")

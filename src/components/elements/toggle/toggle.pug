@@ -1,10 +1,12 @@
-include ./one-toggle/one-toggle.pug
+include ../one-toggle/one-toggle
 
-.toggle-button
-    .toggle-button__title Toggle
-    .toggle-button__toggle
-        +oneToggle(true)
-        +oneToggle(false)
+mixin toggle (show)
+    .toggle
+        if show
+            .toggle__title Toggle
+        .toggle__buttons
+            +one-toggle(true)
+            +one-toggle(false)
         
 
 

@@ -1,0 +1,8 @@
+include ../../../components/common/registration-account/registration-account.pug
+include ../../../components/common/search-rooms/search-rooms.pug
+
+mixin cards__column_left
+    .cards__column_left
+        +search-rooms
+        .cards__container-registration
+            +registration-account

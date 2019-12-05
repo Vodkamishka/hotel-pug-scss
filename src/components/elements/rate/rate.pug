@@ -1,9 +1,10 @@
-include ../comments-stars/stars/stars
+include ../stars/stars
 
-.rate-button
-    .rate-button__title Rate Button
-    .rate-button__rate
-        .rate-button__left
-            +stars(4)
-        .rate-button__right
-            +stars(5)   
+mixin rate
+    .rate
+        .rate__title Rate Button
+        .rate__rate
+            .rate_left
+                +stars(4)
+            .rate_right
+                +stars(5)   

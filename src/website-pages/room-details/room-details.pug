@@ -2,14 +2,14 @@ include ../../components/body/body
 include ../../components/footer/footer
 include ../../components/common/copyright/copyright
 include ../../components/header/header
-include ./room-details__main/room-details__main
+include ./room-details_main/room-details_main
 include ./room-details__images/room-details__images
 
 mixin room-details
     .room-details
         +header('header')
         +room-details__images
-        +room-details__main
+        +room-details_main
         +footer ('footer')
         +copyright('copyright')
 

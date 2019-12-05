@@ -1,4 +1,4 @@
 import './search-rooms.scss'
-import '../../../components/elements/buttons/long-btn/long-btn'
-import '../../../components/elements/input-text/input-text'
-import '../../../components/elements/dropdowns/dropdown'
+import '../../elements/buttons/long-btn/long-btn'
+import '../../elements/input-calendar/input-calendar'
+import '../../elements/long-dropdowns/long-dropdowns'

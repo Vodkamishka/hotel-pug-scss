@@ -1,0 +1,5 @@
+@import '../../../assets/utils/main';
+
+.checkbox-list {
+    @include input-checkbox;
+}

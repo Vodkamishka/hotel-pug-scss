@@ -1,8 +1,10 @@
-mixin regBtn (text)
-    button.reg-btn
-        span=text
-mixin regBtnRus (text)
-    button.reg-btn-rus
-        span=text        
+mixin reg-btn (text)
+    if text === 'registration'
+        button.reg-btn
+            span=text
+    else 
+        button.reg-btn-rus
+            span=text
+      
 
 
