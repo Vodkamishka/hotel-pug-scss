@@ -1,4 +1,4 @@
-@import '../../assets/utils/_main.scss';
+
 
 body {
     p {
@@ -15,74 +15,7 @@ body {
         &__title {
             position: absolute;
             left: 846px;
-            top: 145px;
-                .colorsTitle {
-                    display: flex;
-                    margin-bottom: 50px;
-                    p:nth-child(1) {
-                        margin-right: 30px;
-                        color: $shade25;
-                    }
-                    p:nth-child(2) {
-                        color: $shade100;
-                        font-weight: bold;
-                    }
-                    &.h1 {
-                        p:first-child {
-                            font-size: 24px;
-                            line-height: 29px;
-                            margin-left: 8px;
-                        }
-                        p:last-child {
-                            font-size: 24px;
-                            line-height: 30px;
-                            width: 336px;
-                            height: 60px;
-                        }
-                    }
-                    &.h2 {
-                        p:first-child {
-                            font-size: 19px;
-                            line-height: 23px;
-                            margin-left: 8px;
-                        }
-                        p:last-child {
-                            font-size: 19px;
-                            line-height: 24px;
-                            width: 282px;
-                            height: 48px;
-                        }
-                    }
-                    &.h3 {
-                        p:first-child {
-                            font-size: 12px;
-                            line-height: 15px;
-                            margin-left: 18px;
-                        }
-                        p:last-child {
-                            font-size: 12px;
-                            line-height: 15px;
-                            width: 186px;
-                            height: 15px;
-                            text-transform: uppercase;
-                        }
-                    }
-                    &.h4 {
-                        p:first-child {
-                            font-size: 14px;
-                            line-height: 24px;
-                            
-                        }
-                        p:last-child {
-                            font-size: 14px;
-                            line-height: 24px;
-                            width: 381px;
-                            height: 48px;
-                            font-weight: normal;
-                            color: $shade75;
-                        }
-                    }
-                }     
+            top: 145px;    
         }
     }
 }

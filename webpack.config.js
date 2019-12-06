@@ -67,59 +67,50 @@ module.exports = {
             filename: 'ui-kit/cards/cards.html',
             hash: false,
             template: `./src/ui-kit/cards/cards.pug`,
-            chunks: ['ui-kit/cards/cards']
            }),
         new HTMLWebpackPlugin({
             filename: 'ui-kit/colors-type/colors-type.html',
             hash: false,
             template: `./src/ui-kit/colors-type/colors-type.pug`,
-            chunks: ['ui-kit/colors-type/colors-type']
            }),
         new HTMLWebpackPlugin({
             filename: 'ui-kit/form-elements/form-elements.html',
             hash: false,
             template: `./src/ui-kit/form-elements/form-elements.pug`,
-            chunks: ['ui-kit/form-elements/form-elements']
            }),
         new HTMLWebpackPlugin({
             filename: 'ui-kit/headers-footers/headers-footers.html',
             hash: false,
             template: `./src/ui-kit/headers-footers/headers-footers.pug`,
-            chunks: ['ui-kit/headers-footers/headers-footers']
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/landing/landing.html',
             hash: false,
             template: `./src/website-pages/landing/landing.pug`,
-            chunks: ['website-pages/landing/landing']
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/registration/registration.html',
             hash: false,
-            template: `./src/website-pages/registration/registration.pug`,
-            chunks: ['website-pages/registration/registration']
+            template: `./src/website-pages/registration/registration.pug`
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/room-details/room-details.html',
             hash: false,
-            template: `./src/website-pages/room-details/room-details.pug`,
-            chunks: ['website-pages/room-details/room-details']
+            template: `./src/website-pages/room-details/room-details.pug`
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/search-room-filter/search-room-filter.html',
             hash: false,
-            template: `./src/website-pages/search-room-filter/search-room-filter.pug`,
-            chunks: ['website-pages/search-room-filter/search-room-filter']
+            template: `./src/website-pages/search-room-filter/search-room-filter.pug`
            }),
         new HTMLWebpackPlugin({
             filename: 'website-pages/sign-in/sign-in.html',
             hash: false,
             template: `./src/website-pages/sign-in/sign-in.pug`,
-            chunks: ['website-pages/sign-in/sign-in']
            }),
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/website-pages/landing/landing.pug`,
+            template: `./src/ui-kit/colors-type/colors-type.pug`
            }),
         new CopyWebpackPlugin([
             {from: './src/assets/img', to: './assets/img'},
