@@ -25,13 +25,13 @@
         margin: 20.56px 0 20px 0;
     }
     &__price, &__tax, &__fee {
+        height: 24px;
         display: flex;
         justify-content: space-between;
-        font-weight: normal;
         font-size: 14px;
         line-height: 22px;
         color: $shade75;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         position: relative;
             p:first-child {
                 width: 214px;
@@ -48,13 +48,12 @@
                 border: 1px solid $shade25;
                 color: $shade25;
                 @include flex-center;
-            }      
-    }
-    &__fee {
+            }
         p {
-            line-height: 1.3;
-        }
+            margin: 0;
+        }      
     }
+    
     &__result {
         margin-top: 30px;
         display: flex;
@@ -64,6 +63,9 @@
         font-weight: bold;
         font-size: 19px;
         line-height: 24px;
+        p {
+            margin: 0;
+        }
     }
     &__dots {
         width: 182px;
