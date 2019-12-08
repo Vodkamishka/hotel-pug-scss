@@ -9,6 +9,7 @@ module.exports = {
         'ui-kit/form-elements/form-elements': './src/ui-kit/form-elements/form-elements.js',
         'ui-kit/headers-footers/headers-footers': './src/ui-kit/headers-footers/headers-footers.js',
         'ui-kit/cards/cards': './src/ui-kit/cards/cards.js',
+        'ui-kit/demo/demo': './src/ui-kit/demo/demo.js',
         'website-pages/landing/landing': './src/website-pages/landing/landing.js',
         'website-pages/registration/registration': './src/website-pages/registration/registration.js',
         'website-pages/sign-in/sign-in': './src/website-pages/sign-in/sign-in.js',
@@ -117,13 +118,11 @@ module.exports = {
             template: `./src/website-pages/sign-in/sign-in.pug`,
             chunks: ['website-pages/sign-in/sign-in']
            }),
+        
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/cards/cards.pug`
-           }),
-        new HTMLWebpackPlugin({
-            hash: false,
-            template: `./src/website-pages/room-details/room-details.pug`,
+            template: `./src/ui-kit/demo/demo.pug`,
+            chunks: ['ui-kit/demo/demo']
            }),
         new CopyWebpackPlugin([
             {from: './src/assets/img', to: './assets/img'},

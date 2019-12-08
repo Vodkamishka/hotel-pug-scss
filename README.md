@@ -10,9 +10,7 @@
 
 ## Kлонирования репозитория 
 
-выполняется командой
-
-#### 'git clone https://github.com/Vodkamishka/hotel-webpack-pug-scss.git'
+$ git clone https://github.com/Vodkamishka/hotel-webpack-pug-scss.git'
 
 ## Демонстрация проекта
 

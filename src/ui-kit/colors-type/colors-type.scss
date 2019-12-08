@@ -1,21 +1,15 @@
-
-
-body {
-    p {
-        margin: 0;
+.colors-type {
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    padding-top: 9.0625rem;
+    
+    display: flex;
+    &__squares {        
+    margin-left: 9.375rem;    
     }
-    .colors-type {
-        width: 100%;
-        height: 100%;
-        &__squares {        
-            position: absolute;
-            left: 150px;
-            top: 145px;
-        }
-        &__title {
-            position: absolute;
-            left: 846px;
-            top: 145px;    
-        }
+    &__title {
+    margin-left: 26.875rem;    
     }
 }
+
