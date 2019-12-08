@@ -3,19 +3,19 @@
 .consumer-comments {
         &_top {
             @include align-items;
-            margin-bottom: 10px; 
+            margin-bottom: 0.625rem; 
         }
         &_right {
-            height: 48px;
-            font-size: 14px;
-            line-height: 24px;    
+            height: 3rem;
+            font-size: 0.875rem;
+            line-height: 1.5rem;    
         }
         &__img {
-            width: 47.67px;
-            height: 48px;
-            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
-            border-radius: 32px;
-            margin-right: 9px;
+            width: 2.979375rem;
+            height: 3rem;
+            box-shadow: 0px 0.625rem 1.25rem rgba(31, 32, 65, 0.1);
+            border-radius: 2rem;
+            margin-right: 0.5625rem;
         }
         &__name {
             font-weight: bold;
@@ -26,25 +26,25 @@
         }
         &_bottom {
             display: flex;
-            width: 707.31px;
+            width: 44.206875rem;
         }
         &__text {
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
             color: $shade75;
-            width: 653px;
-            margin-left: 17px;
+            width: 40.8125rem;
+            margin-left: 1.0625rem;
             font-weight: 400;
             p {
                 margin: 0;
             }
         }  
 }
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .consumer-comments {
         &__text {
-            width: 300px;
-            margin-right: 353px;
+            width: 18.75rem;
+            margin-right: 22.0625rem;
         }
     }
 }

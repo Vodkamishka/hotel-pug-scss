@@ -1,10 +1,10 @@
 @import '../../assets/utils/main.scss';
 
 @mixin innerFooter {
-    .inner-footer {
-        padding: 100px 9.72%;
+    .footer_inner {
+        padding: 6.25rem 9.72%;
         box-sizing: border-box;
-        height: 372px;
+        height: 23.25rem;
         display: flex;
             ul {
                 list-style-type: none;
@@ -12,59 +12,60 @@
                 margin: 0;
                 &:first-child {
                     p {
-                        @include Montserrat(14px);
-                        width: 260px;
-                        line-height: 24px;
+                        @include Montserrat(0.875rem);
+                        width: 16.25rem;
+                        line-height: 1.5rem;
                         color: $shade75;
-                        height: 72px;
-                        margin-top: 14px;
-                        height: 96px;
+                        height: 4.5rem;
+                        margin-top: 0.875rem;
+                        height: 6rem;
                     }
                 }
                 &:nth-child(2) {
-                    margin: 0 119px 0 40px;
+                    white-space: nowrap;
+                    margin: 0 7.4375rem 0 2.5rem;
                     li {
-                        width: 81px;
+                        width: 5.0625rem;
                     }
                 }
                 &:nth-child(3) {
                     white-space: nowrap;
                     li {
-                        width: 82px;
+                        width:5.125rem;
                     }
                 }
                 &:nth-child(4) {
-                    margin: 0 87px 0 118px;
+                    white-space: nowrap;
+                    margin: 0 5.4375rem 0 7.375rem;
                     li {
-                        width: 113px;
+                        width: 7.0625rem;
                     }
                 }
                 &:last-child {
                     li:nth-child(2) {
-                        width: 208px;
-                        line-height: 24px;
+                        line-height: 1.5rem;
                             a {
                                 color: $shade75;
                             }
                     }
                 }
                 li {
-                    margin-bottom: 19px;
+                    margin-bottom: 1.1875rem;
                         a {
-                            @include Montserrat(14px);
+                            @include Montserrat(0.875rem);
                             text-decoration: none;
-                            line-height: 17px;
-                            font-size: 14px;
+                            line-height: 1.0625rem;
+                            font-size: 0.875rem;
                             color: $shade50;
                         }
                         &:nth-child(1){
                             font-weight: bold;
                             text-transform: uppercase;
-                            margin-bottom: 19px;
+                            margin-bottom: 1.1875rem;
                                 a {
                                     color: $shade100;
-                                    line-height: 15px;
-                                    font-size: 12px;
+                                    line-height: 0.9375rem;
+                                    font-size: 0.75rem;
                                 }
                         }
                 }
@@ -77,39 +78,37 @@
 }   
 .footer {
     @include innerFooter;
-        .inner-footer {
+        &_inner {
             ul {
                 &:nth-child(2){
-                    margin: 0 57px 0 40px;
+                    margin: 0 3.5625rem 0 2.5rem;
                     li {
-                        width: 143px;
+                        width: 8.9375rem;
                     } 
                 }
                 &:nth-child(3) {
                     white-space: nowrap;
                     li {
-                        width: 108px;
+                        width: 6.75rem;
                     }
                 }
                 &:nth-child(4) {
-                    margin: 0 51px 0 92px;
+                    margin: 0 3.1875rem 0 5.75rem;
                     li {
-                        width: 149px;
+                        width: 9.3125rem;
                     }
                 }
                 &:last-child {
                     li:nth-child(2) {
-                        width: 260px;
+                        width: 16.25rem;
                     }
                 }
             }
         }
-     
 } 
-
-@media (max-width: 1350px) {
+@media (max-width: 84.375rem) {
     .footer {
-        .inner-footer {
+        &_inner {
             flex-wrap: wrap;
             height: auto;
         }

@@ -4,19 +4,19 @@
         &_main {
             display: flex;
             justify-content: space-between;
-            padding: 30px 9.72% 0 9.72%;
+            padding: 1.875rem 9.72% 0 9.72%;
             box-sizing: border-box;
-            border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+            border-bottom: 0.0625rem solid rgba(31, 32, 65, 0.25);
         }  
 }
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
     .search-room-filter {
         &__main {
             padding-left: 5%;
         }
     }
 }
-@media (max-width: 630px) {
+@media (max-width: 39.375rem) {
     .search-room-filter {
         &__main {
             flex-wrap: wrap;

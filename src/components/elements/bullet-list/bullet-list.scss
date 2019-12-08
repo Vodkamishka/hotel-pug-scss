@@ -2,17 +2,17 @@
 
 .bullet-list {
     ul {
-        width: 242.56px;
+        width: 15.16rem;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
         color: $shade75;
         list-style-image: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/ellipse.svg");
         padding: 0; 
         margin: 0;
-        margin-left: 20px;
+        margin-left: 1.25rem;
             li {
-                margin-top: 10px;
+                margin-top: 0.625rem;
             }
     }
 }

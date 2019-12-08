@@ -1,51 +1,51 @@
 @import '../../../assets/utils/main';
 
 .reservation {
-    height: 511px;
-    width: 380px;
+    height: 31.9375rem;
+    width: 23.75rem;
     @include cards;
     &__main-title {
         @include space-between;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     &__guests {
-        margin: 20px 0 20.56px 0;
+        margin: 1.25rem 0 1.285rem 0;
     }
     &__incoming {
         display: flex;
-        margin-top: 20px;
+        margin-top: 1.25rem;
             .input-calendar {
                 input[type='text'] {
-                margin-right: 20px;
-                width: 150px;
+                margin-right: 1.25rem;
+                width: 9.375rem;
                 }
             }
     }
     &__list {
-        margin: 20.56px 0 20px 0;
+        margin: 1.285rem 0 1.25rem 0;
     }
     &__price, &__tax, &__fee {
-        height: 24px;
+        height: 1.5rem;
         display: flex;
         justify-content: space-between;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
         color: $shade75;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         position: relative;
             p:first-child {
-                width: 214px;
+                width: 13.375rem;
             }
             .round {
                 position: absolute;
-                left: 219px;
-                width: 20px;
-                height: 20px;
+                left: 13.6875rem;
+                width: 1.25rem;
+                height: 1.25rem;
                 font-weight: bold;
-                font-size: 12px;
-                line-height: 14px;
+                font-size: 0.75rem;
+                line-height: 0.875rem;
                 border-radius: 50%;
-                border: 1px solid $shade25;
+                border: 0.0625rem solid $shade25;
                 color: $shade25;
                 @include flex-center;
             }
@@ -55,21 +55,21 @@
     }
     
     &__result {
-        margin-top: 30px;
+        margin-top: 1.875rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;;
         color: $shade100;
         font-weight: bold;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 1.1875rem;
+        line-height: 1.5rem;
         p {
             margin: 0;
         }
     }
     &__dots {
-        width: 182px;
-        border-bottom: 1px dotted $shade25;
+        width: 11.375rem;
+        border-bottom: 0.0625rem dotted $shade25;
         
     }
 }

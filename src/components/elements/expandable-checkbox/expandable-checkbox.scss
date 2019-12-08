@@ -1,8 +1,8 @@
 @import '../../../assets/utils/main';
 
 .checkbox-extend {
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75rem;
     transition: all 1s;
 }
 .expandable-checkbox {
@@ -10,11 +10,11 @@
         @include align-items; 
     }
     &__mainline-expandable {
-        margin-bottom: 2.44px;
+        margin-bottom: 0.1525rem;
     }
     &__title {
         @include inputTitle;
-        margin-right: 30px;
+        margin-right: 1.875rem;
         white-space: nowrap;   
     }
     &__image {

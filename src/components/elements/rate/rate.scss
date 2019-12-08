@@ -3,12 +3,12 @@
 .rate {
     &__title {
         @include inputTitle;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     &__rate {
         display: flex;
     }
     &_left {
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
 }

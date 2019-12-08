@@ -2,7 +2,7 @@ include ../elements/buttons/log-reg/log-reg
 include ../navbar/navbar
 
 mixin header (header)
-    - var list = [{item: 'О нас'},{item: 'Услуги',image: true},{item: 'Вакансии'},{item: 'Новости'},{item:'Соглашения', image: true}]
+    - let list = [{item: 'О нас'},{item: 'Услуги',image: true},{item: 'Вакансии'},{item: 'Новости'},{item:'Соглашения', image: true}]
     - var listEng = [{item: 'Home'},{item: 'About Us'},{item: 'Services', image: true},{item: 'Careers'},{item:'News'},{item:'Documentation'}]
     div(class=header)
         div(class=`${header}__image`)

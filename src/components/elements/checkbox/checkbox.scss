@@ -3,7 +3,7 @@
 .checkbox {
     &__title {
         @include inputTitle;
-        margin-bottom: 16.56px; 
+        margin-bottom: 1.034375rem; 
     }
     @include input-checkbox;    
 }

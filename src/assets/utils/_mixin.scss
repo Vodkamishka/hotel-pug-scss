@@ -17,8 +17,8 @@
 
 @mixin inputTitle {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     text-transform: uppercase;
     color: $shade100;
 }
@@ -36,8 +36,8 @@
 }
 
 @mixin textElements {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     color: $shade75;
 }
 
@@ -45,44 +45,44 @@
     .check-list {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
             input[type='checkbox'] {
-                width: 20px;
-                height: 20px;
-                border: 1px solid $shade25;
-                border-radius: 4px;
-                margin: 0 9.7px 0 0;
+                width: 1.25rem;
+                height: 1.25rem;
+                border: 0.0625rem solid $shade25;
+                border-radius: 0.25rem;
+                margin: 0 0.60625rem 0 0;
                 outline: none;
                 -webkit-appearance: none;
                 background: $white;
             }
             input[type='checkbox']:checked {
-                border: 1px solid $purple;
-                margin: 0 10px 0 0;
+                border: 0.0625rem solid $purple;
+                margin: 0 0.625rem 0 0;
                 background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg) no-repeat center center, $white;
             }
             label {
-                font-size: 14px;
-                line-height: 18px;
+                font-size: 0.875rem;
+                line-height: 1.125rem;
                 color: $shade50;
-                width: 192px;
+                width: 12rem;
             }
     }
 }
 
 @mixin cards {
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    padding: 40px 30px 30px 30px;
+    box-shadow: 0px 0px 1.5625rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+    padding: 2.5rem 1.875rem 1.875rem 1.875rem;
     box-sizing: border-box;
         &__title {
             font-family: 'Montserrat', Arial, sans-serif;;
             font-weight: bold;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
             color: $shade100;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 }
 
@@ -92,8 +92,8 @@
         justify-content: space-between;
     }
     &__text {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
         color: $black;
         font-family: 'Montserrat', Arial, sans-serif;;
     }
@@ -103,14 +103,14 @@
     .short-dropdown {
             position: absolute;
             box-sizing: border-box;
-            border: 1px solid $shade50;
+            border: 0.0625rem solid $shade50;
             border-top: transparent;
-            width: 266px;
-            height: 119px;
-            padding: 7px 7px 8px 15px;
+            width: 16.625rem;
+            height: 7.4375rem;
+            padding: 0.4375rem 0.4375rem 0.5rem 0.9375rem;
             font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
             background: $white;
             color: $shade100;
             text-transform: uppercase;
@@ -118,11 +118,11 @@
             z-index: 10000;
                     &__row {
                             @include space-between;
-                            margin-bottom: 7px;
+                            margin-bottom: 0.4375rem;
                     }
     }
     .will-hide {
-            padding-bottom: 15px;
+            padding-bottom: 0.9375rem;
             opacity: 0;
             z-index: -1;
     }  
@@ -131,24 +131,24 @@
 @mixin input-text {
     input[type="text"] {
         box-sizing: border-box;
-        width: 320px;
-        height: 44px;
-        border: 1px solid rgba($shade25, 0.25);
-        border-radius: 4px;
-        padding-left: 15px;
-        font-size: 14px;
-        line-height: 18px;
+        width: 20rem;
+        height: 2.75rem;
+        border: 0.0625rem solid rgba($shade25, 0.25);
+        border-radius: 0.25rem;
+        padding-left: 0.9375rem;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
             &::placeholder {
                 color: $shade50;
             }
             &:hover {
-                border: 1px solid rgba($shade50, 0.5);
+                border: 0.0625rem solid rgba($shade50, 0.5);
                     &::placeholder {
                     color: $shade75;
             }
         }
         &.hover {
-            border: 1px solid rgba($shade50, 0.5);
+            border: 0.0625rem solid rgba($shade50, 0.5);
             color: $shade25;
             &::placeholder {
                 color: $shade75;
@@ -165,7 +165,7 @@
             color: $shade75;
         }
         &.small {
-            width: 150px;
+            width: 9.375rem;
                 &::placeholder {
                     color: $shade75;  
                 }
@@ -173,7 +173,7 @@
             $white
         }
         &.little-expand {
-            width: 266px;
+            width: 16.625rem;
             &::placeholder {
                 color: $shade75;  
             }
@@ -181,7 +181,7 @@
             $white
         }
         &.little-arrow {
-            width: 266px;
+            width: 16.625rem;
             &::placeholder {
                 color: $shade25;  
             }
@@ -189,7 +189,7 @@
             $white
         }
         &.without-border-radius {
-            border-radius: 4px 4px 0 0;
+            border-radius: 0.25rem 0.25rem 0 0;
         }
     }
 }

@@ -1,73 +1,73 @@
 @import '../../../assets/utils/main';
 
 .circle-template {
-    width: 120px;
-    height: 121px;
+    width: 7.5rem;
+    height: 7.5625rem;
     border-style: solid;
     border-radius: 50%;
-    border-width: 3px;
+    border-width: 0.1875rem;
     box-sizing: border-box;
     position: absolute;
 }
 .room-details {
     &_main {
-        padding: 70px 9.72%;
+        padding: 4.375rem 9.72%;
         display: flex;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
         color: $shade75;
-        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+        box-shadow: 0 0.0625rem 0 rgba(31, 32, 65, 0.1);
     }
     &_left {
-        width: 295px;
-        margin-right: 67px;
+        width: 18.4375rem;
+        margin-right: 4.1875rem;
     }
     &_center {
-        margin-right: 64px;
+        margin-right: 4rem;
     }
     &__title {
         font-weight: bold;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 1.1875rem;
+        line-height: 1.5rem;
         color: $shade100;
     }
     &__title-rules {
-        margin: 0 0 15px 19.86px;
+        margin: 0 0 0.9375rem 1.24125rem;
     }
     &__reviews {
-        width: 711px;
+        width: 44.4375rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     &__review_right {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
         color: $shade50;
     }
     &__room-information {
             .info-room:first-child {
-                margin: 20px 0 41px;
+                margin: 1.25rem 0 2.5625rem;
             }
             .info-room:last-child {
-                margin: 41px 0 30px;
+                margin: 2.5625rem 0 1.875rem;
             }
     }
     &__room-impressions {
         margin-bottom: 29.625rem;
     }
     &__comments-consumer {
-        margin-bottom: 34px;
+        margin-bottom: 2.125rem;
     }
     &__diagramma {
         display: flex;
         align-items: flex-end;
     }
     &__wrapper-circles {
-        width: 120px;
-        height: 121px;
-        margin: 21px 45px 0 0;
+        width: 7.5rem;
+        height: 7.5625rem;
+        margin: 1.3125rem 2.8125rem 0 0;
         position: relative;
         @include flex-center;
         text-align: center;
@@ -78,20 +78,20 @@
         display: flex;
         color: $purple;
         font-weight: bold;
-        margin-bottom: 13px;
+        margin-bottom: 0.8125rem;
             span:first-child {
-                font-size: 22px;
-                line-height: 30px;
+                font-size: 1.375rem;
+                line-height: 1.875rem;
             }
             span:last-child {
-                font-size: 16px;
-                line-height: 15px;
+                font-size: 1rem;
+                line-height: 0.9375rem;
             }
     }
     &__circle1 {
         @extend .circle-template;
         border-color: $purple transparent transparent transparent;
-        border-width: 10px;
+        border-width: 0.625rem;
         transform: rotate(45deg);
     }
     &__circle2 {
@@ -110,12 +110,12 @@
         transform: rotate(45deg);
     }
     &__list {
-        margin-right: 35px;
+        margin-right: 2.1875rem;
         ul {
             list-style-type: none;
                 li {
-                    font-size: 14px;
-                    line-height: 24px;
+                    font-size: 0.875rem;
+                    line-height: 1.5rem;
                     color: $shade75;
                     position: relative;
                         &:before {
@@ -123,11 +123,11 @@
                             display: block;
                             border-radius: 50%;
                             position: absolute;
-                            left: -15px;
+                            left: -0.9375rem;
                             top: 50%;
                             transform: translateY(-50%);
-                            width: 10px;
-                            height: 10px;
+                            width: 0.625rem;
+                            height: 0.625rem;
                             background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
                         }
                         &:nth-child(2):before {
@@ -146,37 +146,31 @@
     &__room-escape {
         p {
             color: $shade75;
-            font-size: 14px;
-            line-height: 24px;
-            margin-top: 16px;
-            width: 341px;
-            height: 96px;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            margin-top: 1rem;
+            width: 21.3125rem;
+            height: 6rem;
         }
     }
     &__comments-consumer {
         .consumer-comments:first-child {
-            margin: 23px 0;
+            margin: 1.4375rem 0;
         }
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 93.75rem) {
     .room-details {
         &_main {
             flex-wrap: wrap;
         }
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     .room-details {
-        &__room-impressions {
-            margin: 20px 0;
-        }
-        &__room-escape {
-            margin: 20px 0;
-        }
-        &__rules {
-            margin: 20px 0;
+        &__room-impressions, &__room-escape, &__rules {
+            margin: 1.25rem 0;
         }
     }
 }

@@ -1,20 +1,20 @@
 @import '../../../assets/utils/main';
 
 .registration-account {
-    height: 646px;
+    height: 40.375rem;
     background: $white;
-    width: 380px;
+    width: 23.75rem;
     @include cards;
         &__bithday {
-            margin: 19.56px 0 20px 0;
+            margin: 1.2225rem 0 1.25rem 0;
         }   
         &__two-fields {
             .input {
-                margin-bottom: 9px;
+                margin-bottom: 0.5625rem;
             }
         }
         &__button {
-            margin:24px 0 30px 0;
+            margin: 1.5rem 0 1.875rem 0;
         }
         @include toxin;
 }

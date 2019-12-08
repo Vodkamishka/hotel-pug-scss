@@ -5,12 +5,12 @@
     &__comments {
         display: flex;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
         color: $shade50;
             p:first-child {
                 font-weight: bold;
-                margin-right: 2px;
+                margin-right: 0.125rem;
             }
     }
 

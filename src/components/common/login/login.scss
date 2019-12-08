@@ -1,19 +1,19 @@
 @import '../../../assets/utils/main';
 
 .login {
-    height: 358px;
+    height: 22.375rem;
     background: $white;
     @include cards;
         &__fields {
-            margin: 20px 0;
+            margin: 1.25rem 0;
                 .input:first-child {
                     input {
-                        margin-bottom: 10px;
+                        margin-bottom: 0.625rem;
                     }    
                 }
         }
         &__button {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
         @include toxin;
 }

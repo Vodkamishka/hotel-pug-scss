@@ -5,38 +5,34 @@
     width: 100%;
     top: 0;
     &__section {
-        margin: 150px 0  40px 0;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        margin: 9.375rem 0 2.5rem 0;
+        box-shadow: 0 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
     }
-    &__section2 {
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__section2, &__section3, &__section4 {
+        box-shadow: 0 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
     }
     &__section3 {
-        margin-top: 40px;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    }
-    &__section4 {
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        margin-top: 2.5rem;
     }
     &__section5 {
-        margin-top: 40px;
-        padding: 100px 30.555% 110px;
-        height: 367px;
+        margin-top: 2.5rem;
+        padding: 6.25rem 30.555% 6.875rem;
+        height: 22.9375rem;
         box-sizing: border-box;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);   
+        box-shadow: 0 0.625rem 1.25rem rgba(31, 32, 65, 0.05);   
     }
     &__image {
         div {
-            width: 105.69px;
+            width: 6.605625rem;
             margin: 0 auto;
         }
     }
     &__text {
-        width: 560px;
-        font-size: 14px;
-        line-height: 24px;
+        width: 35rem;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
         color: $shade75;
-        margin: 15px auto 27px;
+        margin: 0.9375rem auto 1.6875rem;
         text-align: center;
     }
     &__social {

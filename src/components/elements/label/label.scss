@@ -3,11 +3,11 @@
 .label {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     text-transform: uppercase;
     color: $shade100;
-    width: 320px;
+    width: $long;
     display: flex;
     justify-content: space-between;
         .label__right {
@@ -21,9 +21,9 @@
         width: $small;
     } 
     &__left {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
     }
     &__right {
-        margin-bottom: 5.44px;
+        margin-bottom: 0.34rem;
     }
 }

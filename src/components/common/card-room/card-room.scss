@@ -1,58 +1,57 @@
 @import '../../../assets/utils/main';
 
 .card-room {
-    width: 270px;
-    height: 257px;
-    box-shadow: 0px 10px 20px $shade05;
+    width: 16.875rem;
+    height: 16.0625rem;
+    box-shadow: 0px 0.625rem 1.25rem $shade05;
     background: $white;
         &__image {
-            margin-bottom: 23px;
-            width: 270px;
-            height: 151.38px;
-            border-radius: 4px 4px 0px 0px;
+            margin-bottom: 1.4375rem;
+            width: 16.875rem;
+            height: 9.46125rem;
+            border-radius: 0.25rem 0.25rem 0 0;
             position: relative;
         }
         &__group-balls {
             position: absolute;
             display: flex;
-            left: 213.75px;
-            top: 128.89px;
+            left: 13.359375rem;
+            top: 8.055625rem;
         }
         &__balls {
-            box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
-            width: 7.5px;
-            height: 7.5px;
+            box-shadow: 0 0.3125rem 0.3125rem rgba(31, 32, 65, 0.3);
+            width: 0.46875rem;
+            height: 0.46875rem;
             border-radius: 50%;
-            margin-right: 3.75px;
+            margin-right: 0.234375rem;
         }
         &__ball {
             background: $white;
         }
         &__ball_empty {
-            border: 1px solid $white;
+            border: 0.0625rem solid $white;
             box-sizing: border-box;
         }
         &__luxe {
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
             .luxe__luxe {
                 display: flex;
                 align-items: flex-end;
-                margin-left: 20px;
+                margin-left: 1.25rem;
                     p:nth-child(2){
-                        font-size: 18px;
+                        font-size: 1.125rem;
                     }
             }
             .luxe__price {
-                margin-right: 17px;
+                margin-right: 1.0625rem;
             }
         }
         &__stars {
             .stars {
-                margin-left: 20px;
-                
+                margin-left: 1.25rem; 
             }
             .comments-stars__comments {
-                margin-right: 20px;
+                margin-right: 1.25rem;
             }
         }
 }

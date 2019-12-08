@@ -1,14 +1,14 @@
 @import '../../assets/utils/main';
 
 .registration {
-    height: 1211px;
+    height: 75.6875rem;
         &__image-wrapper {
-            height: 702px;
+            height: 43.875rem;
             background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg);
             background-size: cover;
             display: flex;
             justify-content: center;
-            padding-top: 30px;
+            padding-top: 1.875rem;
             box-sizing: border-box;  
         }
 }

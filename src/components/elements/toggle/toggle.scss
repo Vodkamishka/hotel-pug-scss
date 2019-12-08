@@ -3,9 +3,9 @@
 .toggle {
     &__title {
         @include inputTitle;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     &__buttons {
-        margin-bottom: 44.44px;
+        margin-bottom: 2.7775rem;
     }
 }

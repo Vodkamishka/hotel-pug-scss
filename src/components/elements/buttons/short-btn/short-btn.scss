@@ -1,14 +1,14 @@
 @import '../../../../assets/utils/_main.scss';
 
 .srt-btn {
-    width: 99px;
-    height: 44px;
-    border-radius: 22px;
+    width: 6.1875rem;
+    height: 2.75rem;
+    border-radius: 1.375rem;
     border: none;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     text-transform: uppercase;
     box-sizing: border-box;
     &.purple {
@@ -22,17 +22,17 @@
     }
     &.white {
         color: $purple;
-        border: 2px solid transparent;
+        border: 0.125rem solid transparent;
         background-origin: border-box;
         background-image: $gradient;
-        box-shadow: 1px 100px 1px #fff inset;   
+        box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;   
     }
     &.white05 {
         color: $purple;
-        border: 2px solid transparent;
+        border: 0.125rem solid transparent;
         background-origin: border-box;
         background-image: $gradient;
-        box-shadow: 1px 100px 1px #fff inset;  
+        box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;  
         border-opacity: 0.5;
     }
 }

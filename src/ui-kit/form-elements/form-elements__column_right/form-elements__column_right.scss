@@ -2,21 +2,21 @@
 
 .form-elements {
     &__column_right {
-        width: 320px;
-        margin-right: 141px;  
+        width: 20rem;
+        margin-right: 8.8125rem;  
     }
     &__container-range-slider {
-        margin: 143.44px 0 43.56px 0;
-        height:44px;
+        margin: 8.965rem 0 2.7225rem 0;
+        height: 2.75rem;
     }
     &__container-buttons {
-        margin: 43.56px 0 30px 0;
+        margin: 2.7225rem 0 1.875rem 0;
     }
     &__container-pagination {
-        margin: 40px 0 235px 0;
+        margin: 2.5rem 0 14.6875rem 0;
     }
     &__container-bullet {
-        margin-top: 257.44px;
+        margin-top: 16.09rem;
     }
     &__bullet-title {
         @include inputTitle

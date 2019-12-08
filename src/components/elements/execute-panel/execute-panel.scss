@@ -1,16 +1,16 @@
 @import '../../../assets/utils/main';
 
 .execute-panel {
-    width: 92px;
+    width: 5.75rem;
     @include space-between;
         &__circle-increment, &__circle-decrement {
-            width: 30px;
-            height: 30px;
-            border-radius: 22px;
-            border: 1px solid $shade25;
+            width: 1.875rem;
+            height: 1.875rem;
+            border-radius: 1.375rem;
+            border: 0.0625rem solid $shade25;
             @include flex-center;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 1.125rem;
+            line-height: 1.375rem;
             box-sizing: border-box;
         }
         &__circle-increment.hide {

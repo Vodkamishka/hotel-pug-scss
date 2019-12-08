@@ -2,26 +2,26 @@
 
 
 .landing {
-    height: 1343px;
+    height: 83.9375rem;
         &__image-wrapper {
             background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/main-picture.jpg);
-            height: 830px;
+            height: 51.875rem;
             overflow: hidden;
             position: relative;
         }
         &__search-rooms {
-            margin: 70px 0 0 9.72%;
+            margin: 4.375rem 0 0 9.72%;
             overflow: hidden;
         }
         &__text-frame {
-            width: 297px;
-            height: 48px;
-            font-size: 14px;
-            line-height: 24px;
+            width: 18.5625rem;
+            height: 3rem;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
             text-align: right;
             color: $shade75;
-            right: 134px;
-            top: 764px;
+            right: 8.375rem;
+            top: 47.75rem;
             position: absolute;
         }
 }

@@ -3,12 +3,12 @@
 .like-button {
     &__title {
         @include inputTitle;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     &__like {
         display: flex;
             .like:nth-child(1) {
-                margin-right: 10px;
+                margin-right: 0.625rem;
             }  
     }
 }

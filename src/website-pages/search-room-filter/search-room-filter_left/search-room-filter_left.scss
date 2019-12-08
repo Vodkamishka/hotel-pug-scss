@@ -2,36 +2,36 @@
 
 .search-room-filter {
     &_left {
-        width: 266px;
+        width: 16.625rem;
         margin-right: 3.75%;
     }
     &_left-container-LongDropdown {
-        margin: 20.44px 0 30.44px;
+        margin: 1.2775rem 0 1.9025rem;
     }
     &_left-container-rich-checkbox {
-        margin: 30.88px 0 30.44px;
+        margin: 1.93rem 0 1.9025rem;
     }
     &_left-container-expanded-checkbox {
-        margin-top: 15.5px;
+        margin-top: 0.96875rem;
     }
     &_left-container-slider {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
     &_left-slider-text {
-        margin-top: 10.56px;
-        font-size: 12px;
-        line-height: 14px;
+        margin-top: 0.66rem;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
         color: $shade50;
     }
 }
-@media (max-width: 1300px) {
+@media (max-width: 81.25rem) {
     .search-room-filter {
         &__left {
             margin-right: 2%;
         }
     }
 }
-@media (max-width: 630px) {
+@media (max-width: 39.375rem) {
     .search-room-filter {
         &__left {
             margin: 0 auto;

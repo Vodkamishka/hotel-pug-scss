@@ -3,25 +3,24 @@
         display: flex;
     }
     &__container_left {
-        width: 981px;
-        height: 485px;
+        width: 61.3125rem;
+        height: 30.3125rem;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/8888.jpg) bottom;
     }
     &__picture_top {
-        width: 461px;
-        height: 243px;
+        width: 28.8125rem;
+        height: 15.1875rem;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/picture-top.jpg) no-repeat;
         background-size: cover; 
     }
     &__picture_bottom {
-        width: 461px;
-        height: 243px;
+        width: 28.8125rem;
+        height: 15.1875rem;
         background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/picture-bottom.jpg) no-repeat; 
         background-size: cover; 
     }
 }
-
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     .room-details {
         &__images {
             flex-wrap: wrap;
@@ -32,7 +31,7 @@
         } 
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .room-details {
         &__right-container {
             flex-direction: column;

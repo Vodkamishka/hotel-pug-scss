@@ -9,15 +9,15 @@
         text-transform: uppercase;
             span:first-child {
             color: $shade100;
-            font-size: 14px;
-            margin-right: 5px;
+            font-size: 0.875rem;
+            margin-right: 0.3125rem;
         }
         span:nth-child(2) {
-            padding-right: 5px;
-            font-size: 17px;
+            padding-right: 0.3125rem;
+            font-size: 1.0625rem;
         }
         span:last-child {
-            font-size: 12px;
+            font-size: 0.75rem;
             color: $purple;   
         }
         .notShowLuxe {
@@ -29,13 +29,13 @@
     align-items: flex-end;
     color: $shade50;
     span:first-child {
-        font-size: 15px;
+        font-size: 0.9375rem;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 0.0625rem;
     }
     span:last-child {
         font-weight: normal;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 }

@@ -3,11 +3,11 @@
 .long-dropdowns {
     @include short-dropdown;
     .short-dropdown {
-            width: 320px;
-            height: 159px;
-            padding-bottom: 13px;
+            width: 20rem;
+            height: 9.9375rem;
+            padding-bottom: 0.8125rem;
             &__buttons {
-                    margin-top: 19px;
+                    margin-top: 1.1875rem;
             }
             &__apply {
                     color: $purple;

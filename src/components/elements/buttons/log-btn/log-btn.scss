@@ -1,24 +1,24 @@
 @import '../../../../assets/utils/_main.scss';
 
 .log-btn {
-    height: 34px;
-    border-radius: 22px;
-    width: 79px;
+    height: 2.125rem;
+    border-radius: 1.375rem;
+    width: 4.9375rem;
     border: none;
     text-align: center;
     text-transform: uppercase; 
     background: white;
-    border: 1px solid $blue;
+    border: 0.0625rem solid $blue;
         span {
             color: $purple;
             font-family:"Montserrat";
             font-weight: bold;
-            font-size: 12px;
-            height: 15px;
+            font-size: 0.75rem;
+            height: 0.9375rem;
             font-style: normal;
         }
 }
 .log-btn_rus {
     @extend .log-btn;
-    width: 87px;
+    width: 5.4375rem;
 }

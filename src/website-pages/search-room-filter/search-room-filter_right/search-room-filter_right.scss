@@ -4,17 +4,17 @@
     &__title {
         color: $shade100;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 20.5px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        margin-bottom: 1.28125rem;
     }
     &__rooms-wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 12px;
+        grid-column-gap: 0.75rem;
             .card-room {
-                margin: 0 0 20px 0;
+                margin: 0 0 1.25rem 0;
             }
             .card-room:nth-child(1),
             .card-room:nth-child(4),
@@ -29,13 +29,13 @@
             }
     }
     &__pagination {
-        margin: 42px 0 77px 289px;
+        margin: 2.625rem 0 4.8125rem 18.0625rem;
     }
     .short-dropdown {
-        width: 266px;
+        width: 16.625rem;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
     .search-room-filter {
         &__rooms-wrapper {
             grid-template-rows: 1fr 1fr;
@@ -43,13 +43,13 @@
         }
     }
 }
-@media (max-width: 910px) {
+@media (max-width: 56.875rem) {
     .search-room-filter {
         &__right {
             margin: 0 auto;
         }
         &__title {
-            font-size: 12px;
+            font-size: 0.75rem;
             text-transform: uppercase;
         }
         &__rooms-wrapper {

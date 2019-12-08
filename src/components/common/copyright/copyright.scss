@@ -2,12 +2,12 @@
 
 .copyright {
     padding: 0 9.72%;
-    height: 70px;
+    height: 4.375rem;
     flex-wrap: wrap;
     @include space-between;
         &__text {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: 0.875rem;
+            line-height: 1.0625rem;
             color: $shade75;
         }   
 }

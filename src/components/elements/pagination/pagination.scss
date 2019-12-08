@@ -3,17 +3,17 @@
 .pagination {
     &__title {
         @include inputTitle;
-        margin-bottom: 16.44px;
+        margin-bottom: 1.0275rem;
     }
     &__numbers {
         display: flex;
-        margin-bottom: 10.56px;
+        margin-bottom: 0.66rem;
             span, .img-container {
-                width: 40px;
-                height: 40px;
+                width: 2.5rem;
+                height: 2.5rem;
                 font-weight: normal;
-                font-size: 12px;
-                line-height: 15px;
+                font-size: 0.75rem;
+                line-height: 0.9375rem;
                 color: $shade50;
                 @include flex-center;
             }
@@ -29,8 +29,8 @@
     }
     &__text {
         font-weight: normal;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: $shade75;
-        margin-left: 4px;;
+        margin-left: 0.25rem;
     }
 }

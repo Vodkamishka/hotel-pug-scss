@@ -1,9 +1,9 @@
-mixin demo (options)
+mixin demo ({websiteLink, uikitLink, websiteTitles, uikitTitles})
     .demo
         .demo__see See demo
         .demo__title Website Pages
-        for el in options.websiteTitles
-            a(href=`${options.websiteLink}${el.link}/${el.link}.html` target="_blank")= el.title
+        for el in websiteTitles
+            a(href=`${websiteLink}${el.link}/${el.link}.html` target="_blank")= el.title
         .demo__title Ui Kit 
-        for el in options.uikitTitles
-            a(href=`${options.uikitLink}${el.link}/${el.link}.html` target="_blank")= el.title   
+        for el in uikitTitles
+            a(href=`${uikitLink}${el.link}/${el.link}.html` target="_blank")= el.title   
