@@ -1,7 +1,6 @@
 @import '../../../assets/utils/main';
 
 .one-toggle {
-    &__button {
         @include align-items;
         margin: 10px 0 0 0;
         font-size: 14px;
@@ -37,5 +36,5 @@
                 }
         }
     }   
-}
+
 

@@ -27,7 +27,7 @@
         margin-left: 24.6%;
     }     
 }
-.header-eng, .header-eng2 {
+.header_eng, .header_eng2 {
     @extend .extends-header;
         &__navbar {
             margin-left: 25.63%;
@@ -47,7 +47,7 @@
             }
         }      
 }
-.header-eng2 {
+.header_eng2 {
         &__navbar {
             margin: 0 0 0 27%;   
         }
