@@ -1,0 +1,26 @@
+@import '../../../../assets/utils/_main.scss';
+
+.form-elements {
+    &__column_center {
+        width: 20rem;
+        margin: 0 4.5rem 0 7.785rem;
+    }
+    &__container-checkbox {
+        margin-top: 8.9375rem;        
+    }
+    &__container-radio {
+        margin: 2.555rem 0 2.285rem 0;
+    }
+    &__container-like {
+        margin-top: 2.7775rem;
+    }
+    &__container-rate {
+        margin: 2.5rem 0 12.25rem 0;
+    }
+    &__container-rich {
+        margin: 16.09rem 0 0 0;
+    }
+    &__container-murad {
+        margin-top: 14.5rem;
+    }
+}

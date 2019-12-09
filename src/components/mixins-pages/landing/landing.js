@@ -1,0 +1,5 @@
+import './landing.scss'
+import '../../header/header'
+import '../../footer/footer'
+import '../../common/search-rooms/search-rooms'
+import '../../common/copyright/copyright'

@@ -1,17 +1,75 @@
-include ../../components/body/body
-include ../../components/footer/footer
-include ../../components/common/copyright/copyright
-include ../../components/header/header
-include ./room-details_main/room-details_main
-include ./room-details__images/room-details__images
+include ../../components/mixins-pages/room-details/room-details
 
-mixin room-details
-    .room-details
-        +header('header')
-        +room-details__images
-        +room-details_main
-        +footer ('footer')
-        +copyright('copyright')
-
-+body("Room details")
-+room-details
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='room details')
+        meta(name="description" content='room details')
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Room details
+    body
+        +room-details ({
+            header: {
+                classHeader: 'header',
+                titlesNavbar: [
+                    {
+                        item: 'О нас'
+                    },
+                    {
+                        item: 'Услуги',
+                        image: true
+                    },
+                    {
+                        item: 'Вакансии'
+                    },
+                    {
+                    item: 'Новости'
+                    },
+                    {
+                    item:'Соглашения', 
+                    image: true
+                    }
+                ],
+                log: 'войти',
+                register: 'зарегистрироваться'
+            },
+            footer: {
+                classFooter: 'footer',
+                titlesFooter: [
+                    [
+                        'Навигация', 
+                        'О нас', 
+                        'Новости', 
+                        'Служба поддержки', 
+                        'Услуги'
+                    ], 
+                    [
+                        'О нас', 
+                        'О сервисе', 
+                        'Наша команда', 
+                        'Вакансии', 
+                        'Инвесторы'
+                    ], 
+                    [
+                        'Служба поддержки', 
+                        'Соглашения', 
+                        'Сообщества', 
+                        'Связь с нами'
+                    ]
+                ], 
+                textTop: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации "Отельные взгляды"', 
+                textBottom: [
+                    'Подписка', 
+                    'Получайте специальные предложения и новости сервиса'
+                ],
+                email: 'Email'
+            },
+            copyright: {
+                text: 'Copyright © 2018 Toxin отель. Все права зачищены.'
+            }
+        })              

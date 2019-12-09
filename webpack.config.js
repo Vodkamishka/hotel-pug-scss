@@ -123,14 +123,13 @@ module.exports = {
         
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/headers-footers/headers-footers.pug`,
-            chunks: ['ui-kit/headers-footers/headers-footers']
+            template: `./src/ui-kit/demo/demo.pug`,
+            chunks: ['ui-kit/demo/demo']
            }),
         new CopyWebpackPlugin([
             {from: './src/assets/img', to: './assets/img'},
             {from: './src/assets/fonts', to: './assets/fonts'},
             {from: './src/favicon.ico', to: './favicon.ico'},
           ]),
-
     ]
 }

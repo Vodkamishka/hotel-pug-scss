@@ -1,0 +1,27 @@
+include ../../footer/footer.pug
+include ../../common/copyright/copyright.pug
+include ../../header/header.pug
+include ../../elements/logo-wrapper/logo-wrapper.pug
+include ../../elements/social/social.pug 
+
+mixin headers-footers ({header, footer, copyright})
+    - let {classHeader, classHeader2, titlesNavbar, log, register} = header
+    .headers-footers
+        +logo-wrapper
+        .headers-footers__section
+            +header(classHeader, titlesNavbar, log, register)
+        .headers-footers__section2
+            +header(classHeader2, titlesNavbar)
+        .headers-footers__section3
+            +footer(footer)
+        .headers-footers__section4
+            +copyright(copyright)
+        .headers-footers__section5
+            .headers-footers__inner
+                .headers-footers__image
+                    div
+                        img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="logotypes")
+                .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+                .headers-footers__social 
+                    +social                        
+

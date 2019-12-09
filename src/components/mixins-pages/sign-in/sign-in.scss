@@ -1,0 +1,13 @@
+@import '../../../assets/utils/main';
+body {
+    @include body
+}
+.sign-in {
+    height: 75.6875rem;
+        &__image-wrapper {
+            height: 42.75rem;
+            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/sign-in.jpg);
+            @include flex-center;
+            background-size: cover;
+        }
+}

@@ -1,5 +1,0 @@
-import './room-details_main.scss'
-import '../../../components/common/reservation/reservation'
-import '../../../components/elements/info-room/info-room'
-import '../../../components/elements/consumer-comments/consumer-comments'
-import '../../../components/elements/bullet-list/bullet-list'

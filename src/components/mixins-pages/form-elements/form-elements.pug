@@ -1,0 +1,12 @@
+include ../../elements/logo-wrapper/logo-wrapper
+include ./form-elements__column_left/form-elements__column_left.pug
+include ./form-elements__column_center/form-elements__column_center.pug
+include ./form-elements__column_right/form-elements__column_right.pug
+
+mixin form-elements
+    .form-elements
+        +logo-wrapper
+        +form-elements__column_left
+        +form-elements__column_center
+        +form-elements__column_right
+

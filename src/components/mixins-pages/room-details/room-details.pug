@@ -1,0 +1,15 @@
+include ../../footer/footer
+include ../../common/copyright/copyright
+include ../../header/header
+include ./room-details_main/room-details_main
+include ./room-details__images/room-details__images
+
+mixin room-details ({header, footer, copyright})
+    - let {classHeader, titlesNavbar, log, register} = header
+    .room-details
+        +header (classHeader, titlesNavbar, log, register)
+        +room-details__images
+        +room-details_main
+        +footer(footer)
+        +copyright(copyright)
+

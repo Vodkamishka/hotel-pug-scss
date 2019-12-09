@@ -1,29 +1,78 @@
 include ../../components/body/body
-include ../../components/footer/footer.pug
-include ../../components/common/copyright/copyright.pug
-include ../../components/header/header.pug
-include ../../components/elements/logo-wrapper/logo-wrapper.pug
-include ../../components/elements/social/social.pug 
+include ../../components/mixins-pages/headers-footers/headers-footers
 
-mixin headers-footers
-    .headers-footers
-        +logo-wrapper
-        .headers-footers__section
-            +header('header_eng')
-        .headers-footers__section2
-            +header('header_eng2')
-        .headers-footers__section3
-            +footer('footer_eng')
-        .headers-footers__section4
-            +copyright('copyright_eng')
-        .headers-footers__section5
-            .headers-footers__inner
-                .headers-footers__image
-                    div
-                        img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="logotypes")
-                .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-                .headers-footers__social 
-                    +social                        
-
-+body("Headers and footers")
-+headers-footers
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='Headers & footers')
+        meta(name="description" content='Headers & footers')
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Headers & footers
+    body
+        +headers-footers ({
+            header: {
+                classHeader: 'header_eng',
+                classHeader2: 'header_eng2',
+                titlesNavbar: [
+                    {
+                        item: 'Home'
+                    },
+                    {
+                        item: 'About Us'
+                    },
+                    {
+                        item: 'Services',
+                        image: true
+                    },
+                    {
+                        item: 'Careers'
+                    },
+                    {
+                        item:'News'
+                    },
+                    {
+                        item:'Documentation'
+                    }
+                ],
+                log: 'login',
+                register: 'register'
+            },
+            footer: {
+                classFooter: 'footer_eng',
+                titlesFooter: [
+                    [
+                        'Navigation',
+                        'About us', 
+                        'News', 
+                        'Support', 
+                        'Products'
+                    ], 
+                    [
+                        'About us', 
+                        'Who we are', 
+                        'Our team', 
+                        'Careers', 
+                        'Investors'
+                    ], 
+                    [
+                        'Support', 
+                        'Documentation', 
+                        'Community', 
+                        'Get in touch']
+                    ], 
+                textTop: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', 
+                textBottom: [
+                    'subscribes to our newsletter', 
+                    'Recieve our latest news and promotions in your inbox!'
+                ],
+                email: 'Your email address'   
+            },
+            copyright: {
+                text: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
+            }
+        })

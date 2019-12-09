@@ -1,3 +1,3 @@
-import '../../components/pages/demo/demo';
-import '../../components/body/body'
+import '../../components/mixins-pages/demo/demo';
+import '../../components/script/script'
 

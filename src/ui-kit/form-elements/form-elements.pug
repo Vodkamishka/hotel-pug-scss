@@ -1,15 +1,17 @@
 include ../../components/body/body
-include ../../components/elements/logo-wrapper/logo-wrapper
-include ./form-elements__column_left/form-elements__column_left.pug
-include ./form-elements__column_center/form-elements__column_center.pug
-include ./form-elements__column_right/form-elements__column_right.pug
+include ../../components/mixins-pages/form-elements/form-elements
 
-mixin form-elements
-    .form-elements
-        +logo-wrapper
-        +form-elements__column_left
-        +form-elements__column_center
-        +form-elements__column_right
-
-+body("Form elements")
-+form-elements
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='Form elements')
+        meta(name="description" content='Form elements')
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Form elements
+    body
+        +form-elements

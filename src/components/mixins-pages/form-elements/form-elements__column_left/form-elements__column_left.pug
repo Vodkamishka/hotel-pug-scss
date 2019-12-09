@@ -1,0 +1,38 @@
+include ../../../elements/expandable-checkbox/expandable-checkbox
+include ../../../elements/info-room/info-room
+include ../../../elements/input/input
+include ../../../elements/short-dropdowns/short-dropdowns
+
+mixin form-elements__column_left
+    - var list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
+    .form-elements__column_left
+        .form-elements__container-text-field
+            +input('Email', 'text-field','text field', 'default')
+        .form-elements__container-text-field2    
+            +input('This is pretty awesome', 'hover', 'text field', 'hover / focus')
+        .form-elements__container-dropdown
+            +input('Сколько гостей', 'dropdowns', 'dropdown', 'default')
+        .form-elements__container-masked-text-field
+            +input('ДД.ММ.ГГГГ', 'text-field', 'masked text field', 'default')
+        .form-elements__container-date-dropdowns
+            .form-elements__dropdown-left
+                +input('ДД.ММ.ГГГГ','small', 'date dropdown', '', 'small')
+            .form-elements__dropdown-right
+                +input('19.08.2019','small', 'date dropdown', '', 'small')
+        .form-elements__container-filter-date-dropdown
+            +input('19 авг - 23 авг','little-expand', 'filter date dropdown')
+        .form-elements__container-subscription-text-field
+            +input('Email', 'little-arrow', 'subscription text field')
+        .form-elements__container-dropdown2    
+            +short-dropdowns('dropdown', 'default', 'little', '2 спальни, 2 кровати', 'little-expand without-border-radius', 'will-hide')
+        .form-elements__container-dropdown3
+            +short-dropdowns( "dropdown", "expanded", "little", "2 спальни, 2 кровати", "little-expand without-border-radius")
+        .form-elements__container-checkbox-list
+            +expandable-checkbox(list, 'expandable checkbox list', 'hide')
+        .form-elements__container-checkbox-list-expandable
+            +expandable-checkbox(list, 'expandable checkbox list', '', 'image-exp')
+        .form-elements__container-incert-emotion
+            +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+                +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+        .form-elements__container-location-city
+                +info-room('location_city', 'Удобство', 'Окно в каждой из спален')

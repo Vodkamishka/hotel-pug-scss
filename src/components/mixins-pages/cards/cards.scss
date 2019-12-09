@@ -1,0 +1,9 @@
+@import '../../../assets/utils/main';
+body {
+    @include body
+}
+.cards {
+        height: 84.375rem;
+        display: flex;
+        padding-top: 9.375rem;
+}

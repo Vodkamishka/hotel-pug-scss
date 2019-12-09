@@ -1,0 +1,16 @@
+include ../../header/header
+include ../../footer/footer
+include ../../common/search-rooms/search-rooms
+include ../../common/copyright/copyright
+
+mixin landing ({header, footer, copyright})
+    - let {classHeader, titlesNavbar, log, register} = header
+    .landing
+        +header(classHeader, titlesNavbar, log, register)
+        .landing__image-wrapper
+            .landing__search-rooms
+                +search-rooms
+            .landing__text-frame Лучшие номера для вашей работы, отдыха и просто вдохновения     
+        +footer (footer)
+        +copyright(copyright)
+    

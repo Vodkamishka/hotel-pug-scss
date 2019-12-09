@@ -1,5 +1,3 @@
-import './colors-type.scss'
-import '../../components/body/body'
-import '../../components/elements/block/block'
-import '../../components/elements/logo-wrapper/logo-wrapper'
-import './colors-title/colors-title'
+import '../../components/script/script'
+import '../../components/mixins-pages/colors-type/colors-type'
+

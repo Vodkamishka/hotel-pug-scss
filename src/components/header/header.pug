@@ -1,21 +1,14 @@
 include ../elements/buttons/log-reg/log-reg
 include ../navbar/navbar
 
-mixin header (header)
-    - let list = [{item: 'О нас'},{item: 'Услуги',image: true},{item: 'Вакансии'},{item: 'Новости'},{item:'Соглашения', image: true}]
-    - var listEng = [{item: 'Home'},{item: 'About Us'},{item: 'Services', image: true},{item: 'Careers'},{item:'News'},{item:'Documentation'}]
-    div(class=header)
-        div(class=`${header}__image`)
+mixin header (classHeader, titlesNavbar, log, register)
+    div(class=classHeader)
+        div(class=`${classHeader}__image`)
             img(src='https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg', alt='logo')
-        div(class=`${header}__navbar`)
-            if header === 'header'
-                +navbar(list)
-            else
-                +navbar(listEng)
-        div(class=`${header}__third-element`)
-            if header === 'header'    
-                +log-reg('войти','зарегистрироваться')
-            else if header === 'header-eng'
-                +log-reg("login","register")
+        div(class=`${classHeader}__navbar`)
+            +navbar(titlesNavbar)
+        div(class=`${classHeader}__third-element`)
+            if classHeader === 'header' || classHeader === 'header_eng'   
+                +log-reg(log, register)
             else
                 span Cosmin Negoita

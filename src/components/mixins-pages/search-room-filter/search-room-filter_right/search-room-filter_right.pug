@@ -1,0 +1,21 @@
+include ../../../common/card-room/card-room
+include ../../../elements/pagination/pagination
+
+mixin search-room-filter_right
+    .search-room-filter_right 
+        .search-room-filter__title Номера, которые мы для вас подобрали
+        .search-room-filter__rooms-wrapper
+            +cardRoom(888, 9990, 5, 145)
+            +cardRoom(840, 9990, 4, 65, "notShowLuxe")
+            +cardRoom(980, 8500, 3, 35)
+            +cardRoom(856, 7300, 5, 19, "notShowLuxe")
+            +cardRoom(740, 6000, 4, 44, "notShowLuxe")
+            +cardRoom(982, 5800, 3, 56, "notShowLuxe")
+            +cardRoom(678, 5500, 5, 45, "notShowLuxe")
+            +cardRoom(450, 5300, 4, 39, "notShowLuxe")
+            +cardRoom(350, 5000, 3, 77, "notShowLuxe")
+            +cardRoom(666, 5000, 5, 25, "notShowLuxe")
+            +cardRoom(444, 5000, 3, 15, "notShowLuxe")
+            +cardRoom(352, 5000, 3, 55, "notShowLuxe")
+        .search-room-filter__pagination
+            +pagination

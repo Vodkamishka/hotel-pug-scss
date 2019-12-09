@@ -1,6 +1,3 @@
-import '../../components/body/body'
-import '../../components/header/header'
-import '../../components/footer/footer'
-import '../../components/common/copyright/copyright'
-import './room-details_main/room-details_main'
-import './room-details__images/room-details__images'
+import '../../components/script/script'
+import '../../components/mixins-pages/room-details/room-details'
+

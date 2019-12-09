@@ -1,6 +1,6 @@
 @import "../../assets/utils/main.scss";
 
-.extends-header {
+.header__extends {
     min-height: 4.375rem;
     background: #FFFFFF;
     box-shadow: 0px 0.625rem 1.25rem $shade05;
@@ -22,13 +22,13 @@
         }  
 }
 .header {
-    @extend .extends-header;
+    @extend .header__extends;
     &__navbar {
         margin-left: 24.6%;
     }     
 }
 .header_eng, .header_eng2 {
-    @extend .extends-header;
+    @extend .header__extends;
         &__navbar {
             margin-left: 25.63%;
             .navbar {

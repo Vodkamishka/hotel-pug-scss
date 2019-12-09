@@ -1,48 +1,59 @@
-include ../../components/pages/demo/demo
-include ../../components/body/body
+include ../../components/mixins-pages/demo/demo
 
-+body ('Demo')
-+demo ({
-    websiteLink: 'https://vodkamishka.github.io/hotel-webpack-pug-scss/public/website-pages/',
-    uikitLink: 'https://vodkamishka.github.io/hotel-webpack-pug-scss/public/ui-kit/',
-    websiteTitles: [
-        {
-            title: 'Landing Page', 
-            link: 'landing'
-        }, 
-        {
-            title: 'Registration', 
-            link: 'registration'
-        },
-        {
-            title: 'Room details', 
-            link: 'room-details'}, 
-        {
-            title: 'Search room/ Filter', 
-            link: 'search-room-filter'
-        },
-        {
-            title: 'Sign in', 
-            link: 'sign-in'
-        }
-    ],
-    uikitTitles: [
-        {
-            title: 'Cards',
-             link: 'cards'
-        }, 
-        {
-            title: 'Colors & type', 
-            link: 'colors-type'
-        },
-        {
-            title: 'Form elements', 
-            link: 'form-elements'
-        }, 
-        {
-            title: 'Headers & footers', 
-            link: 'headers-footers'
-        }
-    ]
-})
-    
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='Demo')
+        meta(name="description" content='Demo')
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Demo
+    body
+        +demo ({
+            websiteLink: 'https://vodkamishka.github.io/hotel-webpack-pug-scss/public/website-pages/',
+            uikitLink: 'https://vodkamishka.github.io/hotel-webpack-pug-scss/public/ui-kit/',
+            websiteTitles: [
+                {
+                    title: 'Landing Page', 
+                    link: 'landing'
+                }, 
+                {
+                    title: 'Registration', 
+                    link: 'registration'
+                },
+                {
+                    title: 'Room details', 
+                    link: 'room-details'}, 
+                {
+                    title: 'Search room/ Filter', 
+                    link: 'search-room-filter'
+                },
+                {
+                    title: 'Sign in', 
+                    link: 'sign-in'
+                }
+            ],
+            uikitTitles: [
+                {
+                    title: 'Cards',
+                    link: 'cards'
+                }, 
+                {
+                    title: 'Colors & type', 
+                    link: 'colors-type'
+                },
+                {
+                    title: 'Form elements', 
+                    link: 'form-elements'
+                }, 
+                {
+                    title: 'Headers & footers', 
+                    link: 'headers-footers'
+                }
+            ]
+        })
+            

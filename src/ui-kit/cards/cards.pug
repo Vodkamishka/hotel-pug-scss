@@ -1,15 +1,16 @@
-include ../../components/body/body
-include ../../components/elements/logo-wrapper/logo-wrapper.pug
-include ./cards__column_left/cards__column_left.pug
-include ./cards__column_center/cards__column_center.pug
-include ./cards__column_right/cards__column_right.pug 
+include ../../components/mixins-pages/cards/cards
 
-mixin cards
-    .cards
-        +logo-wrapper
-        +cards__column_left
-        +cards__column_center
-        +cards__column_right
-
-+body("Cards")
-+cards
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='Cards')
+        meta(name="description" content='Cards')
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Cards
+    body
+        +cards

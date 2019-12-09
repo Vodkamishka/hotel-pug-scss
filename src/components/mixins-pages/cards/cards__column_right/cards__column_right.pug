@@ -1,0 +1,9 @@
+include ../../../common/card-room/card-room.pug
+include ../../../common/calendar/calendar
+
+mixin cards__column_right
+    .cards__column_right
+        +calendar
+        .cards__middleware-card
+            +cardRoom(888, 9990, 5, 145)
+        +cardRoom(840, 9990, 4, 65, "notShowLuxe")

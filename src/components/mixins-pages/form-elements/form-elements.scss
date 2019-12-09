@@ -1,0 +1,11 @@
+@import '../../../assets/utils/main';
+
+body {
+    @include body
+}
+.form-elements {
+    height: 115.8125rem;
+    width: 100%;
+    display: flex;   
+}
+
