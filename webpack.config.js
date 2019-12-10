@@ -123,8 +123,8 @@ module.exports = {
         
         new HTMLWebpackPlugin({
             hash: false,
-            template: `./src/ui-kit/demo/demo.pug`,
-            chunks: ['ui-kit/demo/demo']
+            template: `./src/website-pages/landing/landing.pug`,
+            chunks: ['website-pages/landing/landing']
            }),
         new CopyWebpackPlugin([
             {from: './src/assets/img', to: './assets/img'},

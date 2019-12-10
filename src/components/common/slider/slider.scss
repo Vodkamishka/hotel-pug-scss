@@ -1,10 +1,10 @@
 @import '../../../assets/utils/main';
 
-.slider-wrapper {
+.slider {
     height: 2.9375rem;
     width: 16.625rem;
     @include inputTitle;
-    .slider {
+    .slider_inner {
         width: 16.625rem;
         height: 0.375rem;
         background: $white;

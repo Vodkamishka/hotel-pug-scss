@@ -801,7 +801,7 @@
                     if (/left|right/.test(main)) {
                         top = dims.top + dims.height/2 - selfDims.height/2;
                     } else {
-                        left = $(this.$el).get(0).offsetLeft /*dims.left + dims.width/2 - selfDims.width*/;
+                        left = $('#start').get(0).offsetLeft /*dims.left + dims.width/2 - selfDims.width*/;
                         
                     }
             }
