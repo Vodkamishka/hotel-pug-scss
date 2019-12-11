@@ -2,20 +2,28 @@ import '../label/label'
 import './input-calendar.scss'
 import '../../common/calendar-not-expand/calendar-not-expand'
 
-$('#start').datepicker({
+
+
+$( document ).ready(function() {
+
+  $("#start").datepicker({
     multipleDates: 2,
     range: true,
     multipleDatesSeparator: ' - ',
-    clearButton: true,
+   
+  
 });
 
-$('#start').datepicker({ 
+
+$("#start").datepicker({ 
     onSelect: function (fd, d, picker) { 
       $("#start").val(fd.split("-")[0]);
       $("#end").val(fd.split("-")[1]);
     }
   });
 
-$('#end').click(function(e) {
-    $('#start').datepicker().data('datepicker').show();
-});
+  $("#end").click(function(e) {
+    $("#start").data("datepicker").show();
+  });
+
+})

@@ -178,7 +178,9 @@
   left: 0;
   top: 0;
  }
-  
+ .datepickers-container > .datepicker:nth-child(2) {
+  z-index: -100
+ } 
   @media print {
     .datepickers-container {
       display: none; } }
