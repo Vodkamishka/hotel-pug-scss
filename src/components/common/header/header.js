@@ -1,3 +1,3 @@
 import './header.scss';
-import '../elements/buttons/log-reg/log-reg.js';
+import '../../elements/buttons/log-reg/log-reg';
 import '../navbar/navbar';
