@@ -1,51 +1,53 @@
 @import "../../../assets/utils/_main.scss";
 
+@mixin block_squere($background) {
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 0.375rem;
+  background: $background;
+}
 .block {
+  display: flex;
+  margin-bottom: 1.25rem;
+  align-items: center;
+  &_squere {
+    &_shade {
+      @include block_squere($shade100);
+    }
+    &_shade75 {
+      @include block_squere($shade75);
+    }
+    &_shade50 {
+      @include block_squere($shade50);
+    }
+    &_shade25 {
+      @include block_squere($shade25);
+    }
+    &_shade05 {
+      @include block_squere($shade05);
+    }
+    &_purple {
+      @include block_squere($purple);
+    }
+    &_green {
+      @include block_squere($green);
+    }
+  }
+  &__text {
+    width: 9.9375rem;
+    height: 3.5625rem;
+    margin-left: 2.5rem;
     display: flex;
-    margin-bottom: 1.25rem;
-    align-items: center;
-        &__squere {
-            width: 4.375rem;
-            height: 4.375rem;
-            border-radius: 0.375rem;
-        }
-        &__text {
-            width: 9.9375rem;
-            height: 3.5625rem;
-            margin-left: 2.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            font-size: 1.125rem;
-            font-weight: bold;
-            color: $shade100;
-        }
-        &__text1 {
-            white-space: nowrap;
-        }
-        &__text2 {
-            font-weight: normal;
-        }
-}
-
-.shade {
-    background: $shade100;
-}
-.shade75 {
-    background: $shade75;
-}
-.shade50 {
-    background: $shade50;
-}
-.shade25 {
-    background: $shade25;
-}
-.shade05 {
-    background: $shade05;
-}
-.purple {
-    background: $purple;
-}
-.green {
-    background: $green;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: $shade100;
+  }
+  &__text_first {
+    white-space: nowrap;
+  }
+  &__text2_second {
+    font-weight: normal;
+  }
 }

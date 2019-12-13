@@ -5,13 +5,13 @@ mixin consumer-comments(img, name, term, like, text)
         .consumer-comments_top
             .consumer-comments__img(style= `background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/photo/${img}.jpg) -20px -10px`)
             .consumer-comments_right
-                .consumer-comments__name= name
-                .consumer-comments__term= term
+                .consumer-comments__name=name
+                .consumer-comments__term=term
         .consumer-comments_bottom
             if like === 12
                 +like(12)
             else 
                 +like(2)
             .consumer-comments__text
-                p= text
+                p=text
                     

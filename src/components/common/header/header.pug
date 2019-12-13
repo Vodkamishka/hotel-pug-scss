@@ -1,4 +1,4 @@
-include ../../elements/buttons/log-reg/log-reg
+include ../../elements/buttons/buttons__login-register/buttons__login-register
 include ../navbar/navbar
 
 mixin header (classHeader, titlesNavbar, log, register)
@@ -9,6 +9,6 @@ mixin header (classHeader, titlesNavbar, log, register)
             +navbar(titlesNavbar)
         div(class=`${classHeader}__third-element`)
             if classHeader === 'header' || classHeader === 'header_eng'   
-                +log-reg(log, register)
+                +buttons__login-register(log, register)
             else
                 span Cosmin Negoita

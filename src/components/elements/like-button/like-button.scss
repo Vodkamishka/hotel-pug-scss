@@ -1,14 +1,14 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .like-button {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 1rem;
+  &__title {
+    @include title-inputs;
+    margin-bottom: 1rem;
+  }
+  &__likes {
+    display: flex;
+    .like:nth-child(1) {
+      margin-right: 0.625rem;
     }
-    &__like {
-        display: flex;
-            .like:nth-child(1) {
-                margin-right: 0.625rem;
-            }  
-    }
+  }
 }

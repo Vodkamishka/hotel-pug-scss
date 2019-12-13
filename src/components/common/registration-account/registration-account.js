@@ -1,6 +1,6 @@
-import './registration-account.scss'
-import '../../elements/input/input'
-import '../../elements/one-toggle/one-toggle'
-import '../../elements/buttons/long-btn/long-btn'
-import '../../elements/buttons/short-btn/short-btn'
-import '../../elements/radio/radio'
+import "./registration-account.scss";
+import "../../elements/input/input";
+import "../../elements/toggle_one/toggle_one";
+import "../../elements/buttons/button_long/button_long";
+import "../../elements/buttons/button_short/button_short";
+import "../../elements/radio/radio";

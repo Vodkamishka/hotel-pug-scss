@@ -1,2 +1,2 @@
-import './toggle.scss';
-import '../one-toggle/one-toggle'
+import "./toggle.scss";
+import "../toggle_one/toggle_one";

@@ -1,116 +1,43 @@
-@import '../../../assets/utils/main.scss';
-
-@mixin innerFooter {
-    .footer_inner {
-        padding: 6.25rem 9.72%;
-        box-sizing: border-box;
-        height: 23.25rem;
-        display: flex;
-            ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                &:first-child {
-                    p {
-                        @include Montserrat(0.875rem);
-                        width: 16.25rem;
-                        line-height: 1.5rem;
-                        color: $shade75;
-                        height: 4.5rem;
-                        margin-top: 0.875rem;
-                        height: 6rem;
-                    }
-                }
-                &:nth-child(2) {
-                    white-space: nowrap;
-                    margin: 0 7.4375rem 0 2.5rem;
-                    li {
-                        width: 5.0625rem;
-                    }
-                }
-                &:nth-child(3) {
-                    white-space: nowrap;
-                    li {
-                        width:5.125rem;
-                    }
-                }
-                &:nth-child(4) {
-                    white-space: nowrap;
-                    margin: 0 5.4375rem 0 7.375rem;
-                    li {
-                        width: 7.0625rem;
-                    }
-                }
-                &:last-child {
-                    li:nth-child(2) {
-                        line-height: 1.5rem;
-                            a {
-                                color: $shade75;
-                            }
-                    }
-                }
-                li {
-                    margin-bottom: 1.1875rem;
-                        a {
-                            @include Montserrat(0.875rem);
-                            text-decoration: none;
-                            line-height: 1.0625rem;
-                            font-size: 0.875rem;
-                            color: $shade50;
-                        }
-                        &:nth-child(1){
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            margin-bottom: 1.1875rem;
-                                a {
-                                    color: $shade100;
-                                    line-height: 0.9375rem;
-                                    font-size: 0.75rem;
-                                }
-                        }
-                }
-            }
-    }
-}
+@import "../../../assets/utils/main.scss";
 
 .footer_eng {
-    @include innerFooter;
-}   
+  @include footer_inner;
+}
 .footer {
-    @include innerFooter;
-        &_inner {
-            ul {
-                &:nth-child(2){
-                    margin: 0 3.5625rem 0 2.5rem;
-                    li {
-                        width: 8.9375rem;
-                    } 
-                }
-                &:nth-child(3) {
-                    white-space: nowrap;
-                    li {
-                        width: 6.75rem;
-                    }
-                }
-                &:nth-child(4) {
-                    margin: 0 3.1875rem 0 5.75rem;
-                    li {
-                        width: 9.3125rem;
-                    }
-                }
-                &:last-child {
-                    li:nth-child(2) {
-                        width: 16.25rem;
-                    }
-                }
-            }
+  @include footer_inner;
+  &_inner {
+    ul {
+      &:nth-child(2) {
+        margin: 0 3.5625rem 0 2.5rem;
+        li {
+          width: 8.9375rem;
         }
-} 
-@media (max-width: 84.375rem) {
-    .footer {
-        &_inner {
-            flex-wrap: wrap;
-            height: auto;
+      }
+      &:nth-child(3) {
+        white-space: nowrap;
+        li {
+          width: 6.75rem;
         }
+      }
+      &:nth-child(4) {
+        margin: 0 3.1875rem 0 5.75rem;
+        li {
+          width: 9.3125rem;
+        }
+      }
+      &:last-child {
+        li:nth-child(2) {
+          width: 16.25rem;
+        }
+      }
     }
+  }
+}
+@media (max-width: 84.375rem) {
+  .footer {
+    &_inner {
+      flex-wrap: wrap;
+      height: auto;
+    }
+  }
 }

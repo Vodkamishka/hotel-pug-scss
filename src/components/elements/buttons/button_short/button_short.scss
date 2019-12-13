@@ -1,0 +1,45 @@
+@import "../../../../assets/utils/_main.scss";
+
+@mixin button_short {
+  width: 6.1875rem;
+  height: 2.75rem;
+  border-radius: 1.375rem;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.button_short {
+  &_purple {
+    @include button_short;
+    background: $gradient;
+    color: $white;
+  }
+  &_purple05 {
+    @include button_short;
+    background: $gradient;
+    color: $white;
+    opacity: 0.5;
+  }
+  &_white {
+    @include button_short;
+    color: $purple;
+    border: 0.125rem solid transparent;
+    background-origin: border-box;
+    background-image: $gradient;
+    box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
+  }
+  &_white05 {
+    @include button_short;
+    color: $purple;
+    border: 0.125rem solid transparent;
+    background-origin: border-box;
+    background-image: $gradient;
+    box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
+    border-opacity: 0.5;
+  }
+}

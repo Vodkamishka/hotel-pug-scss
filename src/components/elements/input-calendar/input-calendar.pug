@@ -3,8 +3,8 @@ include ../../common/calendar-not-expand/calendar-not-expand
 
 mixin input-calendar (placeholder, classLabel, leftLabel, placeholder2, classLabel2, leftLabel2, id, id2 )
     .input-calendar
-        +label(leftLabel, '', classLabel)
+        +label(classLabel, leftLabel, '')
         +calendar-not-expand(placeholder, id)
     .input-calendar
-        +label(leftLabel2, '', classLabel2)
+        +label(classLabel2, leftLabel2, '')
         +calendar-not-expand(placeholder2, id2)    

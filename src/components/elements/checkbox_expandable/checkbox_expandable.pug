@@ -1,0 +1,13 @@
+include ../checkbox-list/checkbox-list.pug
+
+mixin checkbox_expandable (list, title, clas = '', clas2 = '')
+    .checkbox_expandable    
+        .checkbox_expandable__mainline
+            .checkbox_expandable__title= title
+            .checkbox_expandable__image(class = clas2)    
+        .checkbox_expandable__list(class = clas)
+            +checkbox-list(list)
+
+           
+
+    

@@ -14,12 +14,12 @@
         }
 }
 .like { 
-        &__left {
+        &_left {
             border: 0.0625rem solid $shade25;
             color: $shade25;
             @extend .like-extend
         }
-        &__right {
+        &_right {
             border: 0.0625rem solid $purple;
             color: $purple;
             @extend .like-extend

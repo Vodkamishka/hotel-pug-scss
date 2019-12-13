@@ -1,12 +1,12 @@
-include ../one-toggle/one-toggle
+include ../toggle_one/toggle_one
 
 mixin toggle (show)
     .toggle
         if show
             .toggle__title Toggle
         .toggle__buttons
-            +one-toggle(true)
-            +one-toggle(false)
+            +toggle_one(true)
+            +toggle_one(false)
         
 
 

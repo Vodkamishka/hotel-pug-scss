@@ -1,6 +1,8 @@
-mixin execute-panel(second)
+mixin execute-panel(title, result)
     .execute-panel
-        .execute-panel__circle-decrement -
-        .execute-panel__result= second
-        .execute-panel__circle-increment +
+        .execute-panel__title=title
+        .execute-panel__increment-decrement
+            .execute-panel__decrement -
+            .execute-panel__result=result
+            .execute-panel__increment +
 

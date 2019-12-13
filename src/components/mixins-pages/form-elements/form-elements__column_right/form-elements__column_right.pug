@@ -1,5 +1,5 @@
-include ../../../elements/buttons/long-btn/long-btn
-include ../../../elements/long-dropdowns/long-dropdowns
+include ../../../elements/buttons/button_long/button_long
+include ../../../elements/dropdowns_long/dropdowns_long
 include ../../../common/slider/slider
 include ../../../elements/pagination/pagination.pug
 include ./container-buttons/container-buttons.pug
@@ -12,11 +12,11 @@ mixin form-elements__column_right
         .form-elements__container-buttons
             +container-buttons
         .form-elements__container-long-button
-            +long-btn("Перейти к оплате")
+            +button_long("Перейти к оплате")
         .form-elements__container-pagination
             +pagination('show')
         .form-elements__container-dropdown
-            +long-dropdowns( "dropdown", "", "", "Сколько гостей", "dropdowns-long without-border-radius", 'block')
+            +dropdowns_long( "Сколько гостей", "dropdowns-long without-border-radius", 'long', "dropdown", "",  'block')
         .form-elements__container-bullet
             .form-elements__bullet-title Bullet List
             +bullet-list

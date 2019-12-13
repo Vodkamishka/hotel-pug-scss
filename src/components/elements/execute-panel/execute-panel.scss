@@ -1,19 +1,20 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .execute-panel {
+  @include space-between;
+  &__increment-decrement {
     width: 5.75rem;
     @include space-between;
-        &__circle-increment, &__circle-decrement {
-            width: 1.875rem;
-            height: 1.875rem;
-            border-radius: 1.375rem;
-            border: 0.0625rem solid $shade25;
-            @include flex-center;
-            font-size: 1.125rem;
-            line-height: 1.375rem;
-            box-sizing: border-box;
-        }
-        &__circle-increment.hide {
-            opacity: 0;
-        }
+  }
+  &__increment,
+  &__decrement {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 1.375rem;
+    border: 0.0625rem solid $shade25;
+    @include flex-center;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    box-sizing: border-box;
+  }
 }

@@ -1,29 +1,30 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .label {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: $shade100;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-transform: uppercase;
+  color: $shade100;
+  width: $long;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  &_little {
+    width: $little;
+  }
+  &_small {
+    width: $small;
+  }
+  &_long {
     width: $long;
-    display: flex;
-    justify-content: space-between;
-        .label__right {
-            color: $shade50;
-            font-weight: normal;
-        }
-    &.little {
-        width: $little;
-    }
-    &.small {
-        width: $small;
-    } 
-    &__left {
-        margin-bottom: 0.3125rem;
-    }
-    &__right {
-        margin-bottom: 0.34rem;
-    }
+  }
+  &_left {
+    margin-bottom: 0.3125rem;
+  }
+  &_right {
+    margin-bottom: 0.34rem;
+    color: $shade50;
+  }
 }

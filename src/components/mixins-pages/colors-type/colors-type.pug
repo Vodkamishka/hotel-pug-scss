@@ -1,6 +1,6 @@
 include ../../elements/block/block
 include ../../elements/logo-wrapper/logo-wrapper
-include ./colors-title/colors-title
+include ../../elements/colors-title/colors-title
 include ../../elements/logo-wrapper/logo-wrapper.pug 
 
 mixin colors-type
@@ -15,7 +15,7 @@ mixin colors-type
             +block("purple", "Purple", "#BC9CFF")
             +block("green", "Green", "#6FCF97")
         .colors-type__title
-            +colors-title("H1", "This one is the sub-section or widget title", "h1")
-            +colors-title("H2", "Next one is the item title inside widget", "h2")
-            +colors-title("H3", "This is a label or CTA text", "h3")
-            +colors-title("Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc", "h4")
+            +colors-title("H1", "This one is the sub-section or widget title", "first")
+            +colors-title("H2", "Next one is the item title inside widget", "second")
+            +colors-title("H3", "This is a label or CTA text", "third")
+            +colors-title("Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc", "fourth")

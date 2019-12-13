@@ -1,55 +1,54 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .radio {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 1rem;
+  &__title {
+    @include title-inputs;
+    margin-bottom: 1rem;
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__buttons-container {
+    display: block;
+    position: relative;
+    padding-left: 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $shade75;
+    margin-right: 1.25rem;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
     }
-    &__buttons {
-        display: flex;
+    input:checked ~ .radio__checkmark:after {
+      display: block;
+      border: 0.0625rem solid $purple;
     }
-    &__buttons-container {
-        display: block;
-        position: relative;
-        padding-left: 1.875rem;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $shade75;
-        margin-right: 1.25rem;
-            input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-            }
-            .checkmark {
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
-                left: 0;
-                height: 1.25rem;
-                width: 1.25rem;
-                background-color: $white;
-                border-radius: 50%;
-                border: 1px solid $shade25;
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-	                    width: 0.75rem;
-	                    height: 0.75rem;
-	                    border-radius: 50%;
-                        background: $blue;
-                        display: none;
-                    }
-            }
-            input:checked ~ .checkmark:after {
-                display: block;
-                border: 0.0625rem solid $purple;
-            }
+  }
+  &__checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $shade25;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: $blue;
+      display: none;
     }
-
+  }
 }

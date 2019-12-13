@@ -1,0 +1,10 @@
+@import "../../../assets/utils/main";
+
+.dropdowns_short {
+  &__container_execute {
+    @include container_execute;
+  }
+  &_hide {
+    display: none;
+  }
+}

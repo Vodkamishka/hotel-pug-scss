@@ -1,1 +1,0 @@
-import './short-btn.scss'

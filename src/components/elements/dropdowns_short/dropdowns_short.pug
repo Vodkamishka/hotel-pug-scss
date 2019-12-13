@@ -1,0 +1,12 @@
+include ../input/input
+include ../execute-panel/execute-panel
+
+mixin dropdowns_short (placeholder, classInput, classLabel, leftLabel, rightLabel, classShowDropdown)
+    .dropdowns_short
+        +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
+        .dropdowns_short__container_execute(class= classShowDropdown)
+            +execute-panel('Спальни', 2)
+            +execute-panel('Кровати', 2)
+            +execute-panel('Ванные комнаты', 0)
+            
+

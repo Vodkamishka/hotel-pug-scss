@@ -1,0 +1,25 @@
+@import "../../../assets/utils/main";
+
+.dropdowns_long {
+  &__container_execute {
+    @include container_execute;
+    height: 9.9375rem;
+    width: 20rem;
+    padding-bottom: 0.8125rem;
+  }
+  &_hide {
+    display: none;
+  }
+  &__buttons {
+    margin-top: 1.1875rem;
+  }
+  &__apply {
+    color: $purple;
+    text-align: right;
+    float: right;
+  }
+  &__clear {
+    color: $shade50;
+    float: left;
+  }
+}

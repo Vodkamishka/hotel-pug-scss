@@ -1,3 +1,3 @@
-import './header.scss';
-import '../../elements/buttons/log-reg/log-reg';
-import '../navbar/navbar';
+import "./header.scss";
+import "../../elements/buttons/buttons__login-register/buttons__login-register";
+import "../navbar/navbar";

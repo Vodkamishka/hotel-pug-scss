@@ -1,14 +1,14 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .rate {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 1rem;
-    }
-    &__rate {
-        display: flex;
-    }
-    &_left {
-        margin-right: 1.25rem;
-    }
+  &__title {
+    @include title-inputs;
+    margin-bottom: 1rem;
+  }
+  &__rate {
+    display: flex;
+  }
+  &_left {
+    margin-right: 1.25rem;
+  }
 }

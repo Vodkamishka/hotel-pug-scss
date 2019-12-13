@@ -1,36 +1,37 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .pagination {
-    &__title {
-        @include inputTitle;
-        margin-bottom: 1.0275rem;
+  &__title {
+    @include title-inputs;
+    margin-bottom: 1.0275rem;
+  }
+  &__numbers {
+    display: flex;
+    margin-bottom: 0.66rem;
+    span:first-child {
+      border-radius: 50%;
+      color: $white;
+      background: $gradient;
     }
-    &__numbers {
-        display: flex;
-        margin-bottom: 0.66rem;
-            span, .img-container {
-                width: 2.5rem;
-                height: 2.5rem;
-                font-weight: normal;
-                font-size: 0.75rem;
-                line-height: 0.9375rem;
-                color: $shade50;
-                @include flex-center;
-            }
-            span:first-child {
-                border-radius: 50%;
-                color: $white;
-                background: $gradient;
-            }
-            .img-container {
-                border-radius: 50%;
-                background: $gradient-green;
-            }
-    }
-    &__text {
-        font-weight: normal;
-        font-size: 0.875rem;
-        color: $shade75;
-        margin-left: 0.25rem;
-    }
+  }
+  span,
+  &__img-container {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: $shade50;
+    @include flex-center;
+  }
+  &__img-container {
+    border-radius: 50%;
+    background: $gradient-green;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: $shade75;
+    margin-left: 0.25rem;
+  }
 }

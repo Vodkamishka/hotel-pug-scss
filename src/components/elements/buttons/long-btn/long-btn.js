@@ -1,1 +1,0 @@
-import './long-btn.scss';

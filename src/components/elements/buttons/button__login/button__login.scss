@@ -1,0 +1,24 @@
+@import "../../../../assets/utils/_main.scss";
+
+.button__login {
+  height: 2.125rem;
+  border-radius: 1.375rem;
+  width: 4.9375rem;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: white;
+  border: 0.0625rem solid $blue;
+  span {
+    color: $purple;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 0.75rem;
+    height: 0.9375rem;
+    font-style: normal;
+  }
+}
+.button__login_rus {
+  @extend .button__login;
+  width: 5.4375rem;
+}

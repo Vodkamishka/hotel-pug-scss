@@ -1,0 +1,19 @@
+@import "../../../../assets/utils/_main.scss";
+
+.button_long {
+  width: 20rem;
+  height: 2.75rem;
+  border-radius: 1.375rem;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg")
+      no-repeat 290px,
+    $gradient;
+  span {
+    color: $white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    height: 0.9375rem;
+  }
+}

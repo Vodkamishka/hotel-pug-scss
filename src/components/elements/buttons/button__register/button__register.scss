@@ -1,0 +1,22 @@
+@import "../../../../assets/utils/_main.scss";
+
+.button__register {
+  height: 34px;
+  border-radius: 22px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: $gradient;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  span {
+    color: $white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    height: 0.9375rem;
+  }
+}
+.button__register_rus {
+  @extend .button__register;
+  width: 12.25rem;
+}

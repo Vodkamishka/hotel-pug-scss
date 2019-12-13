@@ -1,15 +1,15 @@
 include ../../elements/luxe/luxe
 include ../../elements/comments-stars/comments-stars
 
-mixin cardRoom (img, price, stars, comments, clas)
+mixin card-room(img, price, stars, comments, clas)
     .card-room
         .card-room__image(style=`background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/${img}.jpg);`)
             .card-room__group-balls
-                .card-room__balls.card-room__ball
-                .card-room__balls.card-room__ball_empty
-                .card-room__balls.card-room__ball_empty
-                .card-room__balls.card-room__ball_empty
+                .card-room__ball_full
+                .card-room__ball_empty
+                .card-room__ball_empty
+                .card-room__ball_empty
         .card-room__luxe
             +luxe(img, price, clas)
         .card-room__stars
-            +comments-stars (stars,comments)
+            +comments-stars(stars,comments)

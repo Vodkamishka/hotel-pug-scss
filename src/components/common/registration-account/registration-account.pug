@@ -1,7 +1,7 @@
 include ../../elements/input/input.pug
-include ../../elements/one-toggle/one-toggle.pug
-include ../../elements/buttons/long-btn/long-btn.pug
-include ../../elements/buttons/short-btn/short-btn.pug
+include ../../elements/toggle_one/toggle_one.pug
+include ../../elements/buttons/button_long/button_long.pug
+include ../../elements/buttons/button_short/button_short.pug
 include ../../elements/radio/radio.pug
 
 mixin registration-account
@@ -16,12 +16,12 @@ mixin registration-account
         .registration-account__two-fields
             +input('Email','text-field', 'Данные для входа в сервис')
             +input('Пароль','text-field')
-        +one-toggle(false)
+        +toggle_one(false)
         .registration-account__button
-            +long-btn('Перейти к оплате')
+            +button_long('Перейти к оплате')
         .registration-account__toxin
             .registration-account__text Уже есть аккаунт на Toxin
-            +srt-btn("Войти", "white")
+            +button_short("Войти", "white")
     
 
     

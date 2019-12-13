@@ -1,57 +1,46 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .card-room {
+  width: 16.875rem;
+  height: 16.0625rem;
+  box-shadow: 0px 0.625rem 1.25rem $shade05;
+  background: $white;
+  &__image {
+    margin-bottom: 1.25rem;
     width: 16.875rem;
-    height: 16.0625rem;
-    box-shadow: 0px 0.625rem 1.25rem $shade05;
+    height: 9.46125rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    position: relative;
+  }
+  &__group-balls {
+    position: absolute;
+    display: flex;
+    left: 13.359375rem;
+    top: 8.055625rem;
+  }
+  &__group-balls > * {
+    box-shadow: 0 0.3125rem 0.3125rem rgba(31, 32, 65, 0.3);
+    width: 0.46875rem;
+    height: 0.46875rem;
+    border-radius: 50%;
+    margin-right: 0.234375rem;
+  }
+  &__ball_full {
     background: $white;
-        &__image {
-            margin-bottom: 1.4375rem;
-            width: 16.875rem;
-            height: 9.46125rem;
-            border-radius: 0.25rem 0.25rem 0 0;
-            position: relative;
-        }
-        &__group-balls {
-            position: absolute;
-            display: flex;
-            left: 13.359375rem;
-            top: 8.055625rem;
-        }
-        &__balls {
-            box-shadow: 0 0.3125rem 0.3125rem rgba(31, 32, 65, 0.3);
-            width: 0.46875rem;
-            height: 0.46875rem;
-            border-radius: 50%;
-            margin-right: 0.234375rem;
-        }
-        &__ball {
-            background: $white;
-        }
-        &__ball_empty {
-            border: 0.0625rem solid $white;
-            box-sizing: border-box;
-        }
-        &__luxe {
-            margin-bottom: 1.25rem;
-            .luxe__luxe {
-                display: flex;
-                align-items: flex-end;
-                margin-left: 1.25rem;
-                    p:nth-child(2){
-                        font-size: 1.125rem;
-                    }
-            }
-            .luxe__price {
-                margin-right: 1.0625rem;
-            }
-        }
-        &__stars {
-            .stars {
-                margin-left: 1.25rem; 
-            }
-            .comments-stars__comments {
-                margin-right: 1.25rem;
-            }
-        }
+  }
+  &__ball_empty {
+    border: 0.0625rem solid $white;
+    box-sizing: border-box;
+  }
+  &__luxe {
+    margin-bottom: 1.25rem;
+    padding: 0 16px 0 20px;
+    .luxe__luxe {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &__stars {
+    padding-left: 20.56px;
+  }
 }

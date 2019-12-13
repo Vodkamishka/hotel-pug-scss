@@ -1,195 +1,264 @@
 @import "./vars.scss";
 
 @mixin align-items {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin justify-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-@mixin Montserrat($size) {
-    font-size: $size;
-    color: $shade50;
+@mixin montserrat($size) {
+  font-size: $size;
+  color: $shade50;
 }
 
-@mixin inputTitle {
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    text-transform: uppercase;
-    color: $shade100;
+@mixin title-inputs {
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-transform: uppercase;
+  color: $shade100;
 }
 
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin space-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@mixin textElements {
+@mixin checkbox__input {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.625rem;
+  input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.0625rem solid $shade25;
+    border-radius: 0.25rem;
+    margin: 0 0.60625rem 0 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: $white;
+  }
+  input[type="checkbox"]:checked {
+    border: 0.0625rem solid $purple;
+    margin: 0 0.625rem 0 0;
+    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg)
+        no-repeat center center,
+      $white;
+  }
+  label {
     font-size: 0.875rem;
-    line-height: 1.5rem;
-    color: $shade75;
-}
-
-@mixin input-checkbox {
-    .check-list {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 0.625rem;
-            input[type='checkbox'] {
-                width: 1.25rem;
-                height: 1.25rem;
-                border: 0.0625rem solid $shade25;
-                border-radius: 0.25rem;
-                margin: 0 0.60625rem 0 0;
-                outline: none;
-                -webkit-appearance: none;
-                background: $white;
-            }
-            input[type='checkbox']:checked {
-                border: 0.0625rem solid $purple;
-                margin: 0 0.625rem 0 0;
-                background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg) no-repeat center center, $white;
-            }
-            label {
-                font-size: 0.875rem;
-                line-height: 1.125rem;
-                color: $shade50;
-                width: 12rem;
-            }
-    }
+    line-height: 1.125rem;
+    color: $shade50;
+    width: 12rem;
+  }
 }
 
 @mixin cards {
-    box-shadow: 0px 0px 1.5625rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.25rem;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.12);
-    padding: 2.5rem 1.875rem 1.875rem 1.875rem;
-    box-sizing: border-box;
-        &__title {
-            font-family: 'Montserrat', Arial, sans-serif;;
-            font-weight: bold;
-            font-size: 1.5rem;
-            line-height: 1.875rem;
-            color: $shade100;
-            margin-bottom: 1.25rem;
-        }
+  box-shadow: 0px 0px 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
+  box-sizing: border-box;
+  &__title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $shade100;
+    margin-bottom: 1.25rem;
+  }
 }
 
 @mixin toxin {
-    &__toxin {
-        @include align-items;
-        justify-content: space-between;
-    }
-    &__text {
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        color: $black;
-        font-family: 'Montserrat', Arial, sans-serif;;
-    }
+  &__toxin {
+    @include align-items;
+    justify-content: space-between;
+  }
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $black;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
 }
 
-@mixin short-dropdown {
-    .short-dropdown {
-            position: absolute;
-            box-sizing: border-box;
-            border: 0.0625rem solid $shade50;
-            border-top: transparent;
-            width: 16.625rem;
-            height: 7.4375rem;
-            padding: 0.4375rem 0.4375rem 0.5rem 0.9375rem;
-            font-weight: bold;
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
-            background: $white;
-            color: $shade100;
-            text-transform: uppercase;
-            font-family: Montserrat;
-            z-index: 10000;
-                    &__row {
-                            @include space-between;
-                            margin-bottom: 0.4375rem;
-                    }
-    }
-    .will-hide {
-            padding-bottom: 0.9375rem;
-            opacity: 0;
-            z-index: -1;
-    }  
+@mixin container_execute {
+  position: absolute;
+  box-sizing: border-box;
+  border: 0.0625rem solid $shade50;
+  border-top: transparent;
+  width: 16.625rem;
+  height: 7.4375rem;
+  padding: 0.4375rem 0.4375rem 0.5rem 0.9375rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  background: $white;
+  color: $shade100;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  z-index: 10000;
+  .execute-panel {
+    margin-bottom: 0.4375rem;
+  }
+  .will-hide {
+    padding-bottom: 0.9375rem;
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 @mixin input-text {
-    input[type="text"] {
-        box-sizing: border-box;
-        width: 20rem;
-        height: 2.75rem;
-        border: 0.0625rem solid rgba($shade25, 0.25);
-        border-radius: 0.25rem;
-        padding-left: 0.9375rem;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-            &::placeholder {
-                color: $shade50;
-            }
-            &:hover {
-                border: 0.0625rem solid rgba($shade50, 0.5);
-                    &::placeholder {
-                    color: $shade75;
-            }
-        }
-        &.hover {
-            border: 0.0625rem solid rgba($shade50, 0.5);
-            color: $shade25;
-            &::placeholder {
-                color: $shade75;
-            }
-        }
-        &.dropdowns {
-            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
-            $white;
-            color: $shade75;
-        }
-        &.dropdowns-long {
-            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 290px,
-            $white;
-            color: $shade75;
-        }
-        &.small {
-            width: 9.375rem;
-                &::placeholder {
-                    color: $shade75;  
-                }
-            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 120px,
-            $white
-        }
-        &.little-expand {
-            width: 16.625rem;
-            &::placeholder {
-                color: $shade75;  
-            }
-            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 240px,
-            $white
-        }
-        &.little-arrow {
-            width: 16.625rem;
-            &::placeholder {
-                color: $shade25;  
-            }
-            background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg') no-repeat 235px,
-            $white
-        }
-        &.without-border-radius {
-            border-radius: 0.25rem 0.25rem 0 0;
-        }
+  .input_hover {
+    border: 0.0625rem solid rgba($shade50, 0.5);
+    color: $shade25;
+    &::placeholder {
+      color: $shade75;
     }
+  }
+  .input_dropdowns {
+    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+        no-repeat 290px,
+      $white;
+    color: $shade75;
+  }
+  .input_dropdowns-long {
+    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+        no-repeat 290px,
+      $white;
+    color: $shade75;
+  }
+  .input_small {
+    width: 9.375rem;
+    &::placeholder {
+      color: $shade75;
+    }
+    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+        no-repeat 120px,
+      $white;
+  }
+  .input_little-expand {
+    width: 16.625rem;
+    &::placeholder {
+      color: $shade75;
+    }
+    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+        no-repeat 240px,
+      $white;
+  }
+  .input_little-arrow {
+    width: 16.625rem;
+    &::placeholder {
+      color: $shade25;
+    }
+    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg")
+        no-repeat 235px,
+      $white;
+  }
+  .input_without-border-radius {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 20rem;
+  height: 2.75rem;
+  border: 0.0625rem solid rgba($shade25, 0.25);
+  border-radius: 0.25rem;
+  padding-left: 0.9375rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  &::placeholder {
+    color: $shade50;
+  }
+  &:hover {
+    border: 0.0625rem solid rgba($shade50, 0.5);
+    &::placeholder {
+      color: $shade75;
+    }
+  }
+}
+
+@mixin footer_inner {
+  .footer_inner {
+    padding: 6.25rem 9.72%;
+    box-sizing: border-box;
+    height: 23.25rem;
+    display: flex;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      &:first-child {
+        p {
+          @include montserrat(0.875rem);
+          width: 16.25rem;
+          line-height: 1.5rem;
+          color: $shade75;
+          height: 4.5rem;
+          margin-top: 0.875rem;
+          height: 6rem;
+        }
+      }
+      &:nth-child(2) {
+        white-space: nowrap;
+        margin: 0 7.4375rem 0 2.5rem;
+        li {
+          width: 5.0625rem;
+        }
+      }
+      &:nth-child(3) {
+        white-space: nowrap;
+        li {
+          width: 5.125rem;
+        }
+      }
+      &:nth-child(4) {
+        white-space: nowrap;
+        margin: 0 5.4375rem 0 7.375rem;
+        li {
+          width: 7.0625rem;
+        }
+      }
+      &:last-child {
+        li:nth-child(2) {
+          line-height: 1.5rem;
+          a {
+            color: $shade75;
+          }
+        }
+      }
+      li {
+        margin-bottom: 1.1875rem;
+        a {
+          @include montserrat(0.875rem);
+          text-decoration: none;
+          line-height: 1.0625rem;
+          font-size: 0.875rem;
+          color: $shade50;
+        }
+        &:nth-child(1) {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 1.1875rem;
+          a {
+            color: $shade100;
+            line-height: 0.9375rem;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
 }

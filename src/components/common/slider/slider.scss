@@ -1,49 +1,48 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .slider {
-    height: 2.9375rem;
+  height: 2.9375rem;
+  width: 16.625rem;
+  @include title-inputs;
+  &_inner {
     width: 16.625rem;
-    @include inputTitle;
-    .slider_inner {
-        width: 16.625rem;
-        height: 0.375rem;
-        background: $white;
-        border: 0.0625rem solid $shade25;
-        border-radius: 0.1875rem;
-        position: relative;
-            .between {
-                margin-left: 5.1875rem;
-                width: 5.3125rem;
-                height: 0.375rem;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background: $gradient-green;
-            }
-    }
-    .btn1,.btn2 {
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 50%;
-        background: $gradient-green;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%); 
-        border: 0.125rem solid $white;
-        
-    }
-    .range {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.25rem;
-            &__size {
-                color: $shade50;
-            }
-    }
+    height: 0.375rem;
+    background: $white;
+    border: 0.0625rem solid $shade25;
+    border-radius: 0.1875rem;
+    position: relative;
+  }
+  &__between {
+    margin-left: 5.1875rem;
+    width: 5.3125rem;
+    height: 0.375rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $gradient-green;
+  }
+  &__btn1,
+  &__btn2 {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: $gradient-green;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0.125rem solid $white;
+  }
+  &__range {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+  &__size {
+    color: $shade50;
+  }
 }
 * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
-

@@ -1,0 +1,14 @@
+include ../input/input
+include ../execute-panel/execute-panel
+
+mixin dropdowns_long (placeholder, classInput, classLabel, leftLabel, rightLabel, showButtonClear, classShowDropdown)
+    .dropdowns_long
+        +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
+        .dropdowns_long__container_execute(class= classShowDropdown)
+            +execute-panel('Взрослые', 0)
+            +execute-panel('Дети', 0)
+            +execute-panel('Младенцы', 0)
+            .dropdowns_long__buttons
+                if showButtonClear === 'block'
+                    .dropdowns_long__clear Очистить
+                .dropdowns_long__apply Применить
