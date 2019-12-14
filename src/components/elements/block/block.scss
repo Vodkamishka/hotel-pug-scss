@@ -1,36 +1,33 @@
 @import "../../../assets/utils/_main.scss";
 
-@mixin block_squere($background) {
-  width: 4.375rem;
-  height: 4.375rem;
-  border-radius: 0.375rem;
-  background: $background;
-}
 .block {
   display: flex;
   margin-bottom: 1.25rem;
   align-items: center;
   &_squere {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 0.375rem;
     &_shade {
-      @include block_squere($shade100);
+      background: $shade100;
     }
     &_shade75 {
-      @include block_squere($shade75);
+      background: $shade75;
     }
     &_shade50 {
-      @include block_squere($shade50);
+      background: $shade50;
     }
     &_shade25 {
-      @include block_squere($shade25);
+      background: $shade25;
     }
     &_shade05 {
-      @include block_squere($shade05);
+      background: $shade05;
     }
     &_purple {
-      @include block_squere($purple);
+      background: $purple;
     }
     &_green {
-      @include block_squere($green);
+      background: $green;
     }
   }
   &__text {
