@@ -1,9 +1,9 @@
 include ../label/label
 
-mixin input (placeholder, classInput, classLabel, leftLabel, rightLabel)
+mixin input (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='')
     .input
         if leftLabel
             +label(classLabel, leftLabel, rightLabel)
-        input(type="text" placeholder=placeholder class=`input_${classInput}`)
+        input(type="text" placeholder=placeholder class=classInput)
 
    

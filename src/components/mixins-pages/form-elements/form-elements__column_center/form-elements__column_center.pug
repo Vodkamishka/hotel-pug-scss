@@ -20,9 +20,9 @@ mixin form-elements__column_center
         .form-elements__container-rate
             +rate
         .form-elements__container-dropdown
-            +dropdowns_long("Сколько гостей", "dropdowns-long without-border-radius", 'long', "dropdown")
+            +dropdowns_long("Сколько гостей", "input_long input_border", 'long', "dropdown")
         .form-elements__container-rich
             +checkbox_rich("Rich Checkbox Buttons")
         .form-elements__container-murad
-            - var textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
+            - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
                     +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)

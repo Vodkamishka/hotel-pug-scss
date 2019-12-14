@@ -4,17 +4,14 @@
   display: flex;
   align-items: center;
 }
-
 @mixin justify-content {
   display: flex;
   justify-content: center;
 }
-
 @mixin montserrat($size) {
   font-size: $size;
   color: $shade50;
 }
-
 @mixin title-inputs {
   font-weight: bold;
   font-size: 0.75rem;
@@ -22,19 +19,16 @@
   text-transform: uppercase;
   color: $shade100;
 }
-
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 @mixin space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 @mixin checkbox__input {
   display: flex;
   align-items: flex-start;
@@ -63,7 +57,6 @@
     width: 12rem;
   }
 }
-
 @mixin cards {
   box-shadow: 0px 0px 1.5625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
@@ -79,7 +72,6 @@
     margin-bottom: 1.25rem;
   }
 }
-
 @mixin toxin {
   &__toxin {
     @include align-items;
@@ -92,11 +84,11 @@
     font-family: "Montserrat", Arial, sans-serif;
   }
 }
-
 @mixin container_execute {
   position: absolute;
   box-sizing: border-box;
   border: 0.0625rem solid $shade50;
+  border-radius: 0 0 0.25rem 0.25rem;
   border-top: transparent;
   width: 16.625rem;
   height: 7.4375rem;
@@ -112,13 +104,7 @@
   .execute-panel {
     margin-bottom: 0.4375rem;
   }
-  .will-hide {
-    padding-bottom: 0.9375rem;
-    opacity: 0;
-    z-index: -1;
-  }
 }
-
 @mixin input-text {
   .input_hover {
     border: 0.0625rem solid rgba($shade50, 0.5);
@@ -127,13 +113,7 @@
       color: $shade75;
     }
   }
-  .input_dropdowns {
-    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
-        no-repeat 290px,
-      $white;
-    color: $shade75;
-  }
-  .input_dropdowns-long {
+  .input_long {
     background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
         no-repeat 290px,
       $white;
@@ -141,14 +121,11 @@
   }
   .input_small {
     width: 9.375rem;
-    &::placeholder {
-      color: $shade75;
-    }
     background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
         no-repeat 120px,
       $white;
   }
-  .input_little-expand {
+  .input_little {
     width: 16.625rem;
     &::placeholder {
       color: $shade75;
@@ -157,7 +134,7 @@
         no-repeat 240px,
       $white;
   }
-  .input_little-arrow {
+  .input_arrow {
     width: 16.625rem;
     &::placeholder {
       color: $shade25;
@@ -166,7 +143,7 @@
         no-repeat 235px,
       $white;
   }
-  .input_without-border-radius {
+  .input_border {
     border-radius: 0.25rem 0.25rem 0 0;
   }
 }

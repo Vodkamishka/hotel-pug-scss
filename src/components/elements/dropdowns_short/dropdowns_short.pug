@@ -1,7 +1,7 @@
 include ../input/input
 include ../execute-panel/execute-panel
 
-mixin dropdowns_short (placeholder, classInput, classLabel, leftLabel, rightLabel, classShowDropdown)
+mixin dropdowns_short (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', classShowDropdown='')
     .dropdowns_short
         +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
         .dropdowns_short__container_execute(class= classShowDropdown)

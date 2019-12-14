@@ -8,14 +8,14 @@ mixin registration-account
     .registration-account
         .registration-account__title Регистрация аккаунта
         .registration-account__two-fields
-            +input('Имя','text-field')
-            +input('Фамилия','text-field')
+            +input('Имя')
+            +input('Фамилия')
         +radio 
         .registration-account__bithday
-            +input('ДД.ММ.ГГГГ', 'text-field', 'Дата рождения')
+            +input('ДД.ММ.ГГГГ', 'input_no-class', 'long', 'Дата рождения')
         .registration-account__two-fields
-            +input('Email','text-field', 'Данные для входа в сервис')
-            +input('Пароль','text-field')
+            +input('Email','input_no-class', 'long', 'Данные для входа в сервис')
+            +input('Пароль','input_no-class')
         +toggle_one(false)
         .registration-account__button
             +button_long('Перейти к оплате')
