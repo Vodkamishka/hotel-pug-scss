@@ -1,17 +1,22 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 body {
-    @include body
+  @include body;
 }
 
 .registration {
-    height: 75.6875rem;
-        &__image-wrapper {
-            height: 43.875rem;
-            background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg);
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            padding-top: 1.875rem;
-            box-sizing: border-box;  
-        }
+  height: 75.6875rem;
+  &__image-wrapper {
+    height: 43.875rem;
+    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.875rem;
+    box-sizing: border-box;
+  }
+  .footer {
+    &_inner {
+      padding: 6.19375rem 9.72% !important;
+    }
+  }
 }
