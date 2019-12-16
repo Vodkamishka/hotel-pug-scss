@@ -6,6 +6,7 @@
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: $shade75;
+  box-sizing: border-box;
   input[type="checkbox"] {
     margin: 0 0.625rem 0 0;
     -webkit-appearance: none;
@@ -18,7 +19,7 @@
     &:checked[type="checkbox"] {
       border: 0.0625rem solid $purple;
       &:before {
-        left: 1.25rem;
+        left: 1.5rem;
         background: linear-gradient(180deg, $purple 0%, $blue 100%);
       }
     }

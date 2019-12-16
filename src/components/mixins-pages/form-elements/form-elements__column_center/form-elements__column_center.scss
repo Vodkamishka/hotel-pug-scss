@@ -15,12 +15,15 @@
     margin-top: 2.7775rem;
   }
   &__container-rate {
-    margin: 2.5rem 0 12rem 0;
+    margin: 2.5rem 0 12.2rem 0;
   }
   &__container-rich {
     margin: 16.09rem 0 0 0;
   }
   &__container-murad {
     margin-top: 14.5rem;
+    .consumer-comments {
+      letter-spacing: 0;
+    }
   }
 }
