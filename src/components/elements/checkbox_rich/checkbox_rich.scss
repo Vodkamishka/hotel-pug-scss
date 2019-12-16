@@ -5,6 +5,16 @@
     @include title-inputs;
     margin-bottom: 1rem;
   }
+  p {
+    margin-left: 1.875rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: $shade50;
+    height: 1.75rem;
+    margin-bottom: 0.625rem;
+    width: 14.75rem;
+  }
+
   &__input {
     @include checkbox__input;
     margin-bottom: 0.25rem;
@@ -14,14 +24,5 @@
       line-height: 1.125rem;
       color: $shade75;
     }
-  }
-  p {
-    margin-left: 1.875rem;
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    color: $shade50;
-    width: 14.75rem;
-    height: 1.75rem;
-    margin-bottom: 0.625rem;
   }
 }

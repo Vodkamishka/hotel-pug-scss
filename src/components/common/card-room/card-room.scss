@@ -3,7 +3,7 @@
 .card-room {
   width: 16.875rem;
   height: 16.0625rem;
-  box-shadow: 0px 0.625rem 1.25rem $shade05;
+  box-shadow: 0 0.625rem 1.25rem $shade05;
   background: $white;
   &__image {
     margin-bottom: 1.25rem;
@@ -11,6 +11,35 @@
     height: 9.46125rem;
     border-radius: 0.25rem 0.25rem 0 0;
     position: relative;
+    &-side_left,
+    &-side_right {
+      position: absolute;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 99.99%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      width: 2.625rem;
+      height: 9.4375rem;
+    }
+    &-side_left {
+      left: 0;
+    }
+    &-side_right {
+      right: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+  &__arrow {
+    width: 2.75rem;
+    height: 2.75rem;
+    position: absolute;
+    top: 3.355625rem;
+    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/src/assets/img/icons/expand_more_white.svg)
+      no-repeat center;
+    transform: rotate(-90deg);
   }
   &__group-balls {
     position: absolute;
@@ -34,13 +63,13 @@
   }
   &__luxe {
     margin-bottom: 1.25rem;
-    padding: 0 16px 0 20px;
+    padding: 0 1rem 0 1.25rem;
     .luxe__luxe {
       display: flex;
       align-items: flex-end;
     }
   }
   &__stars {
-    padding-left: 20.56px;
+    padding-left: 1.285rem;
   }
 }

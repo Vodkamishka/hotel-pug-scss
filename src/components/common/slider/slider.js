@@ -7,8 +7,8 @@ class View {
   }
   create = () => {
     let content = `<div class="slider__between"></div>
-                            <div class="slider__btn1" style='margin-left: 75px'></div>
-                            <div class="slider__btn2" style='margin-left: 160px'></div>
+                            <div class="slider__btn1" style='margin-left: 4.6875rem'></div>
+                            <div class="slider__btn2" style='margin-left: 10rem'></div>
                     `;
     this.slider.querySelector(".slider_inner").innerHTML = content;
   };

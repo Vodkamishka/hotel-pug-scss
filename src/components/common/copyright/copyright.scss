@@ -1,13 +1,12 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .copyright {
-    padding: 0 9.72%;
-    height: 4.375rem;
-    flex-wrap: wrap;
-    @include space-between;
-        &__text {
-            font-size: 0.875rem;
-            line-height: 1.0625rem;
-            color: $shade75;
-        }   
+  padding: 1.468125rem 9.72%;
+  flex-wrap: wrap;
+  @include space-between;
+  &__text {
+    font-size: 0.875rem;
+    color: $shade75;
+    letter-spacing: -0.00625rem;
+  }
 }

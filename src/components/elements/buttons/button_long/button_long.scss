@@ -8,12 +8,13 @@
   text-align: center;
   text-transform: uppercase;
   background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg")
-      no-repeat 290px,
+      no-repeat 18.125rem,
     $gradient;
   span {
     color: $white;
     font-weight: bold;
     font-size: 0.75rem;
     height: 0.9375rem;
+    letter-spacing: 0.0625rem;
   }
 }

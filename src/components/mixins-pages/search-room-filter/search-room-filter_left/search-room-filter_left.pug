@@ -11,7 +11,7 @@ mixin search-room-filter_left
     .search-room-filter_left
         +input('19 авг - 23 авг','input_little', 'little', 'даты пребывания в отеле')
         .search-room-filter_left__container_dropdowns_long
-            +dropdowns_long('3 гостя, 1 младенец', 'input_little', 'little', 'гости', '',  'block', 'dropdowns_long_hide')
+            +dropdowns_long('3 гостя, 1 младенец', 'input_little', 'little', 'гости', '',  'block', 'dropdowns_long_hide', 3, 0, 1)
         .search-room-filter_left__container-slider
             +slider('Диапазон цены')
             .search-room-filter_left__slider-text Стоимость за сутки пребывания в номере
@@ -21,4 +21,3 @@ mixin search-room-filter_left
         +dropdowns_short('2 спальни,  2 кровати', 'input_little input_border', 'little', 'удобства номера', '',  'dropdowns_short_hide')
         .search-room-filter_left__container_expanded-checkbox 
             +checkbox_expandable(list, 'дополнительные удобства', 'checkbox_expandable_hide')   
-    

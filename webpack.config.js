@@ -128,8 +128,8 @@ module.exports = {
 
     new HTMLWebpackPlugin({
       hash: false,
-      template: `./src/ui-kit/cards/cards.pug`,
-      chunks: ["ui-kit/cards/cards"]
+      template: `./src/ui-kit/demo/demo.pug`,
+      chunks: ["ui-kit/demo/demo"]
     }),
     new CopyWebpackPlugin([
       { from: "./src/assets/img", to: "./assets/img" },

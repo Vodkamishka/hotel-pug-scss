@@ -6,6 +6,7 @@
   p:nth-child(1) {
     margin-right: 1.875rem;
     color: $shade25;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
   p:nth-child(2) {
     color: $shade100;
@@ -38,6 +39,7 @@
     }
   }
   &_third {
+    margin-bottom: 2.99rem;
     p:first-child {
       font-size: 0.75rem;
       line-height: 0.9375rem;
@@ -49,6 +51,7 @@
       width: 11.625rem;
       height: 0.9375rem;
       text-transform: uppercase;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
     }
   }
   &_fourth {
@@ -63,6 +66,7 @@
       height: 3rem;
       font-weight: normal;
       color: $shade75;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
     }
   }
   p {

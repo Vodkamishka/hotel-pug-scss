@@ -2,6 +2,9 @@
 
 .footer_eng {
   @include footer_inner;
+  &_inner {
+    padding: 6.19375rem 9.72%;
+  }
 }
 .footer {
   @include footer_inner;
@@ -34,7 +37,8 @@
   }
 }
 @media (max-width: 84.375rem) {
-  .footer {
+  .footer,
+  .footer_eng {
     &_inner {
       flex-wrap: wrap;
       height: auto;

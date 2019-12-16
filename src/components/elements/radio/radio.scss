@@ -26,6 +26,7 @@
     input:checked ~ .radio__checkmark:after {
       display: block;
       border: 0.0625rem solid $purple;
+      box-sizing: border-box;
     }
   }
   &__checkmark {
@@ -37,7 +38,7 @@
     width: 1.25rem;
     background-color: $white;
     border-radius: 50%;
-    border: 1px solid $shade25;
+    border: 0.0625rem solid $shade25;
     &:after {
       content: "";
       position: absolute;

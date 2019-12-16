@@ -2,7 +2,6 @@
 
 .label {
   font-family: Montserrat;
-  font-weight: bold;
   font-size: 0.75rem;
   line-height: 0.9375rem;
   text-transform: uppercase;
@@ -22,9 +21,9 @@
   }
   &_left {
     margin-bottom: 0.3125rem;
+    font-weight: bold;
   }
   &_right {
-    margin-bottom: 0.34rem;
     color: $shade50;
   }
 }

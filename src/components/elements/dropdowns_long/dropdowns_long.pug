@@ -1,13 +1,13 @@
 include ../input/input
 include ../execute-panel/execute-panel
 
-mixin dropdowns_long (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', showButtonClear='', classShowDropdown='')
+mixin dropdowns_long (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', showButtonClear='', classShowDropdown='', x = 0, y = 0, z = 0)
     .dropdowns_long
         +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
         .dropdowns_long__container_execute(class= classShowDropdown)
-            +execute-panel('Взрослые', 0)
-            +execute-panel('Дети', 0)
-            +execute-panel('Младенцы', 0)
+            +execute-panel('Взрослые', x)
+            +execute-panel('Дети', y)
+            +execute-panel('Младенцы', z)
             .dropdowns_long__buttons
                 if showButtonClear === 'block'
                     .dropdowns_long__clear Очистить

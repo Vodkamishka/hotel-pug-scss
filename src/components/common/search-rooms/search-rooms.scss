@@ -1,28 +1,27 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .search-rooms {
-    height: 23.375rem;
-    @include cards;
-    width: 23.75rem;
-    box-sizing: border-box;
-    background: $white;
-        &__guests {
-            margin: 1.25rem 0 1.9375rem 0;
+  height: 23.375rem;
+  @include cards;
+  width: 23.75rem;
+  box-sizing: border-box;
+  background: $white;
+  &__guests {
+    margin: 1.25rem 0 1.9375rem 0;
+  }
+  &__incoming {
+    display: flex;
+    .input-calendar {
+      input[type="text"] {
+        margin-right: 1.25rem;
+        width: 9.375rem;
+        &::placeholder {
+          color: $shade75;
         }
-        &__incoming {
-            display: flex;
-                .input-calendar{
-                    input[type='text'] {
-                        margin-right: 1.25rem;
-                        width: 9.375rem;
-                        &::placeholder {
-                            color: $shade75;  
-                        }
-                    background: url('https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg') no-repeat 120px,
-                    $white
-                    }
-                }
-                
-        }
-    
+        background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+            no-repeat 7.5rem,
+          $white;
+      }
+    }
+  }
 }

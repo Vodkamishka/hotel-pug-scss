@@ -1,18 +1,26 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .bullet-list {
-    ul {
-        width: 15.16rem;
-        font-weight: normal;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $shade75;
-        list-style-image: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/ellipse.svg");
-        padding: 0; 
-        margin: 0;
-        margin-left: 1.25rem;
-            li {
-                margin-top: 0.625rem;
-            }
+  &__title {
+    @include title-inputs;
+    margin-bottom: 0.8rem;
+  }
+  ul {
+    width: 15.16rem;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $shade75;
+    list-style-image: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/ellipse.svg");
+    padding: 0;
+    margin: 0;
+    margin-left: 1.25rem;
+    li {
+      margin-top: 0.625rem;
+      padding-left: 0.2rem;
     }
+    li:nth-child(2) {
+      white-space: nowrap;
+    }
+  }
 }

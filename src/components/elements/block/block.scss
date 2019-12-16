@@ -38,13 +38,11 @@
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.125rem;
-    font-weight: bold;
     color: $shade100;
+    letter-spacing: 0.03125rem;
   }
   &__text_first {
     white-space: nowrap;
-  }
-  &__text2_second {
-    font-weight: normal;
+    font-weight: bold;
   }
 }
