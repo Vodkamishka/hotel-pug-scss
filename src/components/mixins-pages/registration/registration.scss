@@ -16,7 +16,15 @@ body {
   }
   .footer {
     &_inner {
-      padding: 6.19375rem 9.72% !important;
+      padding: 6.1rem 9.72% 6.21rem !important;
+      ul:last-child {
+        li:first-child {
+          margin-bottom: 17px;
+        }
+        li:nth-child(2) {
+          margin-bottom: 1.4rem;
+        }
+      }
     }
   }
 }

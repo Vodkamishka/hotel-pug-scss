@@ -1,20 +1,30 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 .registration-account {
-    height: 40.375rem;
-    background: $white;
-    width: 23.75rem;
-    @include cards;
-        &__bithday {
-            margin: 1.2225rem 0 1.25rem 0;
-        }   
-        &__two-fields {
-            .input {
-                margin-bottom: 0.5625rem;
-            }
-        }
-        &__button {
-            margin: 1.5rem 0 1.875rem 0;
-        }
-        @include toxin;
+  height: 40.375rem;
+  background: $white;
+  width: 23.75rem;
+  @include cards;
+  &__title,
+  &__two-fields {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+  &__two-fields_one,
+  &__two-fields_two {
+    margin-bottom: 0.6525rem;
+    .input:first-child {
+      margin-bottom: 0.625rem;
+    }
+  }
+  &__two-fields_two {
+    margin-bottom: 0.65rem;
+  }
+  &__bithday {
+    margin: 1.4725rem 0 1.25rem 0;
+  }
+  &__button {
+    margin: 1.5rem 0 1.875rem 0;
+  }
+  @include toxin;
 }

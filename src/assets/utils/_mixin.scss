@@ -75,10 +75,11 @@
 }
 @mixin toxin {
   &__toxin {
-    @include align-items;
+    display: flex;
     justify-content: space-between;
   }
   &__text {
+    margin-top: 0.75rem;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: $black;
@@ -183,6 +184,7 @@ input[type="text"] {
       box-sizing: border-box;
       &:first-child {
         padding-top: 0;
+        margin-right: 2.5rem;
         p {
           @include montserrat(0.875rem);
           width: 16.25rem;
@@ -196,12 +198,13 @@ input[type="text"] {
       }
       &:nth-child(2) {
         white-space: nowrap;
-        margin: 0 7.4375rem 0 2.5rem;
+        margin-right: 7.4375rem;
         li {
           width: 5.0625rem;
         }
       }
       &:nth-child(3) {
+        margin-right: 7.375rem;
         white-space: nowrap;
         li {
           width: 5.125rem;
@@ -209,7 +212,7 @@ input[type="text"] {
       }
       &:nth-child(4) {
         white-space: nowrap;
-        margin: 0 5.4375rem 0 7.375rem;
+        margin-right: 5.4375rem;
         li {
           width: 7.0625rem;
         }
