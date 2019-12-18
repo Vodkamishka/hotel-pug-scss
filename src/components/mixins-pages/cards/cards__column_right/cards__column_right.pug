@@ -1,9 +1,10 @@
 include ../../../common/card-room/card-room.pug
-include ../../../common/calendar/calendar
+include ../../../common/datepicker-here/datepicker-here
+
 
 mixin cards__column_right
     .cards__column_right
-        +calendar
+        +datepicker-here('placeholder', 'new', true)
         .cards__middleware-card
             +card-room(888, 9990, 5, 145)
         +card-room(840, 9990, 4, 65, "luxe_not-show")
