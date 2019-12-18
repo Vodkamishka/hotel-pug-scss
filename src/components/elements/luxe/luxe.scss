@@ -2,7 +2,7 @@
 
 .luxe {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   &_left {
     font-weight: bold;
@@ -31,7 +31,8 @@
     display: flex;
     align-items: flex-end;
     color: $shade50;
-    span:first-child {
+    span:first-child,
+    span:nth-child(2) {
       font-size: 0.9375rem;
       font-weight: bold;
       letter-spacing: 0.0625rem;
