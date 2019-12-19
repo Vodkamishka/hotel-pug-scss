@@ -1,3 +1,0 @@
-import './execute-panel.scss';
-
-

@@ -1,6 +1,3 @@
-import "./checkbox_expandable.scss";
-import "../checkbox-list/checkbox-list.js";
-
 class Checkbox {
   constructor(el) {
     this.img = el.querySelector(".checkbox_expandable__image");

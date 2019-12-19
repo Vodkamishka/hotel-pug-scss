@@ -1,5 +1,0 @@
-import './registration.scss'
-import '../../common/header/header'
-import '../../common/footer/footer'
-import '../../common/copyright/copyright'
-import '../../common/registration-account/registration-account'

@@ -1,1 +1,0 @@
-import './info-room.scss';

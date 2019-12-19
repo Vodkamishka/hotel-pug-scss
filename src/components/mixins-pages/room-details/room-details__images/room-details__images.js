@@ -1,1 +1,0 @@
-import './room-details__images.scss';

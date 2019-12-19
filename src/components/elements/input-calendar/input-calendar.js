@@ -1,7 +1,3 @@
-import "../label/label";
-import "./input-calendar.scss";
-import "../../common/datepicker-here/datepicker-here";
-
 class DatePickerHere {
   constructor() {
     this.init();

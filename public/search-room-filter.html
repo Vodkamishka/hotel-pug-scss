@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="keywords" content="search room/ filter">
+    <meta name="description" content="search room/ filter">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Search room/ Filter</title>
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="search-room-filter">
+      <div class="header">
+        <div class="header__image"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="logo"></div>
+        <div class="header__navbar">
+          <div class="navbar">
+            <ul>
+              <li> <span>О нас</span></li>
+              <li> <span>Услуги</span>
+                <div class="navbar__image"></div>
+              </li>
+              <li> <span>Вакансии</span></li>
+              <li> <span>Новости</span></li>
+              <li> <span>Соглашения</span>
+                <div class="navbar__image"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__third-element">
+          <div class="buttons__login-register">
+            <button class="button__login button__login_rus"><span>войти</span></button>
+            <button class="button__register button__register_rus"><span>зарегистрироваться</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="search-room-filter_main">
+        <div class="search-room-filter_left">
+          <div class="input">
+            <div class="label label_little">
+              <label class="label_left" for="forLab">даты пребывания в отеле</label>
+              <label class="label_right" for="forLab"></label>
+            </div>
+            <input class="input_little" type="text" placeholder="19 авг - 23 авг">
+          </div>
+          <div class="search-room-filter_left__container_dropdowns_long">
+            <div class="dropdowns_long">
+              <div class="input">
+                <div class="label label_little">
+                  <label class="label_left" for="forLab">гости</label>
+                  <label class="label_right" for="forLab"></label>
+                </div>
+                <input class="input_little" type="text" placeholder="3 гостя, 1 младенец">
+              </div>
+              <div class="dropdowns_long__container_execute dropdowns_long_hide">
+                <div class="execute-panel">
+                  <div class="execute-panel__title">Взрослые</div>
+                  <div class="execute-panel__increment-decrement">
+                    <div class="execute-panel__decrement">-</div>
+                    <div class="execute-panel__result">3</div>
+                    <div class="execute-panel__increment">+</div>
+                  </div>
+                </div>
+                <div class="execute-panel">
+                  <div class="execute-panel__title">Дети</div>
+                  <div class="execute-panel__increment-decrement">
+                    <div class="execute-panel__decrement">-</div>
+                    <div class="execute-panel__result">0</div>
+                    <div class="execute-panel__increment">+</div>
+                  </div>
+                </div>
+                <div class="execute-panel">
+                  <div class="execute-panel__title">Младенцы</div>
+                  <div class="execute-panel__increment-decrement">
+                    <div class="execute-panel__decrement">-</div>
+                    <div class="execute-panel__result">1</div>
+                    <div class="execute-panel__increment">+</div>
+                  </div>
+                </div>
+                <div class="dropdowns_long__buttons">
+                  <div class="dropdowns_long__clear">Очистить</div>
+                  <div class="dropdowns_long__apply">Применить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-room-filter_left__container-slider">
+            <div class="slider"> 
+              <div class="slider__range">
+                <div class="slider__title">Диапазон цены</div>
+                <div class="slider__size"></div>
+              </div>
+              <div class="slider_inner"></div>
+            </div>
+            <div class="search-room-filter_left__slider-text">Стоимость за сутки пребывания в номере</div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox__title">checkbox buttons</div>
+            <div class="checkbox__input">
+              <input type="checkbox">
+              <label for="text">Можно курить</label>
+            </div>
+            <div class="checkbox__input">
+              <input type="checkbox" checked>
+              <label for="text">Можно с питомцaми</label>
+            </div>
+            <div class="checkbox__input">
+              <input type="checkbox" checked>
+              <label for="text">Можно пригласть гостей (до 10 человек)</label>
+            </div>
+          </div>
+          <div class="search-room-filter_left__container_checkbox_rich">
+            <div class="checkbox_rich"> 
+              <div class="checkbox_rich__title">доступность</div>
+              <div class="checkbox_rich__input">
+                <input type="checkbox"><span>Широкий коридор</span>
+              </div>
+              <p>Ширина коридоров в номере не менее 91 см.</p>
+              <div class="checkbox_rich__input">
+                <input type="checkbox"><span>Помошник для инвалидов</span>
+              </div>
+              <p>На 1 этаже вас встретит специалист и проводит до номера.</p>
+            </div>
+          </div>
+          <div class="dropdowns_short">
+            <div class="input">
+              <div class="label label_little">
+                <label class="label_left" for="forLab">удобства номера</label>
+                <label class="label_right" for="forLab"></label>
+              </div>
+              <input class="input_little input_border" type="text" placeholder="2 спальни,  2 кровати">
+            </div>
+            <div class="dropdowns_short__container_execute dropdowns_short_hide">
+              <div class="execute-panel">
+                <div class="execute-panel__title">Спальни</div>
+                <div class="execute-panel__increment-decrement">
+                  <div class="execute-panel__decrement">-</div>
+                  <div class="execute-panel__result">2</div>
+                  <div class="execute-panel__increment">+</div>
+                </div>
+              </div>
+              <div class="execute-panel">
+                <div class="execute-panel__title">Кровати</div>
+                <div class="execute-panel__increment-decrement">
+                  <div class="execute-panel__decrement">-</div>
+                  <div class="execute-panel__result">2</div>
+                  <div class="execute-panel__increment">+</div>
+                </div>
+              </div>
+              <div class="execute-panel">
+                <div class="execute-panel__title">Ванные комнаты</div>
+                <div class="execute-panel__increment-decrement">
+                  <div class="execute-panel__decrement">-</div>
+                  <div class="execute-panel__result">0</div>
+                  <div class="execute-panel__increment">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-room-filter_left__container_expanded-checkbox"> 
+            <div class="checkbox_expandable">   
+              <div class="checkbox_expandable__mainline">
+                <div class="checkbox_expandable__title">дополнительные удобства</div>
+                <div class="checkbox_expandable__image">   </div>
+              </div>
+              <div class="checkbox_expandable__list checkbox_expandable_hide">
+                <div class="checkbox-list">
+                  <div class="checkbox-list__input">
+                    <input type="checkbox">
+                    <label for="forText">Завтрак</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox" checked>
+                    <label for="forText">Письменный стол</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox" checked>
+                    <label for="forText">Стул для кормления</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox" checked>
+                    <label for="forText">Кроватка</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox">
+                    <label for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox">
+                    <label for="forText">Шампунь</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox">
+                    <label for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input type="checkbox">
+                    <label for="forText">Шампунь</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-room-filter_right"> 
+          <div class="search-room-filter__title">Номера, которые мы для вас подобрали</div>
+          <div class="search-room-filter__rooms-wrapper">
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/888.jpg);">
+                <div class="card-room__image-side_left">
+                  <div class="card-room__arrow card-room__arrow_left"></div>
+                </div>
+                <div class="card-room__image-side_right">
+                  <div class="card-room__arrow card-room__arrow_right"></div>
+                </div>
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">888</span><span>люкс</span></div>
+                  <div class="luxe_right"><span>9990</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>145</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/840.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">840</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>9990</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>65</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/980.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">980</span><span>люкс</span></div>
+                  <div class="luxe_right"><span>8500</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>35</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/856.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">856</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>7300</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>19</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/740.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">740</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>6000</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>44</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/982.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">982</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5800</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>56</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/678.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">678</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5500</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>45</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/450.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">450</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5300</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>39</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/350.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">350</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5000</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>77</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/666.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">666</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5000</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>25</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/444.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">444</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5000</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>15</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-room">
+              <div class="card-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/352.jpg);">
+                <div class="card-room__group-balls">
+                  <div class="card-room__ball_full"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                  <div class="card-room__ball_empty"></div>
+                </div>
+              </div>
+              <div class="card-room__luxe">
+                <div class="luxe">
+                  <div class="luxe_left"><span>№</span><span style="font-size:undefinedpx;">352</span><span class="luxe_not-show">люкс</span></div>
+                  <div class="luxe_right"><span>5000</span><span>&#8381 </span><span>в сутки</span></div>
+                </div>
+              </div>
+              <div class="card-room__stars">
+                <div class="comments-stars"> 
+                  <div class="stars">
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image"></div>
+                    <div class="stars__image2"> </div>
+                    <div class="stars__image2"> </div>
+                  </div>
+                  <div class="comments-stars__comments">
+                    <p>55</p>
+                    <p> Отзывов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-room-filter__pagination">
+            <div class="pagination">
+              <div class="pagination__numbers"><span>1</span><span>2</span><span>3</span><span>...</span><span>15</span>
+                <div class="pagination__img-container"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg" alt="arrow-right"></div>
+              </div>
+            </div>
+            <div class="pagination__text">1 – 12 из 100+ вариантов аренды   </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_inner">
+          <ul>  <img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="">
+            <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </ul>
+          <ul>
+            <li><a href="#">Навигация</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Служба поддержки</a></li>
+            <li><a href="#">Услуги</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Наша команда</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Инвесторы</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Служба поддержки</a></li>
+            <li><a href="#">Соглашения</a></li>
+            <li><a href="#">Сообщества</a></li>
+            <li><a href="#">Связь с нами</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Подписка</a></li>
+            <li><a href="#">Получайте специальные предложения и новости сервиса</a></li>
+            <div class="input">
+              <input class="input_arrow" type="text" placeholder="Email">
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright"> 
+        <div class="copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+        <div class="social"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/twitter.svg" alt="twitter"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/facebook.svg" alt="twitter"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/instagram.svg" alt="twitter">
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>

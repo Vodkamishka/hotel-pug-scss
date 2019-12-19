@@ -1,0 +1,78 @@
+include ./components/mixins-pages/headers-footers/headers-footers
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="initial-scale=1.0, width=device-width")
+        meta(name="keywords" content='Headers & footers')
+        meta(name="description" content='Headers & footers')
+        link(rel="stylesheet", href="index.css")
+        link(rel="icon" href="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/favicon.ico")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Headers & footers
+    body
+        +headers-footers ({
+            header: {
+                classHeader: 'header_eng',
+                classHeader2: 'header_eng_second',
+                titlesNavbar: [
+                    {
+                        item: 'Home'
+                    },
+                    {
+                        item: 'About Us'
+                    },
+                    {
+                        item: 'Services',
+                        image: true
+                    },
+                    {
+                        item: 'Careers'
+                    },
+                    {
+                        item:'News'
+                    },
+                    {
+                        item:'Documentation'
+                    }
+                ],
+                log: 'login',
+                register: 'register'
+            },
+            footer: {
+                classFooter: 'footer_eng',
+                titlesFooter: [
+                    [
+                        'Navigation',
+                        'About us', 
+                        'News', 
+                        'Support', 
+                        'Products'
+                    ], 
+                    [
+                        'About us', 
+                        'Who we are', 
+                        'Our team', 
+                        'Careers', 
+                        'Investors'
+                    ], 
+                    [
+                        'Support', 
+                        'Documentation', 
+                        'Community', 
+                        'Get in touch']
+                    ], 
+                textTop: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', 
+                textBottom: [
+                    'subscribe to our newsletter', 
+                    'Recieve our latest news and promotions in your inbox!'
+                ],
+                email: 'Your email address'   
+            },
+            copyright: {
+                text: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'
+            }
+        })
