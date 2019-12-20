@@ -6,7 +6,15 @@ class DatePickerHere {
     $("#start").datepicker({
       multipleDates: 2,
       range: true,
-      multipleDatesSeparator: " - "
+      multipleDatesSeparator: " - ",
+      clearButton: true
+    });
+
+    $("#new").datepicker({
+      multipleDates: 2,
+      range: true,
+      multipleDatesSeparator: " - ",
+      clearButton: true
     });
 
     $("#start").datepicker({
@@ -21,6 +29,10 @@ class DatePickerHere {
         .data("datepicker")
         .show();
     });
+
+    $(".datepicker--buttons").append(
+      '<span class="datepicker--button" data-action="apply">Применить</span>'
+    );
   };
 }
 

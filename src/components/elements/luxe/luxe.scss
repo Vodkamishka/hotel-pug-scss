@@ -2,7 +2,7 @@
 
 .luxe {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   &_left {
     font-weight: bold;
@@ -10,14 +10,13 @@
     span:first-child {
       color: $shade100;
       font-size: 0.875rem;
-      margin-right: 0.3125rem;
+      margin-right: 0.25rem;
       font-family: "Quicksand", Arial, Helvetica, sans-serif;
     }
     span:nth-child(2) {
       padding-right: 0.3125rem;
-      font-size: 1.0625rem;
       font-family: "Quicksand", Arial, Helvetica, sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.1875rem;
     }
     span:last-child {
       font-size: 0.75rem;
@@ -28,17 +27,22 @@
     opacity: 0;
   }
   &_right {
-    display: flex;
-    align-items: flex-end;
     color: $shade50;
+    margin-bottom: 0.125rem;
+    letter-spacing: -0.01875rem;
     span:first-child,
-    span:nth-child(2) {
+    span:nth-child(2),
+    span:nth-child(3) {
       font-size: 0.9375rem;
       font-weight: bold;
-      letter-spacing: 0.0625rem;
+    }
+    span:first-child {
+      margin-right: 0.1875rem;
+    }
+    span:nth-child(3) {
+      margin-right: 0.5px;
     }
     span:last-child {
-      font-weight: normal;
       font-size: 0.75rem;
     }
   }

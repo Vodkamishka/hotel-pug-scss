@@ -1,7 +1,7 @@
 include ../../elements/luxe/luxe
 include ../../elements/comments-stars/comments-stars
 
-mixin card-room(img, price, stars, comments, clas)
+mixin card-room(img, firstNumberPrice, price, stars, comments, clas)
     .card-room
         .card-room__image(style=`background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/${img}.jpg);`)
             if img === 888
@@ -15,6 +15,6 @@ mixin card-room(img, price, stars, comments, clas)
                 .card-room__ball_empty
                 .card-room__ball_empty
         .card-room__luxe
-            +luxe(img, price, clas)
+            +luxe(img, firstNumberPrice, price, clas)
         .card-room__stars
             +comments-stars(stars,comments)

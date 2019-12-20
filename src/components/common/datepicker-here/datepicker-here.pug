@@ -2,4 +2,4 @@ mixin datepicker-here(placeholder, id, inline = false)
     if inline === false
         input(type='text' class='datepicker-here' data-language='ru', placeholder= placeholder  data-position='bottom center' id=id inline=inline)
     else
-        .datepicker-here(data-clearButton="true" ) 
+        .datepicker-here(id=id) 

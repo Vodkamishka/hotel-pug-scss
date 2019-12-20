@@ -130,5 +130,3 @@ let short = document.querySelectorAll(".dropdowns_short");
 
 long.forEach(el => new Dropdowns(el, "long"));
 short.forEach(el => new Dropdowns(el, "short"));
-
-console.log(11111111111111111111);
