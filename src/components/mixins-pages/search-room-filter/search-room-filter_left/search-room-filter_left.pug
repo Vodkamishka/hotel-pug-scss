@@ -9,7 +9,8 @@ include ../../../elements/checkbox/checkbox
 mixin search-room-filter_left
     - let list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
     .search-room-filter_left
-        +input('19 авг - 23 авг','input_little', 'little', 'даты пребывания в отеле')
+        .search-room-filter_left__container_input
+            +input('19 авг - 23 авг','input_little', 'little', 'даты пребывания в отеле')
         .search-room-filter_left__container_dropdowns_long
             +dropdowns_long('3 гостя, 1 младенец', 'input_little', 'little', 'гости', '',  'block', 'dropdowns_long_hide', 3, 0, 1)
         .search-room-filter_left__container-slider

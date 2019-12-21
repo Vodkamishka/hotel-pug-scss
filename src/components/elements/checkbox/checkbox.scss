@@ -7,5 +7,17 @@
   }
   &__input {
     @include checkbox__input;
+    &:first-child {
+      margin-bottom: 0.66rem;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0.625rem;
+    }
+    &:last-child {
+      align-items: flex-start;
+      label {
+        padding-top: 2px;
+      }
+    }
   }
 }

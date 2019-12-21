@@ -21,7 +21,7 @@ class Model {
     this.button1 = el.querySelector(".slider__btn1");
     this.button2 = el.querySelector(".slider__btn2");
     this.size = el.querySelector(".slider__size");
-    this.size.innerHTML = 5000 + " &#8381 - " + 10000 + " &#8381";
+    this.size.innerHTML = 5000 + "&#8381 - " + 10000 + "&#8381";
   }
   coor = element => {
     let block = element.getBoundingClientRect();
@@ -70,10 +70,10 @@ class Model {
         }
         if (el1 === this.button1) {
           this.size.innerHTML =
-            parseInt(bL) + " &#8381 - " + parseInt(bR) + " &#8381";
+            parseInt(bL) + "&#8381 - " + parseInt(bR) + "&#8381";
         } else {
           this.size.innerHTML =
-            parseInt(bR) + " &#8381 - " + parseInt(bL) + " &#8381";
+            parseInt(bR) + "&#8381 - " + parseInt(bL) + "&#8381";
         }
       };
       document.addEventListener("mousemove", moveBtn);

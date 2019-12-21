@@ -31,7 +31,7 @@
 }
 @mixin checkbox__input {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 0.625rem;
   input[type="checkbox"] {
     width: 1.25rem;
@@ -132,7 +132,7 @@
       color: $shade75;
     }
     background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
-        no-repeat 15rem,
+        no-repeat 14.9rem,
       $white;
   }
   .input_arrow {

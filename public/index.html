@@ -14,7 +14,7 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div class="search-room-filter">
-      <div class="header">
+      <div class="header header">
         <div class="header__image"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="logo"></div>
         <div class="header__navbar">
           <div class="navbar">
@@ -40,12 +40,14 @@
       </div>
       <div class="search-room-filter_main">
         <div class="search-room-filter_left">
-          <div class="input">
-            <div class="label label_little">
-              <label class="label_left" for="forLab">даты пребывания в отеле</label>
-              <label class="label_right" for="forLab"></label>
+          <div class="search-room-filter_left__container_input">
+            <div class="input">
+              <div class="label label_little">
+                <label class="label_left" for="forLab">даты пребывания в отеле</label>
+                <label class="label_right" for="forLab"></label>
+              </div>
+              <input class="input_little" type="text" placeholder="19 авг - 23 авг">
             </div>
-            <input class="input_little" type="text" placeholder="19 авг - 23 авг">
           </div>
           <div class="search-room-filter_left__container_dropdowns_long">
             <div class="dropdowns_long">
@@ -110,7 +112,7 @@
             </div>
             <div class="checkbox__input">
               <input type="checkbox" checked>
-              <label for="text">Можно пригласть гостей (до 10 человек)</label>
+              <label for="text">Можно пригласить гостей (до 10 человек)</label>
             </div>
           </div>
           <div class="search-room-filter_left__container_checkbox_rich">
@@ -119,11 +121,11 @@
               <div class="checkbox_rich__input">
                 <input type="checkbox"><span>Широкий коридор</span>
               </div>
-              <p>Ширина коридоров в номере не менее 91 см.</p>
+              <div class="checkbox_rich__text">Ширина коридоров в номере не менее 91 см.</div>
               <div class="checkbox_rich__input">
                 <input type="checkbox"><span>Помошник для инвалидов</span>
               </div>
-              <p>На 1 этаже вас встретит специалист и проводит до номера.</p>
+              <div class="checkbox_rich__text checkbox_rich__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
             </div>
           </div>
           <div class="dropdowns_short">

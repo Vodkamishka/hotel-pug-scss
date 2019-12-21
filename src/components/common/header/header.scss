@@ -1,8 +1,8 @@
 @import "../../../assets/utils/main.scss";
 
-.header__extends {
+.header {
   min-height: 4.375rem;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 0.625rem 1.25rem $shade05;
   padding: 0 9.72%;
   @include space-between;
@@ -20,16 +20,12 @@
     color: $shade50;
     white-space: nowrap;
   }
-}
-.header {
-  @extend .header__extends;
   &__navbar {
     margin-left: 24.6%;
   }
 }
 .header_eng,
 .header_eng_second {
-  @extend .header__extends;
   &__navbar {
     margin-left: 25.63%;
     .navbar {
