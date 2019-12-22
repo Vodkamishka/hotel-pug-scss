@@ -3,27 +3,29 @@
 .form-elements {
   &__column_center {
     width: 20rem;
-    margin: 0 4.5rem 0 7.785rem;
-  }
-  &__container-checkbox {
-    margin-top: 8.9375rem;
-  }
-  &__container-radio {
-    margin: 2.555rem 0 2.285rem 0;
-  }
-  &__container-like {
-    margin-top: 2.7775rem;
-  }
-  &__container-rate {
-    margin: 2.5rem 0 12.2rem 0;
-  }
-  &__container-rich {
-    margin: 16.09rem 0 0 0;
-  }
-  &__container-murad {
-    margin-top: 14.5rem;
-    .consumer-comments {
-      letter-spacing: 0;
+    margin: 0 4.5rem 0 7.875rem;
+    &_container {
+      &-checkbox {
+        margin-top: 8.9375rem;
+      }
+      &-radio {
+        margin: 2.555rem 0 2.7rem 0;
+      }
+      &-like {
+        margin-top: 2.7775rem;
+      }
+      &-rate {
+        margin: 2.5rem 0 12.3rem 0;
+      }
+      &-rich {
+        margin: 16rem 0 0 0;
+      }
+      &-murad {
+        margin-top: 14.45rem;
+        .consumer-comments {
+          letter-spacing: 0;
+        }
+      }
     }
   }
 }

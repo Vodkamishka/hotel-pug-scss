@@ -7,17 +7,17 @@ include ../../../elements/bullet-list/bullet-list.pug
 
 mixin form-elements__column_right
     .form-elements__column_right
-        .form-elements__container-range-slider
+        .form-elements__column_right_container-range-slider
             +slider('Range Slider')
-        .form-elements__container-buttons
+        .form-elements__column_right_container-buttons
             +container-buttons
-        .form-elements__container-long-button
+        .form-elements__column_right_container-long-button
             +button_long("Перейти к оплате")
-        .form-elements__container-pagination
+        .form-elements__column_right_container-pagination
             +pagination('show')
-        .form-elements__container-dropdown
+        .form-elements__column_right_container-dropdown
             +dropdowns_long("Сколько гостей", "input_long input_border", 'long', "dropdown", "",  'block','' ,2, 1)
-        .form-elements__container-bullet
+        .form-elements__column_right_container-bullet
             +bullet-list("bullet list")
 
 

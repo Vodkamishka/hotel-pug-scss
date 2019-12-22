@@ -2,36 +2,103 @@
 
 .form-elements {
   &__column_left {
-    width: 20rem;
-    margin-left: 8.8125rem;
+    width: 20.0625rem;
+    margin-left: 8.75rem;
   }
-  &__container-text-field {
-    margin: 8.9375rem 0 1.2775rem 0;
-  }
-  &__container-dropdown {
-    margin: 1.25rem 0 1.41rem 0;
-  }
-  &__container-date-dropdowns {
-    margin: 2.5rem 0 2.535rem 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__container-filter-date-dropdown {
-    margin: 2.535rem 0 2.5625rem 0;
-  }
-  &__container-subscription-text-field {
-    margin-bottom: 6.25rem;
-  }
-  &__container-dropdown_second {
-    margin: 0 0 1.25rem 0;
-  }
-  &__container-dropdown_third {
-    margin-bottom: 9.965rem;
-  }
-  &__container-checkbox-list {
-    margin: 2.5275rem 0 1.25rem 0;
-  }
-  &__container_incert-emotion {
-    margin: 2.5rem 0 2.5625rem 0;
+  &__column_left_container {
+    &-text-field {
+      margin: 8.75rem 0 1.25rem 0.0625rem;
+      .input {
+        .label {
+          &_left {
+            margin-top: 0.1875rem;
+          }
+          &_right {
+            margin-bottom: 0.5rem;
+          }
+        }
+        &_arrow {
+          margin-right: 100px;
+        }
+      }
+    }
+    &-text-field_second {
+      margin-left: 0.0625rem;
+      .input {
+        .label {
+          &_right {
+            margin-bottom: 0.34rem;
+            letter-spacing: -0.1px;
+          }
+        }
+        input::placeholder {
+          letter-spacing: -0.2px;
+          color: $shade100;
+        }
+      }
+    }
+    &-dropdown {
+      margin: 1.25rem 0 1.2225rem 0.0625rem;
+      .input {
+        .label {
+          &_right {
+            margin-bottom: 0.34rem;
+            letter-spacing: -0.00625rem;
+          }
+        }
+      }
+      &_second {
+        margin: 0 0 1.25rem 0;
+      }
+      &_third {
+        margin-bottom: 9.965rem;
+        .input {
+          .label {
+            &_right,
+            &_left {
+              margin-bottom: 0.285rem;
+            }
+          }
+        }
+      }
+    }
+    &-masked-text-field {
+      margin-left: 0.0625rem;
+      .input {
+        .label {
+          &_left {
+            margin-top: 0.1875rem;
+          }
+          &_right {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+    &-date-dropdowns {
+      margin: 2.5rem 0 2.535rem 0.0625rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-filter-date-dropdown {
+      margin: 2.535rem 0 2.5625rem 0.0625rem;
+    }
+    &-subscription-text-field {
+      margin-bottom: 6.25rem;
+      .input {
+        .label {
+          margin-left: 0.0625rem;
+        }
+        .input_arrow {
+          width: 16.6875rem;
+        }
+      }
+    }
+    &-checkbox-list {
+      margin: 2.5275rem 0 1.25rem 0.0625rem;
+    }
+    &_incert-emotion {
+      margin: 2.5rem 0 2.5625rem 0;
+    }
   }
 }

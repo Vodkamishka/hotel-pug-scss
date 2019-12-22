@@ -7,10 +7,10 @@
   }
   &__buttons {
     button:nth-child(1) {
-      margin: 0 1.1875rem 1.875rem 0;
+      margin: 0 0.9375rem 1.875rem 0.0625rem;
     }
     button:nth-child(3) {
-      margin-right: 1.1875rem;
+      margin-right: 0.9375rem;
     }
   }
   &__clickme {
@@ -19,6 +19,7 @@
     line-height: 0.9375rem;
     text-transform: uppercase;
     color: $shade50;
+    margin-left: 0.0625rem;
     margin-top: 1.9375rem;
     span:nth-child(1) {
       margin-right: 1.25rem;

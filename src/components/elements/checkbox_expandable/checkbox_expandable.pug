@@ -4,7 +4,10 @@ mixin checkbox_expandable (list, title, clas = '')
     .checkbox_expandable    
         .checkbox_expandable__mainline
             .checkbox_expandable__title= title
-            .checkbox_expandable__image    
+            if (!clas)
+                .checkbox_expandable__image.checkbox_expandable__image_expand
+            else
+                .checkbox_expandable__image     
         .checkbox_expandable__list(class= clas)
             +checkbox-list(list)
 

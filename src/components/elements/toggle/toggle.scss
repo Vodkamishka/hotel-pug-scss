@@ -3,9 +3,13 @@
 .toggle {
   &__title {
     @include title-inputs;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9375rem;
+    font-size: 0.71875rem;
   }
   &__buttons {
     margin-bottom: 2.7775rem;
+    .toggle_one:first-child {
+      margin-bottom: 0.875rem;
+    }
   }
 }

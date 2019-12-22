@@ -3,7 +3,7 @@
 .rate {
   &__title {
     @include title-inputs;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
   }
   &__rate {
     display: flex;

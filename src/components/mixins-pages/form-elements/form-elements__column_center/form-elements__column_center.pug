@@ -9,20 +9,20 @@ include ../../../elements/rate/rate.pug
 
 mixin form-elements__column_center
     .form-elements__column_center
-        .form-elements__container-checkbox
+        .form-elements__column_center_container-checkbox
             +checkbox
-        .form-elements__container-radio
+        .form-elements__column_center_container-radio
             +radio('show')
-        .form-elements__container-toggle
+        .form-elements__column_center_container-toggle
             +toggle('show')
-        .form-elements__container-like
+        .form-elements__column_center_container-like
             +like-button
-        .form-elements__container-rate
+        .form-elements__column_center_container-rate
             +rate
-        .form-elements__container-dropdown
+        .form-elements__column_center_container-dropdown
             +dropdowns_long("Сколько гостей", "input_long input_border", 'long', "dropdown")
-        .form-elements__container-rich
+        .form-elements__column_center_container-rich
             +checkbox_rich("Rich Checkbox Buttons")
-        .form-elements__container-murad
+        .form-elements__column_center_container-murad
             - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
                     +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)

@@ -8,7 +8,6 @@
   &__numbers {
     display: flex;
     margin-bottom: 0.67rem;
-    margin-left: 1px;
     span:first-child {
       border-radius: 50%;
       color: $white;
@@ -33,6 +32,6 @@
     font-weight: normal;
     font-size: 0.875rem;
     color: $shade75;
-    margin-left: 0.4rem;
+    margin-left: 0.3125rem;
   }
 }

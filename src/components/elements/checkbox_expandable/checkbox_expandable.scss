@@ -9,7 +9,7 @@
   }
   &__title {
     @include title-inputs;
-    margin-right: 0.85rem;
+    margin-right: 1.9rem;
     white-space: nowrap;
   }
   &__image {
@@ -17,7 +17,6 @@
       no-repeat center;
     width: 2.75rem;
     height: 2.75rem;
-    transition: all 1s;
     &_expand {
       background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand_more.svg)
         no-repeat center;
