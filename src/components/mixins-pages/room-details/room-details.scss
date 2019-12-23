@@ -1,5 +1,6 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 
 body {
-    @include body
+  @include body;
+  max-width: 90.125rem !important;
 }

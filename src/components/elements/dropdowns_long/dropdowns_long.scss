@@ -1,10 +1,11 @@
 @import "../../../assets/utils/main";
 
 .dropdowns_long {
+  width: $long;
   &__container_execute {
     @include container_execute;
     height: 9.85rem;
-    width: 20rem;
+    width: $long;
     padding-top: 0.3475rem;
 
     .execute-panel {

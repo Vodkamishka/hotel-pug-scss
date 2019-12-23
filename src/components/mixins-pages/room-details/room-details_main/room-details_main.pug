@@ -18,14 +18,13 @@ mixin room-details_main
                     .room-details__reviews
                         .room-details__review_left Отзывы посетителей номера
                         .room-details__review_right 2 отзыва
-                    .room-details__wrapper-consumer-comments
+                    .room-details__wrapper-consumer-comments_first
                         +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)
-                    .room-details__wrapper-consumer-comments
+                    .room-details__wrapper-consumer-comments_second
                         +consumer-comments("girl","Патрисия Стёклышкова", "Неделю назад", 2, textTwo)
             .room-details__rules 
-                .room-details__title 
-                    .room-details__title-rules Правила
-                    +bullet-list    
+                .room-details__rules_title Правила
+                +bullet-list    
         .room-details_center
             .room-details__room-impressions
                 .room-details__title Впечатления от номера
