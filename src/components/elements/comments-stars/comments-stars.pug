@@ -4,6 +4,6 @@ mixin comments-stars (stars, comments)
     .comments-stars 
         +stars(stars)
         .comments-stars__comments
-            p= comments
-            p  Отзывов
+            p.comments-stars__comments_left= comments
+            p.comments-stars__comments_right  Отзывов
         

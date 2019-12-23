@@ -1,12 +1,12 @@
 .social {
   width: 7rem;
   display: flex;
-  img {
+  &__image {
     width: 1.5rem;
     height: 1.4rem;
     margin-right: 1.25rem;
-  }
-  img:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

@@ -39,12 +39,12 @@ mixin room-details_main
                                 .room-details__circle3
                                 .room-details__circle4
                         .room-details__list
-                            ul
+                            ul.room-details__list_ul
                                 for el in ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
-                                    li= el
+                                    li.room-details__list_li= el
             .room-details__room-escape
                 .room-details__title Отмена
-                p.
+                p.room-details__room-escape_p.
                     Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
         .room-details_right
             +reservation

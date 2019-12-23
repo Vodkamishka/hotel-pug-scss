@@ -46,7 +46,7 @@
     color: $shade75;
     margin-bottom: 1.1rem;
     position: relative;
-    p:first-child {
+    .reservation_p:first-child {
       width: 13.375rem;
     }
     .round {
@@ -62,7 +62,7 @@
       color: $shade25;
       @include flex-center;
     }
-    p {
+    .reservation_p {
       margin: 0;
     }
   }
@@ -78,7 +78,7 @@
     line-height: 1.5rem;
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     letter-spacing: 0.0625rem;
-    p {
+    .reservation_p {
       margin: 0;
     }
   }

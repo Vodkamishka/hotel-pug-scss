@@ -6,7 +6,7 @@
   line-height: 1.25rem;
   color: $shade75;
   box-sizing: border-box;
-  input[type="checkbox"] {
+  &_input {
     margin: 0 0.625rem 0 0;
     -webkit-appearance: none;
     width: 2.5rem;

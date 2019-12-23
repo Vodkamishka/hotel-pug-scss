@@ -62,7 +62,6 @@
     line-height: 0.875rem;
     color: $shade25;
   }
-
   &__room-information {
     margin-left: 0.0625rem;
     .info-room:first-child {
@@ -126,42 +125,42 @@
   }
   &__list {
     margin-right: 2.1875rem;
-    ul {
+    &_ul {
       list-style-type: none;
-      li {
-        font-family: "Montserrat", Arial, Helvetica, sans-serif;
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        color: $shade75;
-        font-weight: normal;
-        letter-spacing: -0.003125rem;
-        position: relative;
-        &:before {
-          content: "";
-          display: block;
-          border-radius: 50%;
-          position: absolute;
-          left: -0.9375rem;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 0.625rem;
-          height: 0.625rem;
-          background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-        }
-        &:nth-child(2):before {
-          background: $green;
-        }
-        &:nth-child(3):before {
-          background: $purple;
-        }
-        &:nth-child(4):before {
-          background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
-        }
+    }
+    &_li {
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      color: $shade75;
+      font-weight: normal;
+      letter-spacing: -0.003125rem;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.9375rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.625rem;
+        height: 0.625rem;
+        background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+      }
+      &:nth-child(2):before {
+        background: $green;
+      }
+      &:nth-child(3):before {
+        background: $purple;
+      }
+      &:nth-child(4):before {
+        background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
       }
     }
   }
   &__room-escape {
-    p {
+    &_p {
       color: $shade75;
       font-size: 0.875rem;
       line-height: 1.5rem;

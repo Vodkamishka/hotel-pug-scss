@@ -1,12 +1,12 @@
 mixin navbar (list)
     .navbar
-        ul
+        ul.navbar_ul
             for el in list
                 if el.image
-                    li 
+                    li.navbar_li 
                         span= el.item
                         .navbar__image
                 else 
-                    li 
+                    li.navbar_li 
                         span= el.item
 

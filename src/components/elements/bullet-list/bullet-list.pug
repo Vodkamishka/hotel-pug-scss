@@ -3,7 +3,7 @@ mixin bullet-list(title)
     .bullet-list
         if title
             .bullet-list__title=title
-        ul 
+        ul.bullet-list_ul 
             for i in arrayLi
-                li= i
+                li.bullet-list_li= i
 

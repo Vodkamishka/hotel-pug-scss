@@ -3,18 +3,18 @@ include ../../elements/input/input.pug
 mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
     div(class = classFooter)
         .footer_inner
-            ul   
+            ul.footer_inner_ul   
                 img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="")
-                p= textTop 
+                p(class="footer_inner_p")= textTop 
             for el in titlesFooter
-                ul
+                ul.footer_inner_ul
                     for i in el
-                        li
-                            a(href="#")=i
-            ul
+                        li.footer_inner_li
+                            a(href="#" class="footer_inner_a")=i
+            ul.footer_inner_ul
                 for el in textBottom
-                    li
-                        a(href="#")=el
+                    li.footer_inner_li
+                        a(href="#" class="footer_inner_a")=el
                 +input(email, "input_arrow") 
                     
  

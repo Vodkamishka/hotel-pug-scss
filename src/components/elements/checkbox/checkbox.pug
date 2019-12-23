@@ -4,7 +4,7 @@ mixin checkbox
         .checkbox__title checkbox buttons
         for el in checkboxList
             .checkbox__input
-                input(type='checkbox', checked= el.checked)
-                label(for='text')= el.text
+                input(type='checkbox', checked= el.checked class="checkbox_input")
+                label(for='text' class="checkbox_label")= el.text
             
     

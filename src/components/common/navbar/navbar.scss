@@ -2,20 +2,20 @@
 
 .navbar {
   height: 1.125rem;
-  ul {
+  &_ul {
     @include space-between;
     padding: 0;
-    li {
-      list-style-type: none;
-      font-size: 0.875rem;
-      line-height: 1.0625rem;
-      color: $shade50;
+  }
+  &_li {
+    list-style-type: none;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $shade50;
+    margin-right: 1.25rem;
+    white-space: nowrap;
+    @include align-items;
+    &:nth-child(3) {
       margin-right: 1.25rem;
-      white-space: nowrap;
-      @include align-items;
-      &:nth-child(3) {
-        margin-right: 1.25rem;
-      }
     }
   }
   &__image {

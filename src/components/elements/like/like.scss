@@ -1,6 +1,6 @@
 @import "../../../assets/utils/main";
 
-.like-extend {
+.like {
   width: 2.5rem;
   height: 1.25rem;
   box-sizing: border-box;
@@ -9,19 +9,15 @@
   line-height: 0.75rem;
   font-weight: normal;
   @include align-items;
-  img {
+  &__image {
     margin: 0 0.3rem 0 0.3125rem;
   }
-}
-.like {
   &_left {
     border: 0.0625rem solid $shade25;
     color: $shade25;
-    @extend .like-extend;
   }
   &_right {
     border: 0.0625rem solid $purple;
     color: $purple;
-    @extend .like-extend;
   }
 }

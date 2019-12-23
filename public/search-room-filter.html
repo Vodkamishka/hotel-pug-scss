@@ -18,14 +18,14 @@
         <div class="header__image"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="logo"></div>
         <div class="header__navbar">
           <div class="navbar">
-            <ul>
-              <li> <span>О нас</span></li>
-              <li> <span>Услуги</span>
+            <ul class="navbar_ul">
+              <li class="navbar_li"> <span>О нас</span></li>
+              <li class="navbar_li"> <span>Услуги</span>
                 <div class="navbar__image"></div>
               </li>
-              <li> <span>Вакансии</span></li>
-              <li> <span>Новости</span></li>
-              <li> <span>Соглашения</span>
+              <li class="navbar_li"> <span>Вакансии</span></li>
+              <li class="navbar_li"> <span>Новости</span></li>
+              <li class="navbar_li"> <span>Соглашения</span>
                 <div class="navbar__image"></div>
               </li>
             </ul>
@@ -103,28 +103,28 @@
           <div class="checkbox">
             <div class="checkbox__title">checkbox buttons</div>
             <div class="checkbox__input">
-              <input type="checkbox">
-              <label for="text">Можно курить</label>
+              <input class="checkbox_input" type="checkbox">
+              <label class="checkbox_label" for="text">Можно курить</label>
             </div>
             <div class="checkbox__input">
-              <input type="checkbox" checked>
-              <label for="text">Можно с питомцaми</label>
+              <input class="checkbox_input" type="checkbox" checked>
+              <label class="checkbox_label" for="text">Можно с питомцaми</label>
             </div>
             <div class="checkbox__input">
-              <input type="checkbox" checked>
-              <label for="text">Можно пригласить гостей (до 10 человек)</label>
+              <input class="checkbox_input" type="checkbox" checked>
+              <label class="checkbox_label" for="text">Можно пригласить гостей (до 10 человек)</label>
             </div>
           </div>
           <div class="search-room-filter_left__container_checkbox_rich">
             <div class="checkbox_rich"> 
               <div class="checkbox_rich__title">доступность</div>
               <div class="checkbox_rich__input">
-                <input type="checkbox">
+                <input class="checkbox_input" type="checkbox">
                 <div class="checkbox_rich__input_span">Широкий коридор</div>
               </div>
               <div class="checkbox_rich__text">Ширина коридоров в номере не менее 91 см.</div>
               <div class="checkbox_rich__input">
-                <input type="checkbox">
+                <input class="checkbox_input" type="checkbox">
                 <div class="checkbox_rich__input_span">Помошник для инвалидов</div>
               </div>
               <div class="checkbox_rich__text checkbox_rich__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
@@ -174,36 +174,36 @@
               <div class="checkbox_expandable__list checkbox_expandable_hide">
                 <div class="checkbox-list">
                   <div class="checkbox-list__input">
-                    <input type="checkbox">
-                    <label for="forText">Завтрак</label>
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Завтрак</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox" checked>
-                    <label for="forText">Письменный стол</label>
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Письменный стол</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox" checked>
-                    <label for="forText">Стул для кормления</label>
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Стул для кормления</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox" checked>
-                    <label for="forText">Кроватка</label>
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Кроватка</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox">
-                    <label for="forText">Телевизор</label>
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox">
-                    <label for="forText">Шампунь</label>
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox">
-                    <label for="forText">Телевизор</label>
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
                   </div>
                   <div class="checkbox-list__input">
-                    <input type="checkbox">
-                    <label for="forText">Шампунь</label>
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
                   </div>
                 </div>
               </div>
@@ -237,15 +237,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>145</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">145</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -268,15 +268,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>65</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">65</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -299,15 +299,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>35</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">35</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -330,15 +330,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>19</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">19</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -361,15 +361,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>44</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">44</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -392,15 +392,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>56</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">56</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -423,15 +423,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>45</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">45</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -454,15 +454,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>39</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">39</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -485,15 +485,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>77</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">77</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -516,15 +516,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>25</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">25</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -547,15 +547,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>15</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">15</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -578,15 +578,15 @@
               <div class="card-room__stars">
                 <div class="comments-stars"> 
                   <div class="stars">
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image"></div>
-                    <div class="stars__image2"> </div>
-                    <div class="stars__image2"> </div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                    <div class="stars__image stars__image_second"></div>
                   </div>
                   <div class="comments-stars__comments">
-                    <p>55</p>
-                    <p> Отзывов</p>
+                    <p class="comments-stars__comments_left">55</p>
+                    <p class="comments-stars__comments_right"> Отзывов</p>
                   </div>
                 </div>
               </div>
@@ -604,32 +604,32 @@
       </div>
       <div class="footer">
         <div class="footer_inner">
-          <ul>  <img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="">
-            <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          <ul class="footer_inner_ul">  <img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="">
+            <p class="footer_inner_p">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
           </ul>
-          <ul>
-            <li><a href="#">Навигация</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Служба поддержки</a></li>
-            <li><a href="#">Услуги</a></li>
+          <ul class="footer_inner_ul">
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Навигация</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">О нас</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Новости</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Служба поддержки</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Услуги</a></li>
           </ul>
-          <ul>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Наша команда</a></li>
-            <li><a href="#">Вакансии</a></li>
-            <li><a href="#">Инвесторы</a></li>
+          <ul class="footer_inner_ul">
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">О нас</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">О сервисе</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Наша команда</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Вакансии</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Инвесторы</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Служба поддержки</a></li>
-            <li><a href="#">Соглашения</a></li>
-            <li><a href="#">Сообщества</a></li>
-            <li><a href="#">Связь с нами</a></li>
+          <ul class="footer_inner_ul">
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Служба поддержки</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Соглашения</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Сообщества</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Связь с нами</a></li>
           </ul>
-          <ul>
-            <li><a href="#">Подписка</a></li>
-            <li><a href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer_inner_ul">
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Подписка</a></li>
+            <li class="footer_inner_li"><a class="footer_inner_a" href="#">Получайте специальные предложения и новости сервиса</a></li>
             <div class="input">
               <input class="input_arrow" type="text" placeholder="Email">
             </div>
@@ -638,7 +638,7 @@
       </div>
       <div class="copyright"> 
         <div class="copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</div>
-        <div class="social"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/twitter.svg" alt="twitter"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/facebook.svg" alt="twitter"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/instagram.svg" alt="twitter">
+        <div class="social"><img class="social__image" src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/twitter.svg" alt="twitter"><img class="social__image" src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/facebook.svg" alt="twitter"><img class="social__image" src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/instagram.svg" alt="twitter">
         </div>
       </div>
     </div>

@@ -1,13 +1,15 @@
 .stars {
-    display: flex;
-    &__image {
-        background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star.svg) no-repeat center;
-        width: 1.5rem;
-        height: 1.5rem;
+  display: flex;
+  &__image {
+    width: 1.5rem;
+    height: 1.5rem;
+    &_first {
+      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star.svg)
+        no-repeat center;
     }
-    &__image2 {
-        background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star_border.svg) no-repeat center;
-        width: 1.5rem;
-        height: 1.5rem;
+    &_second {
+      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star_border.svg)
+        no-repeat center;
     }
+  }
 }

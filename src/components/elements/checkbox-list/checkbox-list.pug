@@ -2,5 +2,5 @@ mixin checkbox-list (list)
     .checkbox-list
         for el in list
             .checkbox-list__input
-                input(type="checkbox" checked= el.checked)
-                label(for="forText")= el.text
+                input(type="checkbox" checked= el.checked class="checkbox_input")
+                label(for="forText" class="checkbox_label")= el.text

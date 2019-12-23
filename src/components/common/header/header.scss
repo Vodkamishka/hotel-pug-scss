@@ -29,16 +29,14 @@
   &__navbar {
     margin-left: 25.63%;
     .navbar {
-      ul {
-        li {
-          margin-right: 1.75rem;
-          &:first-child {
-            font-weight: bold;
-            color: $shade75;
-          }
-          li:last-child {
-            margin-right: 0;
-          }
+      .navbar_li {
+        margin-right: 1.75rem;
+        &:first-child {
+          font-weight: bold;
+          color: $shade75;
+        }
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
@@ -56,7 +54,7 @@
     padding: 0 3%;
     &__navbar {
       margin-left: 2%;
-      .navbar ul li {
+      &_li {
         font-size: 0.8125rem;
       }
     }
@@ -69,7 +67,7 @@
     flex-wrap: wrap;
     height: 8.75rem;
     &__navbar {
-      .navbar ul li {
+      &_li {
         font-size: 0.9375rem;
       }
     }
@@ -85,7 +83,7 @@
     height: auto;
     margin: 0.625rem;
     &__navbar {
-      .navbar ul {
+      &_ul {
         flex-direction: column;
         align-items: flex-start;
         margin: 0.625rem;

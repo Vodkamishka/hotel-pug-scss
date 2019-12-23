@@ -5,7 +5,7 @@
     @include title-inputs;
     margin-bottom: 0.8rem;
   }
-  ul {
+  &_ul {
     width: 15.16rem;
     font-weight: normal;
     font-size: 0.875rem;
@@ -15,12 +15,12 @@
     padding: 0;
     margin: 0;
     margin-left: 1.25rem;
-    li {
+    &_li {
       margin-top: 0.625rem;
       padding-left: 0.1rem;
-    }
-    li:nth-child(2) {
-      white-space: nowrap;
+      &:nth-child(2) {
+        white-space: nowrap;
+      }
     }
   }
 }

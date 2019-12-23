@@ -8,10 +8,6 @@
   display: flex;
   justify-content: center;
 }
-@mixin montserrat($size) {
-  font-size: $size;
-  color: $shade50;
-}
 @mixin title-inputs {
   font-weight: bold;
   font-size: 0.75rem;
@@ -33,7 +29,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.625rem;
-  input[type="checkbox"] {
+  .checkbox_input {
     width: 1.25rem;
     height: 1.25rem;
     border: 0.0625rem solid $shade25;
@@ -42,15 +38,15 @@
     outline: none;
     -webkit-appearance: none;
     background: $white;
+    &:checked {
+      border: 0.0625rem solid $purple;
+      margin: 0 0.625rem 0 0;
+      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg)
+          no-repeat center center,
+        $white;
+    }
   }
-  input[type="checkbox"]:checked {
-    border: 0.0625rem solid $purple;
-    margin: 0 0.625rem 0 0;
-    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg)
-        no-repeat center center,
-      $white;
-  }
-  label {
+  .checkbox_label {
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: $shade50;
@@ -177,7 +173,7 @@ input[type="text"] {
     padding: 6.1875rem 9.72% 6.35rem;
     box-sizing: border-box;
     display: flex;
-    ul {
+    &_ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
@@ -186,8 +182,9 @@ input[type="text"] {
       &:first-child {
         padding-top: 0;
         margin-right: 2.5rem;
-        p {
-          @include montserrat(0.875rem);
+        .footer_inner_p {
+          font-size: 0.875rem;
+          color: $shade50;
           width: 16.25rem;
           line-height: 1.5rem;
           color: $shade75;
@@ -200,35 +197,35 @@ input[type="text"] {
       &:nth-child(2) {
         white-space: nowrap;
         margin-right: 7.4375rem;
-        li {
+        .footer_inner_li {
           width: 5.0625rem;
         }
       }
       &:nth-child(3) {
         margin-right: 7.375rem;
         white-space: nowrap;
-        li {
+        .footer_inner_li {
           width: 5.125rem;
         }
       }
       &:nth-child(4) {
         white-space: nowrap;
         margin-right: 5.4375rem;
-        li {
+        .footer_inner_li {
           width: 7.0625rem;
         }
       }
       &:last-child {
-        li {
+        .footer_inner_li {
           letter-spacing: -0.00625rem;
         }
-        li:first-child {
+        .footer_inner_li:first-child {
           margin-bottom: 1.0625rem;
         }
-        li:nth-child(2) {
+        .footer_inner_li:nth-child(2) {
           line-height: 1.5rem;
           margin-bottom: 1.4rem;
-          a {
+          .footer_inner_a {
             color: $shade75;
           }
         }
@@ -239,10 +236,11 @@ input[type="text"] {
             $white;
         }
       }
-      li {
+      .footer_inner_li {
         margin-bottom: 1.1875rem;
-        a {
-          @include montserrat(0.875rem);
+        .footer_inner_a {
+          font-size: 0.875rem;
+          color: $shade50;
           text-decoration: none;
           line-height: 0.9375rem;
           font-size: 0.875rem;
@@ -252,7 +250,7 @@ input[type="text"] {
           font-weight: bold;
           text-transform: uppercase;
           margin-bottom: 1.1875rem;
-          a {
+          .footer_inner_a {
             color: $shade100;
             line-height: 0.9375rem;
             font-size: 0.6875rem;

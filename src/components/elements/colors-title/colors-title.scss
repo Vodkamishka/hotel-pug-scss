@@ -3,22 +3,22 @@
 .colors-title {
   display: flex;
   margin-bottom: 3.125rem;
-  p:nth-child(1) {
+  &_left {
     margin-right: 1.875rem;
     color: $shade25;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
-  p:nth-child(2) {
+  &_right {
     color: $shade100;
     font-weight: bold;
   }
   &_first {
-    p:first-child {
+    .colors-title_left {
       font-size: 1.5rem;
       line-height: 1.8125rem;
       margin-left: 0.5rem;
     }
-    p:last-child {
+    .colors-title_right {
       font-size: 1.5rem;
       line-height: 1.875rem;
       width: 21rem;
@@ -26,12 +26,12 @@
     }
   }
   &_second {
-    p:first-child {
+    .colors-title_left {
       font-size: 1.1875rem;
       line-height: 1.4375rem;
       margin-left: 0.5rem;
     }
-    p:last-child {
+    .colors-title_right {
       font-size: 1.1875rem;
       line-height: 1.5rem;
       width: 17.625rem;
@@ -40,12 +40,12 @@
   }
   &_third {
     margin-bottom: 2.99rem;
-    p:first-child {
+    .colors-title_left {
       font-size: 0.75rem;
       line-height: 0.9375rem;
       margin-left: 1.125rem;
     }
-    p:last-child {
+    .colors-title_right {
       font-size: 0.75rem;
       line-height: 0.9375rem;
       width: 11.625rem;
@@ -55,11 +55,11 @@
     }
   }
   &_fourth {
-    p:first-child {
+    .colors-title_left {
       font-size: 0.875rem;
       line-height: 1.5rem;
     }
-    p:last-child {
+    .colors-title_right {
       font-size: 0.875rem;
       line-height: 1.5rem;
       width: 18.8125rem;

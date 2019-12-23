@@ -9,31 +9,31 @@
 .footer {
   @include footer_inner;
   &_inner {
-    ul {
+    &_ul {
       &:first-child {
         margin-right: 2.5rem;
       }
       &:nth-child(2) {
         margin-right: 3.5625rem;
-        li {
+        .footer_inner_li {
           width: 8.9375rem;
         }
       }
       &:nth-child(3) {
         margin-right: 5.75rem;
         white-space: nowrap;
-        li {
+        .footer_inner_li {
           width: 6.75rem;
         }
       }
       &:nth-child(4) {
         margin-right: 3.1875rem;
-        li {
+        .footer_inner_li {
           width: 9.3125rem;
         }
       }
       &:last-child {
-        li:nth-child(2) {
+        .footer_inner_li:nth-child(2) {
           width: 16.25rem;
         }
       }
