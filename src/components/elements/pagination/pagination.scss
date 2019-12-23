@@ -8,13 +8,13 @@
   &__numbers {
     display: flex;
     margin-bottom: 0.67rem;
-    span:first-child {
+    &_span:first-child {
       border-radius: 50%;
       color: $white;
       background: $gradient;
     }
   }
-  span,
+  &__numbers_span,
   &__img-container {
     width: 2.5rem;
     height: 2.5rem;

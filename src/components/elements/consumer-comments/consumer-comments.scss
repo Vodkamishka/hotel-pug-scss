@@ -28,9 +28,9 @@
   &_bottom {
     display: flex;
     width: 45.206875rem;
-    margin-bottom: 3px;
+    margin-bottom: 0.1875rem;
     .like {
-      margin-left: 3px;
+      margin-left: 0.1875rem;
     }
   }
   &__text {
@@ -43,7 +43,7 @@
     position: relative;
     p {
       position: absolute;
-      top: -2px;
+      top: -0.125rem;
     }
   }
 }

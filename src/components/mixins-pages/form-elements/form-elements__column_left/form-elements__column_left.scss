@@ -18,7 +18,7 @@
           }
         }
         &_arrow {
-          margin-right: 100px;
+          margin-right: 6.25rem;
         }
       }
     }
@@ -28,11 +28,11 @@
         .label {
           &_right {
             margin-bottom: 0.34rem;
-            letter-spacing: -0.1px;
+            letter-spacing: -0.0625rem;
           }
         }
         input::placeholder {
-          letter-spacing: -0.2px;
+          letter-spacing: -0.125rem;
           color: $shade100;
         }
       }

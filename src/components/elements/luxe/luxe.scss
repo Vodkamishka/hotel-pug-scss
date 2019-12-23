@@ -7,18 +7,18 @@
   &_left {
     font-weight: bold;
     text-transform: uppercase;
-    span:first-child {
+    &_first {
       color: $shade100;
       font-size: 0.875rem;
       margin-right: 0.25rem;
       font-family: "Quicksand", Arial, Helvetica, sans-serif;
     }
-    span:nth-child(2) {
+    &_second {
       padding-right: 0.3125rem;
       font-family: "Quicksand", Arial, Helvetica, sans-serif;
       font-size: 1.1875rem;
     }
-    span:last-child {
+    &_third {
       font-size: 0.75rem;
       color: $purple;
     }
@@ -30,19 +30,19 @@
     color: $shade50;
     margin-bottom: 0.125rem;
     letter-spacing: -0.01875rem;
-    span:first-child,
-    span:nth-child(2),
-    span:nth-child(3) {
+    &_first,
+    &_second,
+    &_third {
       font-size: 0.9375rem;
       font-weight: bold;
     }
-    span:first-child {
+    &_first {
       margin-right: 0.1875rem;
     }
-    span:nth-child(3) {
-      margin-right: 0.5px;
+    &_third {
+      margin-right: 0.03125rem;
     }
-    span:last-child {
+    &_fourth {
       font-size: 0.75rem;
     }
   }

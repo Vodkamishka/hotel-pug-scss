@@ -11,7 +11,7 @@
   background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg")
       no-repeat 18rem,
     $gradient;
-  span {
+  &_text {
     color: $white;
     font-weight: bold;
     font-size: 0.75rem;

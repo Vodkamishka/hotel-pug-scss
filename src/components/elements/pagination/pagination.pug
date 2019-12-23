@@ -4,9 +4,9 @@ mixin pagination(show)
             .pagination__title pagination
         .pagination__numbers
             for i in [1,2,3]
-                span= i
-            span ...
-            span 15
+                span.pagination__numbers_span= i
+            span.pagination__numbers_span ...
+            span.pagination__numbers_span 15
             .pagination__img-container
                 img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg", alt="arrow-right")
     .pagination__text 1 – 12 из 100+ вариантов аренды   

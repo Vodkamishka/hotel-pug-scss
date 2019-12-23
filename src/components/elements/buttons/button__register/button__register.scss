@@ -9,7 +9,7 @@
   background: $gradient;
   padding: 0 1.25rem;
   box-sizing: border-box;
-  span {
+  &_text {
     color: $white;
     font-weight: bold;
     font-size: 0.75rem;

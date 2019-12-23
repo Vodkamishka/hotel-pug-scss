@@ -21,7 +21,7 @@
     color: $shade50;
     margin-left: 0.0625rem;
     margin-top: 1.9375rem;
-    span:nth-child(1) {
+    &_first {
       margin-right: 1.25rem;
       color: $purple;
     }

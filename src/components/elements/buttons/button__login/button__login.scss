@@ -9,7 +9,7 @@
   text-transform: uppercase;
   background: white;
   border: 0.0625rem solid $blue;
-  span {
+  &_text {
     color: $purple;
     font-family: "Montserrat";
     font-weight: bold;
