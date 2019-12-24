@@ -5,9 +5,11 @@ mixin dropdowns_long (placeholder='', classInput='', classLabel='', leftLabel=''
     .dropdowns_long
         +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
         .dropdowns_long__container_execute(class= classShowDropdown)
-            +execute-panel('Взрослые', x)
-            +execute-panel('Дети', y)
-            +execute-panel('Младенцы', z)
+            - let humans = [{people: 'Взрослые', number: x}, {people: 'Дети', number: y}, {people: 'Младенцы', number: z}]
+                for el in humans
+                    - let {people, number} = el
+                        .dropdowns_long__wrapper_execute-panel
+                            +execute-panel(people, number)
             .dropdowns_long__buttons
                 if showButtonClear === 'block'
                     .dropdowns_long__clear Очистить

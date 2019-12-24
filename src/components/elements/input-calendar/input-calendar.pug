@@ -3,8 +3,10 @@ include ../../common/datepicker-here/datepicker-here
 
 mixin input-calendar (placeholder, classLabel, leftLabel, placeholder2, classLabel2, leftLabel2, id, id2, inline )
     .input-calendar
-        +label(classLabel, leftLabel, '')
+        .input-calendar__label
+            +label(classLabel, leftLabel, '')
         +datepicker-here(placeholder, id, inline)
     .input-calendar
-        +label(classLabel2, leftLabel2, '')
+        .input-calendar__label
+            +label(classLabel2, leftLabel2, '')
         +datepicker-here(placeholder2, id2, inline)    

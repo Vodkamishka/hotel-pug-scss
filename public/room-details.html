@@ -33,8 +33,12 @@
         </div>
         <div class="header__third-element">
           <div class="buttons__login-register">
-            <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
-            <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            <div class="buttons__login-register_login">
+              <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
+            </div>
+            <div class="buttons__login-register_register">
+              <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -49,25 +53,31 @@
         <div class="room-details_left">
           <div class="room-details__room-information"> 
             <div class="room-details__title">Сведения о номере
-              <div class="info-room"> 
-                <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/insert_emoticon.svg) no-repeat center"></div>
-                <div class="info-room_right">
-                  <div class="info-room__title">Комфорт</div>
-                  <div class="info-room__text">Шумопоглащающие стены</div>
+              <div class="room-details__wrapper_info-room"> 
+                <div class="info-room"> 
+                  <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/insert_emoticon.svg) no-repeat center"></div>
+                  <div class="info-room_right">
+                    <div class="info-room__title">Комфорт</div>
+                    <div class="info-room__text">Шумопоглащающие стены</div>
+                  </div>
                 </div>
               </div>
-              <div class="info-room"> 
-                <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/location_city.svg) no-repeat center"></div>
-                <div class="info-room_right">
-                  <div class="info-room__title">Удобство</div>
-                  <div class="info-room__text">Окно в каждой из спален</div>
+              <div class="room-details__wrapper_info-room"> 
+                <div class="info-room"> 
+                  <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/location_city.svg) no-repeat center"></div>
+                  <div class="info-room_right">
+                    <div class="info-room__title">Удобство</div>
+                    <div class="info-room__text">Окно в каждой из спален</div>
+                  </div>
                 </div>
               </div>
-              <div class="info-room"> 
-                <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/whatshot.svg) no-repeat center"></div>
-                <div class="info-room_right">
-                  <div class="info-room__title">Уют</div>
-                  <div class="info-room__text">Номер оснащен камином</div>
+              <div class="room-details__wrapper_info-room"> 
+                <div class="info-room"> 
+                  <div class="info-room__image" style="background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/whatshot.svg) no-repeat center"></div>
+                  <div class="info-room_right">
+                    <div class="info-room__title">Уют</div>
+                    <div class="info-room__text">Номер оснащен камином</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -162,16 +172,20 @@
             </div>
             <div class="reservation__incoming">
               <div class="input">
-                <div class="label label_small">
-                  <label class="label_left" for="forLab">Прибытие</label>
-                  <label class="label_right" for="forLab"></label>
+                <div class="input__label">
+                  <div class="label label_small">
+                    <label class="label_left" for="forLab">Прибытие</label>
+                    <label class="label_right" for="forLab"></label>
+                  </div>
                 </div>
                 <input class="input_small" type="text" placeholder="19.08.2019">
               </div>
               <div class="input">
-                <div class="label label_small">
-                  <label class="label_left" for="forLab">Выезд</label>
-                  <label class="label_right" for="forLab"></label>
+                <div class="input__label">
+                  <div class="label label_small">
+                    <label class="label_left" for="forLab">Выезд</label>
+                    <label class="label_right" for="forLab"></label>
+                  </div>
                 </div>
                 <input class="input_small" type="text" placeholder="23.08.2019">
               </div>
@@ -179,35 +193,43 @@
             <div class="reservation__guests">
               <div class="dropdowns_long">
                 <div class="input">
-                  <div class="label label_long">
-                    <label class="label_left" for="forLab">гости</label>
-                    <label class="label_right" for="forLab"></label>
+                  <div class="input__label">
+                    <div class="label label_long">
+                      <label class="label_left" for="forLab">гости</label>
+                      <label class="label_right" for="forLab"></label>
+                    </div>
                   </div>
                   <input class="input_long" type="text" placeholder="3 гостя">
                 </div>
                 <div class="dropdowns_long__container_execute dropdowns_long_hide">
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Взрослые</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">3</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Взрослые</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">3</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Дети</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">0</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Дети</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Младенцы</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">0</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Младенцы</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
                   <div class="dropdowns_long__buttons">

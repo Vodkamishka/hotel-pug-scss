@@ -4,6 +4,9 @@
   &__container_execute {
     @include container_execute;
   }
+  &__wrapper_execute-panel {
+    margin-bottom: 0.4375rem;
+  }
   &_hide {
     display: none;
   }

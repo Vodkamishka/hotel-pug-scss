@@ -7,12 +7,29 @@ body {
   height: 100%;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   padding-top: 9.0625rem;
-
   display: flex;
+  &__logo-wrapper {
+    position: absolute;
+    left: 1.875rem;
+    top: 1.875rem;
+  }
   &__squares {
     margin-left: 9.375rem;
   }
+  &__block-wrapper {
+    margin-bottom: 1.25rem;
+  }
   &__title {
     margin-left: 26.8rem;
+  }
+  &__colors-title-wrapper {
+    margin-bottom: 3.125rem;
+    &:first-child,
+    &:nth-child(2) {
+      margin-left: 0.5rem;
+    }
+    &:nth-child(3) {
+      margin-left: 1.125rem;
+    }
   }
 }

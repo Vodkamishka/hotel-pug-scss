@@ -7,7 +7,8 @@ include ../../elements/social/social.pug
 mixin headers-footers ({header, footer, copyright})
     - let {classHeader, classHeader2, titlesNavbar, log, register} = header
     .headers-footers
-        +logo-wrapper
+        .headers-footers__logo-wrapper
+            +logo-wrapper
         .headers-footers__section
             +header(classHeader, titlesNavbar, log, register)
         .headers-footers__section2

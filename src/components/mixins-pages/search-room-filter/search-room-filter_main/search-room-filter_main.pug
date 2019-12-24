@@ -3,6 +3,8 @@ include ../search-room-filter_left/search-room-filter_left
 
 mixin search-room-filter_main 
     .search-room-filter_main
-        +search-room-filter_left
-        +search-room-filter_right
+        .search-room-filter_main__wrapper_left
+            +search-room-filter_left
+        .search-room-filter_main__wrapper_right
+            +search-room-filter_right
         

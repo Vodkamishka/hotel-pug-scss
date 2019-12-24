@@ -5,8 +5,10 @@ mixin toggle (show)
         if show
             .toggle__title Toggle
         .toggle__buttons
-            +toggle_one(true)
-            +toggle_one(false)
+            .toggle__buttons_top
+                +toggle_one(true)
+            .toggle__buttons_bottom
+                +toggle_one(false)
         
 
 

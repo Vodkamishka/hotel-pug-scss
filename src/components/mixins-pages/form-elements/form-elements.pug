@@ -5,8 +5,12 @@ include ./form-elements__column_right/form-elements__column_right.pug
 
 mixin form-elements
     .form-elements
-        +logo-wrapper
-        +form-elements__column_left
-        +form-elements__column_center
-        +form-elements__column_right
+        .form-elements__logo-wrapper
+            +logo-wrapper
+        .form-elements__wrapper_left
+            +form-elements__column_left
+        .form-elements__wrapper_center
+            +form-elements__column_center
+        .form-elements__wrapper_right
+            +form-elements__column_right
 

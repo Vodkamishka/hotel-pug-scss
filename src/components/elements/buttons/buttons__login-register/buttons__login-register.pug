@@ -3,5 +3,7 @@ include ../button__register/button__register
 
 mixin buttons__login-register(log, register)
     .buttons__login-register
-        +button__login(log)
-        +button__register(register)
+        .buttons__login-register_login
+            +button__login(log)
+        .buttons__login-register_register
+            +button__register(register)

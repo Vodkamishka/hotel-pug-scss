@@ -1,7 +1,6 @@
 @import "../../../assets/utils/main";
 
 .label {
-  font-family: Montserrat;
   font-size: 0.75rem;
   line-height: 0.9375rem;
   text-transform: uppercase;
@@ -20,7 +19,6 @@
     width: $long;
   }
   &_left {
-    margin-bottom: 0.3125rem;
     font-weight: bold;
   }
   &_right {

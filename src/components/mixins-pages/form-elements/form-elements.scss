@@ -6,4 +6,20 @@ body {
 .form-elements {
   height: 115.8125rem;
   display: flex;
+  &__logo-wrapper {
+    position: absolute;
+    left: 1.875rem;
+    top: 1.875rem;
+  }
+  &__wrapper {
+    &_left {
+      margin-left: 8.75rem;
+    }
+    &_center {
+      margin: 0 4.5rem 0 7.875rem;
+    }
+    &_right {
+      margin-right: 8.8125rem;
+    }
+  }
 }

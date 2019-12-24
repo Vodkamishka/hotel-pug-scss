@@ -1,6 +1,6 @@
 .buttons__login-register {
   display: flex;
-  button:last-child {
+  &_register {
     margin-left: 1.25rem;
   }
 }

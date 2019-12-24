@@ -2,4 +2,7 @@
 
 .input {
   @include input-text;
+  &__label {
+    margin-bottom: 0.3125rem;
+  }
 }

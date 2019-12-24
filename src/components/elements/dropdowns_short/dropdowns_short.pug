@@ -5,8 +5,11 @@ mixin dropdowns_short (placeholder='', classInput='', classLabel='', leftLabel='
     .dropdowns_short
         +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
         .dropdowns_short__container_execute(class= classShowDropdown)
-            +execute-panel('Спальни', 2)
-            +execute-panel('Кровати', 2)
-            +execute-panel('Ванные комнаты', 0)
+            - let goods = [{bed: 'Спальни', number: 2}, {bed: 'Кровати', number: 2}, {bed: 'Ванные комнаты', number: 0}]
+                for el in goods
+                    - let {bed, number} = el
+                    .dropdowns_short__wrapper_execute-panel
+                        +execute-panel(bed, number)
+            
             
 

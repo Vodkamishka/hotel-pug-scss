@@ -14,7 +14,9 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div class="headers-footers">
-      <div class="logo-wrapper"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/group.svg" alt="group"></div>
+      <div class="headers-footers__logo-wrapper">
+        <div class="logo-wrapper"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/group.svg" alt="group"></div>
+      </div>
       <div class="headers-footers__section">
         <div class="header header_eng">
           <div class="header_eng__image"><img src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg" alt="logo"></div>
@@ -34,8 +36,12 @@
           </div>
           <div class="header_eng__third-element">
             <div class="buttons__login-register">
-              <button class="button__login"><span class="button__login_text">login</span></button>
-              <button class="button__register"><span class="button__register_text">register</span></button>
+              <div class="buttons__login-register_login">
+                <button class="button__login"><span class="button__login_text">login</span></button>
+              </div>
+              <div class="buttons__login-register_register">
+                <button class="button__register"><span class="button__register_text">register</span></button>
+              </div>
             </div>
           </div>
         </div>

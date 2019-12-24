@@ -6,7 +6,7 @@ mixin search-rooms
     .search-rooms
         .search-rooms__title Найдем номера под ваши пожелания
         .search-rooms__incoming
-            +input-calendar('ДД.ММ.ГГГГ','small','Прибытие', 'ДД.ММ.ГГГГ','input_small','Выезд', 'start', 'end', false)
+            +input-calendar('ДД.ММ.ГГГГ','small','Прибытие', 'ДД.ММ.ГГГГ','small','Выезд', 'start', 'end', false)
         .search-rooms__guests
             +dropdowns_long('Сколько гостей', 'input_long', 'long', 'гости', '', 'block', 'dropdowns_long_hide')
         +button_long('Подобрать номер')

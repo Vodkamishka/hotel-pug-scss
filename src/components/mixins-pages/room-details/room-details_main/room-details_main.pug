@@ -10,9 +10,12 @@ mixin room-details_main
         .room-details_left
             .room-details__room-information 
                 .room-details__title Сведения о номере
-                    +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
-                    +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
-                    +info-room('whatshot', 'Уют', 'Номер оснащен камином')
+                    .room-details__wrapper_info-room 
+                        +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+                    .room-details__wrapper_info-room 
+                        +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+                    .room-details__wrapper_info-room 
+                        +info-room('whatshot', 'Уют', 'Номер оснащен камином')
             .room-details__comments-consumer 
                 .room-details__title 
                     .room-details__reviews

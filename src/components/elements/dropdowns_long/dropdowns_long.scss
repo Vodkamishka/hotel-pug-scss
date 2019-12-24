@@ -7,9 +7,7 @@
     height: 9.85rem;
     width: $long;
     padding-top: 0.3475rem;
-
     .execute-panel {
-      margin-bottom: 0.375rem;
       &__increment-decrement {
         padding-top: 0.0625rem;
         box-sizing: border-box;
@@ -19,6 +17,9 @@
         box-sizing: border-box;
       }
     }
+  }
+  &__wrapper_execute-panel {
+    margin-bottom: 0.375rem;
   }
   &_hide {
     display: none;

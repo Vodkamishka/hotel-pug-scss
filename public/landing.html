@@ -33,8 +33,12 @@
         </div>
         <div class="header__third-element">
           <div class="buttons__login-register">
-            <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
-            <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            <div class="buttons__login-register_login">
+              <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
+            </div>
+            <div class="buttons__login-register_register">
+              <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -44,16 +48,20 @@
             <div class="search-rooms__title">Найдем номера под ваши пожелания</div>
             <div class="search-rooms__incoming">
               <div class="input-calendar">
-                <div class="label label_small">
-                  <label class="label_left" for="forLab">Прибытие</label>
-                  <label class="label_right" for="forLab"></label>
+                <div class="input-calendar__label">
+                  <div class="label label_small">
+                    <label class="label_left" for="forLab">Прибытие</label>
+                    <label class="label_right" for="forLab"></label>
+                  </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="start">
               </div>
               <div class="input-calendar">
-                <div class="label label_input_small">
-                  <label class="label_left" for="forLab">Выезд</label>
-                  <label class="label_right" for="forLab"></label>
+                <div class="input-calendar__label">
+                  <div class="label label_small">
+                    <label class="label_left" for="forLab">Выезд</label>
+                    <label class="label_right" for="forLab"></label>
+                  </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="end">
               </div>
@@ -61,35 +69,43 @@
             <div class="search-rooms__guests">
               <div class="dropdowns_long">
                 <div class="input">
-                  <div class="label label_long">
-                    <label class="label_left" for="forLab">гости</label>
-                    <label class="label_right" for="forLab"></label>
+                  <div class="input__label">
+                    <div class="label label_long">
+                      <label class="label_left" for="forLab">гости</label>
+                      <label class="label_right" for="forLab"></label>
+                    </div>
                   </div>
                   <input class="input_long" type="text" placeholder="Сколько гостей">
                 </div>
                 <div class="dropdowns_long__container_execute dropdowns_long_hide">
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Взрослые</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">0</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Взрослые</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Дети</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">0</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Дети</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="execute-panel">
-                    <div class="execute-panel__title">Младенцы</div>
-                    <div class="execute-panel__increment-decrement">
-                      <div class="execute-panel__decrement">-</div>
-                      <div class="execute-panel__result">0</div>
-                      <div class="execute-panel__increment">+</div>
+                  <div class="dropdowns_long__wrapper_execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Младенцы</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
                     </div>
                   </div>
                   <div class="dropdowns_long__buttons">

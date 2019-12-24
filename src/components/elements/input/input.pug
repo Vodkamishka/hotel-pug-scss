@@ -3,7 +3,8 @@ include ../label/label
 mixin input (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='')
     .input
         if leftLabel
-            +label(classLabel, leftLabel, rightLabel)
+            .input__label
+                +label(classLabel, leftLabel, rightLabel)
         input(type="text" placeholder=placeholder class=classInput)
 
    

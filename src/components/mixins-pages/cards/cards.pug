@@ -5,8 +5,12 @@ include ./cards__column_right/cards__column_right.pug
 
 mixin cards
     .cards
-        +logo-wrapper
-        +cards__column_left
-        +cards__column_center
-        +cards__column_right
+        .cards__logo-wrapper
+            +logo-wrapper
+        .cards__wrapper_left
+            +cards__column_left
+        .cards__wrapper_center
+            +cards__column_center
+        .cards__wrapper_right
+            +cards__column_right
 

@@ -1,9 +1,22 @@
-@import '../../../assets/utils/main';
+@import "../../../assets/utils/main";
 body {
-    @include body
+  @include body;
 }
 .cards {
-        height: 84.375rem;
-        display: flex;
-        padding-top: 9.375rem;
+  height: 84.375rem;
+  display: flex;
+  padding-top: 9.375rem;
+  &__logo-wrapper {
+    position: absolute;
+    left: 1.875rem;
+    top: 1.875rem;
+  }
+  &__wrapper {
+    &_left {
+      margin-left: 8.75rem;
+    }
+    &_center {
+      margin: 0 2.5rem;
+    }
+  }
 }

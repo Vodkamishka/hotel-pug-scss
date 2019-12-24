@@ -33,8 +33,12 @@
         </div>
         <div class="header__third-element">
           <div class="buttons__login-register">
-            <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
-            <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            <div class="buttons__login-register_login">
+              <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
+            </div>
+            <div class="buttons__login-register_register">
+              <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -61,18 +65,22 @@
           </div>
           <div class="registration-account__bithday">
             <div class="input">
-              <div class="label label_long">
-                <label class="label_left" for="forLab">Дата рождения</label>
-                <label class="label_right" for="forLab"></label>
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label_left" for="forLab">Дата рождения</label>
+                  <label class="label_right" for="forLab"></label>
+                </div>
               </div>
               <input class="input_no-class" type="text" placeholder="ДД.ММ.ГГГГ">
             </div>
           </div>
           <div class="registration-account__two-fields_two">
             <div class="input">
-              <div class="label label_long">
-                <label class="label_left" for="forLab">Данные для входа в сервис</label>
-                <label class="label_right" for="forLab"></label>
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label_left" for="forLab">Данные для входа в сервис</label>
+                  <label class="label_right" for="forLab"></label>
+                </div>
               </div>
               <input class="input_no-class" type="text" placeholder="Email">
             </div>

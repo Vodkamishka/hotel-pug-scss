@@ -98,9 +98,6 @@
   color: $shade100;
   text-transform: uppercase;
   z-index: 10000;
-  .execute-panel {
-    margin-bottom: 0.4375rem;
-  }
 }
 @mixin input-text {
   .input_hover {

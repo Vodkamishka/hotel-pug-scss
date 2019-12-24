@@ -15,12 +15,12 @@
     padding: 0;
     margin: 0;
     margin-left: 1.25rem;
-    &_li {
-      margin-top: 0.625rem;
-      padding-left: 0.1rem;
-      &:nth-child(2) {
-        white-space: nowrap;
-      }
+  }
+  &_li {
+    margin-top: 0.625rem;
+    padding-left: 0.1rem;
+    &:nth-child(2) {
+      white-space: nowrap;
     }
   }
 }

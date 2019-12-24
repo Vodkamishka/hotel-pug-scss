@@ -3,9 +3,12 @@ body {
   @include body;
 }
 .headers-footers {
-  position: absolute;
-  width: 100%;
-  top: 0;
+  overflow: hidden;
+  &__logo-wrapper {
+    position: absolute;
+    left: 1.875rem;
+    top: 1.875rem;
+  }
   &__section {
     margin: 9.375rem 0 2.5rem 0;
     box-shadow: 0 0.625rem 1.25rem rgba(31, 32, 65, 0.05);

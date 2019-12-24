@@ -5,17 +5,17 @@ include ../../elements/logo-wrapper/logo-wrapper.pug
 
 mixin colors-type
     .colors-type
-        +logo-wrapper  
+        .colors-type__logo-wrapper
+            +logo-wrapper  
         .colors-type__squares
-            +block("shade", "Dark Shade 100%", "#1F2041")
-            +block("shade75", "Dark Shade 75%", "#1F2041")
-            +block("shade50", "Dark Shade 50%", "#1F2041")
-            +block("shade25", "Dark Shade 25%", "#1F2041")
-            +block("shade05", "Dark Shade 5%", "#1F2041")
-            +block("purple", "Purple", "#BC9CFF")
-            +block("green", "Green", "#6FCF97")
+            - let blocks = [{background:"shade", text:"Dark Shade 100%", color:"#1F2041"}, {background: "shade75", text: "Dark Shade 75%", color: "#1F2041"}, {background: "shade50", text: "Dark Shade 50%", color: "#1F2041"}, {background: "shade25", text: "Dark Shade 25%", color: "#1F2041"}, {background: "shade05", text: "Dark Shade 5%", color: "#1F2041"}, {background: "purple", text: "Purple", color: "#BC9CFF"}, {background: "green", text: "Green", color: "#6FCF97"}]
+            for el in blocks
+                - let {background, text, color} = el
+                .colors-type__block-wrapper
+                    +block(background, text, color)
         .colors-type__title
-            +colors-title("H1", "This one is the sub-section or widget title", "first")
-            +colors-title("H2", "Next one is the item title inside widgets", "second")
-            +colors-title("H3", "This is a label or CTA text", "third")
-            +colors-title("Body", "This is the body text which is used for most of the design, like paragraphs, lists, etc", "fourth")
+            - let titles = [{tag: "H1", text: "This one is the sub-section or widget title", className: "first"}, {tag: "H2", text: "Next one is the item title inside widgets", className: "second"}, {tag: "H3", text: "This is a label or CTA text", className: "third"}, {tag: "Body", text: "This is the body text which is used for most of the design, like paragraphs, lists, etc", className: "fourth"}]
+            for el in titles
+                - let {tag, text, className} = el
+                .colors-type__colors-title-wrapper
+                    +colors-title(tag, text, className)
