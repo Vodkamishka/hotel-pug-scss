@@ -3,7 +3,7 @@ include ../navbar/navbar
 
 mixin header (classHeader, titlesNavbar, log, register)
     div(class=`header ${classHeader}`)
-        div(class=`${classHeader}__image`)
+        div(class=`header__image`)
             img(src='https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg', alt='logo')
         div(class=`${classHeader}__navbar`)
             +navbar(titlesNavbar)
