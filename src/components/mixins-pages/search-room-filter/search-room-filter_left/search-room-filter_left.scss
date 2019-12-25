@@ -17,6 +17,9 @@
     }
     &__container_expanded-checkbox {
       margin-top: 0.92rem;
+      .checkbox_expandable__title {
+        margin-right: 0.8125rem;
+      }
     }
     &__container-slider {
       margin-bottom: 1.8rem;

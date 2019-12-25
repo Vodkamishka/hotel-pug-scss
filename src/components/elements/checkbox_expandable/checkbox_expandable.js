@@ -1,19 +1,18 @@
 class Checkbox {
   constructor(el) {
-    this.img = el.querySelector(".checkbox_expandable__image");
-    this.list = el.querySelector(".checkbox_expandable__list");
+    this.img = el.querySelector('.checkbox_expandable__image');
+    this.list = el.querySelector('.checkbox_expandable__list');
     this.addClick();
   }
-  addClick = () => {
-    this.img.addEventListener("click", () => {
-      this.img.classList.toggle("checkbox_expandable__image_expand");
-      this.list.classList.toggle("checkbox_expandable_hide");
+
+  addClick() {
+    this.img.addEventListener('click', () => {
+      this.img.classList.toggle('checkbox_expandable__image_expand');
+      this.list.classList.toggle('checkbox_expandable_hide');
     });
-  };
+  }
 }
 
-let exp = document.querySelectorAll(".checkbox_expandable");
+const exp = document.querySelectorAll('.checkbox_expandable');
 
-exp.forEach(el => {
-  new Checkbox(el);
-});
+exp.forEach((el) => new Checkbox(el));

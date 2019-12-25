@@ -4,6 +4,7 @@
   height: 31.9375rem;
   width: 23.75rem;
   @include cards;
+  padding-top: 2.4rem;
   .luxe {
     display: block;
     height: 1.5rem;
@@ -13,7 +14,7 @@
       display: inline-block;
     }
     &_left {
-      margin-right: 6.625rem;
+      margin-right: 6.6rem;
     }
   }
   &__main-title {
@@ -25,7 +26,7 @@
   }
   &__incoming {
     display: flex;
-    margin-top: 1.45rem;
+    margin-top: 1.65rem;
     .input {
       input[type="text"] {
         margin-right: 1.25rem;

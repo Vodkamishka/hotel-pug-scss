@@ -1,0 +1,16 @@
+{
+    "extends": "airbnb/base",
+    "rules": {
+        "no-underscore-dangle": "off",
+        "no-new": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "linebreak-style": "off",
+        "class-methods-use-this": "off"
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jquery": true
+    }
+}
