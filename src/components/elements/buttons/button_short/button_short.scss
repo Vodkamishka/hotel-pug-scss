@@ -11,6 +11,11 @@
   line-height: 0.9375rem;
   text-transform: uppercase;
   box-sizing: border-box;
+  &:hover {
+    background: $gradient;
+    color: $white;
+    opacity: 0.5;
+  }
   &_purple {
     background: $gradient;
     color: $white;

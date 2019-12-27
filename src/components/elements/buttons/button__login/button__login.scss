@@ -9,6 +9,14 @@
   text-transform: uppercase;
   background: white;
   border: 0.0625rem solid $blue;
+  &:hover {
+    color: $purple;
+    border: 0.125rem solid transparent;
+    background-origin: border-box;
+    background-image: $gradient;
+    box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
+    border-opacity: 0.5;
+  }
   &_text {
     color: $purple;
     font-family: "Montserrat";

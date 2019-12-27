@@ -14,6 +14,11 @@
     font-weight: bold;
     font-size: 0.75rem;
   }
+  &:hover {
+    background: $gradient;
+    color: $white;
+    opacity: 0.5;
+  }
 }
 .button__register_rus {
   width: 12.25rem;

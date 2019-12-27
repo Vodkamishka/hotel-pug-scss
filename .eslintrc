@@ -6,7 +6,8 @@
         "no-undef": "off",
         "no-unused-vars": "off",
         "linebreak-style": "off",
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "max-classes-per-file": "off"
     },
     "env": {
         "browser": true,

@@ -18,4 +18,9 @@
     height: 0.9375rem;
     letter-spacing: 0.0625rem;
   }
+  &:hover {
+    background: $gradient;
+    color: $white;
+    opacity: 0.5;
+  }
 }

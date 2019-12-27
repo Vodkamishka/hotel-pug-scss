@@ -5,7 +5,7 @@ body {
 .landing {
   height: 83.9375rem;
   &__image-wrapper {
-    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/main-picture.jpg);
+    background-image: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/main-picture.jpg);
     height: 51.875rem;
     overflow: hidden;
     position: relative;
