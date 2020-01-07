@@ -7,7 +7,7 @@ body {
   height: 75.6875rem;
   &__image-wrapper {
     height: 43.875rem;
-    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/rooms/registration.jpg);
+    background: url('/public/assets/img/rooms/registration.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;

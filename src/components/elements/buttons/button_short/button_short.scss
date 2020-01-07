@@ -11,14 +11,12 @@
   line-height: 0.9375rem;
   text-transform: uppercase;
   box-sizing: border-box;
-  &:hover {
-    background: $gradient;
-    color: $white;
-    opacity: 0.5;
-  }
   &_purple {
     background: $gradient;
     color: $white;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &_purple05 {
     background: $gradient;
@@ -31,6 +29,9 @@
     background-origin: border-box;
     background-image: $gradient;
     box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
+    &:hover {
+      border: 1px solid rgba($purple, 0.5);
+    }
   }
   &_white05 {
     color: $purple;
@@ -38,6 +39,6 @@
     background-origin: border-box;
     background-image: $gradient;
     box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
-    border-opacity: 0.5;
+    border: 1px solid rgba($purple, 0.5);
   }
 }

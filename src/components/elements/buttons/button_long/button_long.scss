@@ -8,7 +8,7 @@
   border: none;
   text-align: center;
   text-transform: uppercase;
-  background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_white.svg")
+  background: url('/public/assets/img/icons/arrow_forward_white.svg')
       no-repeat 18rem,
     $gradient;
   &_text {

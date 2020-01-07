@@ -3,7 +3,10 @@ include ../../elements/like/like
 mixin consumer-comments(img, name, term, like, text)
     .consumer-comments
         .consumer-comments_top
-            .consumer-comments__img(style=`background-image: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/photo/${img}.jpg)`)
+            if img === 'man'
+                .consumer-comments__img
+            else 
+                .consumer-comments__img.consumer-comments__img_girl
             .consumer-comments_right
                 .consumer-comments__name=name
                 .consumer-comments__term=term

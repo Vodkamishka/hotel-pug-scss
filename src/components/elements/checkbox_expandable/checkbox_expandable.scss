@@ -13,12 +13,12 @@
     white-space: nowrap;
   }
   &__image {
-    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg)
+    background: url('/public/assets/img/icons/expand.svg')
       no-repeat center;
     width: 2.75rem;
     height: 2.75rem;
     &_expand {
-      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand_more.svg)
+      background: url('/public/assets/img/icons/expand_more.svg')
         no-repeat center;
     }
   }

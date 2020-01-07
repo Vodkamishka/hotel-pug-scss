@@ -1,6 +1,7 @@
 mixin info-room(img, title, text)
     .info-room 
-        .info-room__image(style=`background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/${img}.svg) no-repeat center`)
+        .info-room__image
+            img(src=`/public/assets/img/logotypes/${img}.svg` alt='info-room' class='info-room__img')
         .info-room_right
             .info-room__title= title
             .info-room__text= text

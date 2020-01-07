@@ -41,7 +41,7 @@
     &:checked {
       border: 0.0625rem solid $purple;
       margin: 0 0.625rem 0 0;
-      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/vector.svg)
+      background: url('/public/assets/img/icons/vector.svg')
           no-repeat center center,
         $white;
     }
@@ -108,14 +108,14 @@
     }
   }
   .input_long {
-    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+    background: url('/public/assets/img/icons/expand.svg')
         no-repeat 18.125rem,
       $white;
     color: $shade75;
   }
   .input_small {
     width: 9.375rem;
-    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+    background: url('/public/assets/img/icons/expand.svg')
         no-repeat 7.5rem,
       $white;
   }
@@ -124,7 +124,7 @@
     &::placeholder {
       color: $shade75;
     }
-    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand.svg")
+    background: url('/public/assets/img/icons/expand.svg')
         no-repeat 14.8rem,
       $white;
   }
@@ -133,7 +133,7 @@
     &::placeholder {
       color: $shade25;
     }
-    background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg")
+    background: url('/public/assets/img/icons/arrow_forward.svg')
         no-repeat 14.6875rem,
       $white;
   }
@@ -228,7 +228,7 @@ input[type="text"] {
         }
         .input_arrow {
           width: 16.25rem;
-          background: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward.svg")
+          background: url('/public/assets/img/icons/arrow_forward.svg')
               no-repeat 14.125rem,
             $white;
         }

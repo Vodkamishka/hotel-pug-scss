@@ -4,11 +4,11 @@
     width: 1.5rem;
     height: 1.5rem;
     &_first {
-      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star.svg)
+      background: url('/public/assets/img/icons/star.svg')
         no-repeat center;
     }
     &_second {
-      background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/star_border.svg)
+      background: url('/public/assets/img/icons/star_border.svg')
         no-repeat center;
     }
   }

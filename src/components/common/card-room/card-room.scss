@@ -23,6 +23,7 @@
 
       width: 2.625rem;
       height: 9.4375rem;
+      top: 0;
     }
     &-side_left {
       left: 0;
@@ -37,7 +38,7 @@
     height: 2.75rem;
     position: absolute;
     top: 3.355625rem;
-    background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/expand_more_white.svg)
+    background: url('/public/assets/img/icons/expand_more_white.svg')
       no-repeat center;
     transform: rotate(-90deg);
   }

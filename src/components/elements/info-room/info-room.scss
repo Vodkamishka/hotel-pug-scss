@@ -3,9 +3,8 @@
 .info-room {
   @include align-items;
   &__image {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0.625rem;
+    margin-right: 0.8rem;
+    margin-left: 0.3rem;
   }
   &__title {
     @include title-inputs;

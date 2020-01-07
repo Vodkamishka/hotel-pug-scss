@@ -18,6 +18,10 @@
     border-radius: 2rem;
     margin-right: 0.620625rem;
     background-position: -1.25rem -0.625rem;
+    background-image: url('/public/assets/img/photo/man.jpg');
+    &_girl {
+      background-image: url('/public/assets/img/photo/girl.jpg');
+    }
   }
   &__name {
     font-weight: bold;

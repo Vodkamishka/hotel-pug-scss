@@ -4,7 +4,7 @@ mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
     div(class = classFooter)
         .footer_inner
             ul.footer_inner_ul   
-                img(src="https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/logotypes/logo.svg", alt="")
+                img(src="/public/assets/img/logotypes/logo.svg", alt="")
                 p(class="footer_inner_p")= textTop 
             for el in titlesFooter
                 ul.footer_inner_ul

@@ -1,0 +1,64 @@
+// colors
+
+$black: #000000;
+$shade100: #1f2041;
+$shade75: rgba(#1f2041, 0.75);
+$shade50: rgba(#1f2041, 0.5);
+$shade25: rgba(#1f2041, 0.25);
+$shade05: rgba(#1f2041, 0.05);
+$purple: #bc9cff;
+$green: #6fcf97;
+$aqua: #66d2ea;
+$white: #ffffff;
+$blue: #8ba4f9;
+$gradient: linear-gradient(180deg, $purple 0%, $blue 100%);
+$gradient-green: linear-gradient(180deg, $green 0%, $aqua 100%);
+
+//fonts
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat.ttf"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat.woff"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat.svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-bold.ttf"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-bold.woff"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-bold.svg");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-italic.ttf"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-italic.woff"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/montserrat/montserrat-italic.svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand.woff"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand.ttf"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand.svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand-bold.woff"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand-bold.ttf"),
+    url("https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/fonts/quicksand/quicksand-bold.svg");
+  font-weight: 700;
+  font-style: bold;
+}
+
+//width for text-inputs and labels
+
+$small: 9.375rem;
+$little: 16.625rem;
+$long: 20rem;
