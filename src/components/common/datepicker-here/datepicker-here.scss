@@ -74,11 +74,11 @@
   stroke-width: 0;
 }
 .datepicker--nav-action:first-child {
-  background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_back_purple.svg)
+  background: url('/public/assets/img/icons/arrow_back_purple.svg')
     no-repeat center center;
 }
 .datepicker--nav-action:last-child {
-  background: url(https://vodkamishka.github.io/hotel-webpack-pug-scss/public/assets/img/icons/arrow_forward_purple.svg)
+  background: url('/public/assets/img/icons/arrow_forward_purple.svg')
     no-repeat center center;
 }
 .datepicker--nav-action:hover {
