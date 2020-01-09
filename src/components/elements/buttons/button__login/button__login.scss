@@ -4,14 +4,13 @@
   height: 2.125rem;
   border-radius: 1.375rem;
   width: 4.9375rem;
-  border: none;
   text-align: center;
   text-transform: uppercase;
   background: white;
-  border: 0.0625rem solid $blue;
+  border: 0.125rem solid $blue;
   &:hover {
     color: $purple;
-    border: 0.125rem solid transparent;
+    border: 0.0625rem solid transparent;
     background-origin: border-box;
     background-image: $gradient;
     box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;

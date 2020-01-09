@@ -7,20 +7,22 @@
   &_left {
     font-weight: bold;
     text-transform: uppercase;
-    &_first {
-      color: $shade100;
-      font-size: 0.875rem;
-      margin-right: 0.25rem;
-      font-family: "Quicksand", Arial, Helvetica, sans-serif;
-    }
-    &_second {
-      padding-right: 0.3125rem;
-      font-family: "Quicksand", Arial, Helvetica, sans-serif;
-      font-size: 1.1875rem;
-    }
-    &_third {
-      font-size: 0.75rem;
-      color: $purple;
+    &_text {
+      &:nth-child(1) {
+        color: $shade100;
+        font-size: 0.875rem;
+        margin-right: 0.25rem;
+        font-family: "Quicksand", Arial, Helvetica, sans-serif;
+      }
+      &:nth-child(2) {
+        padding-right: 0.3125rem;
+        font-family: "Quicksand", Arial, Helvetica, sans-serif;
+        font-size: 1.1875rem;
+      }
+      &:nth-child(3) {
+        font-size: 0.75rem;
+        color: $purple;
+      }
     }
   }
   &_not-show {
@@ -30,20 +32,22 @@
     color: $shade50;
     margin-bottom: 0.125rem;
     letter-spacing: -0.01875rem;
-    &_first,
-    &_second,
-    &_third {
-      font-size: 0.9375rem;
-      font-weight: bold;
-    }
-    &_first {
-      margin-right: 0.1875rem;
-    }
-    &_third {
-      margin-right: 0.03125rem;
-    }
-    &_fourth {
-      font-size: 0.75rem;
+    &_text {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        font-size: 0.9375rem;
+        font-weight: bold;
+      }
+      &:nth-child(1) {
+        margin-right: 0.1875rem;
+      }
+      &:nth-child(3) {
+        margin-right: 0.03125rem;
+      }
+      &:nth-child(4) {
+        font-size: 0.75rem;
+      }
     }
   }
 }

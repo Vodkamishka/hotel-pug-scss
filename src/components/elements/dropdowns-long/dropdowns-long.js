@@ -2,12 +2,12 @@ class Dropdowns {
   constructor(el, width) {
     this.dropdown = el;
     this.input = el.querySelector('input');
-    this.container = el.querySelector(`.dropdowns_${width}__container_execute`);
+    this.container = el.querySelector(`.dropdowns-${width}__container_execute`);
     this.increment = el.querySelectorAll('.execute-panel__increment');
     this.decrement = el.querySelectorAll('.execute-panel__decrement');
     this.result = el.querySelectorAll('.execute-panel__result');
-    this.clear = el.querySelector('.dropdowns_long__clear');
-    this.className = `dropdowns_${width}_hide`;
+    this.clear = el.querySelector('.dropdowns-long__clear');
+    this.className = `dropdowns-${width}_hide`;
     this.init();
   }
 
@@ -93,7 +93,7 @@ class Dropdowns {
       } else {
         this.decrement[index].style.opacity = 1;
       }
-      if (this.dropdown.classList.contains('dropdowns_long')) {
+      if (this.dropdown.classList.contains('dropdowns-long')) {
         this.setGuestsInInput(this.result);
       } else {
         this.setBedsInInput(this.result);
@@ -140,8 +140,8 @@ class Dropdowns {
   }
 }
 
-const long = document.querySelectorAll('.dropdowns_long');
-const short = document.querySelectorAll('.dropdowns_short');
+const long = document.querySelectorAll('.dropdowns-long');
+const short = document.querySelectorAll('.dropdowns-short');
 
 long.forEach((el) => new Dropdowns(el, 'long'));
 short.forEach((el) => new Dropdowns(el, 'short'));

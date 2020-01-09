@@ -165,8 +165,8 @@ input[type="text"] {
   }
 }
 
-@mixin footer_inner {
-  .footer_inner {
+@mixin footer__inner {
+  .footer__inner {
     padding: 6.1875rem 9.72% 6.35rem;
     box-sizing: border-box;
     display: flex;
@@ -179,7 +179,7 @@ input[type="text"] {
       &:first-child {
         padding-top: 0;
         margin-right: 2.5rem;
-        .footer_inner_p {
+        .footer__inner_p {
           font-size: 0.875rem;
           color: $shade50;
           width: 16.25rem;
@@ -194,35 +194,35 @@ input[type="text"] {
       &:nth-child(2) {
         white-space: nowrap;
         margin-right: 7.4375rem;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 5.0625rem;
         }
       }
       &:nth-child(3) {
         margin-right: 7.375rem;
         white-space: nowrap;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 5.125rem;
         }
       }
       &:nth-child(4) {
         white-space: nowrap;
         margin-right: 5.4375rem;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 7.0625rem;
         }
       }
       &:last-child {
-        .footer_inner_li {
+        .footer__inner_li {
           letter-spacing: -0.00625rem;
         }
-        .footer_inner_li:first-child {
+        .footer__inner_li:first-child {
           margin-bottom: 1.0625rem;
         }
-        .footer_inner_li:nth-child(2) {
+        .footer__inner_li:nth-child(2) {
           line-height: 1.5rem;
           margin-bottom: 1.4rem;
-          .footer_inner_a {
+          .footer__inner_a {
             color: $shade75;
           }
         }
@@ -233,9 +233,9 @@ input[type="text"] {
             $white;
         }
       }
-      .footer_inner_li {
+      .footer__inner_li {
         margin-bottom: 1.1875rem;
-        .footer_inner_a {
+        .footer__inner_a {
           font-size: 0.875rem;
           color: $shade50;
           text-decoration: none;
@@ -247,7 +247,7 @@ input[type="text"] {
           font-weight: bold;
           text-transform: uppercase;
           margin-bottom: 1.1875rem;
-          .footer_inner_a {
+          .footer__inner_a {
             color: $shade100;
             line-height: 0.9375rem;
             font-size: 0.6875rem;

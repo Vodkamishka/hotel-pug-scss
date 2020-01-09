@@ -1,11 +1,11 @@
 mixin luxe (number, firstNumberPrice, price, clas, fontSize)
     .luxe
         .luxe_left
-            span.luxe_left_first №
-            span.luxe_left_second(style={'font-size': `${fontSize}px`})= number
-            span.luxe_left_third(class=clas) люкс
+            span.luxe_left_text №
+            span.luxe_left_text(style={'font-size': `${fontSize}px`})= number
+            span.luxe_left_text(class=clas) люкс
         .luxe_right
-            span.luxe_right_first= firstNumberPrice
-            span.luxe_right_second= price 
-            span.luxe_right_third &#8381 
-            span.luxe_right_fourth в сутки
+            span.luxe_right_text= firstNumberPrice
+            span.luxe_right_text= price 
+            span.luxe_right_text &#8381 
+            span.luxe_right_text в сутки

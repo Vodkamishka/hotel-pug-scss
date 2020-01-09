@@ -1,14 +1,14 @@
 include ../input/input
 include ../execute-panel/execute-panel
 
-mixin dropdowns_short (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', classShowDropdown='')
-    .dropdowns_short
+mixin dropdowns-short (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', classShowDropdown='')
+    .dropdowns-short
         +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
-        .dropdowns_short__container_execute(class= classShowDropdown)
+        .dropdowns-short__container_execute(class= classShowDropdown)
             - let goods = [{bed: 'Спальни', number: 2}, {bed: 'Кровати', number: 2}, {bed: 'Ванные комнаты', number: 0}]
                 for el in goods
                     - let {bed, number} = el
-                    .dropdowns_short__wrapper_execute-panel
+                    .dropdowns-short__wrapper_execute-panel
                         +execute-panel(bed, number)
             
             

@@ -1,16 +1,16 @@
 include ../../elements/logo-wrapper/logo-wrapper
-include ./form-elements__column_left/form-elements__column_left.pug
-include ./form-elements__column_center/form-elements__column_center.pug
-include ./form-elements__column_right/form-elements__column_right.pug
+include ./form-elements_left/form-elements_left.pug
+include ./form-elements_center/form-elements_center.pug
+include ./form-elements_right/form-elements_right.pug
 
 mixin form-elements
     .form-elements
         .form-elements__logo-wrapper
             +logo-wrapper
         .form-elements__wrapper_left
-            +form-elements__column_left
+            +form-elements_left
         .form-elements__wrapper_center
-            +form-elements__column_center
+            +form-elements_center
         .form-elements__wrapper_right
-            +form-elements__column_right
+            +form-elements_right
 

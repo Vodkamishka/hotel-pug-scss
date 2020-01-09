@@ -1,7 +1,7 @@
 include ../../elements/luxe/luxe.pug
 include ../../elements/buttons/button_long/button_long
 include ../../elements/input/input
-include ../../elements/dropdowns_long/dropdowns_long
+include ../../elements/dropdowns-long/dropdowns-long
 
 mixin reservation
     .reservation
@@ -10,7 +10,7 @@ mixin reservation
             +input('19.08.2019','input_small', 'small', 'Прибытие')
             +input('23.08.2019','input_small', 'small', 'Выезд')
         .reservation__guests
-            +dropdowns_long('3 гостя', 'input_long', "long", 'гости', '', 'block', 'dropdowns_long_hide', 3)
+            +dropdowns-long('3 гостя', 'input_long', "long", 'гости', '', 'block', 'dropdowns-long_hide', 3)
         .reservation__list
             .reservation__price
                 p.reservation_p 9990&#8381 x 4 суток

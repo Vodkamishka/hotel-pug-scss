@@ -1,7 +1,7 @@
 @import "../../../../assets/utils/main";
 
 .form-elements {
-  &__column_right {
+  &_right {
     width: 20rem;
     &_container {
       &-range-slider {
@@ -18,7 +18,7 @@
         margin-top: 16rem;
       }
       &-dropdown {
-        .dropdowns_long {
+        .dropdowns-long {
           &__container_execute {
             padding-top: 0.3125rem;
           }

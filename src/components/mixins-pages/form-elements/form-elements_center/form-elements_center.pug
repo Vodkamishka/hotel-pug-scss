@@ -1,28 +1,28 @@
-include ../../../elements/dropdowns_long/dropdowns_long
+include ../../../elements/dropdowns-long/dropdowns-long
 include ../../../elements/consumer-comments/consumer-comments
-include ../../../elements/checkbox_rich/checkbox_rich
+include ../../../elements/checkbox-rich/checkbox-rich
 include ../../../elements/checkbox/checkbox.pug
 include ../../../elements/radio/radio.pug
 include ../../../elements/toggle/toggle.pug
 include ../../../elements/like-button/like-button.pug
 include ../../../elements/rate/rate.pug
 
-mixin form-elements__column_center
-    .form-elements__column_center
-        .form-elements__column_center_container-checkbox
+mixin form-elements_center
+    .form-elements_center
+        .form-elements_center_container-checkbox
             +checkbox
-        .form-elements__column_center_container-radio
+        .form-elements_center_container-radio
             +radio('show')
-        .form-elements__column_center_container-toggle
+        .form-elements_center_container-toggle
             +toggle('show')
-        .form-elements__column_center_container-like
+        .form-elements_center_container-like
             +like-button
-        .form-elements__column_center_container-rate
+        .form-elements_center_container-rate
             +rate
-        .form-elements__column_center_container-dropdown
-            +dropdowns_long("Сколько гостей", "input_long input_border", 'long', "dropdown")
-        .form-elements__column_center_container-rich
-            +checkbox_rich("Rich Checkbox Buttons")
-        .form-elements__column_center_container-murad
+        .form-elements_center_container-dropdown
+            +dropdowns-long("Сколько гостей", "input_long input_border", 'long', "dropdown")
+        .form-elements_center_container-rich
+            +checkbox-rich("Rich Checkbox Buttons")
+        .form-elements_center_container-murad
             - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
                     +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)

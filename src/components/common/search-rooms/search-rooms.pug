@@ -1,6 +1,6 @@
 include ../../elements/buttons/button_long/button_long
 include ../../elements/input-calendar/input-calendar
-include ../../elements/dropdowns_long/dropdowns_long
+include ../../elements/dropdowns-long/dropdowns-long
 
 mixin search-rooms
     .search-rooms
@@ -8,5 +8,5 @@ mixin search-rooms
         .search-rooms__incoming
             +input-calendar('ДД.ММ.ГГГГ','small','Прибытие', 'ДД.ММ.ГГГГ','small','Выезд', 'start', 'end', false)
         .search-rooms__guests
-            +dropdowns_long('Сколько гостей', 'input_long', 'long', 'гости', '', 'block', 'dropdowns_long_hide')
+            +dropdowns-long('Сколько гостей', 'input_long', 'long', 'гости', '', 'block', 'dropdowns-long_hide')
         +button_long('Подобрать номер')

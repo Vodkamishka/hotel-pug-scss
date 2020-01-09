@@ -1,0 +1,24 @@
+include ../../../elements/buttons/button_long/button_long
+include ../../../elements/dropdowns-long/dropdowns-long
+include ../../../common/slider/slider
+include ../../../elements/pagination/pagination.pug
+include ./container-buttons/container-buttons.pug
+include ../../../elements/bullet-list/bullet-list.pug
+
+mixin form-elements_right
+    .form-elements_right
+        .form-elements_right_container-range-slider
+            +slider('Range Slider')
+        .form-elements_right_container-buttons
+            +container-buttons
+        .form-elements_right_container-long-button
+            +button_long("Перейти к оплате")
+        .form-elements_right_container-pagination
+            +pagination('show')
+        .form-elements_right_container-dropdown
+            +dropdowns-long("Сколько гостей", "input_long input_border", 'long', "dropdown", "",  'block','' ,2, 1)
+        .form-elements_right_container-bullet
+            +bullet-list("bullet list")
+
+
+    

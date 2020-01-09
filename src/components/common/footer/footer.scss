@@ -1,39 +1,39 @@
 @import "../../../assets/utils/main.scss";
 
 .footer_eng {
-  @include footer_inner;
-  &_inner {
+  @include footer__inner;
+  &__inner {
     padding: 6.19375rem 9.72%;
   }
 }
 .footer {
-  @include footer_inner;
-  &_inner {
+  @include footer__inner;
+  &__inner {
     &_ul {
       &:first-child {
         margin-right: 2.5rem;
       }
       &:nth-child(2) {
         margin-right: 3.5625rem;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 8.9375rem;
         }
       }
       &:nth-child(3) {
         margin-right: 5.75rem;
         white-space: nowrap;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 6.75rem;
         }
       }
       &:nth-child(4) {
         margin-right: 3.1875rem;
-        .footer_inner_li {
+        .footer__inner_li {
           width: 9.3125rem;
         }
       }
       &:last-child {
-        .footer_inner_li:nth-child(2) {
+        .footer__inner_li:nth-child(2) {
           width: 16.25rem;
         }
       }
@@ -43,7 +43,7 @@
 @media (max-width: 84.375rem) {
   .footer,
   .footer_eng {
-    &_inner {
+    &__inner {
       flex-wrap: wrap;
       height: auto;
     }

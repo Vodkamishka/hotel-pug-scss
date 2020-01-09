@@ -1,5 +1,5 @@
 include ../../elements/input/input.pug
-include ../../elements/toggle_one/toggle_one.pug
+include ../../elements/toggle-one/toggle-one.pug
 include ../../elements/buttons/button_long/button_long.pug
 include ../../elements/buttons/button_short/button_short.pug
 include ../../elements/radio/radio.pug
@@ -16,7 +16,7 @@ mixin registration-account
         .registration-account__two-fields_two
             +input('Email','input_no-class', 'long', 'Данные для входа в сервис')
             +input('Пароль','input_no-class')
-        +toggle_one(false)
+        +toggle-one(false)
         .registration-account__button
             +button_long('Перейти к оплате')
         .registration-account__toxin

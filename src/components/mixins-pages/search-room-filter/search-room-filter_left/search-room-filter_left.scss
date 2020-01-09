@@ -3,28 +3,28 @@
 .search-room-filter {
   &_left {
     width: 16.625rem;
-    &__container_input {
+    &_container-input {
       margin-top: 0.0625rem;
     }
-    &__container_dropdowns_long {
+    &_container-dropdowns-long {
       margin: 1.2775rem 0 1.9025rem;
-      .dropdowns_long__container_execute {
+      .dropdowns-long_container-execute {
         width: $little;
       }
     }
-    &__container_checkbox_rich {
+    &_container-checkbox-rich {
       margin: 1.89rem 0 1.85rem;
     }
-    &__container_expanded-checkbox {
+    &_container-expanded-checkbox {
       margin-top: 0.92rem;
-      .checkbox_expandable__title {
+      .checkbox-expandable__title {
         margin-right: 0.8125rem;
       }
     }
-    &__container-slider {
+    &_container-slider {
       margin-bottom: 1.8rem;
     }
-    &__slider-text {
+    &_slider-text {
       margin-top: 0.73rem;
       font-size: 0.75rem;
       line-height: 0.875rem;
@@ -34,14 +34,14 @@
 }
 @media (max-width: 81.25rem) {
   .search-room-filter {
-    &__left {
+    &_left {
       margin-right: 2%;
     }
   }
 }
 @media (max-width: 39.375rem) {
   .search-room-filter {
-    &__left {
+    &_left {
       margin: 0 auto;
     }
   }
