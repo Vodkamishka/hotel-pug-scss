@@ -7,6 +7,7 @@ class Dropdowns {
     this.decrement = el.querySelectorAll('.execute-panel__decrement');
     this.result = el.querySelectorAll('.execute-panel__result');
     this.clear = el.querySelector('.dropdowns-guest-selection__clear');
+    this.apply = el.querySelector('.dropdowns-guest-selection__apply');
     this.className = `dropdowns-${width}-selection_hide`;
     this.init();
   }
@@ -16,6 +17,7 @@ class Dropdowns {
     this.calculatedIncrement();
     this.calculatedDecrement();
     this.clearAll();
+    this.applyed();
     this.drawDecrementAndInput();
   }
 
@@ -133,8 +135,15 @@ class Dropdowns {
           el.innerHTML = '0';
         });
         this.input.placeholder = 'Сколько гостей';
-
         this.drawDecrementAndInput();
+      });
+    }
+  }
+
+  applyed() {
+    if (this.apply !== null) {
+      this.apply.addEventListener('click', () => {
+        this.container.classList.toggle(this.className);
       });
     }
   }

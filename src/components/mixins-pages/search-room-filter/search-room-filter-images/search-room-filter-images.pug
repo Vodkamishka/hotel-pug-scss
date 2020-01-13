@@ -5,17 +5,8 @@ mixin search-room-filter-images
     .search-room-filter-images 
         .search-room-filter-images__title Номера, которые мы для вас подобрали
         .search-room-filter-images__rooms-wrapper
-            +card-room(888, 9, 990, 5, 145)
-            +card-room(840, 9, 990, 4, 65, "luxe_not-show")
-            +card-room(980, 8, 500, 3, 35)
-            +card-room(856, 7, 300, 5, 19, "luxe_not-show")
-            +card-room(740, 6, '000', 4, 44, "luxe_not-show")
-            +card-room(982, 5, 800, 3, 56, "luxe_not-show")
-            +card-room(678, 5, 500, 5, 45, "luxe_not-show")
-            +card-room(450, 5, 300, 4, 39, "luxe_not-show")
-            +card-room(350, 5, '000', 3, 77, "luxe_not-show")
-            +card-room(666, 5, '000', 5, 25, "luxe_not-show")
-            +card-room(444, 5, '000', 3, 15, "luxe_not-show")
-            +card-room(352, 5, '000', 3, 55, "luxe_not-show")
+            for element in [{img: 888, firstNumberPrice: 9, price: 990, stars: 5, comments: 145, clas: ''}, {img: 840, firstNumberPrice: 9, price: 990, stars: 4, comments: 65, clas: 'luxe_not-show'}, {img: 980, firstNumberPrice: 8, price: 500, stars: 3, comments: 35, clas: ''}, {img: 856, firstNumberPrice: 7, price: 300, stars: 5, comments: 19, clas: 'luxe_not-show'}, {img: 740, firstNumberPrice: 6, price: '000', stars: 4, comments: 44, clas: 'luxe_not-show'}, {img: 982, firstNumberPrice: 5, price: 800, stars: 3, comments: 56, clas: 'luxe_not-show'}, {img: 678, firstNumberPrice: 5, price: 500, stars: 5, comments: 45, clas: 'luxe_not-show'}, {img: 450, firstNumberPrice: 5, price: 300, stars: 4, comments: 39, clas: 'luxe_not-show'}, {img: 350, firstNumberPrice: 5, price: '000', stars: 3, comments: 77, clas: 'luxe_not-show'}, {img: 666, firstNumberPrice: 5, price: '000', stars: 5, comments: 25, clas: 'luxe_not-show'}, {img: 444, firstNumberPrice: 5, price: '000', stars: 3, comments: 15, clas: 'luxe_not-show'}, {img: 352, firstNumberPrice: 5, price: '000', stars: 3, comments: 55, clas: 'luxe_not-show'}]
+                - const {img, firstNumberPrice, price, stars, comments, clas} = element
+                    +card-room(img, firstNumberPrice, price, stars, comments, clas)
         .search-room-filter-images__pagination
             +pagination

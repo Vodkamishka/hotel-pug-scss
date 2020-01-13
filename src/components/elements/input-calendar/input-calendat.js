@@ -31,10 +31,19 @@ class DatePickerHere {
         .data('datepicker')
         .show();
     });
+    $('#start').click(() => {
+      $('#start')
+        .data('datepicker')
+        .show();
+    });
 
     $('.datepicker--buttons').append(
-      '<span class=\'datepicker--button\' data-action=\'apply\'>Применить</span>',
+      '<span class=\'datepicker-button\' data-action=\'apply\'>Применить</span>',
     );
+    const apply = document.querySelector('[data-action="apply"]');
+    apply.addEventListener('click', () => {
+      $('.datepicker').css('left', '-10000px');
+    });
   }
 }
 
