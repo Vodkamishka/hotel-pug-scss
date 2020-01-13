@@ -1,0 +1,52 @@
+@import "../../../../assets/utils/main";
+
+.form-elements-slider-buttons {
+    width: 20rem;
+      &__range-slider {
+        margin: 8.965rem 0 2.7225rem 0;
+        height: 2.75rem;
+      }
+      &__buttons {
+        margin: 2.7225rem 0 1.875rem 0;
+        &-title {
+          @include title-inputs;
+          margin-bottom: 1rem;
+        }
+        &-group {
+          button:nth-child(1) {
+            margin: 0 0.9375rem 1.875rem 0.0625rem;
+          }
+          button:nth-child(3) {
+            margin-right: 0.9375rem;
+          }
+        }
+        &-clickmes {
+          margin-left: 0.0625rem;
+          margin-top: 1.9375rem;
+        }
+        &-clickme {
+          font-weight: bold;
+          font-size: 0.75rem;
+          line-height: 0.9375rem;
+          text-transform: uppercase;
+          color: $shade50;
+          &:first-child {
+            margin-right: 1.25rem;
+            color: $purple;
+          }
+        }
+      }
+      &__pagination {
+        margin: 2.5rem 0 14.75rem 0.0625rem;
+      }
+      &__bullet {
+        margin-top: 16rem;
+      }
+      &-dropdown {
+        .dropdowns-guest-selection {
+          &__container-execute {
+            padding-top: 0.3125rem;
+          }
+        }
+      }
+}

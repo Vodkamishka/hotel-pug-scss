@@ -1,49 +1,47 @@
 @import "../../../assets/utils/main.scss";
 
 .footer_eng {
-  @include footer__inner;
-  &__inner {
+  @include footer__text-block;
+  .footer__text-block {
     padding: 6.19375rem 9.72%;
   }
 }
 .footer {
-  @include footer__inner;
-  &__inner {
-    &_ul {
+  @include footer__text-block;
+    &__ul {
       &:first-child {
         margin-right: 2.5rem;
       }
       &:nth-child(2) {
         margin-right: 3.5625rem;
-        .footer__inner_li {
+        .footer__li {
           width: 8.9375rem;
         }
       }
       &:nth-child(3) {
         margin-right: 5.75rem;
         white-space: nowrap;
-        .footer__inner_li {
+        .footer__li {
           width: 6.75rem;
         }
       }
       &:nth-child(4) {
         margin-right: 3.1875rem;
-        .footer__inner_li {
+        .footer__li {
           width: 9.3125rem;
         }
       }
       &:last-child {
-        .footer__inner_li:nth-child(2) {
+        .footer__li:nth-child(2) {
           width: 16.25rem;
         }
       }
     }
-  }
 }
 @media (max-width: 84.375rem) {
   .footer,
   .footer_eng {
-    &__inner {
+    .footer__text-block {
       flex-wrap: wrap;
       height: auto;
     }

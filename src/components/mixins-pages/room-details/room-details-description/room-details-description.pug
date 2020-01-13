@@ -1,0 +1,53 @@
+include ../../../elements/info-room/info-room
+include ../../../elements/consumer-comments/consumer-comments
+include ../../../elements/bullet-list/bullet-list
+include ../../../common/reservation/reservation
+
+mixin room-details-description
+    - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+    - let textTwo = 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+    .room-details-description
+        .room-details-description__data
+            .room-details-description__room-information 
+                .room-details-description__title Сведения о номере
+                    .room-details-description__wrapper-info-room 
+                        +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+                    .room-details-description__wrapper-info-room 
+                        +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+                    .room-details-description__wrapper-info-room 
+                        +info-room('whatshot', 'Уют', 'Номер оснащен камином')
+            .room-details-description__comments-consumer 
+                .room-details-description__title 
+                    .room-details-description__reviews
+                        .room-details-description__review Отзывы посетителей номера
+                        .room-details-description__review 2 отзыва
+                    .room-details-description__wrapper-consumer-comments
+                        +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)
+                    .room-details-description__wrapper-consumer-comments.room-details-description__wrapper-consumer-comments_second
+                        +consumer-comments("girl","Патрисия Стёклышкова", "Неделю назад", 2, textTwo)
+            .room-details-description__rules 
+                .room-details-description__rules-title Правила
+                +bullet-list    
+        .room-details-description__circle-diagramma
+            .room-details-description__room-impressions
+                .room-details-description__title Впечатления от номера
+                    .room-details-description__diagramma
+                        .room-details-description__circle
+                            .room-details-description__wrapper-circles
+                                .room-details-description__circle-title 
+                                    span.room-details-description__circle-title-number 260
+                                    span.room-details-description__circle-title-word голосов
+                                .room-details-description__circle-template.room-details-description__circle-template_first
+                                .room-details-description__circle-template.room-details-description__circle-template_second
+                                .room-details-description__circle-template.room-details-description__circle-template_third
+                                .room-details-description__circle-template.room-details-description__circle-template_fourth
+                        .room-details-description__list
+                            ul.room-details-description__ul
+                                for el in ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
+                                    li.room-details-description__li= el
+            .room-details-description__room-escape
+                .room-details-description__title Отмена
+                p.room-details-description__room-escape-paragraph.
+                    Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+        .room-details-description__reservation
+            +reservation

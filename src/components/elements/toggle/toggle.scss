@@ -8,8 +8,8 @@
   }
   &__buttons {
     margin-bottom: 2.7775rem;
-    &_top {
-      margin-bottom: 0.875rem;
-    }
+  }
+  &__button:first-child {
+    margin-bottom: 0.875rem;
   }
 }

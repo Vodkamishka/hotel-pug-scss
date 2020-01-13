@@ -1,0 +1,10 @@
+mixin button-register (register)
+    if register === 'register'
+        button.button-register
+            span.button-register__text= register
+    else 
+        button.button-register(class='button-register_rus')
+            span.button-register__text= register
+      
+
+

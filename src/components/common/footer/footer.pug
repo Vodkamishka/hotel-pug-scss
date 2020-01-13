@@ -1,20 +1,20 @@
 include ../../elements/input/input.pug
 
 mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
-    div(class = classFooter)
-        .footer__inner
-            ul.footer__inner_ul   
+    div(class =`footer ${classFooter}`)
+        .footer__text-block
+            ul.footer__ul   
                 img(src="/public/assets/img/logotypes/logo.svg", alt="")
-                p(class="footer__inner_p")= textTop 
+                p(class="footer__p")= textTop 
             for el in titlesFooter
-                ul.footer__inner_ul
+                ul.footer__ul
                     for i in el
-                        li.footer__inner_li
-                            a(href="#" class="footer__inner_a")=i
-            ul.footer__inner_ul
+                        li.footer__li
+                            a(href="#" class="footer__a")=i
+            ul.footer__ul
                 for el in textBottom
-                    li.footer__inner_li
-                        a(href="#" class="footer__inner_a")=el
+                    li.footer__li
+                        a(href="#" class="footer__a")=el
                 +input(email, "input_arrow") 
                     
  

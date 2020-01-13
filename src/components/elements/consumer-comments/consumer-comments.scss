@@ -2,11 +2,11 @@
 
 .consumer-comments {
   letter-spacing: 0.064375rem;
-  &_top {
+  &__image-wrapper {
     @include align-items;
     margin-bottom: 0.75rem;
   }
-  &_right {
+  &__name-term {
     height: 3rem;
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -30,7 +30,7 @@
   &__term {
     font-weight: normal;
   }
-  &_bottom {
+  &__likes {
     display: flex;
     width: 45.206875rem;
     margin-bottom: 0.1875rem;
@@ -46,7 +46,7 @@
     margin-left: 0.894375rem;
     font-weight: 400;
     position: relative;
-    &_p {
+    &_review {
       position: absolute;
       top: -0.125rem;
     }

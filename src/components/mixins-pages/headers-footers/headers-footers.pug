@@ -9,16 +9,16 @@ mixin headers-footers ({header, footer, copyright})
     .headers-footers
         .headers-footers__logo-wrapper
             +logo-wrapper
-        .headers-footers__section
+        .headers-footers__section.headers-footers__section_first
             +header(classHeader, titlesNavbar, log, register)
-        .headers-footers__section2
+        .headers-footers__section.headers-footers__section_second
             +header(classHeader2, titlesNavbar)
-        .headers-footers__section3
+        .headers-footers__section.headers-footers__section_third
             +footer(footer)
-        .headers-footers__section4
+        .headers-footers__section.headers-footers__section_fourth
             +copyright(copyright)
-        .headers-footers__section5
-            .headers-footers__inner
+        .headers-footers__section.headers-footers__section_fifth
+            .headers-footers__image-text-social
                 .headers-footers__image
                     img(src="/public/assets/img/logotypes/logo.svg", alt="logotypes")
                 .headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.

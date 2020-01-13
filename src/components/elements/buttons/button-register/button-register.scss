@@ -1,0 +1,26 @@
+@import "../../../../assets/utils/_main.scss";
+
+.button-register {
+  height: 2.125rem;
+  border-radius: 1.375rem;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: $gradient;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  &__text {
+    color: $white;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  &:hover {
+    background: $gradient;
+    color: $white;
+    opacity: 0.5;
+  }
+  &_rus {
+    width: 12.25rem;
+  letter-spacing: 0.0375rem;
+  }
+}

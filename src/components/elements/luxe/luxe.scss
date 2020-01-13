@@ -4,10 +4,10 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  &_left {
+  &__room-number {
     font-weight: bold;
     text-transform: uppercase;
-    &_text {
+    &-text {
       &:nth-child(1) {
         color: $shade100;
         font-size: 0.875rem;
@@ -28,11 +28,11 @@
   &_not-show {
     opacity: 0;
   }
-  &_right {
+  &__price {
     color: $shade50;
     margin-bottom: 0.125rem;
     letter-spacing: -0.01875rem;
-    &_text {
+    &-text {
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3) {

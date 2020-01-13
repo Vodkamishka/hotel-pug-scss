@@ -1,0 +1,26 @@
+@import "../../../../assets/utils/_main.scss";
+
+.form-elements-checkbox-radio {
+    width: 20rem;
+      &__checkbox {
+        margin-top: 8.9375rem;
+      }
+      &__radio {
+        margin: 2.555rem 0 2.7rem 0;
+      }
+      &__like {
+        margin-top: 2.7775rem;
+      }
+      &__rate {
+        margin: 2.5rem 0 12.3rem 0;
+      }
+      &__rich {
+        margin: 16rem 0 0 0;
+      }
+      &__murad {
+        margin-top: 14.45rem;
+        .consumer-comments {
+          letter-spacing: 0;
+        }
+      }
+}

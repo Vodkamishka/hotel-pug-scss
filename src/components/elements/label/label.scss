@@ -18,10 +18,13 @@
   &_long {
     width: $long;
   }
-  &_left {
-    font-weight: bold;
+  &__text {
+    &:first-child {
+      font-weight: bold;
+    }
+    &:nth-child(2) {
+      color: $shade50;
+    }
   }
-  &_right {
-    color: $shade50;
-  }
+  
 }

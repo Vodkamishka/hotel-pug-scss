@@ -11,14 +11,14 @@ body {
     left: 1.875rem;
     top: 1.875rem;
   }
-  &__wrapper {
-    &_left {
+  &__column {
+    &:nth-child(2) {
       margin-left: 8.75rem;
     }
-    &_center {
+    &:nth-child(3) {
       margin: 0 4.5rem 0 7.875rem;
     }
-    &_right {
+    &:nth-child(4) {
       margin-right: 8.8125rem;
     }
   }

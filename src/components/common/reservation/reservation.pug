@@ -1,7 +1,7 @@
 include ../../elements/luxe/luxe.pug
-include ../../elements/buttons/button_long/button_long
+include ../../elements/buttons/button/button
 include ../../elements/input/input
-include ../../elements/dropdowns-long/dropdowns-long
+include ../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 
 mixin reservation
     .reservation
@@ -10,21 +10,21 @@ mixin reservation
             +input('19.08.2019','input_small', 'small', 'Прибытие')
             +input('23.08.2019','input_small', 'small', 'Выезд')
         .reservation__guests
-            +dropdowns-long('3 гостя', 'input_long', "long", 'гости', '', 'block', 'dropdowns-long_hide', 3)
+            +dropdowns-guest-selection('3 гостя', 'input_long', "long", 'гости', '', 'block', 'dropdowns-guest-selection_hide', 3)
         .reservation__list
             .reservation__price
-                p.reservation_p 9990&#8381 x 4 суток
-                p.reservation_p 39960&#8381
+                p.reservation__p 9990&#8381 x 4 суток
+                p.reservation__p 39960&#8381
             .reservation__tax
-                p.reservation_p Сбор за услуги: скидка 2179&#8381
+                p.reservation__p Сбор за услуги: скидка 2179&#8381
                 .round i
-                p.reservation_p 0&#8381
+                p.reservation__p 0&#8381
             .reservation__fee
-                p.reservation_p Сбор за дополнительные услуги
+                p.reservation__p Сбор за дополнительные услуги
                 .round i
-                p.reservation_p 300&#8381
+                p.reservation__p 300&#8381
             .reservation__result
-                p.reservation_p Итого
+                p.reservation__p Итого
                 .reservation__dots
-                p.reservation_p 38081&#8381
-        +button_long('Забронировать')
+                p.reservation__p 38081&#8381
+        +button('Забронировать')

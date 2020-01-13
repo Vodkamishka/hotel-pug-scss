@@ -3,7 +3,7 @@
 .block {
   display: flex;
   align-items: center;
-  &_squere {
+  &__squere {
     width: 4.375rem;
     height: 4.375rem;
     border-radius: 0.375rem;
@@ -40,7 +40,7 @@
     color: $shade100;
     letter-spacing: 0.03125rem;
   }
-  &__text_first {
+  &__color-name {
     white-space: nowrap;
     font-weight: bold;
   }

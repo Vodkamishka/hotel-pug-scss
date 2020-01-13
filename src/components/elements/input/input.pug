@@ -5,6 +5,6 @@ mixin input (placeholder='', classInput='', classLabel='', leftLabel='', rightLa
         if leftLabel
             .input__label
                 +label(classLabel, leftLabel, rightLabel)
-        input(type="text" placeholder=placeholder class=classInput)
+        input(type="text" placeholder=placeholder class=`input__input input__${classInput}`)
 
    

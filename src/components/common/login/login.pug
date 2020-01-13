@@ -1,6 +1,6 @@
 include ../../elements/input/input.pug
-include ../../elements/buttons/button_long/button_long
-include ../../elements/buttons/button_short/button_short
+include ../../elements/buttons/button/button
+include ../../elements/buttons/button/button
 
 mixin login
     .login
@@ -9,7 +9,7 @@ mixin login
             +input("Email")
             +input("Пароль")
         .login__button
-            +button_long("Войти")
+            +button("Войти")
         .login__toxin
             .login__text Нет аккаунта на Toxin?
-            +button_short("Создать", "white")
+            +button("Создать", "white")

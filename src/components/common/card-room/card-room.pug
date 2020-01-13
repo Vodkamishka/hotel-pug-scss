@@ -6,15 +6,15 @@ mixin card-room(img, firstNumberPrice, price, stars, comments, clas)
         .card-room__image
             img(src=`/public/assets/img/rooms/${img}.jpg` class='.card-room__img')
             if img === 888
-                .card-room__image-side_left
-                    .card-room__arrow.card-room__arrow_left
-                .card-room__image-side_right
-                    .card-room__arrow.card-room__arrow_right
+                .card-room__image-side.card-room__image-side_left
+                    .card-room__arrow
+                .card-room__image-side.card-room__image-side_right
+                    .card-room__arrow
             .card-room__group-balls
-                .card-room__ball_full
-                .card-room__ball_empty
-                .card-room__ball_empty
-                .card-room__ball_empty
+                .card-room__ball.card-room__ball_full
+                .card-room__ball.card-room__ball_empty
+                .card-room__ball.card-room__ball_empty
+                .card-room__ball.card-room__ball_empty
         .card-room__luxe
             +luxe(img, firstNumberPrice, price, clas)
         .card-room__stars

@@ -1,0 +1,6 @@
+mixin button (text, className)
+    if className
+        button(class=`button button_short button_short_${className}`)= text
+    else    
+        button(class='button button_long')
+            span.button__text=text

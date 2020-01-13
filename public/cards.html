@@ -16,16 +16,16 @@
       <div class="cards__logo-wrapper">
         <div class="logo-wrapper"><img src="/public/assets/img/logotypes/group.svg" alt="group"></div>
       </div>
-      <div class="cards__wrapper_left">
-        <div class="cards__column_left">
+      <div class="cards__wrapper">
+        <div class="cards__search-rooms">
           <div class="search-rooms">
             <div class="search-rooms__title">Найдем номера под ваши пожелания</div>
             <div class="search-rooms__incoming">
               <div class="input-calendar">
                 <div class="input-calendar__label">
                   <div class="label label_small">
-                    <label class="label_left" for="forLab">Прибытие</label>
-                    <label class="label_right" for="forLab"></label>
+                    <label class="label__text" for="forLab">Прибытие</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="start">
@@ -33,26 +33,26 @@
               <div class="input-calendar">
                 <div class="input-calendar__label">
                   <div class="label label_small">
-                    <label class="label_left" for="forLab">Выезд</label>
-                    <label class="label_right" for="forLab"></label>
+                    <label class="label__text" for="forLab">Выезд</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="end">
               </div>
             </div>
             <div class="search-rooms__guests">
-              <div class="dropdowns-long">
+              <div class="dropdowns-guest-selection">
                 <div class="input">
                   <div class="input__label">
                     <div class="label label_long">
-                      <label class="label_left" for="forLab">гости</label>
-                      <label class="label_right" for="forLab"></label>
+                      <label class="label__text" for="forLab">гости</label>
+                      <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input_long" type="text" placeholder="Сколько гостей">
+                  <input class="input__input input__input_long" type="text" placeholder="Сколько гостей">
                 </div>
-                <div class="dropdowns-long__container_execute dropdowns-long_hide">
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Взрослые</div>
                       <div class="execute-panel__increment-decrement">
@@ -62,7 +62,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Дети</div>
                       <div class="execute-panel__increment-decrement">
@@ -72,7 +72,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Младенцы</div>
                       <div class="execute-panel__increment-decrement">
@@ -82,252 +82,217 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__buttons">
-                    <div class="dropdowns-long__clear">Очистить</div>
-                    <div class="dropdowns-long__apply">Применить</div>
+                  <div class="dropdowns-guest-selection__buttons">
+                    <div class="dropdowns-guest-selection__clear">Очистить</div>
+                    <div class="dropdowns-guest-selection__apply">Применить</div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="button_long"><span class="button_long_text">Подобрать номер</span></button>
+            <button class="button button_long"><span class="button__text">Подобрать номер</span></button>
           </div>
-          <div class="cards__container-registration">
-            <div class="registration-account">
-              <div class="registration-account__title">Регистрация аккаунта</div>
-              <div class="registration-account__two-fields_one">
-                <div class="input">
-                  <input type="text" placeholder="Имя">
-                </div>
-                <div class="input">
-                  <input type="text" placeholder="Фамилия">
-                </div>
+        </div>
+        <div class="cards__registration">
+          <div class="registration-account">
+            <div class="registration-account__title">Регистрация аккаунта</div>
+            <div class="registration-account__two-fields">
+              <div class="input">
+                <input class="input__input input__" type="text" placeholder="Имя">
               </div>
-              <div class="radio">
-                <div class="radio__buttons">
-                  <label class="radio__buttons-container">Мужчина
-                    <input class="radio__input" type="radio" checked name="gender"><span class="radio__checkmark"></span>
-                  </label>
-                  <label class="radio__buttons-container">Женщина    
-                    <input class="radio__input" type="radio" name="gender"><span class="radio__checkmark"></span>
-                  </label>
-                </div>
+              <div class="input">
+                <input class="input__input input__" type="text" placeholder="Фамилия">
               </div>
-              <div class="registration-account__bithday">
-                <div class="input">
-                  <div class="input__label">
-                    <div class="label label_long">
-                      <label class="label_left" for="forLab">Дата рождения</label>
-                      <label class="label_right" for="forLab"></label>
-                    </div>
+            </div>
+            <div class="radio">
+              <div class="radio__buttons">
+                <label class="radio__buttons-container">Мужчина
+                  <input class="radio__input" type="radio" checked name="gender"><span class="radio__checkmark"></span>
+                </label>
+                <label class="radio__buttons-container">Женщина    
+                  <input class="radio__input" type="radio" name="gender"><span class="radio__checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="registration-account__bithday">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_long">
+                    <label class="label__text" for="forLab">Дата рождения</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
-                  <input class="input_no-class" type="text" placeholder="ДД.ММ.ГГГГ">
                 </div>
+                <input class="input__input input__input_no-modifier" type="text" placeholder="ДД.ММ.ГГГГ">
               </div>
-              <div class="registration-account__two-fields_two">
-                <div class="input">
-                  <div class="input__label">
-                    <div class="label label_long">
-                      <label class="label_left" for="forLab">Данные для входа в сервис</label>
-                      <label class="label_right" for="forLab"></label>
-                    </div>
+            </div>
+            <div class="registration-account__two-fields">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_long">
+                    <label class="label__text" for="forLab">Данные для входа в сервис</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
-                  <input class="input_no-class" type="text" placeholder="Email">
                 </div>
-                <div class="input">
-                  <input class="input_no-class" type="text" placeholder="Пароль">
-                </div>
+                <input class="input__input input__input_no-modifier" type="text" placeholder="Email">
               </div>
-              <div class="toggle-one">
-                <input class="toggle-one__input" type="checkbox">
-                <label for="offer">Получать спецпредложения</label>
+              <div class="input">
+                <input class="input__input input__input_no-modifier" type="text" placeholder="Пароль">
               </div>
-              <div class="registration-account__button">
-                <button class="button_long"><span class="button_long_text">Перейти к оплате</span></button>
-              </div>
-              <div class="registration-account__toxin">
-                <div class="registration-account__text">Уже есть аккаунт на Toxin</div>
-                <button class="button_short button_short_white">Войти</button>
-              </div>
+            </div>
+            <div class="toggle-one">
+              <input class="toggle-one__input" type="checkbox">
+              <label for="offer">Получать спецпредложения</label>
+            </div>
+            <div class="registration-account__button">
+              <button class="button button_long"><span class="button__text">Перейти к оплате</span></button>
+            </div>
+            <div class="registration-account__toxin">
+              <div class="registration-account__text">Уже есть аккаунт на Toxin</div>
+              <button class="button button_short button_short_white">Войти</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="cards__wrapper_center">
-        <div class="cards__column_center">
-          <div class="reservation">
-            <div class="luxe">
-              <div class="luxe_left"><span class="luxe_left_text">№</span><span class="luxe_left_text" style="font-size:24px;">888</span><span class="luxe_left_text">люкс</span></div>
-              <div class="luxe_right"><span class="luxe_right_text">9</span><span class="luxe_right_text">990</span><span class="luxe_right_text">&#8381 </span><span class="luxe_right_text">в сутки</span></div>
-            </div>
-            <div class="reservation__incoming">
-              <div class="input">
-                <div class="input__label">
-                  <div class="label label_small">
-                    <label class="label_left" for="forLab">Прибытие</label>
-                    <label class="label_right" for="forLab"></label>
-                  </div>
-                </div>
-                <input class="input_small" type="text" placeholder="19.08.2019">
-              </div>
-              <div class="input">
-                <div class="input__label">
-                  <div class="label label_small">
-                    <label class="label_left" for="forLab">Выезд</label>
-                    <label class="label_right" for="forLab"></label>
-                  </div>
-                </div>
-                <input class="input_small" type="text" placeholder="23.08.2019">
-              </div>
-            </div>
-            <div class="reservation__guests">
-              <div class="dropdowns-long">
-                <div class="input">
-                  <div class="input__label">
-                    <div class="label label_long">
-                      <label class="label_left" for="forLab">гости</label>
-                      <label class="label_right" for="forLab"></label>
-                    </div>
-                  </div>
-                  <input class="input_long" type="text" placeholder="3 гостя">
-                </div>
-                <div class="dropdowns-long__container_execute dropdowns-long_hide">
-                  <div class="dropdowns-long__wrapper_execute-panel">
-                    <div class="execute-panel">
-                      <div class="execute-panel__title">Взрослые</div>
-                      <div class="execute-panel__increment-decrement">
-                        <div class="execute-panel__decrement">-</div>
-                        <div class="execute-panel__result">3</div>
-                        <div class="execute-panel__increment">+</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
-                    <div class="execute-panel">
-                      <div class="execute-panel__title">Дети</div>
-                      <div class="execute-panel__increment-decrement">
-                        <div class="execute-panel__decrement">-</div>
-                        <div class="execute-panel__result">0</div>
-                        <div class="execute-panel__increment">+</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
-                    <div class="execute-panel">
-                      <div class="execute-panel__title">Младенцы</div>
-                      <div class="execute-panel__increment-decrement">
-                        <div class="execute-panel__decrement">-</div>
-                        <div class="execute-panel__result">0</div>
-                        <div class="execute-panel__increment">+</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdowns-long__buttons">
-                    <div class="dropdowns-long__clear">Очистить</div>
-                    <div class="dropdowns-long__apply">Применить</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="reservation__list">
-              <div class="reservation__price">
-                <p class="reservation_p">9990&#8381 x 4 суток</p>
-                <p class="reservation_p">39960&#8381</p>
-              </div>
-              <div class="reservation__tax">
-                <p class="reservation_p">Сбор за услуги: скидка 2179&#8381</p>
-                <div class="round">i</div>
-                <p class="reservation_p">0&#8381</p>
-              </div>
-              <div class="reservation__fee">
-                <p class="reservation_p">Сбор за дополнительные услуги</p>
-                <div class="round">i</div>
-                <p class="reservation_p">300&#8381</p>
-              </div>
-              <div class="reservation__result">
-                <p class="reservation_p">Итого</p>
-                <div class="reservation__dots"></div>
-                <p class="reservation_p">38081&#8381</p>
-              </div>
-            </div>
-            <button class="button_long"><span class="button_long_text">Забронировать</span></button>
+      <div class="cards__wrapper">
+        <div class="reservation">
+          <div class="luxe">
+            <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:24px;">888</span><span class="luxe__room-number-text">люкс</span></div>
+            <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
           </div>
-          <div class="cards__login">
-            <div class="login">
-              <div class="login__title">Войти</div>
-              <div class="login__fields">
-                <div class="input">
-                  <input type="text" placeholder="Email">
-                </div>
-                <div class="input">
-                  <input type="text" placeholder="Пароль">
+          <div class="reservation__incoming">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_small">
+                  <label class="label__text" for="forLab">Прибытие</label>
+                  <label class="label__text" for="forLab"></label>
                 </div>
               </div>
-              <div class="login__button">
-                <button class="button_long"><span class="button_long_text">Войти</span></button>
+              <input class="input__input input__input_small" type="text" placeholder="19.08.2019">
+            </div>
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_small">
+                  <label class="label__text" for="forLab">Выезд</label>
+                  <label class="label__text" for="forLab"></label>
+                </div>
               </div>
-              <div class="login__toxin">
-                <div class="login__text">Нет аккаунта на Toxin?</div>
-                <button class="button_short button_short_white">Создать</button>
+              <input class="input__input input__input_small" type="text" placeholder="23.08.2019">
+            </div>
+          </div>
+          <div class="reservation__guests">
+            <div class="dropdowns-guest-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_long">
+                    <label class="label__text" for="forLab">гости</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_long" type="text" placeholder="3 гостя">
               </div>
+              <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Взрослые</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">3</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Дети</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Младенцы</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__buttons">
+                  <div class="dropdowns-guest-selection__clear">Очистить</div>
+                  <div class="dropdowns-guest-selection__apply">Применить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reservation__list">
+            <div class="reservation__price">
+              <p class="reservation__p">9990&#8381 x 4 суток</p>
+              <p class="reservation__p">39960&#8381</p>
+            </div>
+            <div class="reservation__tax">
+              <p class="reservation__p">Сбор за услуги: скидка 2179&#8381</p>
+              <div class="round">i</div>
+              <p class="reservation__p">0&#8381</p>
+            </div>
+            <div class="reservation__fee">
+              <p class="reservation__p">Сбор за дополнительные услуги</p>
+              <div class="round">i</div>
+              <p class="reservation__p">300&#8381</p>
+            </div>
+            <div class="reservation__result">
+              <p class="reservation__p">Итого</p>
+              <div class="reservation__dots"></div>
+              <p class="reservation__p">38081&#8381</p>
+            </div>
+          </div>
+          <button class="button button_long"><span class="button__text">Забронировать</span></button>
+        </div>
+        <div class="cards__login">
+          <div class="login">
+            <div class="login__title">Войти</div>
+            <div class="login__fields">
+              <div class="input">
+                <input class="input__input input__" type="text" placeholder="Email">
+              </div>
+              <div class="input">
+                <input class="input__input input__" type="text" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="login__button">
+              <button class="button button_long"><span class="button__text">Войти</span></button>
+            </div>
+            <div class="login__toxin">
+              <div class="login__text">Нет аккаунта на Toxin?</div>
+              <button class="button button_short button_short_white">Создать</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="cards__wrapper_right">
-        <div class="cards__column_right">
-          <div class="datepicker-here" id="new"> </div>
-          <div class="cards__middleware-card">
-            <div class="card-room">
-              <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/888.jpg">
-                <div class="card-room__image-side_left">
-                  <div class="card-room__arrow card-room__arrow_left"></div>
-                </div>
-                <div class="card-room__image-side_right">
-                  <div class="card-room__arrow card-room__arrow_right"></div>
-                </div>
-                <div class="card-room__group-balls">
-                  <div class="card-room__ball_full"></div>
-                  <div class="card-room__ball_empty"></div>
-                  <div class="card-room__ball_empty"></div>
-                  <div class="card-room__ball_empty"></div>
-                </div>
-              </div>
-              <div class="card-room__luxe">
-                <div class="luxe">
-                  <div class="luxe_left"><span class="luxe_left_text">№</span><span class="luxe_left_text" style="font-size:undefinedpx;">888</span><span class="luxe_left_text">люкс</span></div>
-                  <div class="luxe_right"><span class="luxe_right_text">9</span><span class="luxe_right_text">990</span><span class="luxe_right_text">&#8381 </span><span class="luxe_right_text">в сутки</span></div>
-                </div>
-              </div>
-              <div class="card-room__stars">
-                <div class="comments-stars"> 
-                  <div class="stars">
-                    <div class="stars__image stars__image_first"></div>
-                    <div class="stars__image stars__image_first"></div>
-                    <div class="stars__image stars__image_first"></div>
-                    <div class="stars__image stars__image_first"></div>
-                    <div class="stars__image stars__image_first"></div>
-                  </div>
-                  <div class="comments-stars__comments">
-                    <p class="comments-stars__comments_left">145</p>
-                    <p class="comments-stars__comments_right"> Отзывов</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="cards__wrapper">
+        <div class="datepicker-here" id="new"> </div>
+        <div class="cards__middleware-card">
           <div class="card-room">
-            <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/840.jpg">
+            <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/888.jpg">
+              <div class="card-room__image-side card-room__image-side_left">
+                <div class="card-room__arrow"></div>
+              </div>
+              <div class="card-room__image-side card-room__image-side_right">
+                <div class="card-room__arrow"></div>
+              </div>
               <div class="card-room__group-balls">
-                <div class="card-room__ball_full"></div>
-                <div class="card-room__ball_empty"></div>
-                <div class="card-room__ball_empty"></div>
-                <div class="card-room__ball_empty"></div>
+                <div class="card-room__ball card-room__ball_full"></div>
+                <div class="card-room__ball card-room__ball_empty"></div>
+                <div class="card-room__ball card-room__ball_empty"></div>
+                <div class="card-room__ball card-room__ball_empty"></div>
               </div>
             </div>
             <div class="card-room__luxe">
               <div class="luxe">
-                <div class="luxe_left"><span class="luxe_left_text">№</span><span class="luxe_left_text" style="font-size:undefinedpx;">840</span><span class="luxe_left_text luxe_not-show">люкс</span></div>
-                <div class="luxe_right"><span class="luxe_right_text">9</span><span class="luxe_right_text">990</span><span class="luxe_right_text">&#8381 </span><span class="luxe_right_text">в сутки</span></div>
+                <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">888</span><span class="luxe__room-number-text">люкс</span></div>
+                <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
               </div>
             </div>
             <div class="card-room__stars">
@@ -337,12 +302,43 @@
                   <div class="stars__image stars__image_first"></div>
                   <div class="stars__image stars__image_first"></div>
                   <div class="stars__image stars__image_first"></div>
-                  <div class="stars__image stars__image_second"></div>
+                  <div class="stars__image stars__image_first"></div>
                 </div>
                 <div class="comments-stars__comments">
-                  <p class="comments-stars__comments_left">65</p>
-                  <p class="comments-stars__comments_right"> Отзывов</p>
+                  <p class="comments-stars__comments-number">145</p>
+                  <p>Отзывов</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-room">
+          <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/840.jpg">
+            <div class="card-room__group-balls">
+              <div class="card-room__ball card-room__ball_full"></div>
+              <div class="card-room__ball card-room__ball_empty"></div>
+              <div class="card-room__ball card-room__ball_empty"></div>
+              <div class="card-room__ball card-room__ball_empty"></div>
+            </div>
+          </div>
+          <div class="card-room__luxe">
+            <div class="luxe">
+              <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">840</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+              <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+            </div>
+          </div>
+          <div class="card-room__stars">
+            <div class="comments-stars"> 
+              <div class="stars">
+                <div class="stars__image stars__image_first"></div>
+                <div class="stars__image stars__image_first"></div>
+                <div class="stars__image stars__image_first"></div>
+                <div class="stars__image stars__image_first"></div>
+                <div class="stars__image stars__image_second"></div>
+              </div>
+              <div class="comments-stars__comments">
+                <p class="comments-stars__comments-number">65</p>
+                <p>Отзывов</p>
               </div>
             </div>
           </div>

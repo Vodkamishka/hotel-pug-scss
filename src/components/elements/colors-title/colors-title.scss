@@ -2,21 +2,21 @@
 
 .colors-title {
   display: flex;
-  &_left {
+  &__letter {
     margin-right: 1.875rem;
     color: $shade25;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
-  &_right {
+  &__title {
     color: $shade100;
     font-weight: bold;
   }
   &_first {
-    .colors-title_left {
+    .colors-title__letter {
       font-size: 1.5rem;
       line-height: 1.8125rem;
     }
-    .colors-title_right {
+    .colors-title__title {
       font-size: 1.5rem;
       line-height: 1.875rem;
       width: 21rem;
@@ -24,11 +24,11 @@
     }
   }
   &_second {
-    .colors-title_left {
+    .colors-title__letter {
       font-size: 1.1875rem;
       line-height: 1.4375rem;
     }
-    .colors-title_right {
+    .colors-title__title {
       font-size: 1.1875rem;
       line-height: 1.5rem;
       width: 17.625rem;
@@ -37,11 +37,11 @@
   }
   &_third {
     margin-bottom: 2.99rem;
-    .colors-title_left {
+    .colors-title__title {
       font-size: 0.75rem;
       line-height: 0.9375rem;
     }
-    .colors-title_right {
+    .colors-title__title {
       font-size: 0.75rem;
       line-height: 0.9375rem;
       width: 11.625rem;
@@ -51,11 +51,11 @@
     }
   }
   &_fourth {
-    .colors-title_left {
+    .colors-title__letter {
       font-size: 0.875rem;
       line-height: 1.5rem;
     }
-    .colors-title_right {
+    .colors-title__title {
       font-size: 0.875rem;
       line-height: 1.5rem;
       width: 18.8125rem;
@@ -64,8 +64,5 @@
       color: $shade75;
       font-family: "Montserrat", Arial, Helvetica, sans-serif;
     }
-  }
-  p {
-    margin-right: 1.875rem;
   }
 }

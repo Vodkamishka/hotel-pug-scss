@@ -1,0 +1,10 @@
+mixin button-login (log)
+    if log === 'войти'
+        button.button-login(class='button-login_rus')
+            span.button-login__text=log 
+    else
+        button.button-login
+            span.button-login__text=log 
+
+  
+        

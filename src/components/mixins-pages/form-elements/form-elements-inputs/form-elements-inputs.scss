@@ -1,0 +1,97 @@
+@import "../../../../assets/utils/_main.scss";
+
+.form-elements-inputs {
+    width: 20.0625rem;
+    &__container {
+      &_first {
+        margin: 8.75rem 0 1.25rem 0.0625rem;
+        .input {
+        .label {
+        &__text:first-child {
+        margin-top: 0.1875rem;
+        }}
+        }
+        }
+      &_second {
+        margin-left: 0.0625rem;
+        .input {
+          .label {
+            &__text:nth-child(2) {
+              margin-bottom: 0.0275rem;
+              letter-spacing: -0.01rem;
+            }
+          }
+          input::placeholder {
+            color: $shade100;
+            letter-spacing: -0.00625rem;
+          }
+        }
+      }
+      &_third {
+        margin: 1.25rem 0 1.2225rem 0.0625rem;
+        .input {
+          .label {
+            &:nth-child(2) {
+              margin-bottom: 0.0275rem;
+              letter-spacing: -0.00625rem;
+            }
+          }
+        }
+      }
+      &_fourth {
+        margin-left: 0.0625rem;
+        .input {
+          .label {
+            &__text:first-child {
+              margin-top: 0.1875rem;
+            }
+            &__text:nth-child(2) {
+              margin-bottom: 0.1875rem;
+            }
+          }
+        }
+      }
+      &_sixth {
+        margin: 2.5rem 0 2.535rem 0.0625rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      &_seventh {
+        margin: 2.535rem 0 2.5625rem 0.0625rem;
+      }
+      &_eighth {
+        margin-bottom: 6.25rem;
+        .input {
+          .label {
+            margin-left: 0.0625rem;
+          }
+          .input_arrow {
+            width: 16.6875rem;
+          }
+        }
+      }
+       &_ninth {
+        margin: 0 0 1.25rem 0;
+      }
+      &_tenth {
+        margin-bottom: 9.965rem;
+        .input {
+          &__label {
+            margin-bottom: 0.285rem;
+          }
+        }
+      }
+      &_eleventh {
+        margin: 2.5275rem 0 1.25rem 0.0625rem;
+      }
+      &_incert-emotion {
+        margin: 2.5rem 0 2.5625rem 0;
+      }
+      &_location-city {
+        .info-room__image {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+}

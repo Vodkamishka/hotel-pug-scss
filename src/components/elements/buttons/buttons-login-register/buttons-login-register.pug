@@ -1,0 +1,9 @@
+include ../button-login/button-login
+include ../button-register/button-register
+
+mixin buttons-login-register(log, register)
+    .buttons-login-register
+        .buttons-login-register__login
+            +button-login(log)
+        .buttons-login-register__register
+            +button-register(register)

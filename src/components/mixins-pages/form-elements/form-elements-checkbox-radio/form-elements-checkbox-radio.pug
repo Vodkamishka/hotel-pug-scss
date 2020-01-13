@@ -1,0 +1,28 @@
+include ../../../elements/dropdowns-guest-selection/dropdowns-guest-selection
+include ../../../elements/consumer-comments/consumer-comments
+include ../../../elements/checkbox-rich/checkbox-rich
+include ../../../elements/checkbox/checkbox.pug
+include ../../../elements/radio/radio.pug
+include ../../../elements/toggle/toggle.pug
+include ../../../elements/like-button/like-button.pug
+include ../../../elements/rate/rate.pug
+
+mixin form-elements-checkbox-radio
+    .form-elements-checkbox-radio
+        .form-elements-checkbox-radio__checkbox
+            +checkbox
+        .form-elements-checkbox-radio__radio
+            +radio('show')
+        .form-elements-checkbox-radio__toggle
+            +toggle('show')
+        .form-elements-checkbox-radio__like
+            +like-button
+        .form-elements-checkbox-radio__rate
+            +rate
+        .form-elements-checkbox-radio__dropdown
+            +dropdowns-guest-selection("Сколько гостей", "input_long input_border", 'long', "dropdown")
+        .form-elements-checkbox-radio__rich
+            +checkbox-rich("Rich Checkbox Buttons")
+        .form-elements-checkbox-radio__murad
+            - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
+                    +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)

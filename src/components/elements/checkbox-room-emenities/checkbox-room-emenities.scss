@@ -1,0 +1,28 @@
+@import "../../../assets/utils/main";
+
+.checkbox-room-emenities {
+  &__mainline {
+    @include align-items;
+  }
+  &__mainline {
+    margin-bottom: 0.1525rem;
+  }
+  &__title {
+    @include title-inputs;
+    margin-right: 1.9rem;
+    white-space: nowrap;
+  }
+  &__image {
+    background: url('/public/assets/img/icons/expand.svg')
+      no-repeat center;
+    width: 2.75rem;
+    height: 2.75rem;
+    &_expand {
+      background: url('/public/assets/img/icons/expand_more.svg')
+        no-repeat center;
+    }
+  }
+  &_hide {
+    display: none;
+  }
+}

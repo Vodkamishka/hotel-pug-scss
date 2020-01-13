@@ -13,30 +13,30 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div class="landing">
-      <div class="header header">
+      <div class="header ">
         <div class="header__image"><img src="/public/assets/img/logotypes/logo.svg" alt="logo"></div>
         <div class="header__navbar">
           <div class="navbar">
-            <ul class="navbar_ul">
-              <li class="navbar_li"> <span>О нас</span></li>
-              <li class="navbar_li"> <span>Услуги</span>
+            <ul class="navbar__ul">
+              <li class="navbar__li"> <span>О нас</span></li>
+              <li class="navbar__li"> <span>Услуги</span>
                 <div class="navbar__image"></div>
               </li>
-              <li class="navbar_li"> <span>Вакансии</span></li>
-              <li class="navbar_li"> <span>Новости</span></li>
-              <li class="navbar_li"> <span>Соглашения</span>
+              <li class="navbar__li"> <span>Вакансии</span></li>
+              <li class="navbar__li"> <span>Новости</span></li>
+              <li class="navbar__li"> <span>Соглашения</span>
                 <div class="navbar__image"></div>
               </li>
             </ul>
           </div>
         </div>
         <div class="header__third-element">
-          <div class="buttons__login-register">
-            <div class="buttons__login-register_login">
-              <button class="button__login button__login_rus"><span class="button__login_text">войти</span></button>
+          <div class="buttons-login-register">
+            <div class="buttons-login-register__login">
+              <button class="button-login button-login_rus"><span class="button-login__text">войти</span></button>
             </div>
-            <div class="buttons__login-register_register">
-              <button class="button__register button__register_rus"><span class="button__register_text">зарегистрироваться</span></button>
+            <div class="buttons-login-register__register">
+              <button class="button-register button-register_rus"><span class="button-register__text">зарегистрироваться</span></button>
             </div>
           </div>
         </div>
@@ -49,8 +49,8 @@
               <div class="input-calendar">
                 <div class="input-calendar__label">
                   <div class="label label_small">
-                    <label class="label_left" for="forLab">Прибытие</label>
-                    <label class="label_right" for="forLab"></label>
+                    <label class="label__text" for="forLab">Прибытие</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="start">
@@ -58,26 +58,26 @@
               <div class="input-calendar">
                 <div class="input-calendar__label">
                   <div class="label label_small">
-                    <label class="label_left" for="forLab">Выезд</label>
-                    <label class="label_right" for="forLab"></label>
+                    <label class="label__text" for="forLab">Выезд</label>
+                    <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
                 <input class="datepicker-here" type="text" data-language="ru" placeholder="ДД.ММ.ГГГГ" data-position="bottom center" id="end">
               </div>
             </div>
             <div class="search-rooms__guests">
-              <div class="dropdowns-long">
+              <div class="dropdowns-guest-selection">
                 <div class="input">
                   <div class="input__label">
                     <div class="label label_long">
-                      <label class="label_left" for="forLab">гости</label>
-                      <label class="label_right" for="forLab"></label>
+                      <label class="label__text" for="forLab">гости</label>
+                      <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input_long" type="text" placeholder="Сколько гостей">
+                  <input class="input__input input__input_long" type="text" placeholder="Сколько гостей">
                 </div>
-                <div class="dropdowns-long__container_execute dropdowns-long_hide">
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Взрослые</div>
                       <div class="execute-panel__increment-decrement">
@@ -87,7 +87,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Дети</div>
                       <div class="execute-panel__increment-decrement">
@@ -97,7 +97,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__wrapper_execute-panel">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
                     <div class="execute-panel">
                       <div class="execute-panel__title">Младенцы</div>
                       <div class="execute-panel__increment-decrement">
@@ -107,48 +107,48 @@
                       </div>
                     </div>
                   </div>
-                  <div class="dropdowns-long__buttons">
-                    <div class="dropdowns-long__clear">Очистить</div>
-                    <div class="dropdowns-long__apply">Применить</div>
+                  <div class="dropdowns-guest-selection__buttons">
+                    <div class="dropdowns-guest-selection__clear">Очистить</div>
+                    <div class="dropdowns-guest-selection__apply">Применить</div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="button_long"><span class="button_long_text">Подобрать номер</span></button>
+            <button class="button button_long"><span class="button__text">Подобрать номер</span></button>
           </div>
         </div>
         <div class="landing__text-frame">Лучшие номера для вашей работы, отдыха и просто вдохновения     </div>
       </div>
-      <div class="footer">
-        <div class="footer__inner">
-          <ul class="footer__inner_ul">  <img src="/public/assets/img/logotypes/logo.svg" alt="">
-            <p class="footer__inner_p">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+      <div class="footer ">
+        <div class="footer__text-block">
+          <ul class="footer__ul">  <img src="/public/assets/img/logotypes/logo.svg" alt="">
+            <p class="footer__p">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
           </ul>
-          <ul class="footer__inner_ul">
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Навигация</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">О нас</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Новости</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Служба поддержки</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Услуги</a></li>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Навигация</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Новости</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Услуги</a></li>
           </ul>
-          <ul class="footer__inner_ul">
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">О нас</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">О сервисе</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Наша команда</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Вакансии</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Инвесторы</a></li>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">О сервисе</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Наша команда</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Вакансии</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Инвесторы</a></li>
           </ul>
-          <ul class="footer__inner_ul">
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Служба поддержки</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Соглашения</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Сообщества</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Связь с нами</a></li>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Соглашения</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Сообщества</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Связь с нами</a></li>
           </ul>
-          <ul class="footer__inner_ul">
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Подписка</a></li>
-            <li class="footer__inner_li"><a class="footer__inner_a" href="#">Получайте специальные предложения и новости сервиса</a></li>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Подписка</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Получайте специальные предложения и новости сервиса</a></li>
             <div class="input">
-              <input class="input_arrow" type="text" placeholder="Email">
+              <input class="input__input input__input_arrow" type="text" placeholder="Email">
             </div>
           </ul>
         </div>

@@ -1,0 +1,31 @@
+@import "../../../assets/utils/main";
+
+.checkbox-rich {
+  &__title {
+    @include title-inputs;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-left: 1.875rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: $shade50;
+    height: 1.75rem;
+    margin-bottom: 0.58rem;
+    width: 12.875rem;
+  }
+  &__text_wide {
+    width: 14.375rem;
+  }
+
+  &__input {
+    @include checkbox__input;
+    margin-bottom: 0.3125rem;
+    &-span {
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      color: $shade75;
+    }
+  }
+}

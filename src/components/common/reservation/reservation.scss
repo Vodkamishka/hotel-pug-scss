@@ -4,16 +4,15 @@
   height: 31.9375rem;
   width: 23.75rem;
   @include cards;
-  padding-top: 2.4rem;
   .luxe {
     display: block;
     height: 1.5rem;
     margin-top: 0.0625rem;
-    &_left,
-    &_right {
+    &__room-number,
+    &__price {
       display: inline-block;
     }
-    &_left {
+    &__room-number {
       margin-right: 6.6rem;
     }
   }
@@ -26,7 +25,7 @@
   }
   &__incoming {
     display: flex;
-    margin-top: 1.65rem;
+    margin-top: 1.5rem;
     .input {
       input[type="text"] {
         margin-right: 1.25rem;
@@ -47,7 +46,7 @@
     color: $shade75;
     margin-bottom: 1.1rem;
     position: relative;
-    .reservation_p:first-child {
+    .reservation__p:first-child {
       width: 13.375rem;
     }
     .round {
@@ -63,7 +62,7 @@
       color: $shade25;
       @include flex-center;
     }
-    .reservation_p {
+    .reservation__p {
       margin: 0;
     }
   }
@@ -79,7 +78,7 @@
     line-height: 1.5rem;
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     letter-spacing: 0.0625rem;
-    .reservation_p {
+    .reservation__p {
       margin: 0;
     }
   }

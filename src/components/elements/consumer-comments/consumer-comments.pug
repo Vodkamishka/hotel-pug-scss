@@ -2,19 +2,19 @@ include ../../elements/like/like
 
 mixin consumer-comments(img, name, term, like, text)
     .consumer-comments
-        .consumer-comments_top
+        .consumer-comments__image-wrapper
             if img === 'man'
                 .consumer-comments__img
             else 
                 .consumer-comments__img.consumer-comments__img_girl
-            .consumer-comments_right
+            .consumer-comments__name-term
                 .consumer-comments__name=name
                 .consumer-comments__term=term
-        .consumer-comments_bottom
+        .consumer-comments__likes
             if like === 12
                 +like(12)
             else 
                 +like(2)
             .consumer-comments__text
-                p.consumer-comments__text_p=text
+                p.consumer-comments__text-review=text
                     

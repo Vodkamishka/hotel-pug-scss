@@ -1,0 +1,13 @@
+@import "../../../assets/utils/main";
+
+.dropdowns-room-selection {
+  &__container-execute {
+    @include container_execute;
+  }
+  &__wrapper-execute-panel {
+    margin-bottom: 0.4375rem;
+  }
+  &_hide {
+    display: none;
+  }
+}

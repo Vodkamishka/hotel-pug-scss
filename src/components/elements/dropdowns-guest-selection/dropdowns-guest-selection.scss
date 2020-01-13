@@ -1,0 +1,39 @@
+@import "../../../assets/utils/main";
+
+.dropdowns-guest-selection {
+  width: $long;
+  &__container-execute {
+    @include container_execute;
+    height: 9.85rem;
+    width: $long;
+    padding-top: 0.3475rem;
+    .execute-panel {
+      &_increment-decrement {
+        padding-top: 0.0625rem;
+        box-sizing: border-box;
+      }
+      &_result {
+        padding-bottom: 0.1875rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+  &__wrapper-execute-panel {
+    margin-bottom: 0.375rem;
+  }
+  &_hide {
+    display: none;
+  }
+  &__buttons {
+    margin-top: 1.25rem;
+  }
+  &__apply {
+    color: $purple;
+    text-align: right;
+    float: right;
+  }
+  &__clear {
+    color: $shade50;
+    float: left;
+  }
+}

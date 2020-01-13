@@ -9,15 +9,12 @@
   &__two-fields {
     font-size: 1.5rem;
     width: 20rem;
-  }
-  &__two-fields_one,
-  &__two-fields_two {
     margin-bottom: 0.6525rem;
     .input:first-child {
       margin-bottom: 0.625rem;
     }
   }
-  &__two-fields_two {
+  &__two-fields:nth-child(2) {
     margin-bottom: 0.65rem;
   }
   &__bithday {

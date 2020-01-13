@@ -1,0 +1,31 @@
+include ../../../elements/buttons/button/button
+include ../../../elements/dropdowns-guest-selection/dropdowns-guest-selection
+include ../../../common/slider/slider
+include ../../../elements/pagination/pagination.pug
+include ../../../elements/bullet-list/bullet-list.pug
+
+mixin form-elements-slider-buttons
+    .form-elements-slider-buttons
+        .form-elements-slider-buttons__range-slider
+            +slider('Range Slider')
+        .form-elements-slider-buttons__buttons
+            .form-elements-slider-buttons__buttons-title Buttons
+            .form-elements-slider-buttons__buttons-group
+                +button("click me", "purple")
+                +button("click me", "shade-purple")
+                +button("click me", "white")
+                +button("click me", "shade-white")
+            .form-elements-slider-buttons__buttons-clickmes
+                span.form-elements-slider-buttons__buttons-clickme click me
+                span.form-elements-slider-buttons__buttons-clickme click me
+        .form-elements-slider-buttons__button
+            +button("Перейти к оплате")
+        .form-elements-slider-buttons__pagination
+            +pagination('show')
+        .form-elements-slider-buttons__dropdown
+            +dropdowns-guest-selection("Сколько гостей", "input_long input_border", 'long', "dropdown", "",  'block','' ,2, 1)
+        .form-elements-slider-buttons__bullet
+            +bullet-list("bullet list")
+
+
+    

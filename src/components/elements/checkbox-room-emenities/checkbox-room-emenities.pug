@@ -1,0 +1,16 @@
+include ../checkbox-list/checkbox-list.pug
+
+mixin checkbox-room-emenities (list, title, clas = '')
+    .checkbox-room-emenities    
+        .checkbox-room-emenities__mainline
+            .checkbox-room-emenities__title= title
+            if (!clas)
+                .checkbox-room-emenities__image.checkbox-room-emenities__image_expand
+            else
+                .checkbox-room-emenities__image     
+        .checkbox-room-emenities__list(class= clas)
+            +checkbox-list(list)
+
+           
+
+    

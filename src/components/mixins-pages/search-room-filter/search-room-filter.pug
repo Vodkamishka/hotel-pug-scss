@@ -1,13 +1,18 @@
 include ../../common/footer/footer
 include ../../common/copyright/copyright
 include ../../common/header/header
-include ./search-room-filter_main/search-room-filter_main
+include ./search-room-filter-column/search-room-filter-column
+include ./search-room-filter-images/search-room-filter-images
 
 mixin search-room-filter ({header, footer, copyright})
     - let {classHeader, titlesNavbar, log, register} = header
     .search-room-filter
         +header(classHeader, titlesNavbar, log, register)
-        +search-room-filter_main
+        .search-room-filter__content
+            .search-room-filter__wrapper-column
+                +search-room-filter-column
+            .search-room-filter__wrapper-images
+                +search-room-filter-images
         +footer(footer)
         +copyright(copyright)
 

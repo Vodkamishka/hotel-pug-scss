@@ -1,16 +1,28 @@
 include ../../elements/logo-wrapper/logo-wrapper.pug
-include ./cards__column_left/cards__column_left.pug
-include ./cards__column_center/cards__column_center.pug
-include ./cards__column_right/cards__column_right.pug 
+include ../../common/registration-account/registration-account.pug
+include ../../common/search-rooms/search-rooms.pug
+include ../../common/reservation/reservation.pug
+include ../../common/login/login.pug
+include ../../common/card-room/card-room.pug
+include ../../common/datepicker-here/datepicker-here
+
 
 mixin cards
     .cards
         .cards__logo-wrapper
             +logo-wrapper
-        .cards__wrapper_left
-            +cards__column_left
-        .cards__wrapper_center
-            +cards__column_center
-        .cards__wrapper_right
-            +cards__column_right
+        .cards__wrapper
+            .cards__search-rooms
+                +search-rooms
+            .cards__registration
+                +registration-account
+        .cards__wrapper
+            +reservation
+            .cards__login
+                +login
+        .cards__wrapper
+            +datepicker-here('placeholder', 'new', true)
+            .cards__middleware-card
+                +card-room(888, 9, 990, 5, 145)
+            +card-room(840, 9, 990, 4, 65, "luxe_not-show")
 

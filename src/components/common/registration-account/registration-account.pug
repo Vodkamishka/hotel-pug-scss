@@ -1,27 +1,27 @@
 include ../../elements/input/input.pug
 include ../../elements/toggle-one/toggle-one.pug
-include ../../elements/buttons/button_long/button_long.pug
-include ../../elements/buttons/button_short/button_short.pug
+include ../../elements/buttons/button/button.pug
+include ../../elements/buttons/button/button.pug
 include ../../elements/radio/radio.pug
 
 mixin registration-account
     .registration-account
         .registration-account__title Регистрация аккаунта
-        .registration-account__two-fields_one
+        .registration-account__two-fields
             +input('Имя')
             +input('Фамилия')
         +radio 
         .registration-account__bithday
-            +input('ДД.ММ.ГГГГ', 'input_no-class', 'long', 'Дата рождения')
-        .registration-account__two-fields_two
-            +input('Email','input_no-class', 'long', 'Данные для входа в сервис')
-            +input('Пароль','input_no-class')
+            +input('ДД.ММ.ГГГГ', 'input_no-modifier', 'long', 'Дата рождения')
+        .registration-account__two-fields
+            +input('Email','input_no-modifier', 'long', 'Данные для входа в сервис')
+            +input('Пароль','input_no-modifier')
         +toggle-one(false)
         .registration-account__button
-            +button_long('Перейти к оплате')
+            +button('Перейти к оплате')
         .registration-account__toxin
             .registration-account__text Уже есть аккаунт на Toxin
-            +button_short("Войти", "white")
+            +button("Войти", "white")
     
 
     

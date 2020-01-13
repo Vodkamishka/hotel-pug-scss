@@ -2,11 +2,11 @@
 
 .navbar {
   height: 1.125rem;
-  &_ul {
+  &__ul {
     @include space-between;
     padding: 0;
   }
-  &_li {
+  &__li {
     list-style-type: none;
     font-size: 0.875rem;
     line-height: 1.0625rem;
