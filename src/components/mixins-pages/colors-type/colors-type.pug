@@ -8,7 +8,7 @@ mixin colors-type
         .colors-type__logo-wrapper
             +logo-wrapper  
         .colors-type__squares
-            - let blocks = [{background:"shade", text:"Dark Shade 100%", color:"#1F2041"}, {background: "shade75", text: "Dark Shade 75%", color: "#1F2041"}, {background: "shade50", text: "Dark Shade 50%", color: "#1F2041"}, {background: "shade25", text: "Dark Shade 25%", color: "#1F2041"}, {background: "shade05", text: "Dark Shade 5%", color: "#1F2041"}, {background: "purple", text: "Purple", color: "#BC9CFF"}, {background: "green", text: "Green", color: "#6FCF97"}]
+            - let blocks = [{background:"shade", text:"Dark Shade 100%", color:"#1F2041"}, {background: "shade-seventy-five", text: "Dark Shade 75%", color: "#1F2041"}, {background: "shade-fifty", text: "Dark Shade 50%", color: "#1F2041"}, {background: "shade-twenty-five", text: "Dark Shade 25%", color: "#1F2041"}, {background: "shade-five", text: "Dark Shade 5%", color: "#1F2041"}, {background: "purple", text: "Purple", color: "#BC9CFF"}, {background: "green", text: "Green", color: "#6FCF97"}]
             for el in blocks
                 - let {background, text, color} = el
                 .colors-type__block-wrapper
