@@ -13,4 +13,58 @@ html(lang="en")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
         title Form elements
     body
-        +form-elements
+        +form-elements({
+            checkboxList: [
+                {
+                    checked: false,
+                    text: 'Можно курить'
+                },
+                {
+                    checked: true, 
+                    text: 'Можно с питомцaми'
+                },
+                {
+                    checked: true, 
+                    text: 'Можно пригласить гостей (до 10 человек)'
+                }
+            ],
+            bulletList: [
+                "Нельзя с питомцами", 
+                "Без вечеринок и мероприятий", 
+                "Время прибытия — после 13:00, а выезд до 12:00"
+            ],
+            list: [
+                {
+                    text: 'Завтрак', 
+                    checked: false
+                },
+                {
+                    text: 'Письменный стол', 
+                    checked: true
+                },
+                {
+                    text: 'Стул для кормления', 
+                    checked: true
+                },
+                {
+                    text: 'Кроватка', 
+                    checked: true
+                },
+                {
+                    text: 'Телевизор', 
+                    checked: false
+                },
+                {
+                    text: 'Шампунь', 
+                    checked: false
+                },
+                {
+                    text: 'Телевизор', 
+                    checked: false
+                },
+                {
+                    text: 'Шампунь', 
+                    checked: false
+                }
+            ]
+        })

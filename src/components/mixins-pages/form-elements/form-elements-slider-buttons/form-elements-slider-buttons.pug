@@ -4,7 +4,7 @@ include ../../../common/slider/slider
 include ../../../elements/pagination/pagination.pug
 include ../../../elements/bullet-list/bullet-list.pug
 
-mixin form-elements-slider-buttons
+mixin form-elements-slider-buttons(bulletList)
     .form-elements-slider-buttons
         .form-elements-slider-buttons__range-slider
             +slider('Range Slider')
@@ -25,7 +25,7 @@ mixin form-elements-slider-buttons
         .form-elements-slider-buttons__dropdown
             +dropdowns-guest-selection("Сколько гостей", "input_long input_border", 'long', "dropdown", "",  'block','' ,2, 1)
         .form-elements-slider-buttons__bullet
-            +bullet-list("bullet list")
+            +bullet-list(bulletList, "bullet list")
 
 
     

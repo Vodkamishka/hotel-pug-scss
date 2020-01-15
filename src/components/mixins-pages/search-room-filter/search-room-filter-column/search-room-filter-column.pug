@@ -6,8 +6,8 @@ include ../../../elements/checkbox-room-emenities/checkbox-room-emenities
 include ../../../common/slider/slider
 include ../../../elements/checkbox/checkbox
 
-mixin search-room-filter-column
-    - let list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
+mixin search-room-filter-column(options)
+    - const {checkboxList, list} = options
     .search-room-filter-column
         .search-room-filter-column__input
             +input('19 авг - 23 авг','input_little', 'little', 'даты пребывания в отеле')
@@ -16,7 +16,7 @@ mixin search-room-filter-column
         .search-room-filter-column__slider
             +slider('Диапазон цены')
             .search-room-filter-column__slider-text Стоимость за сутки пребывания в номере
-        +checkbox
+        +checkbox(checkboxList)
         .search-room-filter-column__checkbox-rich
             +checkbox-rich('доступность')
         +dropdowns-room-selection('2 спальни,  2 кровати', 'input_little input__input_border', 'little', 'удобства номера', '',  'dropdowns-room-selection_hide')

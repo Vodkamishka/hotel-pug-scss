@@ -5,17 +5,667 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="keywords" content="Demo">
-    <meta name="description" content="Demo">
+    <meta name="keywords" content="search room/ filter">
+    <meta name="description" content="search room/ filter">
     <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Demo</title>
+    <title>Search room/ Filter</title>
   <link href="main.css" rel="stylesheet"></head>
   <body>
-    <div class="demo">
-      <div class="demo__see">See demo</div>
-      <div class="demo__title">Website Pages</div><a class="demo__a" href="public//landing.html" target="_blank">Landing Page</a><a class="demo__a" href="public//registration.html" target="_blank">Registration</a><a class="demo__a" href="public//room-details.html" target="_blank">Room details</a><a class="demo__a" href="public//search-room-filter.html" target="_blank">Search room/ Filter</a><a class="demo__a" href="public//sign-in.html" target="_blank">Sign in</a>
-      <div class="demo__title">Ui Kit </div><a class="demo__a" href="public//cards.html" target="_blank">Cards</a><a class="demo__a" href="public//colors-type.html" target="_blank">Colors &amp; type</a><a class="demo__a" href="public//form-elements.html" target="_blank">Form elements</a><a class="demo__a" href="public//headers-footers.html" target="_blank">Headers &amp; footers</a>
+    <div class="search-room-filter">
+      <div class="header ">
+        <div class="header__image"><img src="/public/assets/img/logotypes/logo.svg" alt="logo"></div>
+        <div class="header__navbar">
+          <div class="navbar">
+            <ul class="navbar__ul">
+              <li class="navbar__li"> <span>О нас</span></li>
+              <li class="navbar__li"> <span>Услуги</span>
+                <div class="navbar__image"></div>
+              </li>
+              <li class="navbar__li"> <span>Вакансии</span></li>
+              <li class="navbar__li"> <span>Новости</span></li>
+              <li class="navbar__li"> <span>Соглашения</span>
+                <div class="navbar__image"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__third-element">
+          <div class="buttons-login-register">
+            <div class="buttons-login-register__login">
+              <button class="button-login button-login_rus"><span class="button-login__text">войти</span></button>
+            </div>
+            <div class="buttons-login-register__register">
+              <button class="button-register button-register_rus"><span class="button-register__text">зарегистрироваться</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-room-filter__content">
+        <div class="search-room-filter__wrapper-column">
+          <div class="search-room-filter-column">
+            <div class="search-room-filter-column__input">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_little">
+                    <label class="label__text" for="forLab">даты пребывания в отеле</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_little" type="text" placeholder="19 авг - 23 авг">
+              </div>
+            </div>
+            <div class="search-room-filter-column__dropdowns">
+              <div class="dropdowns-guest-selection">
+                <div class="input">
+                  <div class="input__label">
+                    <div class="label label_little">
+                      <label class="label__text" for="forLab">гости</label>
+                      <label class="label__text" for="forLab"></label>
+                    </div>
+                  </div>
+                  <input class="input__input input__input_little" type="text" placeholder="3 гостя, 1 младенец">
+                </div>
+                <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Взрослые</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">3</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Дети</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">0</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                    <div class="execute-panel">
+                      <div class="execute-panel__title">Младенцы</div>
+                      <div class="execute-panel__increment-decrement">
+                        <div class="execute-panel__decrement">-</div>
+                        <div class="execute-panel__result">1</div>
+                        <div class="execute-panel__increment">+</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdowns-guest-selection__buttons">
+                    <div class="dropdowns-guest-selection__clear">Очистить</div>
+                    <div class="dropdowns-guest-selection__apply">Применить</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-room-filter-column__slider">
+              <div class="slider"> 
+                <div class="slider__range">
+                  <div class="slider__title">Диапазон цены</div>
+                  <div class="slider__size"></div>
+                </div>
+                <div class="slider__inner"></div>
+              </div>
+              <div class="search-room-filter-column__slider-text">Стоимость за сутки пребывания в номере</div>
+            </div>
+            <div class="checkbox">
+              <div class="checkbox__title">checkbox buttons</div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox">
+                <label class="checkbox_label" for="text">Можно курить</label>
+              </div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox" checked>
+                <label class="checkbox_label" for="text">Можно с питомцaми</label>
+              </div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox" checked>
+                <label class="checkbox_label" for="text">Можно пригласить гостей (до 10 человек)</label>
+              </div>
+            </div>
+            <div class="search-room-filter-column__checkbox-rich">
+              <div class="checkbox-rich"> 
+                <div class="checkbox-rich__title">доступность</div>
+                <div class="checkbox-rich__input">
+                  <input class="checkbox_input" type="checkbox">
+                  <div class="checkbox-rich__input-span">Широкий коридор</div>
+                </div>
+                <div class="checkbox-rich__text">Ширина коридоров в номере не менее 91 см.</div>
+                <div class="checkbox-rich__input">
+                  <input class="checkbox_input" type="checkbox">
+                  <div class="checkbox-rich__input-span">Помошник для инвалидов</div>
+                </div>
+                <div class="checkbox-rich__text checkbox-rich__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
+              </div>
+            </div>
+            <div class="dropdowns-room-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_little">
+                    <label class="label__text" for="forLab">удобства номера</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_little input__input_border" type="text" placeholder="2 спальни,  2 кровати">
+              </div>
+              <div class="dropdowns-room-selection__container-execute dropdowns-room-selection_hide">
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Спальни</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Кровати</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Ванные комнаты</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-room-filter-column__checkbox"> 
+              <div class="checkbox-room-emenities">   
+                <div class="checkbox-room-emenities__mainline">
+                  <div class="checkbox-room-emenities__title">дополнительные удобства</div>
+                  <div class="checkbox-room-emenities__image">    </div>
+                </div>
+                <div class="checkbox-room-emenities__list checkbox-room-emenities_hide">
+                  <div class="checkbox-list">
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox">
+                      <label class="checkbox_label" for="forText">Завтрак</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox" checked>
+                      <label class="checkbox_label" for="forText">Письменный стол</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox" checked>
+                      <label class="checkbox_label" for="forText">Стул для кормления</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox" checked>
+                      <label class="checkbox_label" for="forText">Кроватка</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox">
+                      <label class="checkbox_label" for="forText">Телевизор</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox">
+                      <label class="checkbox_label" for="forText">Шампунь</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox">
+                      <label class="checkbox_label" for="forText">Телевизор</label>
+                    </div>
+                    <div class="checkbox-list__input">
+                      <input class="checkbox_input" type="checkbox">
+                      <label class="checkbox_label" for="forText">Шампунь</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-room-filter__wrapper-images">
+          <div class="search-room-filter-images"> 
+            <div class="search-room-filter-images__title">Номера, которые мы для вас подобрали</div>
+            <div class="search-room-filter-images__rooms-wrapper">
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/888.jpg">
+                  <div class="card-room__image-side card-room__image-side_left">
+                    <div class="card-room__arrow"></div>
+                  </div>
+                  <div class="card-room__image-side card-room__image-side_right">
+                    <div class="card-room__arrow"></div>
+                  </div>
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">888</span><span class="luxe__room-number-text">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">145</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/840.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">840</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">65</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/980.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">980</span><span class="luxe__room-number-text">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">8</span><span class="luxe__price-text">500</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">35</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/856.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">856</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">7</span><span class="luxe__price-text">300</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">19</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/740.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">740</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">6</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">44</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/982.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">982</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">800</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">56</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/678.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">678</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">500</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">45</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/450.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">450</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">300</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">39</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/350.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">350</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">77</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/666.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">666</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">25</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/444.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">444</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">15</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-room">
+                <div class="card-room__image"><img class=".card-room__img" src="/public/assets/img/rooms/352.jpg">
+                  <div class="card-room__group-balls">
+                    <div class="card-room__ball card-room__ball_full"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                    <div class="card-room__ball card-room__ball_empty"></div>
+                  </div>
+                </div>
+                <div class="card-room__luxe">
+                  <div class="luxe">
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">352</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
+                  </div>
+                </div>
+                <div class="card-room__stars">
+                  <div class="comments-stars"> 
+                    <div class="stars">
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_first"></div>
+                      <div class="stars__image stars__image_second"></div>
+                      <div class="stars__image stars__image_second"></div>
+                    </div>
+                    <div class="comments-stars__comments">
+                      <p class="comments-stars__comments-number">55</p>
+                      <p>Отзывов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-room-filter-images__pagination">
+              <div class="pagination">
+                <div class="pagination__numbers"><span class="pagination__numbers-span">1</span><span class="pagination__numbers-span">2</span><span class="pagination__numbers-span">3</span><span class="pagination__numbers-span">...</span><span class="pagination__numbers-span">15</span>
+                  <div class="pagination__img-container"><img src="/public/assets/img/icons/arrow_forward_white.svg" alt="arrow-right"></div>
+                </div>
+              </div>
+              <div class="pagination__text">1 – 12 из 100+ вариантов аренды   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer ">
+        <div class="footer__text-block">
+          <ul class="footer__ul">  <img src="/public/assets/img/logotypes/logo.svg" alt="">
+            <p class="footer__p">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+          </ul>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Навигация</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Новости</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Услуги</a></li>
+          </ul>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">О сервисе</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Наша команда</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Вакансии</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Инвесторы</a></li>
+          </ul>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Соглашения</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Сообщества</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Связь с нами</a></li>
+          </ul>
+          <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__a" href="#">Подписка</a></li>
+            <li class="footer__li"><a class="footer__a" href="#">Получайте специальные предложения и новости сервиса</a></li>
+            <div class="input">
+              <input class="input__input input__input_arrow" type="text" placeholder="Email">
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright"> 
+        <div class="copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</div>
+        <div class="social"><img class="social__image" src="/public/assets/img/logotypes/twitter.svg" alt="twitter"><img class="social__image" src="/public/assets/img/logotypes/facebook.svg" alt="twitter"><img class="social__image" src="/public/assets/img/logotypes/instagram.svg" alt="twitter">
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="main.js"></script></body>
 </html>

@@ -3,14 +3,15 @@ include ./form-elements-inputs/form-elements-inputs.pug
 include ./form-elements-checkbox-radio/form-elements-checkbox-radio.pug
 include ./form-elements-slider-buttons/form-elements-slider-buttons.pug
 
-mixin form-elements
+mixin form-elements(options)
+    - const {checkboxList, bulletList, list} = options
     .form-elements
         .form-elements__logo-wrapper
             +logo-wrapper
         .form-elements__column
-            +form-elements-inputs
+            +form-elements-inputs(list)
         .form-elements__column
-            +form-elements-checkbox-radio
+            +form-elements-checkbox-radio(checkboxList)
         .form-elements__column
-            +form-elements-slider-buttons
+            +form-elements-slider-buttons(bulletList)
 

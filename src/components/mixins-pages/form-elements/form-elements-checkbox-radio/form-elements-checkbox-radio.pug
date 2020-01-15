@@ -7,10 +7,10 @@ include ../../../elements/toggle/toggle.pug
 include ../../../elements/like-button/like-button.pug
 include ../../../elements/rate/rate.pug
 
-mixin form-elements-checkbox-radio
+mixin form-elements-checkbox-radio(checkboxList)
     .form-elements-checkbox-radio
         .form-elements-checkbox-radio__checkbox
-            +checkbox
+            +checkbox(checkboxList)
         .form-elements-checkbox-radio__radio
             +radio('show')
         .form-elements-checkbox-radio__toggle

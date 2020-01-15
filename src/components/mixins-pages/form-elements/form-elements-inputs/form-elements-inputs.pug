@@ -3,8 +3,7 @@ include ../../../elements/info-room/info-room
 include ../../../elements/input/input
 include ../../../elements/dropdowns-room-selection/dropdowns-room-selection
 
-mixin form-elements-inputs
-    - let list = [{text: 'Завтрак', checked: false},{text: 'Письменный стол', checked: true},{text: 'Стул для кормления', checked: true},{text: 'Кроватка', checked: true},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false},{text: 'Телевизор', checked: false},{text: 'Шампунь', checked: false}]
+mixin form-elements-inputs(list)
     .form-elements-inputs
         .form-elements-inputs__container.form-elements-inputs__container_first
             +input('Email', 'input_no-modifier', 'long', 'text field', 'default')

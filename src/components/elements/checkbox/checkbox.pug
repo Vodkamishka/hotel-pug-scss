@@ -1,5 +1,4 @@
-mixin checkbox
-    - let checkboxList = [{checked: false, text: 'Можно курить'},{checked: true, text: 'Можно с питомцaми'},{checked: true, text: 'Можно пригласить гостей (до 10 человек)'}]
+mixin checkbox(checkboxList)
     .checkbox
         .checkbox__title checkbox buttons
         for el in checkboxList

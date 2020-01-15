@@ -5,13 +5,13 @@ include ./search-room-filter-column/search-room-filter-column
 include ./search-room-filter-images/search-room-filter-images
 
 mixin search-room-filter (options)
-    - const {header, footer, copyright} = options
+    - const {header, footer, copyright, checkboxList, list} = options
     - let {classHeader, titlesNavbar, log, register} = header
     .search-room-filter
         +header(classHeader, titlesNavbar, log, register)
         .search-room-filter__content
             .search-room-filter__wrapper-column
-                +search-room-filter-column
+                +search-room-filter-column({checkboxList, list})
             .search-room-filter__wrapper-images
                 +search-room-filter-images
         +footer(footer)

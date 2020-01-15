@@ -3,9 +3,8 @@ include ../../../elements/consumer-comments/consumer-comments
 include ../../../elements/bullet-list/bullet-list
 include ../../../common/reservation/reservation
 
-mixin room-details-description
-    - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
-    - let textTwo = 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+mixin room-details-description(options)
+    - const {bulletList, textOne, textTwo} = options
     .room-details-description
         .room-details-description__data
             .room-details-description__room-information 
@@ -27,7 +26,7 @@ mixin room-details-description
                         +consumer-comments("girl","Патрисия Стёклышкова", "Неделю назад", 2, textTwo)
             .room-details-description__rules 
                 .room-details-description__rules-title Правила
-                +bullet-list    
+                +bullet-list(bulletList)    
         .room-details-description__circle-diagram
             .room-details-description__room-impressions
                 .room-details-description__title Впечатления от номера
