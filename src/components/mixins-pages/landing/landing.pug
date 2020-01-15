@@ -3,7 +3,8 @@ include ../../common/footer/footer
 include ../../common/search-rooms/search-rooms
 include ../../common/copyright/copyright
 
-mixin landing ({header, footer, copyright})
+mixin landing (options)
+    - const {header, footer, copyright} = options
     - let {classHeader, titlesNavbar, log, register} = header
     .landing
         +header(classHeader, titlesNavbar, log, register)

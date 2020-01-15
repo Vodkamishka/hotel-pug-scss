@@ -3,7 +3,8 @@ include ../../common/copyright/copyright
 include ../../common/header/header
 include ../../common/login/login 
 
-mixin sign-in({header, footer, copyright})
+mixin sign-in(options)
+    - const {header, footer, copyright} = options
     - let {classHeader, titlesNavbar, log, register} = header
     .sign-in
         +header(classHeader, titlesNavbar,log, register)

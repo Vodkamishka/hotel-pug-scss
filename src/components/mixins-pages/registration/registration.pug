@@ -3,7 +3,8 @@ include ../../common/copyright/copyright
 include ../../common/header/header
 include ../../common/registration-account/registration-account 
 
-mixin registration ({header, footer, copyright})
+mixin registration (options)
+    - const {header, footer, copyright} = options
     - let {classHeader, titlesNavbar, log, register} = header
     .registration
         +header (classHeader, titlesNavbar, log, register)

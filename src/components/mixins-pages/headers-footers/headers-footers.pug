@@ -4,7 +4,8 @@ include ../../common/header/header.pug
 include ../../elements/logo-wrapper/logo-wrapper.pug
 include ../../elements/social/social.pug 
 
-mixin headers-footers ({header, footer, copyright})
+mixin headers-footers (options)
+    - const {header, footer, copyright} = options
     - let {classHeader, classHeader2, titlesNavbar, log, register} = header
     .headers-footers
         .headers-footers__logo-wrapper

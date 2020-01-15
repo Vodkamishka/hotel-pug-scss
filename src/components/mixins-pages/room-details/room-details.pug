@@ -4,7 +4,8 @@ include ../../common/header/header
 include ./room-details-description/room-details-description
 include ./room-details-images/room-details-images
 
-mixin room-details ({header, footer, copyright})
+mixin room-details (options)
+    - const {header, footer, copyright} = options
     - let {classHeader, titlesNavbar, log, register} = header
     .room-details
         +header (classHeader, titlesNavbar, log, register)
