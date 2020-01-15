@@ -5,7 +5,7 @@ mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
         .footer__text-block
             ul.footer__ul   
                 img(src="/public/assets/img/logotypes/logo.svg", alt="")
-                p(class="footer__p")= textTop 
+                p(class="footer__paragraph")= textTop 
             for el in titlesFooter
                 ul.footer__ul
                     for i in el
@@ -15,7 +15,7 @@ mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
                 for el in textBottom
                     li.footer__li
                         a(href="#" class="footer__a")=el
-                +input(email, "input_arrow") 
+                +input(email, "input__input_arrow") 
                     
  
         

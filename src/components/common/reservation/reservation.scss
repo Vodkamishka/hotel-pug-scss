@@ -46,10 +46,10 @@
     color: $shade75;
     margin-bottom: 1.1rem;
     position: relative;
-    .reservation__p:first-child {
+    .reservation__paragraph:first-child {
       width: 13.375rem;
     }
-    .round {
+    .reservation__round {
       position: absolute;
       left: 13.6875rem;
       width: 1.25rem;
@@ -62,7 +62,7 @@
       color: $shade25;
       @include flex-center;
     }
-    .reservation__p {
+    .reservation__paragraph {
       margin: 0;
     }
   }
@@ -78,7 +78,7 @@
     line-height: 1.5rem;
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     letter-spacing: 0.0625rem;
-    .reservation__p {
+    .reservation__paragraph {
       margin: 0;
     }
   }
