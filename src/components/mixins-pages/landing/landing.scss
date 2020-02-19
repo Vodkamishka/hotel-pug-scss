@@ -8,7 +8,7 @@ body {
     height: 51.875rem;
     overflow: hidden;
     position: relative;
-    background-image: url('/public/assets/img/rooms/main-picture.jpg')
+    background-image: url(/assets/img/rooms/main-picture.jpg), url(/assets/img/rooms/main-picture.jpg)
   }
   &__search-rooms {
     margin: 4.375rem 0 0 9.72%;

@@ -92,7 +92,7 @@ module.exports = {
       template: './src/sign-in.pug',
     }),
     new HTMLWebpackPlugin({
-      template: './src/headers-footers.pug',
+      template: './src/demo.pug',
     }),
     new CopyWebpackPlugin([
       { from: './src/assets/img', to: './assets/img' },
