@@ -9,8 +9,73 @@ html(lang="en")
         meta(name="viewport" content="initial-scale=1.0, width=device-width")
         meta(name="keywords" content='Colors & type')
         meta(name="description" content='Colors & type')
-        link(rel="icon" href="favicon.ico")
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        link(rel="apple-touch-icon" sizes="180x180" href='assets/favicons/apple-touch-icon.png')
+        link(rel="icon" type="image/png" sizes="32x32" href='assets/favicons/favicon-32x32.png')
+        link(rel="icon" type="image/png" sizes="16x16" href='assets/favicons/favicon-16x16.png')
+        link(rel="manifest" href="assets/favicons/site.webmanifest")
+        link(rel="mask-icon" href=require('./assets/favicons/safari-pinned-tab.svg') color="#5bbad5")
+        meta(name="msapplication-TileColor" content="#2d89ef")
+        meta(name="theme-color" content="#ffffff")
         title Colors & type
     body
-        +colors-type
+        +colors-type ({
+            blocks: [
+                {
+                    background:"shade", 
+                    text:"Dark Shade 100%", 
+                    color:"#1F2041"
+                }, 
+                {
+                    background: "shade-seventy-five", 
+                    text: "Dark Shade 75%", 
+                    color: "#1F2041"
+                }, 
+                {
+                    background: "shade-fifty", 
+                    text: "Dark Shade 50%", 
+                    color: "#1F2041"
+                }, 
+                {
+                    background: "shade-twenty-five", 
+                    text: "Dark Shade 25%", 
+                    color: "#1F2041"
+                }, 
+                {
+                    background: "shade-five", 
+                    text: "Dark Shade 5%", 
+                    color: "#1F2041"
+                }, 
+                {
+                    background: "purple", 
+                    text: "Purple", 
+                    color: "#BC9CFF"
+                }, 
+                {
+                    background: "green", 
+                    text: "Green", 
+                    color: "#6FCF97"
+                }
+            ],
+            titles: [
+                {
+                    tag: "H1", 
+                    text: "This one is the sub-section or widget title", 
+                    className: "first"
+                }, 
+                {
+                    tag: "H2", 
+                    text: "Next one is the item title inside widgets", 
+                    className: "second"
+                }, 
+                {
+                    tag: "H3", 
+                    text: "This is a label or CTA text", 
+                    className: "third"
+                }, 
+                {
+                    tag: "Body", 
+                    text: "This is the body text which is used for most of the design, like paragraphs, lists, etc", 
+                    className: "fourth"
+                }
+            ]
+        })

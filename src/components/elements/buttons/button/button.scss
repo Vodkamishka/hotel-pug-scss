@@ -30,7 +30,7 @@
         background-image: $gradient;
         box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
             &:hover {
-                border: 1px solid rgba($purple, 0.5);
+                border: 0.0625rem solid rgba($purple, 0.5);
             }
         }
         &_shade-white {
@@ -39,7 +39,7 @@
         background-origin: border-box;
         background-image: $gradient;
         box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
-        border: 1px solid rgba($purple, 0.5);
+        border: 0.0625rem solid rgba($purple, 0.5);
         }
     }
     &_long {

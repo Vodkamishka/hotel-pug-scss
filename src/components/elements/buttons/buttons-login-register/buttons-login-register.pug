@@ -1,7 +1,8 @@
 include ../button-login/button-login
 include ../button-register/button-register
 
-mixin buttons-login-register(log, register)
+mixin buttons-login-register(props)
+    - const {log, register} = props
     .buttons-login-register
         .buttons-login-register__login
             +button-login(log)

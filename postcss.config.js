@@ -4,12 +4,12 @@ module.exports = {
         require('css-mqpacker'),
         require('cssnano')({
             preset: [
-            'default', {
-                discardComments: {
-                    removeAll: true
-                }
-            }
-            ]
-        })
-    ]
-}
+                'default', {
+                    discardComments: {
+                        removeAll: true,
+                    },
+                },
+            ],
+        }),
+    ],
+};

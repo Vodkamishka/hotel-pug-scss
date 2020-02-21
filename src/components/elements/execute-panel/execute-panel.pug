@@ -1,4 +1,5 @@
-mixin execute-panel(title, result)
+mixin execute-panel(props)
+    - const {title, result} = props
     .execute-panel
         .execute-panel__title=title
         .execute-panel__increment-decrement

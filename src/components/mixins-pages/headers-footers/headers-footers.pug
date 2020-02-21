@@ -6,14 +6,14 @@ include ../../elements/social/social.pug
 
 mixin headers-footers (options)
     - const {header, footer, copyright} = options
-    - let {classHeader, classHeader2, titlesNavbar, log, register} = header
+    - const {classHeader2, titlesNavbar} = header
     .headers-footers
         .headers-footers__logo-wrapper
             +logo-wrapper
         .headers-footers__section.headers-footers__section_first
-            +header(classHeader, titlesNavbar, log, register)
+            +header(header)
         .headers-footers__section.headers-footers__section_second
-            +header(classHeader2, titlesNavbar)
+            +header({classHeader: classHeader2, titlesNavbar})
         .headers-footers__section.headers-footers__section_third
             +footer(footer)
         .headers-footers__section.headers-footers__section_fourth

@@ -6,7 +6,6 @@ mixin search-room-filter-images
         .search-room-filter-images__title Номера, которые мы для вас подобрали
         .search-room-filter-images__rooms-wrapper
             for element in [{img: 888, firstNumberPrice: 9, price: 990, stars: 5, comments: 145, clas: ''}, {img: 840, firstNumberPrice: 9, price: 990, stars: 4, comments: 65, clas: 'luxe_not-show'}, {img: 980, firstNumberPrice: 8, price: 500, stars: 3, comments: 35, clas: ''}, {img: 856, firstNumberPrice: 7, price: 300, stars: 5, comments: 19, clas: 'luxe_not-show'}, {img: 740, firstNumberPrice: 6, price: '000', stars: 4, comments: 44, clas: 'luxe_not-show'}, {img: 982, firstNumberPrice: 5, price: 800, stars: 3, comments: 56, clas: 'luxe_not-show'}, {img: 678, firstNumberPrice: 5, price: 500, stars: 5, comments: 45, clas: 'luxe_not-show'}, {img: 450, firstNumberPrice: 5, price: 300, stars: 4, comments: 39, clas: 'luxe_not-show'}, {img: 350, firstNumberPrice: 5, price: '000', stars: 3, comments: 77, clas: 'luxe_not-show'}, {img: 666, firstNumberPrice: 5, price: '000', stars: 5, comments: 25, clas: 'luxe_not-show'}, {img: 444, firstNumberPrice: 5, price: '000', stars: 3, comments: 15, clas: 'luxe_not-show'}, {img: 352, firstNumberPrice: 5, price: '000', stars: 3, comments: 55, clas: 'luxe_not-show'}]
-                - const {img, firstNumberPrice, price, stars, comments, clas} = element
-                    +card-room(img, firstNumberPrice, price, stars, comments, clas)
+                +card-room(element)
         .search-room-filter-images__pagination
             +pagination

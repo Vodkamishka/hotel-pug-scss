@@ -5,12 +5,11 @@ include ../../common/login/login
 
 mixin sign-in(options)
     - const {header, footer, copyright} = options
-    - let {classHeader, titlesNavbar, log, register} = header
     .sign-in
-        +header(classHeader, titlesNavbar,log, register)
+        +header(header)
         .sign-in__image-wrapper
             +login 
-        +footer (footer)
+        +footer(footer)
         +copyright(copyright)
 
 

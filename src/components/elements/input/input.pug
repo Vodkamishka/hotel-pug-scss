@@ -1,10 +1,11 @@
 include ../label/label
 
-mixin input (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='')
+mixin input (props)
+    - const {placeholder, classInput, leftLabel} = props
     .input
         if leftLabel
             .input__label
-                +label(classLabel, leftLabel, rightLabel)
+                +label(props)
         input(type="text" placeholder=placeholder class=`input__input input__${classInput}`)
 
    

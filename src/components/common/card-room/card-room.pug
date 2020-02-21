@@ -1,7 +1,8 @@
 include ../../elements/luxe/luxe
 include ../../elements/comments-stars/comments-stars
 
-mixin card-room(img, firstNumberPrice, price, stars, comments, clas)
+mixin card-room(props)
+    - const {img} = props
     .card-room
         .card-room__image
             img(src=`/public/assets/img/rooms/${img}.jpg` class='.card-room__img')
@@ -16,6 +17,6 @@ mixin card-room(img, firstNumberPrice, price, stars, comments, clas)
                 .card-room__ball.card-room__ball_empty
                 .card-room__ball.card-room__ball_empty
         .card-room__luxe
-            +luxe(img, firstNumberPrice, price, clas)
+            +luxe(props)
         .card-room__stars
-            +comments-stars(stars,comments)
+            +comments-stars(props)

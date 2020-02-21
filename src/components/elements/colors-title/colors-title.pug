@@ -1,4 +1,5 @@
-mixin colors-title (letter, title, name)
-    .colors-title(class=`colors-title_${name}`)
-        p.colors-title__letter=letter
-        p.colors-title__title=title
+mixin colors-title (props)
+    - const {tag, text, className} = props
+    .colors-title(class=`colors-title_${className}`)
+        p.colors-title__letter=tag
+        p.colors-title__title=text

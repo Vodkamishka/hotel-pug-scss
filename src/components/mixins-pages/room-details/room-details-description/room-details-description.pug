@@ -10,23 +10,23 @@ mixin room-details-description(options)
             .room-details-description__room-information 
                 .room-details-description__title Сведения о номере
                     .room-details-description__wrapper-info-room 
-                        +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+                        +info-room({img: 'insert_emoticon', title: 'Комфорт', text: 'Шумопоглащающие стены'})
                     .room-details-description__wrapper-info-room 
-                        +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+                        +info-room({img:'location_city', title: 'Удобство', text: 'Окно в каждой из спален'})
                     .room-details-description__wrapper-info-room 
-                        +info-room('whatshot', 'Уют', 'Номер оснащен камином')
+                        +info-room({img: 'whatshot', title: 'Уют', text: 'Номер оснащен камином'})
             .room-details-description__comments-consumer 
                 .room-details-description__title 
                     .room-details-description__reviews
                         .room-details-description__review Отзывы посетителей номера
                         .room-details-description__review 2 отзыва
                     .room-details-description__wrapper-consumer-comments
-                        +consumer-comments("man","Мурад Сарафанов", "5 дней назад", 12, textOne)
+                        +consumer-comments({img: "man", name: "Мурад Сарафанов", term: "5 дней назад", like: 12, text: textOne})
                     .room-details-description__wrapper-consumer-comments.room-details-description__wrapper-consumer-comments_second
-                        +consumer-comments("girl","Патрисия Стёклышкова", "Неделю назад", 2, textTwo)
+                        +consumer-comments({img: "girl", name: "Патрисия Стёклышкова", term: "Неделю назад", like: 2, text: textTwo})
             .room-details-description__rules 
                 .room-details-description__rules-title Правила
-                +bullet-list(bulletList)    
+                +bullet-list({bulletList})    
         .room-details-description__circle-diagram
             .room-details-description__room-impressions
                 .room-details-description__title Впечатления от номера

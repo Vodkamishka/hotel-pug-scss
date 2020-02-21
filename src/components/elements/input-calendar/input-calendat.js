@@ -42,7 +42,7 @@ class DatePickerHere {
     );
     const apply = document.querySelector('[data-action="apply"]');
     apply.addEventListener('click', () => {
-      $('.datepicker').css('left', '-10000px');
+      $('.datepicker').css('left', '-625rem');
     });
   }
 }

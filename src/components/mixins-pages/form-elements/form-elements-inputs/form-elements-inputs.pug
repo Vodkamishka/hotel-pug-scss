@@ -6,31 +6,31 @@ include ../../../elements/dropdowns-room-selection/dropdowns-room-selection
 mixin form-elements-inputs(list)
     .form-elements-inputs
         .form-elements-inputs__container.form-elements-inputs__container_first
-            +input('Email', 'input_no-modifier', 'long', 'text field', 'default')
+            +input({placeholder:'Email', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'text field', rightLabel: 'default'})  
         .form-elements-inputs__container.form-elements-inputs__container_second  
-            +input('This is pretty awesome', 'input_hover', 'long', 'text field', 'hover / focus')
+            +input({placeholder: 'This is pretty awesome', classInput: 'input_hover', classLabel: 'long', leftLabel: 'text field', rightLabel: 'hover / focus'})
         .form-elements-inputs__container.form-elements-inputs__container_third
-            +input('Сколько гостей', 'input_long', 'long', 'dropdown', 'default')
+            +input({placeholder: 'Сколько гостей', classInput: 'input_long', classLabel: 'long', leftLabel: 'dropdown', rightLabel: 'default'})
         .form-elements-inputs__container.form-elements-inputs__container_fourth
-            +input('ДД.ММ.ГГГГ', 'input_no-modifier', 'long', 'masked text field', 'default')
+            +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'masked text field', rightLabel: 'default'})
         .form-elements-inputs__container.form-elements-inputs__container_sixth
             .form-elements-inputs__dropdown
-                +input('ДД.ММ.ГГГГ','input_small', 'small', 'date dropdown')
+                +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_small', classLabel: 'small', leftLabel: 'date dropdown'})
             .form-elements-inputs__dropdown
-                +input('19.08.2019','input_small', 'small', 'date dropdown')
+                +input({placeholder: '19.08.2019', classInput: 'input_small', classLabel: 'small', leftLabel:'date dropdown'})
         .form-elements-inputs__container.form-elements-inputs__container_seventh
-            +input('19 авг - 23 авг','input_little', 'little', 'filter date dropdown')
+            +input({placeholder: '19 авг - 23 авг', classInput: 'input_little', classLabel: 'little', leftLabel:'filter date dropdown'})
         .form-elements-inputs__container.form-elements-inputs__container_eighth
-            +input('Email', 'input_arrow', 'little', 'subscription text field')
+            +input({placeholder: 'Email', classInput: 'input_arrow', classLabel: 'little', leftLabel:'subscription text field'})
         .form-elements-inputs__container.form-elements-inputs__container_ninth    
-            +dropdowns-room-selection('2 спальни, 2 кровати', 'input_little input__input_border', 'little', 'dropdown', 'default', 'dropdowns-room-selection_hide')
+            +dropdowns-room-selection({placeholder:'2 спальни, 2 кровати',  classInput: 'input_little input__input_border', classLabel: 'little', leftLabel: 'dropdown', rightLabel: 'default', classShowDropdown: 'dropdowns-room-selection_hide'})
         .form-elements-inputs__container.form-elements-inputs__container_tenth
-            +dropdowns-room-selection('2 спальни, 2 кровати', 'input_little input__input_border', 'little', 'dropdown', 'expanded')
+            +dropdowns-room-selection({placeholder:'2 спальни, 2 кровати',  classInput: 'input_little input__input_border', classLabel: 'little', leftLabel: 'dropdown', rightLabel: 'expanded'})
         .form-elements-inputs__container.form-elements-inputs__container_eleventh
-            +checkbox-room-emenities(list, 'expandable checkbox list', 'checkbox-room-emenities_hide')
+            +checkbox-room-emenities({list, title: 'expandable checkbox list', clas: 'checkbox-room-emenities_hide'})
         .form-elements-inputs__container
-            +checkbox-room-emenities(list, 'expandable checkbox list', )
+            +checkbox-room-emenities({list, title: 'expandable checkbox list'})
         .form-elements-inputs__container.form-elements-inputs__container_incert-emotion
-            +info-room('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
+            +info-room({img:'insert_emoticon', title: 'Комфорт', text: 'Шумопоглащающие стены'})
         .form-elements-inputs__container.form-elements-inputs__container_location-city
-            +info-room('location_city', 'Удобство', 'Окно в каждой из спален')
+            +info-room({img:'location_city', title: 'Удобство', text: 'Окно в каждой из спален'})

@@ -1,12 +1,13 @@
 include ../label/label.pug
 include ../../common/datepicker-here/datepicker-here
 
-mixin input-calendar (placeholder, classLabel, leftLabel, placeholder2, classLabel2, leftLabel2, id, id2, inline )
+mixin input-calendar (props)
+    - const {placeholder, classLabel, leftLabel, placeholder2, classLabel2, leftLabel2, id, id2, inline} = props
     .input-calendar
         .input-calendar__label
-            +label(classLabel, leftLabel, '')
-        +datepicker-here(placeholder, id, inline)
+            +label(props)
+        +datepicker-here(props)
     .input-calendar
         .input-calendar__label
-            +label(classLabel2, leftLabel2, '')
-        +datepicker-here(placeholder2, id2, inline)    
+            +label({classLabel: classLabel2, leftLabel: leftLabel2})
+        +datepicker-here({placeholder: placeholder2, id: id2, inline})    

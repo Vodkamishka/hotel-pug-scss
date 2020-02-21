@@ -1,4 +1,5 @@
-mixin info-room(img, title, text)
+mixin info-room(props)
+    - const {img, title, text} = props
     .info-room
         .info-room__image
             img(src=`/public/assets/img/logotypes/${img}.svg` alt='info-room' class='info-room__img')

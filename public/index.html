@@ -5,17 +5,573 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="keywords" content="Demo">
-    <meta name="description" content="Demo">
-    <link rel="icon" href="favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Demo</title>
+    <meta name="keywords" content="Form elements">
+    <meta name="description" content="Form elements">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{&quot;default&quot;:&quot;assets/favicons/safari-pinned-tab.svg&quot;}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <title>Form elements</title>
   <link href="main.css" rel="stylesheet"></head>
   <body>
-    <div class="demo">
-      <div class="demo__see">See demo</div>
-      <div class="demo__title">Website Pages</div><a class="demo__a" href="public/landing.html" target="_blank">Landing Page</a><a class="demo__a" href="public/registration.html" target="_blank">Registration</a><a class="demo__a" href="public/room-details.html" target="_blank">Room details</a><a class="demo__a" href="public/search-room-filter.html" target="_blank">Search room/ Filter</a><a class="demo__a" href="public/sign-in.html" target="_blank">Sign in</a>
-      <div class="demo__title">Ui Kit </div><a class="demo__a" href="public/cards.html" target="_blank">Cards</a><a class="demo__a" href="public/colors-type.html" target="_blank">Colors &amp; type</a><a class="demo__a" href="public/form-elements.html" target="_blank">Form elements</a><a class="demo__a" href="public/headers-footers.html" target="_blank">Headers &amp; footers</a>
+    <div class="form-elements">
+      <div class="form-elements__logo-wrapper">
+        <div class="logo-wrapper"><img src="/public/assets/img/logotypes/group.svg" alt="group"></div>
+      </div>
+      <div class="form-elements__column">
+        <div class="form-elements-inputs">
+          <div class="form-elements-inputs__container form-elements-inputs__container_first">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label__text" for="forLab">text field</label>
+                  <label class="label__text" for="forLab">default</label>
+                </div>
+              </div>
+              <input class="input__input input__input_no-modifier" type="text" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_second"> 
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label__text" for="forLab">text field</label>
+                  <label class="label__text" for="forLab">hover / focus</label>
+                </div>
+              </div>
+              <input class="input__input input__input_hover" type="text" placeholder="This is pretty awesome">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_third">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label__text" for="forLab">dropdown</label>
+                  <label class="label__text" for="forLab">default</label>
+                </div>
+              </div>
+              <input class="input__input input__input_long" type="text" placeholder="Сколько гостей">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_fourth">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_long">
+                  <label class="label__text" for="forLab">masked text field</label>
+                  <label class="label__text" for="forLab">default</label>
+                </div>
+              </div>
+              <input class="input__input input__input_no-modifier" type="text" placeholder="ДД.ММ.ГГГГ">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_sixth">
+            <div class="form-elements-inputs__dropdown">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_small">
+                    <label class="label__text" for="forLab">date dropdown</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_small" type="text" placeholder="ДД.ММ.ГГГГ">
+              </div>
+            </div>
+            <div class="form-elements-inputs__dropdown">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_small">
+                    <label class="label__text" for="forLab">date dropdown</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_small" type="text" placeholder="19.08.2019">
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_seventh">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_little">
+                  <label class="label__text" for="forLab">filter date dropdown</label>
+                  <label class="label__text" for="forLab"></label>
+                </div>
+              </div>
+              <input class="input__input input__input_little" type="text" placeholder="19 авг - 23 авг">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_eighth">
+            <div class="input">
+              <div class="input__label">
+                <div class="label label_little">
+                  <label class="label__text" for="forLab">subscription text field</label>
+                  <label class="label__text" for="forLab"></label>
+                </div>
+              </div>
+              <input class="input__input input__input_arrow" type="text" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_ninth">   
+            <div class="dropdowns-room-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_little">
+                    <label class="label__text" for="forLab">dropdown</label>
+                    <label class="label__text" for="forLab">default</label>
+                  </div>
+                </div>
+                <input class="input__input input__input_little input__input_border" type="text" placeholder="2 спальни, 2 кровати">
+              </div>
+              <div class="dropdowns-room-selection__container-execute dropdowns-room-selection_hide">
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Спальни</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Кровати</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Ванные комнаты</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_tenth">
+            <div class="dropdowns-room-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_little">
+                    <label class="label__text" for="forLab">dropdown</label>
+                    <label class="label__text" for="forLab">expanded</label>
+                  </div>
+                </div>
+                <input class="input__input input__input_little input__input_border" type="text" placeholder="2 спальни, 2 кровати">
+              </div>
+              <div class="dropdowns-room-selection__container-execute">
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Спальни</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Кровати</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-room-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Ванные комнаты</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_eleventh">
+            <div class="checkbox-room-emenities">   
+              <div class="checkbox-room-emenities__mainline">
+                <div class="checkbox-room-emenities__title">expandable checkbox list</div>
+                <div class="checkbox-room-emenities__image">    </div>
+              </div>
+              <div class="checkbox-room-emenities__list checkbox-room-emenities_hide">
+                <div class="checkbox-list">
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Завтрак</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Письменный стол</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Стул для кормления</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Кроватка</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container">
+            <div class="checkbox-room-emenities">   
+              <div class="checkbox-room-emenities__mainline">
+                <div class="checkbox-room-emenities__title">expandable checkbox list</div>
+                <div class="checkbox-room-emenities__image checkbox-room-emenities__image_expand"></div>
+              </div>
+              <div class="checkbox-room-emenities__list">
+                <div class="checkbox-list">
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Завтрак</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Письменный стол</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Стул для кормления</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox" checked>
+                    <label class="checkbox_label" for="forText">Кроватка</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Телевизор</label>
+                  </div>
+                  <div class="checkbox-list__input">
+                    <input class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="forText">Шампунь</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_incert-emotion">
+            <div class="info-room">
+              <div class="info-room__image"><img class="info-room__img" src="/public/assets/img/logotypes/insert_emoticon.svg" alt="info-room"></div>
+              <div class="info-room__title-text">
+                <div class="info-room__title">Комфорт</div>
+                <div class="info-room__text">Шумопоглащающие стены</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-inputs__container form-elements-inputs__container_location-city">
+            <div class="info-room">
+              <div class="info-room__image"><img class="info-room__img" src="/public/assets/img/logotypes/location_city.svg" alt="info-room"></div>
+              <div class="info-room__title-text">
+                <div class="info-room__title">Удобство</div>
+                <div class="info-room__text">Окно в каждой из спален</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-elements__column">
+        <div class="form-elements-checkbox-radio">
+          <div class="form-elements-checkbox-radio__checkbox">
+            <div class="checkbox">
+              <div class="checkbox__title">checkbox buttons</div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox">
+                <label class="checkbox_label" for="text">Можно курить</label>
+              </div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox" checked>
+                <label class="checkbox_label" for="text">Можно с питомцaми</label>
+              </div>
+              <div class="checkbox__input">
+                <input class="checkbox_input" type="checkbox" checked>
+                <label class="checkbox_label" for="text">Можно пригласить гостей (до 10 человек)</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__radio">
+            <div class="radio">
+              <div class="radio__title">Radio Buttons</div>
+              <div class="radio__buttons">
+                <label class="radio__buttons-container">Мужчина
+                  <input class="radio__input" type="radio" checked name="gender"><span class="radio__checkmark"></span>
+                </label>
+                <label class="radio__buttons-container">Женщина    
+                  <input class="radio__input" type="radio" name="gender"><span class="radio__checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__toggle">
+            <div class="toggle">
+              <div class="toggle__title">Toggle</div>
+              <div class="toggle__buttons">
+                <div class="toggle__button">
+                  <div class="toggle-one">
+                    <input class="toggle-one__input" type="checkbox" checked>
+                    <label for="offer">Получать спецпредложения</label>
+                  </div>
+                </div>
+                <div class="toggle__button">
+                  <div class="toggle-one">
+                    <input class="toggle-one__input" type="checkbox">
+                    <label for="offer">Получать спецпредложения</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__like">
+            <div class="like-button"> 
+              <div class="like-button__title">like button</div>
+              <div class="like-button__likes">
+                <div class="like like_left"><img class="like__image" src="/public/assets/img/icons/favorite_border.svg" alt="favorite_border"><span>2</span></div>
+                <div class="like like_right"><img class="like__image" src="/public/assets/img/icons/favorite.svg" alt="favorite"><span>12</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__rate">
+            <div class="rate">
+              <div class="rate__title">Rate Button</div>
+              <div class="rate__rate">
+                <div class="rate__stars">
+                  <div class="stars">
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_second"></div>
+                  </div>
+                </div>
+                <div class="rate__stars">
+                  <div class="stars">
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                    <div class="stars__image stars__image_first"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__dropdown">
+            <div class="dropdowns-guest-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_long">
+                    <label class="label__text" for="forLab">dropdown</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_long input_border" type="text" placeholder="Сколько гостей">
+              </div>
+              <div class="dropdowns-guest-selection__container-execute">
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Взрослые</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Дети</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Младенцы</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__buttons">
+                  <div class="dropdowns-guest-selection__apply">Применить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__rich">
+            <div class="checkbox-rich"> 
+              <div class="checkbox-rich__title">Rich Checkbox Buttons</div>
+              <div class="checkbox-rich__input">
+                <input class="checkbox_input" type="checkbox">
+                <div class="checkbox-rich__input-span">Широкий коридор</div>
+              </div>
+              <div class="checkbox-rich__text">Ширина коридоров в номере не менее 91 см.</div>
+              <div class="checkbox-rich__input">
+                <input class="checkbox_input" type="checkbox">
+                <div class="checkbox-rich__input-span">Помошник для инвалидов</div>
+              </div>
+              <div class="checkbox-rich__text checkbox-rich__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
+            </div>
+          </div>
+          <div class="form-elements-checkbox-radio__murad">
+            <div class="consumer-comments">
+              <div class="consumer-comments__image-wrapper">
+                <div class="consumer-comments__img"></div>
+                <div class="consumer-comments__name-term">
+                  <div class="consumer-comments__name">Мурад Сарафанов</div>
+                  <div class="consumer-comments__term">5 дней назад</div>
+                </div>
+              </div>
+              <div class="consumer-comments__likes">
+                <div class="like like_right"><img class="like__image" src="/public/assets/img/icons/favorite.svg" alt="favorite"><span>12</span></div>
+                <div class="consumer-comments__text">
+                  <p class="consumer-comments__text-review">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-elements__column">
+        <div class="form-elements-slider-buttons">
+          <div class="form-elements-slider-buttons__range-slider">
+            <div class="slider js-slider"> 
+              <div class="slider__range js-slider__range">
+                <div class="slider__title js-slider__title">Range Slider</div>
+                <div class="slider__size js-slider__size"></div>
+              </div>
+              <div class="slider__inner js-slider__inner"></div>
+            </div>
+          </div>
+          <div class="form-elements-slider-buttons__buttons">
+            <div class="form-elements-slider-buttons__buttons-title">Buttons</div>
+            <div class="form-elements-slider-buttons__buttons-group">
+              <button class="button button_short button_short_purple">click me</button>
+              <button class="button button_short button_short_shade-purple">click me</button>
+              <button class="button button_short button_short_white">click me</button>
+              <button class="button button_short button_short_shade-white">click me</button>
+            </div>
+            <div class="form-elements-slider-buttons__buttons-clickmes"><span class="form-elements-slider-buttons__buttons-clickme">click me</span><span class="form-elements-slider-buttons__buttons-clickme">click me</span></div>
+          </div>
+          <div class="form-elements-slider-buttons__button">
+            <button class="button button_long"><span class="button__text">Перейти к оплате</span></button>
+          </div>
+          <div class="form-elements-slider-buttons__pagination">
+            <div class="pagination">
+              <div class="pagination__title">pagination</div>
+              <div class="pagination__numbers"><span class="pagination__numbers-span">1</span><span class="pagination__numbers-span">2</span><span class="pagination__numbers-span">3</span><span class="pagination__numbers-span">...</span><span class="pagination__numbers-span">15</span>
+                <div class="pagination__img-container"><img src="/public/assets/img/icons/arrow_forward_white.svg" alt="arrow-right"></div>
+              </div>
+            </div>
+            <div class="pagination__text">1 – 12 из 100+ вариантов аренды   </div>
+          </div>
+          <div class="form-elements-slider-buttons__dropdown">
+            <div class="dropdowns-guest-selection">
+              <div class="input">
+                <div class="input__label">
+                  <div class="label label_long">
+                    <label class="label__text" for="forLab">dropdown</label>
+                    <label class="label__text" for="forLab"></label>
+                  </div>
+                </div>
+                <input class="input__input input__input_long input_border" type="text" placeholder="Сколько гостей">
+              </div>
+              <div class="dropdowns-guest-selection__container-execute">
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Взрослые</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">2</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Дети</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">1</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__wrapper-execute-panel">
+                  <div class="execute-panel">
+                    <div class="execute-panel__title">Младенцы</div>
+                    <div class="execute-panel__increment-decrement">
+                      <div class="execute-panel__decrement">-</div>
+                      <div class="execute-panel__result">0</div>
+                      <div class="execute-panel__increment">+</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdowns-guest-selection__buttons">
+                  <div class="dropdowns-guest-selection__clear">Очистить</div>
+                  <div class="dropdowns-guest-selection__apply">Применить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements-slider-buttons__bullet">
+            <div class="bullet-list">
+              <div class="bullet-list__title">bullet list</div>
+              <ul class="bullet-list__ul"> 
+                <li class="bullet-list__li">Нельзя с питомцами</li>
+                <li class="bullet-list__li">Без вечеринок и мероприятий</li>
+                <li class="bullet-list__li">Время прибытия — после 13:00, а выезд до 12:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   <script type="text/javascript" src="main.js"></script></body>
 </html>

@@ -1,4 +1,5 @@
-mixin datepicker-here(placeholder, id, inline = false)
+mixin datepicker-here(props)
+    - const {placeholder, id, inline} = props
     if inline === false
         input(type='text' class='datepicker-here' data-language='ru', placeholder= placeholder  data-position='bottom center' id=id inline=inline)
     else

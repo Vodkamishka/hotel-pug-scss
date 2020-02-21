@@ -1,8 +1,9 @@
-mixin luxe (number, firstNumberPrice, price, clas, fontSize)
+mixin luxe (props)
+    - let {img, firstNumberPrice, price, clas, fontSize} = props
     .luxe
         .luxe__room-number
             span.luxe__room-number-text №
-            span.luxe__room-number-text(style={'font-size': `${fontSize}px`})= number
+            span.luxe__room-number-text(style={'font-size': `${fontSize}rem`})= img
             span.luxe__room-number-text(class=clas) люкс
         .luxe__price
             span.luxe__price-text= firstNumberPrice

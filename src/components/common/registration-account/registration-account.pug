@@ -8,20 +8,20 @@ mixin registration-account
     .registration-account
         .registration-account__title Регистрация аккаунта
         .registration-account__two-fields
-            +input('Имя')
-            +input('Фамилия')
+            +input({placeholder:'Имя'})
+            +input({placeholder:'Фамилия'})
         +radio 
         .registration-account__bithday
-            +input('ДД.ММ.ГГГГ', 'input_no-modifier', 'long', 'Дата рождения')
+            +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'Дата рождения'})
         .registration-account__two-fields
-            +input('Email','input_no-modifier', 'long', 'Данные для входа в сервис')
-            +input('Пароль','input_no-modifier')
+            +input({placeholder: 'Email', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'Данные для входа в сервис'})
+            +input({placeholder:'Пароль', classInput: 'input_no-modifier'})
         +toggle-one(false)
         .registration-account__button
-            +button('Перейти к оплате')
+            +button({text: 'Перейти к оплате'})
         .registration-account__toxin
             .registration-account__text Уже есть аккаунт на Toxin
-            +button("Войти", "white")
+            +button({text: "Войти", className: "white"})
     
 
     

@@ -10,15 +10,15 @@ mixin search-room-filter-column(options)
     - const {checkboxList, list} = options
     .search-room-filter-column
         .search-room-filter-column__input
-            +input('19 авг - 23 авг','input_little', 'little', 'даты пребывания в отеле')
+            +input({placeholder: '19 авг - 23 авг', classInput: 'input_little', classLabel: 'little', leftLabel: 'даты пребывания в отеле'})
         .search-room-filter-column__dropdowns
-            +dropdowns-guest-selection('3 гостя, 1 младенец', 'input_little', 'little', 'гости', '',  'block', 'dropdowns-guest-selection_hide', 3, 0, 1)
+            +dropdowns-guest-selection({placeholder: '3 гостя, 1 младенец', classInput: 'input_little', classLabel: 'little', leftLabel: 'гости', rightLabel: '', showButtonClear: 'block', classShowDropdown: 'dropdowns-guest-selection_hide', x: 3, y: 0, z: 1})
         .search-room-filter-column__slider
             +slider('Диапазон цены')
             .search-room-filter-column__slider-text Стоимость за сутки пребывания в номере
         +checkbox(checkboxList)
         .search-room-filter-column__checkbox-rich
             +checkbox-rich('доступность')
-        +dropdowns-room-selection('2 спальни,  2 кровати', 'input_little input__input_border', 'little', 'удобства номера', '',  'dropdowns-room-selection_hide')
+        +dropdowns-room-selection({placeholder: '2 спальни,  2 кровати', classInput: 'input_little input__input_border', classLabel: 'little', leftLabel: 'удобства номера', rightLabel: '', classShowDropdown: 'dropdowns-room-selection_hide'})
         .search-room-filter-column__checkbox 
-            +checkbox-room-emenities(list, 'дополнительные удобства', 'checkbox-room-emenities_hide')   
+            +checkbox-room-emenities({list, title: 'дополнительные удобства', clas: 'checkbox-room-emenities_hide'})   

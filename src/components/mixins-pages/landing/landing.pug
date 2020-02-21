@@ -5,9 +5,8 @@ include ../../common/copyright/copyright
 
 mixin landing (options)
     - const {header, footer, copyright} = options
-    - let {classHeader, titlesNavbar, log, register} = header
     .landing
-        +header(classHeader, titlesNavbar, log, register)
+        +header(header)
         .landing__image-wrapper
             .landing__search-rooms
                 +search-rooms

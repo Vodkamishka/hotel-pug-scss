@@ -7,21 +7,21 @@ class View {
   }
 
   create() {
-    const content = `<div class="slider__between"></div>
-                            <div class="slider__btn_first" style='margin-left: 4.6875rem'></div>
-                            <div class="slider__btn_second" style='margin-left: 10rem'></div>
+    const content = `<div class="slider__between js-slider__between"></div>
+                            <div class="slider__btn_first js-slider__btn_first" style='margin-left: 4.6875rem'></div>
+                            <div class="slider__btn_second js-slider__btn_second" style='margin-left: 10rem'></div>
                     `;
-    this.slider.querySelector('.slider__inner').innerHTML = content;
+    this.slider.querySelector('.js-slider__inner').innerHTML = content;
   }
 }
 class Model {
   constructor(el) {
     this.slider = el;
-    this.slider_inner = el.querySelector('.slider__inner');
-    this.between = el.querySelector('.slider__between');
-    this.button1 = el.querySelector('.slider__btn_first');
-    this.button2 = el.querySelector('.slider__btn_second');
-    this.size = el.querySelector('.slider__size');
+    this.slider_inner = el.querySelector('.js-slider__inner');
+    this.between = el.querySelector('.js-slider__between');
+    this.button1 = el.querySelector('.js-slider__btn_first');
+    this.button2 = el.querySelector('.js-slider__btn_second');
+    this.size = el.querySelector('.js-slider__size');
     this.size.innerHTML = `${5000}&#8381 - ${10000}&#8381`;
   }
 

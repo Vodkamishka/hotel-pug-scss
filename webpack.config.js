@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -36,17 +37,32 @@ module.exports = {
         },
       },
       {
-        test: /\.(gif|png|jpeg|svg|jpg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-        },
+        test: /\.(jpg|png|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './assets/favicons',
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 70,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
+          outputPath: './assets/fonts',
         },
       },
     ],
@@ -92,12 +108,16 @@ module.exports = {
       template: './src/sign-in.pug',
     }),
     new HTMLWebpackPlugin({
-      template: './src/demo.pug',
+      template: './src/form-elements.pug',
     }),
     new CopyWebpackPlugin([
       { from: './src/assets/img', to: './assets/img' },
       { from: './src/assets/fonts', to: './assets/fonts' },
-      { from: './src/favicon.ico', to: './favicon.ico' },
+      { from: './src/assets/favicons', to: './assets/favicons' },
     ]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
   ],
 };

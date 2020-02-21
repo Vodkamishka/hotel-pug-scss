@@ -7,7 +7,8 @@ include ../../common/card-room/card-room.pug
 include ../../common/datepicker-here/datepicker-here
 
 
-mixin cards
+mixin cards(options)
+    - const {datepickerHere, cardRoomFirst, cardRoomSecond} = options
     .cards
         .cards__logo-wrapper
             +logo-wrapper
@@ -21,8 +22,8 @@ mixin cards
             .cards__login
                 +login
         .cards__wrapper
-            +datepicker-here('placeholder', 'new', true)
+            +datepicker-here(datepickerHere)
             .cards__middleware-card
-                +card-room(888, 9, 990, 5, 145)
-            +card-room(840, 9, 990, 4, 65, "luxe_not-show")
+                +card-room(cardRoomFirst)
+            +card-room(cardRoomSecond) 
 

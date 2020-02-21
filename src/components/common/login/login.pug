@@ -6,10 +6,10 @@ mixin login
     .login
         .login__title Войти
         .login__fields
-            +input("Email")
-            +input("Пароль")
+            +input({placeholder: "Email"})
+            +input({placeholder: "Пароль"})
         .login__button
-            +button("Войти")
+            +button({text: "Войти"})
         .login__toxin
             .login__text Нет аккаунта на Toxin?
-            +button("Создать", "white")
+            +button({text: "Создать", className: "white"})

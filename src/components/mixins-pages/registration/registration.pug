@@ -3,13 +3,12 @@ include ../../common/copyright/copyright
 include ../../common/header/header
 include ../../common/registration-account/registration-account 
 
-mixin registration (options)
+mixin registration(options)
     - const {header, footer, copyright} = options
-    - let {classHeader, titlesNavbar, log, register} = header
     .registration
-        +header (classHeader, titlesNavbar, log, register)
+        +header(header)
         .registration__image-wrapper
             +registration-account       
-        +footer (footer)
+        +footer(footer)
         +copyright(copyright)
 

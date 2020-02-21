@@ -1,7 +1,8 @@
 include ../../elements/buttons/buttons-login-register/buttons-login-register
 include ../navbar/navbar
 
-mixin header (classHeader, titlesNavbar, log, register)
+mixin header (props)
+    - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header ${classHeader}`)
         .header__image
             img(src='/public/assets/img/logotypes/logo.svg', alt='logo')
@@ -11,5 +12,5 @@ mixin header (classHeader, titlesNavbar, log, register)
             if classHeader === 'header_eng_second' 
                 span.header__span Cosmin Negoita  
             else
-                +buttons-login-register(log, register)
+                +buttons-login-register(props)
                 

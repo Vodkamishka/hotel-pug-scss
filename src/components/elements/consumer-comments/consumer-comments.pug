@@ -1,6 +1,7 @@
 include ../../elements/like/like
 
-mixin consumer-comments(img, name, term, like, text)
+mixin consumer-comments(props)
+    - const {img, name, term, like, text} = props
     .consumer-comments
         .consumer-comments__image-wrapper
             if img === 'man'

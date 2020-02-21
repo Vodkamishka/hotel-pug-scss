@@ -1,4 +1,5 @@
-mixin bullet-list(bulletList, title)
+mixin bullet-list(props)
+    - const {bulletList, title} = props
     .bullet-list
         if title
             .bullet-list__title=title

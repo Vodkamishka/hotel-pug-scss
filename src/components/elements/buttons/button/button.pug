@@ -1,4 +1,5 @@
-mixin button (text, className)
+mixin button (props)
+    - const {text, className} = props
     if className
         button(class=`button button_short button_short_${className}`)= text
     else    

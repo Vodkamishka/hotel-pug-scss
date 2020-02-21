@@ -1,6 +1,7 @@
 include ../stars/stars
 
-mixin comments-stars (stars, comments)
+mixin comments-stars (props)
+    - const {stars, comments} = props
     .comments-stars 
         +stars(stars)
         .comments-stars__comments

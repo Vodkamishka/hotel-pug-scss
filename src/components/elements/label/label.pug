@@ -1,4 +1,5 @@
-mixin label (classLabel='', leftLabel='', rightLabel='')
+mixin label (props)
+    - const {classLabel, leftLabel, rightLabel} = props
     .label(class=`label_${classLabel}`)
         label(for="forLab").label__text= leftLabel
         label(for="forLab").label__text= rightLabel

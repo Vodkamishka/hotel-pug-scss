@@ -1,15 +1,20 @@
 include ../input/input
 include ../execute-panel/execute-panel
 
-mixin dropdowns-guest-selection (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', showButtonClear='', classShowDropdown='', x = 0, y = 0, z = 0)
+mixin dropdowns-guest-selection (props)
+    - const {placeholder, classInput, classLabel, leftLabel, rightLabel, showButtonClear, classShowDropdown} = props
+    - let {x, y, z} = props
+    - x = x || 0
+    - y = y || 0
+    - z = z || 0
     .dropdowns-guest-selection
-        +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
+        +input({placeholder, classInput, classLabel, leftLabel, rightLabel})
         .dropdowns-guest-selection__container-execute(class= classShowDropdown)
             - let humans = [{people: 'Взрослые', number: x}, {people: 'Дети', number: y}, {people: 'Младенцы', number: z}]
                 for el in humans
                     - let {people, number} = el
                         .dropdowns-guest-selection__wrapper-execute-panel
-                            +execute-panel(people, number)
+                            +execute-panel({title: people, result: number})
             .dropdowns-guest-selection__buttons
                 if showButtonClear === 'block'
                     .dropdowns-guest-selection__clear Очистить

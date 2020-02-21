@@ -1,6 +1,7 @@
 include ../../elements/input/input.pug
 
-mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
+mixin footer (props)
+    - const {classFooter, titlesFooter, textTop, textBottom, email} = props
     div(class =`footer ${classFooter}`)
         .footer__text-block
             ul.footer__ul   
@@ -15,7 +16,7 @@ mixin footer ({classFooter, titlesFooter, textTop, textBottom, email})
                 for el in textBottom
                     li.footer__li
                         a(href="#" class="footer__a")=el
-                +input(email, "input__input_arrow") 
+                +input({placeholder: email, classInput: "input__input_arrow"}) 
                     
  
         

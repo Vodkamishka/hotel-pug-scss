@@ -1,15 +1,16 @@
 include ../input/input
 include ../execute-panel/execute-panel
 
-mixin dropdowns-room-selection (placeholder='', classInput='', classLabel='', leftLabel='', rightLabel='', classShowDropdown='')
+mixin dropdowns-room-selection (props)
+    - const {placeholder, classInput, classLabel, leftLabel, rightLabel, classShowDropdown} = props
     .dropdowns-room-selection
-        +input(placeholder, classInput, classLabel, leftLabel, rightLabel)
+        +input(props)
         .dropdowns-room-selection__container-execute(class= classShowDropdown)
             - let goods = [{bed: 'Спальни', number: 2}, {bed: 'Кровати', number: 2}, {bed: 'Ванные комнаты', number: 0}]
                 for el in goods
                     - let {bed, number} = el
                     .dropdowns-room-selection__wrapper-execute-panel
-                        +execute-panel(bed, number)
+                        +execute-panel({title: bed, result: number})
             
             
 

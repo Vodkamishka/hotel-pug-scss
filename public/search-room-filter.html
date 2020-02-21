@@ -7,8 +7,13 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta name="keywords" content="search room/ filter">
     <meta name="description" content="search room/ filter">
-    <link rel="icon" href="favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="{&quot;default&quot;:&quot;assets/favicons/safari-pinned-tab.svg&quot;}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
     <title>Search room/ Filter</title>
   <link href="main.css" rel="stylesheet"></head>
   <body>
@@ -105,12 +110,12 @@
               </div>
             </div>
             <div class="search-room-filter-column__slider">
-              <div class="slider"> 
-                <div class="slider__range">
-                  <div class="slider__title">Диапазон цены</div>
-                  <div class="slider__size"></div>
+              <div class="slider js-slider"> 
+                <div class="slider__range js-slider__range">
+                  <div class="slider__title js-slider__title">Диапазон цены</div>
+                  <div class="slider__size js-slider__size"></div>
                 </div>
-                <div class="slider__inner"></div>
+                <div class="slider__inner js-slider__inner"></div>
               </div>
               <div class="search-room-filter-column__slider-text">Стоимость за сутки пребывания в номере</div>
             </div>
@@ -254,7 +259,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">888</span><span class="luxe__room-number-text">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">888</span><span class="luxe__room-number-text">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -285,7 +290,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">840</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">840</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -316,7 +321,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">980</span><span class="luxe__room-number-text">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">980</span><span class="luxe__room-number-text">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">8</span><span class="luxe__price-text">500</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -347,7 +352,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">856</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">856</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">7</span><span class="luxe__price-text">300</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -378,7 +383,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">740</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">740</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">6</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -409,7 +414,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">982</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">982</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">800</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -440,7 +445,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">678</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">678</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">500</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -471,7 +476,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">450</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">450</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">300</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -502,7 +507,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">350</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">350</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -533,7 +538,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">666</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">666</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -564,7 +569,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">444</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">444</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>
@@ -595,7 +600,7 @@
                 </div>
                 <div class="card-room__luxe">
                   <div class="luxe">
-                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedpx;">352</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
+                    <div class="luxe__room-number"><span class="luxe__room-number-text">№</span><span class="luxe__room-number-text" style="font-size:undefinedrem;">352</span><span class="luxe__room-number-text luxe_not-show">люкс</span></div>
                     <div class="luxe__price"><span class="luxe__price-text">5</span><span class="luxe__price-text">000</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
                   </div>
                 </div>

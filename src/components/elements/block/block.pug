@@ -1,6 +1,7 @@
-mixin block (name, text1, text2)
+mixin block (props)
+    - const {background, text, color} = props
     .block
-        .block__squere(class=`block__squere_${name}`)
+        .block__squere(class=`block__squere_${background}`)
         .block__text
-            .block__color-name= text1
-            .block__color-hex= text2
+            .block__color-name= text
+            .block__color-hex= color
