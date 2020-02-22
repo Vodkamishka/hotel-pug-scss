@@ -24,10 +24,10 @@ class Dropdowns {
   setGuestsInInput(result) {
     const array = [];
     const peoples = ['взрослые', 'младенцы'];
-    function returnedTrueWord(name, num) {
+    function returnedTrueWord(name, humansNumber) {
       let word;
+      let num = humansNumber;
       if (num > 20) {
-        // eslint-disable-next-line no-param-reassign
         num %= 10;
       }
       if (num === 0 || (num > 4 && num <= 20)) {
@@ -57,10 +57,10 @@ class Dropdowns {
   setBedsInInput(result) {
     const array = [];
     const rooms = ['Спальни', 'Кровати'];
-    function returnTrueWord(name, num) {
+    function returnTrueWord(name, bedNumbers) {
       let bed;
+      let num = bedNumbers;
       if (num > 20) {
-        // eslint-disable-next-line no-param-reassign
         num %= 10;
       }
       if (num === 0 || (num > 4 && num <= 20)) {
@@ -129,10 +129,9 @@ class Dropdowns {
   clearAll() {
     if (this.clear) {
       this.clear.addEventListener('click', () => {
-        // eslint-disable-next-line no-return-assign
         this.result.forEach((el) => {
-          // eslint-disable-next-line no-param-reassign
-          el.innerHTML = '0';
+          const res = el;
+          res.innerHTML = '0';
         });
         this.input.placeholder = 'Сколько гостей';
         this.drawDecrementAndInput();

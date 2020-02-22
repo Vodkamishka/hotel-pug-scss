@@ -1,9 +1,9 @@
 class DatePickerHere {
   constructor() {
-    this.init();
+    DatePickerHere.init();
   }
 
-  init() {
+  static init() {
     $('#start').datepicker({
       multipleDates: 2,
       range: true,
@@ -19,8 +19,7 @@ class DatePickerHere {
     });
 
     $('#start').datepicker({
-      // eslint-disable-next-line func-names
-      onSelect(fd, _d, _picker) {
+      onSelect(fd) {
         $('#start').val(fd.split('-')[0]);
         $('#end').val(fd.split('-')[1]);
       },
@@ -40,13 +39,12 @@ class DatePickerHere {
     $('.datepicker--buttons').append(
       '<span class=\'datepicker-button\' data-action=\'apply\'>Применить</span>',
     );
-    const apply = document.querySelector('[data-action="apply"]');
-    apply.addEventListener('click', () => {
+    $('.datepicker-button[data-action="apply"]');
+
+    $('.datepicker-button[data-action="apply"]').on('click', () => {
       $('.datepicker').css('left', '-625rem');
     });
   }
 }
 
-$(document).ready(() => {
-  new DatePickerHere();
-});
+$(document).ready(() => new DatePickerHere());

@@ -1,13 +1,7 @@
 {
     "extends": "airbnb/base",
     "rules": {
-        "no-underscore-dangle": "off",
-        "no-new": "off",
-        "no-undef": "off",
-        "no-unused-vars": "off",
-        "linebreak-style": "off",
-        "class-methods-use-this": "off",
-        "max-classes-per-file": "off"
+        "linebreak-style": ["error", "windows"]
     },
     "env": {
         "browser": true,

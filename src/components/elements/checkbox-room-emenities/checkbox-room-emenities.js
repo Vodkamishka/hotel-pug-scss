@@ -1,7 +1,7 @@
 class Checkbox {
-  constructor(el) {
-    this.img = el.querySelector('.checkbox-room-emenities__image');
-    this.list = el.querySelector('.checkbox-room-emenities__list');
+  constructor(checkbox) {
+    this.img = checkbox.querySelector('.checkbox-room-emenities__image');
+    this.list = checkbox.querySelector('.checkbox-room-emenities__list');
     this.addClick();
   }
 
@@ -13,6 +13,6 @@ class Checkbox {
   }
 }
 
-const exp = document.querySelectorAll('.checkbox-room-emenities');
+const checkboxEmentities = document.querySelectorAll('.checkbox-room-emenities');
 
-exp.forEach((el) => new Checkbox(el));
+checkboxEmentities.forEach((checkbox) => new Checkbox(checkbox));
