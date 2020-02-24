@@ -1,24 +1,29 @@
 class Dropdowns {
   constructor(el, width) {
     this.dropdown = el;
-    this.input = el.querySelector('input');
-    this.container = el.querySelector(`.dropdowns-${width}-selection__container-execute`);
-    this.increment = el.querySelectorAll('.execute-panel__increment');
-    this.decrement = el.querySelectorAll('.execute-panel__decrement');
-    this.result = el.querySelectorAll('.execute-panel__result');
-    this.clear = el.querySelector('.dropdowns-guest-selection__clear');
-    this.apply = el.querySelector('.dropdowns-guest-selection__apply');
-    this.className = `dropdowns-${width}-selection_hide`;
+    this.width = width;
     this.init();
   }
 
   init() {
+    this.findDom();
     this.showHideContainer();
     this.calculatedIncrement();
     this.calculatedDecrement();
     this.clearAll();
     this.applyed();
     this.drawDecrementAndInput();
+  }
+
+  findDom() {
+    this.input = this.dropdown.querySelector('input');
+    this.container = this.dropdown.querySelector(`.dropdowns-${this.width}-selection__container-execute`);
+    this.increment = this.dropdown.querySelectorAll('.execute-panel__increment');
+    this.decrement = this.dropdown.querySelectorAll('.execute-panel__decrement');
+    this.result = this.dropdown.querySelectorAll('.execute-panel__result');
+    this.clear = this.dropdown.querySelector('.dropdowns-guest-selection__clear');
+    this.apply = this.dropdown.querySelector('.dropdowns-guest-selection__apply');
+    this.className = `dropdowns-${this.width}-selection_hide`;
   }
 
   setGuestsInInput(result) {
@@ -82,10 +87,12 @@ class Dropdowns {
     this.input.value = `${array.join(', ')}...`;
   }
 
+  hideContainer() {
+    this.container.classList.toggle(this.className);
+  }
+
   showHideContainer() {
-    this.input.addEventListener('click', () => {
-      this.container.classList.toggle(this.className);
-    });
+    this.input.addEventListener('click', () => this.hideContainer());
   }
 
   drawDecrementAndInput() {
@@ -103,47 +110,52 @@ class Dropdowns {
     });
   }
 
+  increased(el) {
+    const result = el.previousElementSibling;
+    result.innerHTML = +result.innerHTML + 1;
+    this.drawDecrementAndInput();
+  }
+
   calculatedIncrement() {
     this.increment.forEach((el) => {
-      el.addEventListener('click', () => {
-        const result = el.previousElementSibling;
-        result.innerHTML = +result.innerHTML + 1;
-
-        this.drawDecrementAndInput();
-      });
+      el.addEventListener('click', () => this.increased(el));
     });
   }
 
+  reduced(el) {
+    const result = el.nextElementSibling;
+    if (result.innerHTML > 0) {
+      result.innerHTML -= 1;
+    }
+    this.drawDecrementAndInput();
+  }
+
   calculatedDecrement() {
-    this.decrement.forEach((el) => {
-      el.addEventListener('click', () => {
-        const result = el.nextElementSibling;
-        if (result.innerHTML > 0) {
-          result.innerHTML -= 1;
-        }
-        this.drawDecrementAndInput();
-      });
+    this.decrement.forEach((el) => el.addEventListener('click', () => this.reduced(el)));
+  }
+
+  clearResult() {
+    this.result.forEach((el) => {
+      const res = el;
+      res.innerHTML = '0';
     });
+    this.input.placeholder = 'Сколько гостей';
+    this.drawDecrementAndInput();
   }
 
   clearAll() {
     if (this.clear) {
-      this.clear.addEventListener('click', () => {
-        this.result.forEach((el) => {
-          const res = el;
-          res.innerHTML = '0';
-        });
-        this.input.placeholder = 'Сколько гостей';
-        this.drawDecrementAndInput();
-      });
+      this.clear.addEventListener('click', () => this.clearResult());
     }
+  }
+
+  classListToggle() {
+    this.container.classList.toggle(this.className);
   }
 
   applyed() {
     if (this.apply !== null) {
-      this.apply.addEventListener('click', () => {
-        this.container.classList.toggle(this.className);
-      });
+      this.apply.addEventListener('click', () => this.classListToggle());
     }
   }
 }
