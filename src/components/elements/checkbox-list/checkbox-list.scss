@@ -2,6 +2,8 @@
 
 .checkbox-list {
   &__input {
-    @include checkbox__input;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
   }
 }

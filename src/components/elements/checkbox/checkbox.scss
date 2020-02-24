@@ -6,7 +6,9 @@
     margin-bottom: 1.034375rem;
   }
   &__input {
-    @include checkbox__input;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
     &:first-child {
       margin-bottom: 0.66rem;
     }

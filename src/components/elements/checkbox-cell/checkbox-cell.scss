@@ -1,0 +1,19 @@
+@import "../../../assets/utils/main";
+
+.checkbox-cell {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.0625rem solid $shade25;
+    border-radius: 0.25rem;
+    margin: 0 0.60625rem 0 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: $white;
+    &:checked {
+      border: 0.0625rem solid $purple;
+      margin: 0 0.625rem 0 0;
+      background: url('/public/assets/img/icons/vector.svg')
+          no-repeat center center,
+        $white;
+    }
+}

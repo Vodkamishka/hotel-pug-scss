@@ -1,6 +1,6 @@
 include ../../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 include ../../../elements/consumer-comments/consumer-comments
-include ../../../elements/checkbox-rich/checkbox-rich
+include ../../../elements/checkbox-buttons/checkbox-buttons
 include ../../../elements/checkbox/checkbox.pug
 include ../../../elements/radio/radio.pug
 include ../../../elements/toggle/toggle.pug
@@ -22,7 +22,7 @@ mixin form-elements-checkbox-radio(checkboxList)
         .form-elements-checkbox-radio__dropdown
             +dropdowns-guest-selection({placeholder: "Сколько гостей", classInput: "input_long input_border", classLabel: 'long', leftLabel: "dropdown"})
         .form-elements-checkbox-radio__rich
-            +checkbox-rich("Rich Checkbox Buttons")
+            +checkbox-buttons("Rich Checkbox Buttons")
         .form-elements-checkbox-radio__murad
             - let textOne = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей. '
             +consumer-comments({img: "man", name: "Мурад Сарафанов", term: "5 дней назад", like: 12, text: textOne})

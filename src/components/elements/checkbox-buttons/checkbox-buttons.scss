@@ -1,6 +1,6 @@
 @import "../../../assets/utils/main";
 
-.checkbox-rich {
+.checkbox-buttons {
   &__title {
     @include title-inputs;
     margin-bottom: 1rem;
@@ -17,15 +17,15 @@
   &__text_wide {
     width: 14.375rem;
   }
-
-  &__input {
-    @include checkbox__input;
+  &__input-description {
+    display: flex;
+    align-items: center;
     margin-bottom: 0.3125rem;
-    &-span {
-      font-weight: bold;
-      font-size: 0.875rem;
-      line-height: 1.125rem;
-      color: $shade75;
-    }
+  }
+  &__description {
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $shade75;
   }
 }

@@ -1,7 +1,7 @@
 include ../../../elements/input/input
 include ../../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 include ../../../elements/dropdowns-room-selection/dropdowns-room-selection
-include ../../../elements/checkbox-rich/checkbox-rich
+include ../../../elements/checkbox-buttons/checkbox-buttons
 include ../../../elements/checkbox-room-emenities/checkbox-room-emenities
 include ../../../common/slider/slider
 include ../../../elements/checkbox/checkbox
@@ -18,7 +18,7 @@ mixin search-room-filter-column(options)
             .search-room-filter-column__slider-text Стоимость за сутки пребывания в номере
         +checkbox(checkboxList)
         .search-room-filter-column__checkbox-rich
-            +checkbox-rich('доступность')
+            +checkbox-buttons('доступность')
         +dropdowns-room-selection({placeholder: '2 спальни,  2 кровати', classInput: 'input_little input__input_border', classLabel: 'little', leftLabel: 'удобства номера', rightLabel: '', classShowDropdown: 'dropdowns-room-selection_hide'})
         .search-room-filter-column__checkbox 
             +checkbox-room-emenities({list, title: 'дополнительные удобства', clas: 'checkbox-room-emenities_hide'})   

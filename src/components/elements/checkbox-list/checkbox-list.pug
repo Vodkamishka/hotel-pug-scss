@@ -1,6 +1,9 @@
+include ../checkbox-cell/checkbox-cell
+include ../checkbox-label/checkbox-label
+
 mixin checkbox-list (list)
     .checkbox-list
         for el in list
             .checkbox-list__input
-                input(type="checkbox" checked= el.checked class="checkbox_input")
-                label(for="forText" class="checkbox_label")= el.text
+                +checkbox-cell(el.checked)
+                +checkbox-label(el.text)

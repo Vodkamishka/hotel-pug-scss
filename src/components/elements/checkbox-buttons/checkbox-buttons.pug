@@ -1,0 +1,13 @@
+include ../checkbox-cell/checkbox-cell
+
+mixin checkbox-buttons(text) 
+    .checkbox-buttons  
+        .checkbox-buttons__title= text
+        .checkbox-buttons__input-description
+            +checkbox-cell
+            .checkbox-buttons__description Широкий коридор
+        .checkbox-buttons__text Ширина коридоров в номере не менее 91 см.
+        .checkbox-buttons__input-description
+            +checkbox-cell
+            .checkbox-buttons__description Помошник для инвалидов
+        .checkbox-buttons__text.checkbox-buttons__text_wide На 1 этаже вас встретит специалист и проводит до номера.
