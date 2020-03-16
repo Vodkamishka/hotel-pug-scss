@@ -14,7 +14,7 @@ git clone https://github.com/Vodkamishka/hotel.git
 
 WEBSITE PAGES
 
-Landing page [Демонстрация](https://vodkamishka.github.io/hotel/public/landing.html)
+Landing page [Демонстрация](git commit )
 
 Registration [Демонстрация](https://vodkamishka.github.io/hotel/public/registration.html)
 
