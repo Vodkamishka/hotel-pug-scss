@@ -185,14 +185,23 @@
 @media (max-width: 93.75rem) {
   .room-details-description {
     flex-wrap: wrap;
+    &__reservation {
+      margin-top: 2rem;
+    }
   }
 }
-@media (max-width: 56.25rem) {
+@media (max-width: 59rem) {
   .room-details-description {
     &__room-impressions,
     &__room-escape,
     &__rules {
       margin: 1.25rem 0;
+    }
+    &__room-impressions {
+      margin-bottom: 2rem;
+    }
+    &__reviews {
+      width: 100%;
     }
   }
 }

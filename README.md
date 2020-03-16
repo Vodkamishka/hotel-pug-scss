@@ -1,6 +1,4 @@
-# Hotel Webpack Pug Scss
-
-[Репозиторий](https://github.com/Vodkamishka/hotel)
+# Hotel 
 
 Тестовое задание для Fullstack Development
 
@@ -16,33 +14,31 @@ git clone https://github.com/Vodkamishka/hotel.git
 
 WEBSITE PAGES
 
-Landing page [Демонстрация](https://vodkamishka.github.io/hotel/public/website-pages/landing/landing.html)
+Landing page [Демонстрация](https://vodkamishka.github.io/hotel/public/landing.html)
 
-Registration [Демонстрация](https://vodkamishka.github.io/hotel/public/website-pages/registration/registration.html)
+Registration [Демонстрация](https://vodkamishka.github.io/hotel/public/registration.html)
 
-Room details [Демонстрация](https://vodkamishka.github.io/hotel/public/website-pages/room-details/room-details.html)
+Room details [Демонстрация](https://vodkamishka.github.io/hotel/public/room-details.html)
 
-Search room/Filter [Демонстрация](https://vodkamishka.github.io/hotel/public/website-pages/search-room-filter/search-room-filter.html)
+Search room/Filter [Демонстрация](https://vodkamishka.github.io/hotel/public/search-room-filter.html)
 
-Sign in [Демонстрация](https://vodkamishka.github.io/hotel/public/website-pages/sign-in/sign-in.html)
+Sign in [Демонстрация](https://vodkamishka.github.io/hotel/public/sign-in.html)
 
 UI KIT
 
-Cards [Демонстрация](https://vodkamishka.github.io/hotel/public/ui-kit/cards/cards.html)
+Cards [Демонстрация](https://vodkamishka.github.io/hotel/public/cards.html)
 
-Colors & Type [Демонстрация](https://vodkamishka.github.io/hotel/public/ui-kit/colors-type/colors-type.html)
+Colors & Type [Демонстрация](https://vodkamishka.github.io/hotel/public/colors-type.html)
 
-Form Elements [Демонстрация](https://vodkamishka.github.io/hotel/public/ui-kit/form-elements/form-elements.html)
+Form Elements [Демонстрация](https://vodkamishka.github.io/hotel/public/form-elements.html)
 
-Headers & Footers [Демонстрация](https://vodkamishka.github.io/hotel/public/ui-kit/headers-footers/headers-footers.html)
+Headers & Footers [Демонстрация](https://vodkamishka.github.io/hotel/public/headers-footers.html)
 
-## Запуск приложения
-
-npm i
+## Сборка dev
 
 npm start
 
-## Транспиляция файлов
+## Сборка prod
 
 npm run build
 

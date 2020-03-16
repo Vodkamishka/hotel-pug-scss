@@ -1,7 +1,7 @@
 @import '../../../assets/utils/main';
 
 .login {
-    height: 22.375rem;
+    min-height: 22.375rem;
     background: $white;
     @include cards;
         &__fields {
@@ -16,4 +16,19 @@
             margin-bottom: 1.875rem;
         }
         @include toxin;
+}
+
+@media (max-width: 27rem) {
+    .login {
+        width: 90%;
+        &__fields {
+            width: 100%;
+        }
+        &__toxin {
+            justify-content: center;
+        }
+        &__text {
+            margin-bottom: 1rem;
+        }
+    }
 }

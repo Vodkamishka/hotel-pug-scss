@@ -45,6 +45,7 @@
   &__toxin {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__text {
     margin-top: 0.75rem;
@@ -52,6 +53,7 @@
     line-height: 1.125rem;
     color: $black;
     font-family: "Montserrat", Arial, sans-serif;
+    margin-right: 0.5rem;
   }
 }
 @mixin container_execute {

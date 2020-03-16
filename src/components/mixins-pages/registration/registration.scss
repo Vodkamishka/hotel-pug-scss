@@ -5,13 +5,15 @@ body {
 
 .registration {
   height: 75.6875rem;
+  min-width: 16rem;
   &__image-wrapper {
-    height: 43.875rem;
+    min-height: 43.875rem;
     background: url('/public/assets/img/rooms/registration.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
     box-sizing: border-box;
   }
   .footer {
@@ -28,3 +30,5 @@ body {
     }
   }
 }
+
+

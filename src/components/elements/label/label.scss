@@ -8,7 +8,6 @@
   width: $long;
   display: flex;
   justify-content: space-between;
-  white-space: nowrap;
   &_little {
     width: $little;
   }
@@ -26,5 +25,12 @@
       color: $shade50;
     }
   }
-  
+}
+
+@media (max-width: 24rem) {
+  .label {
+    &_long {
+      width: 100%;
+    }
+  }
 }

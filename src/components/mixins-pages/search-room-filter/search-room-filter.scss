@@ -4,6 +4,7 @@ body {
     @include body
 }
 .search-room-filter {
+    min-width: 18.75rem;
     &__content {
         display: flex;
         justify-content: space-between;
