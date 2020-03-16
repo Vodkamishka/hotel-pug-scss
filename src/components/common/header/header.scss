@@ -1,14 +1,11 @@
 @import "../../../assets/utils/main.scss";
 
 .header {
-  min-height: 4.375rem;
   background: $white;
   box-shadow: 0 0.625rem 1.25rem $shade05;
-  padding: 0 9.72%;
+  padding: 0.9375rem 9.72%;
+  flex-wrap: wrap;
   @include space-between;
-  &__image {
-    height: 2.5rem;
-  }
   &__span {
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -18,9 +15,12 @@
   &__navbar {
     margin-left: 24.6%;
   }
+  &__a {
+    height: 2.5rem;
+  }
 }
 .header_eng,
-.header_eng_second {
+.header_eng-second {
   .header__navbar {
     margin-left: 23%;
     .navbar {
@@ -40,16 +40,15 @@
     }
   }
 }
-.header_eng_second {
+.header_eng-second {
   .header__navbar {
     margin: 0 0 0 24.5%;
   }
 }
-@media (max-width: 78.125rem) {
+@media (max-width: 89.99rem) {
   .header,
   .header_eng,
-  .header_eng_second {
-    padding: 0 3%;
+  .header_eng-second {
     .header__navbar {
       margin-left: 2%;
       &_li {
@@ -58,12 +57,19 @@
     }
   }
 }
+@media (max-width: 69rem) {
+  .header,
+  .header_eng,
+  .header_eng-second {
+    .header__a, .header__navbar {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
 @media (max-width: 56.25rem) {
   .header,
   .header_eng,
-  .header_eng_second {
-    flex-wrap: wrap;
-    height: 8.75rem;
+  .header_eng-second {
     .header__navbar {
       &_li {
         font-size: 0.9375rem;
@@ -71,10 +77,11 @@
     }
   }
 }
+
 @media (max-width: 31.25rem) {
   .header,
   .header_eng,
-  .header_eng_second {
+  .header_eng-second {
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -89,3 +96,5 @@
     }
   }
 }
+
+

@@ -1,8 +1,6 @@
 {
     "name": "supreme-webpack",
     "version": "1.0.0",
-    "description": "supreme webpack",
-    "index": "index.js",
     "scripts": {
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
@@ -43,7 +41,6 @@
         "webpack-cli": "^3.3.9",
         "webpack-dev-server": "^3.8.1",
         "autoprefixer": "^9.6.1"
-        
     },
     "dependencies": {
         "air-datepicker": "^2.2.3",

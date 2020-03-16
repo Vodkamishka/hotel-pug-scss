@@ -1,0 +1,20 @@
+include ../label/label
+include ../calendar/calendar
+
+mixin double-date-calendar (props)
+    - const {placeholder, classLabel, leftLabel, placeholder2, classLabel2, leftLabel2, id, id2, inline} = props
+    .double-date-calendar.js-double-date-calendar
+        .double-date-calendar__inputs-wrapper
+            .double-date-calendar__input.double-date-calendar__input_first
+                +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_small', leftLabel: 'прибытие', classLabel: 'small'})
+                button.double-date-calendar__button-tick.double-date-calendar__button-tick_first.js-double-date-calendar__button-tick_first
+                    img(src='/public/assets/img/icons/expand.svg').double-date-calendar__img-button-tick
+            .double-date-calendar__input.double-date-calendar__input_second
+                +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_small', leftLabel: 'выезд', classLabel: 'small'})
+                button.double-date-calendar__button-tick.double-date-calendar__button-tick_second.js-double-date-calendar__button-tick_second
+                    img(src='/public/assets/img/icons/expand.svg').double-date-calendar__img-button-tick 
+        .double-date-calendar__calendar-wrapper.double-date-calendar__calendar-wrapper_hide.js-double-date-calendar__calendar-wrapper
+            +calendar
+            .double-date-calendar__buttons-wrapper 
+                button.double-date-calendar__button-clear.js-double-date-calendar__button-clear очистить
+                button.double-date-calendar__button-apply.js-double-date-calendar__button-apply применить

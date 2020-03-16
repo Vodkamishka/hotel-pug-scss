@@ -1,7 +1,7 @@
 mixin button (props)
     - const {text, className} = props
     if className
-        button(class=`button button_short button_short_${className}`)= text
+        button(class=`button button_short button_short_${className}` )= text
     else    
         button(class='button button_long')
             span.button__text=text

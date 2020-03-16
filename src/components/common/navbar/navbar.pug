@@ -4,9 +4,9 @@ mixin navbar (list)
             for el in list
                 if el.image
                     li.navbar__li 
-                        span= el.item
+                        a(href = '/')= el.item
                         .navbar__image
                 else 
                     li.navbar__li 
-                        span= el.item
+                        a(href = '/')= el.item
 

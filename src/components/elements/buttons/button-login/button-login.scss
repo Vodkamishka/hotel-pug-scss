@@ -2,30 +2,27 @@
 
 .button-login {
   height: 2.125rem;
+  border: none;
   border-radius: 1.375rem;
-  width: 4.9375rem;
-  text-align: center;
+  background-image: linear-gradient(180deg, $purple 0%, $blue 100%);
+  min-width: 4.9375rem;
   text-transform: uppercase;
-  background: white;
-  border: 0.125rem solid $blue;
   &:hover {
-    color: $purple;
-    border: 0.0625rem solid transparent;
-    background-origin: border-box;
-    background-image: $gradient;
-    box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
-    border-opacity: 0.5;
+    background-image: linear-gradient($purple50 0%, $blue50 100%);
   }
   &__text {
+    padding: 0 1rem;
     color: $purple;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.7499625rem;
     height: 0.9375rem;
-    font-style: normal;
+    padding: 0.45rem 1.15rem;
+    background: $white;
+    border-radius: 1.58rem;
   }
   &_rus {
-    width: 5.4375rem;
+    min-width: 5.4375rem;
   }
 }
 

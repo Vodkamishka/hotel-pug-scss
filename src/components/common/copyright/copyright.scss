@@ -1,11 +1,20 @@
 @import "../../../assets/utils/main";
 
 .copyright {
-  padding: 1.2rem 9.72%;
+  padding: 1.489rem 9.72%;
   flex-wrap: wrap;
   @include space-between;
   &__text {
     font-size: 0.875rem;
     color: $shade75;
+  }
+}
+
+@media (max-width: 40rem) {
+  .copyright {
+    justify-content: center;
+    &__text {
+      margin-bottom: 1rem;
+    }
   }
 }

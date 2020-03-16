@@ -4,18 +4,20 @@ mixin footer (props)
     - const {classFooter, titlesFooter, textTop, textBottom, email} = props
     div(class =`footer ${classFooter}`)
         .footer__text-block
-            ul.footer__ul   
-                img(src="/public/assets/img/logotypes/logo.svg", alt="")
+            ul.footer__ul
+                a(href="/")   
+                    img(src="/public/assets/img/logotypes/logo.svg", alt="logo")
                 p(class="footer__paragraph")= textTop 
             for el in titlesFooter
                 ul.footer__ul
-                    for i in el
-                        li.footer__li
-                            a(href="#" class="footer__a")=i
+                    for i in el.slice(0,1)
+                        li.footer__li= i
+                    for i in el.slice(1)
+                        li.footer__li 
+                            a(href="/" class="footer__a")=i            
             ul.footer__ul
-                for el in textBottom
-                    li.footer__li
-                        a(href="#" class="footer__a")=el
+                li.footer__li= textBottom[0]
+                li.footer__li= textBottom[1]
                 +input({placeholder: email, classInput: "input__input_arrow input_arrow"}) 
                     
  

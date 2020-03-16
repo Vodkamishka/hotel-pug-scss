@@ -1,10 +1,10 @@
 @import "../../../assets/utils/main";
 
 .navbar {
-  height: 1.125rem;
   &__ul {
     @include space-between;
     padding: 0;
+    flex-wrap: wrap;
   }
   &__li {
     list-style-type: none;

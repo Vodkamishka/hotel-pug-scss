@@ -1,49 +1,112 @@
 @import "../../../assets/utils/main.scss";
 
-.footer_eng {
-  @include footer__text-block;
-  .footer__text-block {
-    padding: 6.19375rem 9.72%;
-  }
-}
 .footer {
-  @include footer__text-block;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    &__text-block {
+    padding: 6.5rem 9.72% 6.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    }
     &__ul {
+      list-style-type: none;
       &:first-child {
         margin-right: 2.5rem;
+        max-width: 16.255625rem;
+        margin-top: -0.25rem;
+        .footer__paragraph {
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          color: $shade75;
+          margin-top: 0.875rem;
+        }
       }
       &:nth-child(2) {
         margin-right: 3.5625rem;
         .footer__li {
-          width: 8.9375rem;
+          min-width: 8.9375rem;
         }
       }
       &:nth-child(3) {
-        margin-right: 5.75rem;
         white-space: nowrap;
+        margin-right: 5.75rem;
         .footer__li {
-          width: 6.75rem;
+          min-width: 6.75rem;
         }
       }
       &:nth-child(4) {
         margin-right: 3.1875rem;
         .footer__li {
-          width: 9.3125rem;
+          min-width: 9.3125rem;
         }
       }
       &:last-child {
+        max-width: 16.25rem;
+        .footer__li:first-child {
+          margin-bottom: 1.0625rem;
+        }
         .footer__li:nth-child(2) {
+          line-height: 1.5rem;
+          margin-bottom: 1.4rem;
+          color: $shade75;
+          font-size: 0.875rem;
+        }
+        .input_arrow {
           width: 16.25rem;
+          background: url('/public/assets/img/icons/arrow_forward.svg')
+              no-repeat 14.3rem,
+            $white;
         }
       }
     }
+    &__li {
+      margin-bottom: 1.1875rem;
+      .footer__a {
+        font-size: 0.875rem;
+        color: $shade50;
+      }
+      &:first-child {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1.1875rem;
+        font-size: 0.6875rem;
+        letter-spacing: 0.05rem;
+        .footer__a {
+          color: $shade100;
+          font-size: 0.6875rem;
+          letter-spacing: 0.05rem;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 }
-@media (max-width: 84.375rem) {
+@media (max-width: 69.8125rem) {
   .footer,
   .footer_eng {
-    .footer__text-block {
-      flex-wrap: wrap;
-      height: auto;
+    .footer__ul {
+      margin-bottom: 2rem;
     }
   }
 }
+@media (max-width: 18.75rem) {
+  .footer,
+  .footer_eng {
+    .footer__ul {
+      .input_arrow {
+        width: 10rem;
+        background: url('/public/assets/img/icons/arrow_forward.svg')
+              no-repeat 8rem,
+            $white;
+      }
+    }
+  }
+}
+
+.footer_eng {
+  @extend .footer;
+  .footer__text-block {
+    padding: 6.19375rem 9.72%;
+  }
+}
+

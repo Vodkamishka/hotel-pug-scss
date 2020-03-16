@@ -7,12 +7,14 @@
   text-align: center;
   text-transform: uppercase;
   background: $gradient;
-  padding: 0 1.25rem;
   box-sizing: border-box;
+  min-width: 6.25rem;
+  padding: 0 0.8rem;
   &__text {
     color: $white;
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 0.7499625rem;
+    font-family: "Montserrat";
   }
   &:hover {
     background: $gradient;
@@ -20,7 +22,7 @@
     opacity: 0.5;
   }
   &_rus {
-    width: 12.25rem;
+  min-width: 12.25rem;
   letter-spacing: 0.0375rem;
   }
 }

@@ -4,7 +4,7 @@ include ../../common/search-rooms/search-rooms.pug
 include ../../common/reservation/reservation.pug
 include ../../common/login/login.pug
 include ../../common/card-room/card-room.pug
-include ../../common/datepicker-here/datepicker-here
+include ../../elements/calendar/calendar
 
 
 mixin cards(options)
@@ -22,7 +22,7 @@ mixin cards(options)
             .cards__login
                 +login
         .cards__wrapper
-            +datepicker-here(datepickerHere)
+            +calendar
             .cards__middleware-card
                 +card-room(cardRoomFirst)
             +card-room(cardRoomSecond) 

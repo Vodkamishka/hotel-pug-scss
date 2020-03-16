@@ -1,4 +1,5 @@
 mixin social
     .social
-        for el in ['twitter', 'facebook', 'instagram'] 
-            img(class="social__image" src="/public/assets/img/logotypes/" + el + ".svg", alt="twitter")
+        for el in ['twitter', 'facebook', 'instagram']
+            a(href = '/' class= "social__a") 
+                img(class="social__image" src="/public/assets/img/logotypes/" + el + ".svg", alt="twitter")

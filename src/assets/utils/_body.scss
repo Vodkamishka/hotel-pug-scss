@@ -18,4 +18,17 @@
   button, input {
     outline: none;
   }
+  input {
+    cursor: default;
+  }
+  a {
+    text-decoration: none;
+    color: $shade50;
+  }
+  button, a {
+    cursor: pointer;
+  }
+  li, p, h1 {
+    cursor: text;
+  }
 }

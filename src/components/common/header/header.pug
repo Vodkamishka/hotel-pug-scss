@@ -4,12 +4,12 @@ include ../navbar/navbar
 mixin header (props)
     - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header ${classHeader}`)
-        .header__image
+        a(href= "/" class = 'header__a')
             img(src='/public/assets/img/logotypes/logo.svg', alt='logo')
         .header__navbar
             +navbar(titlesNavbar)
         .header__third-element
-            if classHeader === 'header_eng_second' 
+            if classHeader === 'header_eng-second' 
                 span.header__span Cosmin Negoita  
             else
                 +buttons-login-register(props)

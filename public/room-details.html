@@ -18,18 +18,17 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div class="room-details">
-      <div class="header ">
-        <div class="header__image"><img src="/public/assets/img/logotypes/logo.svg" alt="logo"></div>
+      <div class="header "><a class="header__a" href="/"><img src="/public/assets/img/logotypes/logo.svg" alt="logo"></a>
         <div class="header__navbar">
           <div class="navbar">
             <ul class="navbar__ul">
-              <li class="navbar__li"> <span>О нас</span></li>
-              <li class="navbar__li"> <span>Услуги</span>
+              <li class="navbar__li"> <a href="/">О нас</a></li>
+              <li class="navbar__li"> <a href="/">Услуги</a>
                 <div class="navbar__image"></div>
               </li>
-              <li class="navbar__li"> <span>Вакансии</span></li>
-              <li class="navbar__li"> <span>Новости</span></li>
-              <li class="navbar__li"> <span>Соглашения</span>
+              <li class="navbar__li"> <a href="/">Вакансии</a></li>
+              <li class="navbar__li"> <a href="/">Новости</a></li>
+              <li class="navbar__li"> <a href="/">Соглашения</a>
                 <div class="navbar__image"></div>
               </li>
             </ul>
@@ -182,7 +181,7 @@
                     <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
-                <input class="input__input input__input_small" type="text" placeholder="19.08.2019">
+                <input class="input__input input__input_small js-input__input" type="text" placeholder="19.08.2019">
               </div>
               <div class="input">
                 <div class="input__label">
@@ -191,7 +190,7 @@
                     <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
-                <input class="input__input input__input_small" type="text" placeholder="23.08.2019">
+                <input class="input__input input__input_small js-input__input" type="text" placeholder="23.08.2019">
               </div>
             </div>
             <div class="reservation__guests">
@@ -203,7 +202,7 @@
                       <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input__input input__input_long" type="text" placeholder="3 гостя">
+                  <input class="input__input input__input_long js-input__input" type="text" placeholder="3 гостя">
                 </div>
                 <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
                   <div class="dropdowns-guest-selection__wrapper-execute-panel">
@@ -270,41 +269,41 @@
       </div>
       <div class="footer ">
         <div class="footer__text-block">
-          <ul class="footer__ul">  <img src="/public/assets/img/logotypes/logo.svg" alt="">
+          <ul class="footer__ul"><a href="/">  <img src="/public/assets/img/logotypes/logo.svg" alt="logo"></a>
             <p class="footer__paragraph">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
           </ul>
           <ul class="footer__ul">
-            <li class="footer__li"><a class="footer__a" href="#">Навигация</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Новости</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Услуги</a></li>
+            <li class="footer__li">Навигация</li>
+            <li class="footer__li"> <a class="footer__a" href="/">О нас</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Новости</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Служба поддержки</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Услуги</a></li>
           </ul>
           <ul class="footer__ul">
-            <li class="footer__li"><a class="footer__a" href="#">О нас</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">О сервисе</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Наша команда</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Вакансии</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Инвесторы</a></li>
+            <li class="footer__li">О нас</li>
+            <li class="footer__li"> <a class="footer__a" href="/">О сервисе</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Наша команда</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Вакансии</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Инвесторы</a></li>
           </ul>
           <ul class="footer__ul">
-            <li class="footer__li"><a class="footer__a" href="#">Служба поддержки</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Соглашения</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Сообщества</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Связь с нами</a></li>
+            <li class="footer__li">Служба поддержки</li>
+            <li class="footer__li"> <a class="footer__a" href="/">Соглашения</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Сообщества</a></li>
+            <li class="footer__li"> <a class="footer__a" href="/">Связь с нами</a></li>
           </ul>
           <ul class="footer__ul">
-            <li class="footer__li"><a class="footer__a" href="#">Подписка</a></li>
-            <li class="footer__li"><a class="footer__a" href="#">Получайте специальные предложения и новости сервиса</a></li>
+            <li class="footer__li">Подписка</li>
+            <li class="footer__li">Получайте специальные предложения и новости сервиса</li>
             <div class="input">
-              <input class="input__input input__input__input_arrow input_arrow" type="text" placeholder="Email">
+              <input class="input__input input__input__input_arrow input_arrow js-input__input" type="text" placeholder="Email">
             </div>
           </ul>
         </div>
       </div>
       <div class="copyright"> 
         <div class="copyright__text">Copyright © 2018 Toxin отель. Все права зачищены.</div>
-        <div class="social"><img class="social__image" src="/public/assets/img/logotypes/twitter.svg" alt="twitter"><img class="social__image" src="/public/assets/img/logotypes/facebook.svg" alt="twitter"><img class="social__image" src="/public/assets/img/logotypes/instagram.svg" alt="twitter">
+        <div class="social"><a class="social__a" href="/"> <img class="social__image" src="/public/assets/img/logotypes/twitter.svg" alt="twitter"></a><a class="social__a" href="/"> <img class="social__image" src="/public/assets/img/logotypes/facebook.svg" alt="twitter"></a><a class="social__a" href="/"> <img class="social__image" src="/public/assets/img/logotypes/instagram.svg" alt="twitter"></a>
         </div>
       </div>
     </div>
