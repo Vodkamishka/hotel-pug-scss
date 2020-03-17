@@ -107,6 +107,9 @@
     &::placeholder {
       color: $shade25;
     }
+    background: url('../../../assets/img/icons/arrow_forward.svg')
+        no-repeat 14.6875rem,
+      $white;
   }
   &_border {
     border-radius: 0.25rem 0.25rem 0 0;

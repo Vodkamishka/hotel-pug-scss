@@ -4,9 +4,9 @@ mixin navbar (list)
             for el in list
                 if el.image
                     li.navbar__li 
-                        a(href = '/')= el.item
-                        .navbar__image
+                        a(href = '/landing.html')= el.item
+                        button.navbar__button
                 else 
                     li.navbar__li 
-                        a(href = '/')= el.item
+                        a(href = '/landing.html')= el.item
 

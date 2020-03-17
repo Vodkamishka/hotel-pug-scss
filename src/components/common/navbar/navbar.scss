@@ -18,10 +18,11 @@
       margin-right: 1.25rem;
     }
   }
-  &__image {
+  &__button {
     width: 1.5rem;
     height: 1.3125rem;
     background: url('../../../assets/img/icons/expand.svg')
       no-repeat center center;
+    border: none;
   }
 }
