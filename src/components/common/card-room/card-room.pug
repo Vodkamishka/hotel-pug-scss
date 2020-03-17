@@ -5,7 +5,7 @@ mixin card-room(props)
     - const {img} = props
     .card-room
         .card-room__image
-            img(src=`/public/assets/img/rooms/${img}.jpg` class='.card-room__img')
+            img(src=`assets/img/rooms/${img}.jpg` class='.card-room__img')
             if img === 888
                 .card-room__image-side.card-room__image-side_left
                     .card-room__arrow

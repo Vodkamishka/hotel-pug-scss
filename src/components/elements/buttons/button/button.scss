@@ -44,7 +44,7 @@
     }
     &_long {
         width: 20rem;
-        background: url('/public/assets/img/icons/arrow_forward_white.svg') no-repeat 18rem, $gradient;
+        background: url('../../../../assets/img/icons/arrow_forward_white.svg') no-repeat 18rem, $gradient;
         &:hover {
         background: $gradient;
         color: $white;

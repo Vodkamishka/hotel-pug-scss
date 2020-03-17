@@ -5,7 +5,7 @@ mixin header (props)
     - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header ${classHeader}`)
         a(href= "/" class = 'header__a')
-            img(src='/public/assets/img/logotypes/logo.svg', alt='logo')
+            img(src='assets/img/logotypes/logo.svg', alt='logo')
         .header__navbar
             +navbar(titlesNavbar)
         .header__third-element

@@ -4,18 +4,18 @@
   &__picture {
     width: 61.3125rem;
     height: 30.3125rem;
-    background: url('/public/assets/img/rooms/8888.jpg')
+    background: url('../../../../assets/img/rooms/8888.jpg')
       bottom;
   }
   &__image {
     width: 28.8125rem;
     height: 15.1875rem;
-    background: url('/public/assets/img/rooms/picture-top.jpg')
+    background: url('../../../../assets/img/rooms/picture-top.jpg')
       right no-repeat;
     background-size: cover;
   }
   &__image_bottom {
-    background: url('/public/assets/img/rooms/picture-bottom.jpg')
+    background: url('../../../../assets/img/rooms/picture-bottom.jpg')
       no-repeat;
   }
 }

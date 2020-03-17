@@ -12,7 +12,7 @@
     &:checked {
       border: 0.0625rem solid $purple;
       margin: 0 0.625rem 0 0;
-      background: url('/public/assets/img/icons/vector.svg')
+      background: url('../../../assets/img/icons/vector.svg')
           no-repeat center center,
         $white;
     }

@@ -52,7 +52,7 @@
         }
         .input_arrow {
           width: 16.25rem;
-          background: url('/public/assets/img/icons/arrow_forward.svg')
+          background: url('../../../assets/img/icons/arrow_forward.svg')
               no-repeat 14.3rem,
             $white;
         }
@@ -95,7 +95,7 @@
     .footer__ul {
       .input_arrow {
         width: 10rem;
-        background: url('/public/assets/img/icons/arrow_forward.svg')
+        background: url('../../../assets/img/icons/arrow_forward.svg')
               no-repeat 8rem,
             $white;
       }

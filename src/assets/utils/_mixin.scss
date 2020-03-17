@@ -82,14 +82,14 @@
     }
   }
   &_long {
-    background: url('/public/assets/img/icons/expand.svg')
+    background: url('../../../assets/img/icons/expand.svg')
         no-repeat 18.125rem,
       $white;
     color: $shade75;
   }
   &_small {
     width: 9.375rem;
-    background: url('/public/assets/img/icons/expand.svg')
+    background: url('../../../assets/img/icons/expand.svg')
         no-repeat 7.5rem,
       $white;
   }
@@ -98,7 +98,7 @@
     &::placeholder {
       color: $shade75;
     }
-    background: url('/public/assets/img/icons/expand.svg')
+    background: url('../../../assets/img/icons/expand.svg')
         no-repeat 14.8rem,
       $white;
   }
@@ -107,7 +107,7 @@
     &::placeholder {
       color: $shade25;
     }
-    background: url('/public/assets/img/icons/arrow_forward.svg')
+    background: url('../../../assets/img/icons/arrow_forward.svg')
         no-repeat 14.6875rem,
       $white;
   }
