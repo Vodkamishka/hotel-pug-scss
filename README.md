@@ -12,9 +12,8 @@ git clone https://github.com/Vodkamishka/hotel.git
 
 ## Демонстрация проекта
 
-WEBSITE PAGES
 
-Landing page [Демонстрация](git commit )
+Landing page [Демонстрация](https://vodkamishka.github.io/hotel/public/landing.html)
 
 Registration [Демонстрация](https://vodkamishka.github.io/hotel/public/registration.html)
 
@@ -24,7 +23,6 @@ Search room/Filter [Демонстрация](https://vodkamishka.github.io/hote
 
 Sign in [Демонстрация](https://vodkamishka.github.io/hotel/public/sign-in.html)
 
-UI KIT
 
 Cards [Демонстрация](https://vodkamishka.github.io/hotel/public/cards.html)
 
