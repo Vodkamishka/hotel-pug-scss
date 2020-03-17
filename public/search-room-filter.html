@@ -68,7 +68,7 @@
                       <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input__input input__input_little js-input__input" type="text" placeholder="3 гостя, 1 младенец">
+                  <input class="input__input input__input_little js-input__input" type="text" placeholder="3 гостя, 1 младенец" readonly>
                 </div>
                 <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
                   <div class="dropdowns-guest-selection__wrapper-execute-panel">
@@ -148,6 +148,7 @@
                 <div class="checkbox-buttons__text checkbox-buttons__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
               </div>
             </div>
+            <props>= {...props, readonly: true}</props>
             <div class="dropdowns-room-selection">
               <div class="input">
                 <div class="input__label">

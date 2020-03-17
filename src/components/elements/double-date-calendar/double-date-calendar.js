@@ -6,6 +6,9 @@ const props = {
   offset: 9,
   range: true,
   multipleDatesSeparator: '-',
+  navTitles: {
+    days: 'MM yyyy',
+  },
 };
 
 class DoubleDateCalendar {

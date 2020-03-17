@@ -14,24 +14,32 @@
         padding: 0;
         
     }
-    &--cell {
+    &--cell-day {
         border-radius: 50%;
         box-sizing: border-box;
         height: 2.5rem;
         width: 14.2857%;
         color: $shade50;
     }
-    &--cell.-current- {
+    &--cell-day.-current- {
         color: $white;
         background: $gradient-green;
     }
 
-    &--cell.-range-from-.-selected-,.-range-to-.-selected- {
+    &--cell-day.-range-from-.-selected-,.-range-to-,.-focus-.-selected- {
       background: $gradient;
       border-radius: 50%;
     }
-    &--cell.-in-range- {
+    &--cell-day.-in-range- {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+      border: none;
+    }
+
+    .datepicker--cell-day.-range-to- {
+      border: none;
+      background-color: $gradient;
+      border-radius: 50%;
+      color: $white;
     }
 
     .datepicker--cell-day.-range-from-:not(.-disabled-)::after {
@@ -67,6 +75,7 @@
         width: 12.54%;
         color: $purple;
     }
+
     &--nav {
         min-height: 1.5rem;
         margin: 1.25rem 0 1.875rem 0;
@@ -92,9 +101,7 @@
         background: url('/public/assets/img/icons/arrow_forward_purple.svg')
             no-repeat center center;
     }
-    &--nav-action:hover {
-        background: none;
-    }
+    
     &--nav-action svg {
         width: 1.495625rem;
         height: 1.5rem;

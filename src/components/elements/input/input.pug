@@ -1,11 +1,11 @@
 include ../label/label
 
 mixin input (props)
-    - const {placeholder, classInput, leftLabel} = props
+    - const {placeholder, classInput, leftLabel, readonly= false} = props
     .input
         if leftLabel
             .input__label
                 +label(props)
-        input(type="text" placeholder=placeholder class=`input__input input__${classInput} js-input__input`)
+        input(type="text" placeholder=placeholder class=`input__input input__${classInput} js-input__input` readonly= readonly)
 
    

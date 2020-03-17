@@ -3,6 +3,7 @@ include ../execute-panel/execute-panel
 
 mixin dropdowns-room-selection (props)
     - const {placeholder, classInput, classLabel, leftLabel, rightLabel, classShowDropdown} = props
+    props = {...props, readonly: true}
     .dropdowns-room-selection
         +input(props)
         .dropdowns-room-selection__container-execute(class= classShowDropdown)
