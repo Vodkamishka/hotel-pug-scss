@@ -4,7 +4,7 @@ include ../navbar/navbar
 mixin header (props)
     - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header ${classHeader}`)
-        a(href= "/" class = 'header__a')
+        a(href= "/landing.html" class = 'header__a')
             img(src='assets/img/logotypes/logo.svg', alt='logo')
         .header__navbar
             +navbar(titlesNavbar)

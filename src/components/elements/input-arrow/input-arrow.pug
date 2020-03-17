@@ -1,0 +1,8 @@
+include ../input/input
+
+mixin input-arrow(email)
+    .input-arrow
+        +input({placeholder: email, classInput: "input__input_arrow input_arrow"})
+        button.input-arrow__button
+            img(src='assets/img/icons/arrow_forward.svg')
+

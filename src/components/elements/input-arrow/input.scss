@@ -1,0 +1,10 @@
+.input-arrow {
+    position: relative;
+    &__button {
+        position: absolute;
+        top: 50%;;
+        border: none;
+        right: 0.8rem;
+        transform: translateY(-50%);
+    }
+}

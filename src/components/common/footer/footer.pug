@@ -1,11 +1,11 @@
-include ../../elements/input/input.pug
+include ../../elements/input-arrow/input-arrow.pug
 
 mixin footer (props)
     - const {classFooter, titlesFooter, textTop, textBottom, email} = props
     div(class =`footer ${classFooter}`)
         .footer__text-block
             ul.footer__ul
-                a(href="/")   
+                a(href="/landing.html")   
                     img(src="assets/img/logotypes/logo.svg", alt="logo")
                 p(class="footer__paragraph")= textTop 
             for el in titlesFooter
@@ -14,11 +14,11 @@ mixin footer (props)
                         li.footer__li= i
                     for i in el.slice(1)
                         li.footer__li 
-                            a(href="/" class="footer__a")=i            
+                            a(href="/landing.html" class="footer__a")=i            
             ul.footer__ul
                 li.footer__li= textBottom[0]
                 li.footer__li= textBottom[1]
-                +input({placeholder: email, classInput: "input__input_arrow input_arrow"}) 
+                +input-arrow(email) 
                     
  
         
