@@ -1,17 +1,11 @@
 {
-    "name": "supreme-webpack",
-    "version": "1.0.0",
     "scripts": {
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
-        "dev": "webpack --mode development",
         "lint": "eslint src/"
     },
-    "keywords": [
-        "webpack",
-        "js"
-    ],
     "author": "Deynega Andrey",
+    "private": true,
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.6.0",
