@@ -12,8 +12,15 @@
     color: $shade50;
     white-space: nowrap;
   }
-  &__navbar {
+  &__burger {
+    position: absolute;
+    right: 8.75rem;
+    display: none;
+  }
+  &__container {
     margin-left: 24.6%;
+    display: flex;
+    align-items: center;
   }
   &__a {
     height: 2.5rem;
@@ -21,7 +28,7 @@
 }
 .header_eng,
 .header_eng-second {
-  .header__navbar {
+  .header__container {
     margin-left: 23%;
     .navbar {
       .navbar_li {
@@ -41,7 +48,7 @@
   }
 }
 .header_eng-second {
-  .header__navbar {
+  .header__container {
     margin: 0 0 0 24.5%;
   }
 }
@@ -49,7 +56,7 @@
   .header,
   .header_eng,
   .header_eng-second {
-    .header__navbar {
+    .header__container {
       margin-left: 2%;
       &_li {
         font-size: 0.8125rem;
@@ -61,11 +68,32 @@
   .header,
   .header_eng,
   .header_eng-second {
+    .header__burger {
+      display: block;
+      position: static;
+    }
+    .header__container {
+      flex-direction: column;
+      width: 100%;
+      border: 0.125rem solid $purple;
+      padding: 1rem;
+      border-radius: 1rem;
+      &_hide {
+        display: none;
+      }
+    }
     .header__a, .header__navbar {
       margin-bottom: 0.8rem;
     }
+    .header__navbar {
+      width: 100%;
+    }
+    .header__third-element {
+      width: 100%;
+    }
   }
 }
+/*
 @media (max-width: 56.25rem) {
   .header,
   .header_eng,
@@ -97,4 +125,4 @@
   }
 }
 
-
+*/

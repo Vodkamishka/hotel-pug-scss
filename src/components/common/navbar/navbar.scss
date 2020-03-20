@@ -26,3 +26,16 @@
     border: none;
   }
 }
+
+@media (max-width: 69rem) {
+  .navbar {
+    &__ul {
+      flex-direction: column;
+    }
+    &__li {
+      width: 100%;
+      border-bottom: 0.0625rem solid lightblue;
+      margin-bottom: 1rem;
+    }
+  }
+}
