@@ -1,12 +1,12 @@
 {
+    "private": true,
+    "author": "Deynega Andrey",
+    "license": "ISC",
     "scripts": {
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
         "lint": "eslint src/"
     },
-    "author": "Deynega Andrey",
-    "private": true,
-    "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.6.0",
         "@babel/plugin-proposal-class-properties": "^7.7.4",
