@@ -1,4 +1,7 @@
-## Демонстрация проекта
+# Hotel
+***
+
+Демонстрация проекта:
 
 Landing page [Демонстрация](https://vodkamishka.github.io/hotel/public/landing.html)
 
@@ -18,17 +21,14 @@ Form Elements [Демонстрация](https://vodkamishka.github.io/hotel/pub
 
 Headers & Footers [Демонстрация](https://vodkamishka.github.io/hotel/public/headers-footers.html)
 
-## Kлонирования репозитория 
+### Kлонирования репозитория 
 
-git clone https://github.com/Vodkamishka/hotel.git
+* ssh git@github.com:Vodkamishka/hotel.git
+* https git clone https://github.com/Vodkamishka/hotel.git
 
-ssh git@github.com:Vodkamishka/hotel.git
+### Сборка dev
+```npm run start```
 
-## Сборка dev
-
-npm start
-
-## Сборка prod
-
-npm run build
+### Сборка prod
+``` npm run build```
 
