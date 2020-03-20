@@ -33,6 +33,9 @@
     &--cell-day.-in-range- {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
       border: none;
+      &:hover {
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%); 
+      }
     }
 
     .datepicker--cell-day.-range-to- {
