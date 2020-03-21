@@ -1,15 +1,13 @@
 include ../../elements/luxe/luxe.pug
 include ../../elements/buttons/button/button
-include ../../elements/input/input
+include ../../elements/double-date-calendar/double-date-calendar
 include ../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 
 mixin reservation
     .reservation
         +luxe({img: 888, firstNumberPrice: 9, price: 990, clas: '', fontSize: 1.5})
         .reservation__incoming
-            .reservation__input_first
-                +input({placeholder: '19.08.2019', className: 'small', leftLabel: 'Прибытие', expand: 'expand'})
-            +input({placeholder: '23.08.2019', className: 'small', leftLabel: 'Выезд', expand: 'expand'})
+            +double-date-calendar       
         .reservation__guests
             +dropdowns-guest-selection({placeholder: '3 гостя', className: 'long', leftLabel: 'гости', rightLabel: '', showButtonClear: 'block', classShowDropdown: 'dropdowns-guest-selection_hide', x: 3})
         .reservation__list

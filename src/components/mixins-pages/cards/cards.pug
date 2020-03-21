@@ -1,14 +1,13 @@
-include ../../elements/logo-wrapper/logo-wrapper.pug
-include ../../common/registration-account/registration-account.pug
-include ../../common/search-rooms/search-rooms.pug
-include ../../common/reservation/reservation.pug
-include ../../common/login/login.pug
-include ../../common/card-room/card-room.pug
+include ../../elements/logo-wrapper/logo-wrapper
+include ../../common/registration-account/registration-account
+include ../../common/search-rooms/search-rooms
+include ../../common/reservation/reservation
+include ../../common/login/login
+include ../../common/card-room/card-room
 include ../../elements/calendar/calendar
 
-
 mixin cards(options)
-    - const {datepickerHere, cardRoomFirst, cardRoomSecond} = options
+    - const {cardRoomFirst, cardRoomSecond} = options
     .cards
         .cards__logo-wrapper
             +logo-wrapper

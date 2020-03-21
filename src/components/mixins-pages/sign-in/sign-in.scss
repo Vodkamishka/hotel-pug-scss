@@ -9,6 +9,7 @@ body {
     &__image-wrapper {
         height: 42.75rem;
         background: url('../../../assets/img/rooms/sign-in.jpg');
+        background-size: cover;
         @include flex-center;
         background-size: cover;
         width: 100%;
