@@ -3,24 +3,23 @@ body {
   @include body;
 }
 .colors-type {
-  width: 100%;
   height: 100%;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   padding-top: 9.0625rem;
+  padding-left: 9.375rem;
   display: flex;
+  flex-wrap: wrap;
   &__logo-wrapper {
     position: absolute;
     left: 1.875rem;
     top: 1.875rem;
   }
   &__squares {
-    margin-left: 9.375rem;
+    margin-right: 26.8rem;
+    margin-bottom: 2rem;
   }
   &__block-wrapper {
     margin-bottom: 1.25rem;
-  }
-  &__title {
-    margin-left: 26.8rem;
   }
   &__colors-title-wrapper {
     margin-bottom: 3.125rem;
@@ -31,6 +30,17 @@ body {
     &:nth-child(3) {
       margin-left: 1.125rem;
       margin-bottom: 2.8rem;
+    }
+  }
+}
+@media (max-width: 42rem) {
+  .colors-type {
+    min-width: 30rem;
+    padding-left: 10%;
+    justify-content: flex-start;
+    &__squares {
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
