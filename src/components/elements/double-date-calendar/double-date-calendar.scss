@@ -5,27 +5,12 @@
     display: flex;
   }
   &__input {
-    position: relative;
-    @include input-text;
-    input[type="text"] {
-      &::placeholder {
-        color: $shade75;
-      }
-    background: none; // need to delete
-    }
     &_first {
       margin-right: 1.25rem;
     }
   }
   &__label {
     margin-bottom: 0.3125rem;
-  }
-  &__button-tick {
-    position: absolute;
-    top: 2.1rem;
-    right: 1rem;
-    border: none;
-    background: transparent;
   }
   &__calendar-wrapper {
     border: 0.0625rem solid rgba($shade25, 0.25);

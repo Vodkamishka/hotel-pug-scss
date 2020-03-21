@@ -62,28 +62,28 @@
               <div class="double-date-calendar js-double-date-calendar">
                 <div class="double-date-calendar__inputs-wrapper">
                   <div class="double-date-calendar__input double-date-calendar__input_first">
-                    <div class="input">
+                    <div class="input input_small">
                       <div class="input__label">
-                        <div class="label label_small">
+                        <div class="label">
                           <label class="label__text" for="forLab">прибытие</label>
                           <label class="label__text" for="forLab"></label>
                         </div>
                       </div>
-                      <input class="input__input input__input_small js-input__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <input class="input__input js-input__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                     </div>
-                    <button class="double-date-calendar__button-tick double-date-calendar__button-tick_first js-double-date-calendar__button-tick_first"><img class="double-date-calendar__img-button-tick" src="assets/img/icons/expand.svg"></button>
                   </div>
                   <div class="double-date-calendar__input double-date-calendar__input_second">
-                    <div class="input">
+                    <div class="input input_small">
                       <div class="input__label">
-                        <div class="label label_small">
+                        <div class="label">
                           <label class="label__text" for="forLab">выезд</label>
                           <label class="label__text" for="forLab"></label>
                         </div>
                       </div>
-                      <input class="input__input input__input_small js-input__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <input class="input__input js-input__input" type="text" placeholder="ДД.ММ.ГГГГ" readonly>
+                      <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                     </div>
-                    <button class="double-date-calendar__button-tick double-date-calendar__button-tick_second js-double-date-calendar__button-tick_second"><img class="double-date-calendar__img-button-tick" src="assets/img/icons/expand.svg"></button>
                   </div>
                 </div>
                 <div class="double-date-calendar__calendar-wrapper double-date-calendar__calendar-wrapper_hide js-double-date-calendar__calendar-wrapper">
@@ -97,14 +97,15 @@
             </div>
             <div class="search-rooms__guests">
               <div class="dropdowns-guest-selection">
-                <div class="input">
+                <div class="input input_long">
                   <div class="input__label">
-                    <div class="label label_long">
+                    <div class="label">
                       <label class="label__text" for="forLab">гости</label>
                       <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input__input input__input_long js-input__input" type="text" placeholder="Сколько гостей" readonly>
+                  <input class="input__input js-input__input" type="text" placeholder="Сколько гостей" readonly>
+                  <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                 </div>
                 <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
                   <div class="dropdowns-guest-selection__wrapper-execute-panel">
@@ -177,11 +178,9 @@
           <ul class="footer__ul">
             <li class="footer__li">Подписка</li>
             <li class="footer__li">Получайте специальные предложения и новости сервиса</li>
-            <div class="input-arrow">
-              <div class="input">
-                <input class="input__input input__input__input_arrow input_arrow js-input__input" type="text" placeholder="Email">
-              </div>
-              <button class="input-arrow__button"><img src="assets/img/icons/arrow_forward.svg"></button>
+            <div class="input input_little">
+              <input class="input__input js-input__input" type="text" placeholder="Email">
+              <button class="input__button input__button_without-label"><img src="assets/img/icons/arrow_forward.svg"></button>
             </div>
           </ul>
         </div>

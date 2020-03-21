@@ -183,35 +183,40 @@
               <div class="luxe__price"><span class="luxe__price-text">9</span><span class="luxe__price-text">990</span><span class="luxe__price-text">&#8381 </span><span class="luxe__price-text">в сутки</span></div>
             </div>
             <div class="reservation__incoming">
-              <div class="input">
-                <div class="input__label">
-                  <div class="label label_small">
-                    <label class="label__text" for="forLab">Прибытие</label>
-                    <label class="label__text" for="forLab"></label>
+              <div class="reservation__input_first">
+                <div class="input input_small">
+                  <div class="input__label">
+                    <div class="label">
+                      <label class="label__text" for="forLab">Прибытие</label>
+                      <label class="label__text" for="forLab"></label>
+                    </div>
                   </div>
+                  <input class="input__input js-input__input" type="text" placeholder="19.08.2019">
+                  <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                 </div>
-                <input class="input__input input__input_small js-input__input" type="text" placeholder="19.08.2019">
               </div>
-              <div class="input">
+              <div class="input input_small">
                 <div class="input__label">
-                  <div class="label label_small">
+                  <div class="label">
                     <label class="label__text" for="forLab">Выезд</label>
                     <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
-                <input class="input__input input__input_small js-input__input" type="text" placeholder="23.08.2019">
+                <input class="input__input js-input__input" type="text" placeholder="23.08.2019">
+                <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
               </div>
             </div>
             <div class="reservation__guests">
               <div class="dropdowns-guest-selection">
-                <div class="input">
+                <div class="input input_long">
                   <div class="input__label">
-                    <div class="label label_undefined">
+                    <div class="label">
                       <label class="label__text" for="forLab">гости</label>
                       <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input__input input__input_long js-input__input" type="text" placeholder="3 гостя" readonly>
+                  <input class="input__input js-input__input" type="text" placeholder="3 гостя" readonly>
+                  <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                 </div>
                 <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
                   <div class="dropdowns-guest-selection__wrapper-execute-panel">
@@ -304,11 +309,9 @@
           <ul class="footer__ul">
             <li class="footer__li">Подписка</li>
             <li class="footer__li">Получайте специальные предложения и новости сервиса</li>
-            <div class="input-arrow">
-              <div class="input">
-                <input class="input__input input__input__input_arrow input_arrow js-input__input" type="text" placeholder="Email">
-              </div>
-              <button class="input-arrow__button"><img src="assets/img/icons/arrow_forward.svg"></button>
+            <div class="input input_little">
+              <input class="input__input js-input__input" type="text" placeholder="Email">
+              <button class="input__button input__button_without-label"><img src="assets/img/icons/arrow_forward.svg"></button>
             </div>
           </ul>
         </div>

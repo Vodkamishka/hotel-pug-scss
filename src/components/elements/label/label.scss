@@ -5,18 +5,9 @@
   line-height: 0.9375rem;
   text-transform: uppercase;
   color: $shade100;
-  width: $long;
   display: flex;
   justify-content: space-between;
-  &_little {
-    width: $little;
-  }
-  &_small {
-    width: $small;
-  }
-  &_long {
-    width: $long;
-  }
+  width: 100%;
   &__text {
     &:first-child {
       font-weight: bold;

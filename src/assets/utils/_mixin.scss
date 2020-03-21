@@ -71,80 +71,9 @@
   color: $shade100;
   text-transform: uppercase;
   z-index: 10000;
-}
-@mixin input-text {
-  .input__input {
-  &_hover {
-    border: 0.0625rem solid rgba($shade50, 0.5);
-    color: $shade25;
-    &::placeholder {
-      color: $shade75;
-    }
-  }
-  &_long {
-    background: url('../../../assets/img/icons/expand.svg')
-        no-repeat 18.125rem,
-      $white;
-    color: $shade75;
-  }
-  &_small {
-    width: 9.375rem;
-    background: url('../../../assets/img/icons/expand.svg')
-        no-repeat 7.5rem,
-      $white;
-  }
-  &_little {
-    width: 16.625rem;
-    &::placeholder {
-      color: $shade75;
-    }
-    background: url('../../../assets/img/icons/expand.svg')
-        no-repeat 14.8rem,
-      $white;
-  }
-  &_arrow {
-    width: 16.625rem;
-    &::placeholder {
-      color: $shade25;
-    }
-    background: url('../../../assets/img/icons/arrow_forward.svg')
-        no-repeat 14.6875rem,
-      $white;
-  }
-  &_border {
-    border-radius: 0.25rem 0.25rem 0 0;
-  }
-}}
-
-@media (max-width: 30rem) {
-  .input__input {
-    &_small {
-      width: 100%;
-    }
-   
-  }
-}
-
-input[type="text"] {
-  font-family: "Montserrat", Arial, sans-serif;
-  box-sizing: border-box;
-  width: 20rem;
-  height: 2.75rem;
-  border: 0.0625rem solid rgba($shade25, 0.25);
-  border-radius: 0.25rem;
-  padding-left: 0.875rem;
-  padding-bottom: 0.125rem;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  letter-spacing: -0.025rem;
-  &::placeholder {
-    color: $shade50;
-    letter-spacing: 0.00625rem;
-  }
-  &:hover {
-    border: 0.0625rem solid rgba($shade50, 0.5);
-    &::placeholder {
-      color: $shade75;
+  .execute-panel {
+    &__increment, &__decrement {
+      cursor: pointer;
     }
   }
 }

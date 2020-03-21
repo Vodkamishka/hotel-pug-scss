@@ -3,11 +3,16 @@
 .dropdowns-room-selection {
   &__container-execute {
     @include container_execute;
+    width: 100%;
   }
   &__wrapper-execute-panel {
     margin-bottom: 0.4375rem;
+    width: 100%;
   }
   &_hide {
     display: none;
+  }
+  &_little {
+    width: $little;
   }
 }

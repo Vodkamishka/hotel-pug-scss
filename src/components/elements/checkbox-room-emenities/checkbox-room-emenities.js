@@ -6,12 +6,12 @@ class Checkbox {
   }
 
   findDom() {
-    this.img = this.checkbox.querySelector('.checkbox-room-emenities__image');
+    this.img = this.checkbox.querySelector('.checkbox-room-emenities__button');
     this.list = this.checkbox.querySelector('.checkbox-room-emenities__list');
   }
 
   classListToggle() {
-    this.img.classList.toggle('checkbox-room-emenities__image_expand');
+    this.img.classList.toggle('checkbox-room-emenities__button_expand');
     this.list.classList.toggle('checkbox-room-emenities_hide');
   }
 

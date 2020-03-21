@@ -26,12 +26,9 @@
   &__incoming {
     display: flex;
     margin-top: 1.5rem;
-    .input {
-      input[type="text"] {
-        margin-right: 1.25rem;
-        width: 9.375rem;
-      }
-    }
+  }
+  &__input_first {
+    margin-right: 1.25rem;
   }
   &__list {
     margin: 1.285rem 0 1.25rem 0;

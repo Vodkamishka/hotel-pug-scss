@@ -6,7 +6,7 @@ mixin search-rooms
     .search-rooms
         .search-rooms__title Найдем номера под ваши пожелания
         .search-rooms__incoming
-            +double-date-calendar({placeholder: 'ДД.ММ.ГГГГ', classLabel: 'small', leftLabel: 'Прибытие', placeholder2: 'ДД.ММ.ГГГГ', classLabel2: 'small', leftLabel2: 'Выезд', id: 'start', id2: 'end', inline: false})
+            +double-date-calendar
         .search-rooms__guests
-            +dropdowns-guest-selection({placeholder: 'Сколько гостей', classInput: 'input_long', classLabel: 'long', leftLabel: 'гости', rightLabel: '', showButtonClear: 'block',  classShowDropdown: 'dropdowns-guest-selection_hide'})
+            +dropdowns-guest-selection({placeholder: 'Сколько гостей', className: 'long', leftLabel: 'гости', rightLabel: '', showButtonClear: 'block',  classShowDropdown: 'dropdowns-guest-selection_hide'})
         +button({text: 'Подобрать номер'})

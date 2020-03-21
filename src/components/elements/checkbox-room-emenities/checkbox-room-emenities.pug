@@ -6,9 +6,9 @@ mixin checkbox-room-emenities (props)
         .checkbox-room-emenities__mainline
             .checkbox-room-emenities__title= title
             if (!clas)
-                .checkbox-room-emenities__image.checkbox-room-emenities__image_expand
+                button.checkbox-room-emenities__button.checkbox-room-emenities__button_expand
             else
-                .checkbox-room-emenities__image     
+                button.checkbox-room-emenities__button     
         .checkbox-room-emenities__list(class= clas)
             +checkbox-list(list)
 

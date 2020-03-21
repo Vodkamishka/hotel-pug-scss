@@ -2,13 +2,13 @@ include ../input/input
 include ../execute-panel/execute-panel
 
 mixin dropdowns-guest-selection (props)
-    - const {placeholder, classInput, classLabel, leftLabel, rightLabel, showButtonClear, classShowDropdown} = props
+    - const {placeholder, className, leftLabel, rightLabel, showButtonClear, classShowDropdown} = props
     - let {x, y, z} = props
     - x = x || 0
     - y = y || 0
     - z = z || 0
     .dropdowns-guest-selection
-        +input({placeholder, classInput, classLabel, leftLabel, rightLabel, readonly: true})
+        +input({placeholder, className, leftLabel, rightLabel, readonly: true, expand: 'expand'})
         .dropdowns-guest-selection__container-execute(class= classShowDropdown)
             - let humans = [{people: 'Взрослые', number: x}, {people: 'Дети', number: y}, {people: 'Младенцы', number: z}]
                 for el in humans

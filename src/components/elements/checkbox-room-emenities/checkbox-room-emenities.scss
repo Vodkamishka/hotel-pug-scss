@@ -12,11 +12,12 @@
     margin-right: 1.9rem;
     white-space: nowrap;
   }
-  &__image {
+  &__button {
     background: url('../../../assets/img/icons/expand.svg')
       no-repeat center;
     width: 2.75rem;
     height: 2.75rem;
+    border: none;
     &_expand {
       background: url('../../../assets/img/icons/expand_more.svg')
         no-repeat center;

@@ -2,9 +2,9 @@ include ../input/input
 include ../execute-panel/execute-panel
 
 mixin dropdowns-room-selection (props)
-    - const {placeholder, classInput, classLabel, leftLabel, rightLabel, classShowDropdown} = props
-    props = {...props, readonly: true}
-    .dropdowns-room-selection
+    - const {placeholder, className, leftLabel, rightLabel, classShowDropdown} = props
+    - props = {...props, expand: 'expand', readonly: 'true', className: 'input_border'}
+    .dropdowns-room-selection(class=`dropdowns-room-selection_${className}`)
         +input(props)
         .dropdowns-room-selection__container-execute(class= classShowDropdown)
             - let goods = [{bed: 'Спальни', number: 2}, {bed: 'Кровати', number: 2}, {bed: 'Ванные комнаты', number: 0}]

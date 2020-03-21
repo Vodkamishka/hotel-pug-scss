@@ -1,7 +1,6 @@
 @import "../../../assets/utils/main";
 
 .dropdowns-guest-selection {
-  width: 20rem;
   &__container-execute {
     @include container_execute;
     height: 9.85rem;
@@ -30,10 +29,12 @@
     color: $purple;
     text-align: right;
     float: right;
+    cursor: pointer;
   }
   &__clear {
     color: $shade50;
     float: left;
+    cursor: pointer;
   }
 }
 

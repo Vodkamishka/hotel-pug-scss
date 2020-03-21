@@ -26,8 +26,7 @@ class DoubleDateCalendar {
 
   findDom() {
     this.$calendar = this.$double.find('.js-calendar');
-    this.$tickFirst = this.$double.find(`.${jsParentClass}__button-tick_first`);
-    this.$tickSecond = this.$double.find(`.${jsParentClass}__button-tick_second`);
+    this.$ticks = this.$double.find('.input__button');
     this.$container = this.$double.find(`.${jsParentClass}__calendar-wrapper`);
     this.$apply = this.$double.find(`.${jsParentClass}__button-apply`);
     this.$clear = this.$double.find(`.${jsParentClass}__button-clear`);
@@ -35,8 +34,8 @@ class DoubleDateCalendar {
   }
 
   addEventListeners() {
-    this.$tickFirst.on('click', () => this.$container.toggleClass(parentClassHide));
-    this.$tickSecond.on('click', () => this.$container.toggleClass(parentClassHide));
+    $(this.$ticks[0]).on('click', () => this.$container.toggleClass(parentClassHide));
+    $(this.$ticks[1]).on('click', () => this.$container.toggleClass(parentClassHide));
     this.$apply.on('click', () => this.$container.toggleClass(parentClassHide));
     this.$clear.on('click', () => this.data.clear());
   }

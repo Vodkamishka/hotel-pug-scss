@@ -58,26 +58,28 @@
         <div class="search-room-filter__wrapper-column">
           <div class="search-room-filter-column">
             <div class="search-room-filter-column__input">
-              <div class="input">
+              <div class="input input_little">
                 <div class="input__label">
-                  <div class="label label_little">
+                  <div class="label">
                     <label class="label__text" for="forLab">даты пребывания в отеле</label>
                     <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
-                <input class="input__input input__input_little js-input__input" type="text" placeholder="19 авг - 23 авг">
+                <input class="input__input js-input__input" type="text" placeholder="19 авг - 23 авг">
+                <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
               </div>
             </div>
             <div class="search-room-filter-column__dropdowns">
               <div class="dropdowns-guest-selection">
-                <div class="input">
+                <div class="input input_little">
                   <div class="input__label">
-                    <div class="label label_little">
+                    <div class="label">
                       <label class="label__text" for="forLab">гости</label>
                       <label class="label__text" for="forLab"></label>
                     </div>
                   </div>
-                  <input class="input__input input__input_little js-input__input" type="text" placeholder="3 гостя, 1 младенец" readonly>
+                  <input class="input__input js-input__input" type="text" placeholder="3 гостя, 1 младенец" readonly>
+                  <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
                 </div>
                 <div class="dropdowns-guest-selection__container-execute dropdowns-guest-selection_hide">
                   <div class="dropdowns-guest-selection__wrapper-execute-panel">
@@ -157,16 +159,16 @@
                 <div class="checkbox-buttons__text checkbox-buttons__text_wide">На 1 этаже вас встретит специалист и проводит до номера.</div>
               </div>
             </div>
-            <props>= {...props, readonly: true}</props>
-            <div class="dropdowns-room-selection">
-              <div class="input">
+            <div class="dropdowns-room-selection dropdowns-room-selection_little input_border">
+              <div class="input input_input_border">
                 <div class="input__label">
-                  <div class="label label_little">
+                  <div class="label">
                     <label class="label__text" for="forLab">удобства номера</label>
                     <label class="label__text" for="forLab"></label>
                   </div>
                 </div>
-                <input class="input__input input__input_little input__input_border js-input__input" type="text" placeholder="2 спальни,  2 кровати">
+                <input class="input__input js-input__input" type="text" placeholder="2 спальни,  2 кровати" readonly="true">
+                <button class="input__button"><img src="assets/img/icons/expand.svg"></button>
               </div>
               <div class="dropdowns-room-selection__container-execute dropdowns-room-selection_hide">
                 <div class="dropdowns-room-selection__wrapper-execute-panel">
@@ -205,7 +207,7 @@
               <div class="checkbox-room-emenities">   
                 <div class="checkbox-room-emenities__mainline">
                   <div class="checkbox-room-emenities__title">дополнительные удобства</div>
-                  <div class="checkbox-room-emenities__image">    </div>
+                  <button class="checkbox-room-emenities__button">    </button>
                 </div>
                 <div class="checkbox-room-emenities__list checkbox-room-emenities_hide">
                   <div class="checkbox-list">
@@ -669,11 +671,9 @@
           <ul class="footer__ul">
             <li class="footer__li">Подписка</li>
             <li class="footer__li">Получайте специальные предложения и новости сервиса</li>
-            <div class="input-arrow">
-              <div class="input">
-                <input class="input__input input__input__input_arrow input_arrow js-input__input" type="text" placeholder="Email">
-              </div>
-              <button class="input-arrow__button"><img src="assets/img/icons/arrow_forward.svg"></button>
+            <div class="input input_little">
+              <input class="input__input js-input__input" type="text" placeholder="Email">
+              <button class="input__button input__button_without-label"><img src="assets/img/icons/arrow_forward.svg"></button>
             </div>
           </ul>
         </div>

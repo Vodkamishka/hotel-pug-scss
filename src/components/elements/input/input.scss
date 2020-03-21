@@ -1,10 +1,75 @@
 @import "../../../assets/utils/main";
 
-.input {
-  @include input-text;
+input[type="text"] {
   width: 100%;
+  font-family: "Montserrat", Arial, sans-serif;
+  box-sizing: border-box;
+  height: 2.75rem;
+  border: 0.0625rem solid rgba($shade25, 0.25);
+  border-radius: 0.25rem;
+  padding-left: 0.875rem;
+  padding-bottom: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.025rem;
+  &::placeholder {
+    color: $shade50;
+    letter-spacing: 0.00625rem;
+  }
+  &:hover {
+    border: 0.0625rem solid rgba($shade50, 0.5);
+    &::placeholder {
+      color: $shade75;
+    }
+  }
+}
+
+.input {
+  position: relative;
   &__label {
     margin-bottom: 0.3125rem;
+    width: 100%;
+  }
+  &__button {
+    border: none;
+    position: absolute;
+    top: 2.1rem;
+    background: transparent;
+    right: 1rem;
+    &_without-label {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &_long {
+    color: $shade75;
+    width: $long;
+  }
+  &_little {
+    width: $little;
+    &::placeholder {
+      color: $shade75;
+    }
+  }
+  &_small {
+    width: $small;
+  }
+  &_hover {
+    border: 0.0625rem solid rgba($shade50, 0.5);
+    color: $shade25;
+    &::placeholder {
+    color: $shade75;
+    }
+  }
+  &_arrow {
+    width: 16.625rem;
+      &::placeholder {
+      color: $shade25;
+      }
+  }
+  &_border {
+    border-radius: 0.25rem 0.25rem 0 0;
   }
 }
 

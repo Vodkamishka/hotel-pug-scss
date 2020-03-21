@@ -12,10 +12,10 @@ mixin registration-account
             +input({placeholder:'Фамилия'})
         +radio 
         .registration-account__bithday
-            +input({placeholder: 'ДД.ММ.ГГГГ', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'Дата рождения'})
+            +input({placeholder: 'ДД.ММ.ГГГГ', className: 'long', leftLabel: 'Дата рождения'})
         .registration-account__two-fields
-            +input({placeholder: 'Email', classInput: 'input_no-modifier', classLabel: 'long', leftLabel: 'Данные для входа в сервис'})
-            +input({placeholder:'Пароль', classInput: 'input_no-modifier'})
+            +input({placeholder: 'Email', className: 'long', leftLabel: 'Данные для входа в сервис'})
+            +input({placeholder:'Пароль', className: 'long'})
         +toggle-one(false)
         .registration-account__button
             +button({text: 'Перейти к оплате'})

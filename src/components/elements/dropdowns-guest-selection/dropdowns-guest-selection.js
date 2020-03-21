@@ -17,6 +17,7 @@ class Dropdowns {
 
   findDom() {
     this.input = this.dropdown.querySelector('input');
+    this.tick = this.dropdown.querySelector('.input__button');
     this.container = this.dropdown.querySelector(`.dropdowns-${this.width}-selection__container-execute`);
     this.increment = this.dropdown.querySelectorAll('.execute-panel__increment');
     this.decrement = this.dropdown.querySelectorAll('.execute-panel__decrement');
@@ -92,7 +93,7 @@ class Dropdowns {
   }
 
   showHideContainer() {
-    this.input.addEventListener('click', () => this.hideContainer());
+    this.tick.addEventListener('click', () => this.hideContainer());
   }
 
   drawDecrementAndInput() {

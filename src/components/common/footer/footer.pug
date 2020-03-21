@@ -1,4 +1,4 @@
-include ../../elements/input-arrow/input-arrow.pug
+include ../../elements/input/input.pug
 
 mixin footer (props)
     - const {classFooter, titlesFooter, textTop, textBottom, email} = props
@@ -18,7 +18,7 @@ mixin footer (props)
             ul.footer__ul
                 li.footer__li= textBottom[0]
                 li.footer__li= textBottom[1]
-                +input-arrow(email) 
+                +input({placeholder: email, className: "little", expand: 'arrow_forward'}) 
                     
  
         
