@@ -197,12 +197,41 @@
     &__room-escape,
     &__rules {
       margin: 1.25rem 0;
+      width: 100%;
     }
     &__room-impressions {
       margin-bottom: 2rem;
     }
     &__reviews {
       width: 100%;
+
+    }
+    &__review:nth-child(2) {
+      display: none;
+    }
+    &__data {
+      margin-right: 0;
+    }
+    &__circle-diagram {
+      width: 90%;
+      margin-right: 0;
+    }
+    &__room-escape-paragraph {
+      width: 100%;
+    }
+    &__diagram {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 30rem) {
+  .room-details-description {
+    &__diagram {
+      margin-left: 1rem;
+    }
+    &__list {
+      margin-top: 2rem;
     }
   }
 }

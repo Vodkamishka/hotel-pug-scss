@@ -4,5 +4,5 @@ body {
   @include body;
 }
 .room-details {
-  width: 100.138888%;
+  min-width: 20rem;
 }

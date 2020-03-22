@@ -1,42 +1,40 @@
 .room-details-images {
     display: flex;
-    flex-wrap: wrap;
+    
   &__picture {
     width: 61.3125rem;
-    height: 30.3125rem;
+    height: 30.375rem;
     background: url('../../../../assets/img/rooms/8888.jpg')
       bottom;
+    background-size: cover;
+    
   }
-  
   &__image {
     width: 28.8125rem;
     height: 15.1875rem;
     background: url('../../../../assets/img/rooms/picture-top.jpg')
       right no-repeat;
     background-size: cover;
+    
   }
   &__image_bottom {
     background: url('../../../../assets/img/rooms/picture-bottom.jpg')
       no-repeat;
-     
-  }
+      background-size: cover; 
+      
 }
-@media (max-width: 56.25rem) {
-  .room-details {
-    flex-wrap: wrap;
-    &__container-images {
-      display: flex;
+
+@media (max-width: 30rem) {
+  .room-details-images {
+    &__container-images  {
       width: 100%;
     }
-  }
-}
-@media (max-width: 31.25rem) {
-  .room-details {
-    &__container-images {
-      flex-direction: column;
-    }
-    &__image {
+    &__image, &__image_bottom {
       width: 100%;
     }
+    &__picture {
+      width: 0;
+    }
   }
+}
 }
