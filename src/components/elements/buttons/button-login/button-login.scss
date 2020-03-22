@@ -7,11 +7,11 @@
   background-image: linear-gradient(180deg, $purple 0%, $blue 100%);
   min-width: 4.9375rem;
   text-transform: uppercase;
+  padding: 0.125rem;
   &:hover {
     background-image: linear-gradient($purple50 0%, $blue50 100%);
   }
   &__text {
-    padding: 0 1rem;
     color: $purple;
     font-family: "Montserrat";
     font-weight: bold;
@@ -19,7 +19,7 @@
     height: 0.9375rem;
     padding: 0.45rem 1.15rem;
     background: $white;
-    border-radius: 1.58rem;
+    border-radius: 1.7rem;
   }
   &_rus {
     min-width: 5.4375rem;
