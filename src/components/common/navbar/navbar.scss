@@ -25,6 +25,13 @@
     background: transparent;
   }
 }
+.header_eng, .header_eng-second {
+  .navbar {
+    &__li:first-child {
+      font-weight: bold;;
+    }
+  }
+}
 
 @media (max-width: 69rem) {
   .navbar {

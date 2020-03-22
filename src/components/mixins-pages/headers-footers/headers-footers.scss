@@ -47,3 +47,12 @@ body {
 .footer_eng .footer__text-block {
   padding-top: 6.5625rem;
 }
+
+@media (max-width: 35rem) {
+  .headers-footers {
+    min-width: 17rem;
+    &__text {
+      width: 100%;
+    }
+  }
+}

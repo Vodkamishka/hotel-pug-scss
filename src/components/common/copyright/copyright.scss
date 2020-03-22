@@ -14,8 +14,12 @@
 @media (max-width: 44rem) {
   .copyright {
     justify-content: center;
+  }
+}
+@media (max-width: 36.0625rem) {
+  .copyright {
     &__text {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 }
