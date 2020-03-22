@@ -19,7 +19,9 @@ body {
     }
     &_fifth {
       margin-top: 2.5rem;
-      padding: 6.25rem 30.555% 6.875rem;
+      padding: 6.25rem 0 6.875rem;
+      display: flex;
+      justify-content: center;
       height: 22.9375rem;
       box-sizing: border-box;
     }
@@ -41,4 +43,7 @@ body {
       margin: 0 auto;
     }
   }
+}
+.footer_eng .footer__text-block {
+  padding-top: 6.5625rem;
 }

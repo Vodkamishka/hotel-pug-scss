@@ -3,7 +3,7 @@
 .form-elements-checkbox-radio {
     width: 20rem;
       &__checkbox {
-        margin-top: 8.9375rem;
+        margin-top: 9.1rem;
       }
       &__radio {
         margin: 2.7rem 0;
@@ -12,10 +12,10 @@
         margin-top: 2.7775rem;
       }
       &__rate {
-        margin: 2.5rem 0 12.3rem 0;
+        margin: 2.5rem 0 12.4rem 0;
       }
       &__rich {
-        margin: 16rem 0 0 0;
+        margin: 6.2rem 0 0 0;
       }
       &__murad {
         margin-top: 14.45rem;
@@ -23,4 +23,23 @@
           letter-spacing: 0;
         }
       }
+}
+
+
+@media (max-width: 30rem) {
+  .form-elements-checkbox-radio {
+    &__checkbox {
+      margin-top: 2rem;
+    }
+    &__rate {
+      margin-bottom: 2rem;
+    }
+    &__rich {
+      margin-top: 2rem;
+    }
+    &__murad {
+      margin-top: 3rem;
+    }
+  }
+    
 }

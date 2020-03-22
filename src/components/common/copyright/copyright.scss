@@ -7,14 +7,15 @@
   &__text {
     font-size: 0.875rem;
     color: $shade75;
+    margin-right: 1rem;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 44rem) {
   .copyright {
     justify-content: center;
     &__text {
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
     }
   }
 }

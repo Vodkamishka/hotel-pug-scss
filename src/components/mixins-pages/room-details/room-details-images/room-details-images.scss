@@ -1,12 +1,13 @@
 .room-details-images {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
   &__picture {
     width: 61.3125rem;
     height: 30.3125rem;
     background: url('../../../../assets/img/rooms/8888.jpg')
       bottom;
   }
+  
   &__image {
     width: 28.8125rem;
     height: 15.1875rem;
@@ -17,6 +18,7 @@
   &__image_bottom {
     background: url('../../../../assets/img/rooms/picture-bottom.jpg')
       no-repeat;
+     
   }
 }
 @media (max-width: 56.25rem) {

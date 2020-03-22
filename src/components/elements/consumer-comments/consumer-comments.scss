@@ -52,11 +52,14 @@
     }
   }
 }
-@media (max-width: 50rem) {
+@media (max-width: 81.25rem) {
   .consumer-comments {
+    &__likes {
+      width: 100%;
+    }
     &__text {
-      width: 18.75rem;
-      margin-right: 22.0625rem;
+      width: 100%;
+      
     }
   }
 }

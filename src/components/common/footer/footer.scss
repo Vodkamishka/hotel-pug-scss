@@ -87,7 +87,11 @@
     .footer__ul {
       margin-bottom: 2rem;
     }
+    .footer__text-block {
+      padding-bottom:  0;
+    }
   }
+  
 }
 @media (max-width: 18.75rem) {
   .footer,

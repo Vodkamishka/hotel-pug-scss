@@ -37,10 +37,10 @@
         }
       }
       &__pagination {
-        margin: 2.5rem 0 14.75rem 0.0625rem;
+        margin: 2.5rem 0 14.85rem 0.0625rem;
       }
       &__bullet {
-        margin-top: 16rem;
+        margin-top: 6.2rem;
       }
       &-dropdown {
         .dropdowns-guest-selection {
@@ -49,4 +49,18 @@
           }
         }
       }
+}
+
+@media (max-width: 30rem) {
+  .form-elements-slider-buttons {
+    &__range-slider {
+      margin-top: 3rem;
+    }
+    &__pagination {
+      margin-bottom: 3rem;
+    }
+    &__bullet {
+      margin-top: 3rem;
+    }
+  }  
 }

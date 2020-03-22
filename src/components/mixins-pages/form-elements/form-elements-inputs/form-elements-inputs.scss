@@ -4,7 +4,7 @@
     width: 20.0625rem;
     &__container {
       &_first {
-        margin: 8.75rem 0 1.25rem 0.0625rem;
+        margin: 8.8rem 0 1.25rem 0.0625rem;
         .input {
         .label {
         &__text:first-child {
@@ -52,15 +52,16 @@
         }
       }
       &_sixth {
-        margin: 2.5rem 0 2.535rem 0.0625rem;
+        margin: 2.6rem 0 2.535rem 0.0625rem;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
       &_seventh {
         margin: 2.535rem 0 2.5625rem 0.0625rem;
       }
       &_eighth {
-        margin-bottom: 6.25rem;
+        margin-bottom: 6.3rem;
         .input {
           .label {
             margin-left: 0.0625rem;
@@ -74,7 +75,7 @@
         margin: 0 0 1.25rem 0;
       }
       &_tenth {
-        margin-bottom: 9.965rem;
+        margin-bottom: 2.6rem;
         .input {
           &__label {
             margin-bottom: 0.285rem;
@@ -93,5 +94,21 @@
         }
       }
     }
-
+}
+@media (max-width: 30rem) {
+  .form-elements-inputs {
+    &__container {
+      &_eighth {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  
+  .form-elements-inputs__dropdown {
+    width: 100%;
+    .input_small {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
 }
