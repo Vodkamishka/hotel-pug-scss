@@ -24,7 +24,7 @@ Headers & Footers [Демонстрация](https://vodkamishka.github.io/hotel
 ### Kлонирования репозитория 
 
 * ssh ```git@github.com:Vodkamishka/hotel.git```
-* https git clone ```https://github.com/Vodkamishka/hotel.git```
+* https ```https://github.com/Vodkamishka/hotel.git```
 
 ### Сборка dev
 ```npm run start```
