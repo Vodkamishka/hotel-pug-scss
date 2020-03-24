@@ -29,6 +29,10 @@
       background: $gradient;
       border-radius: 50%;
       border: none;
+      color: $white;
+    }
+    &--cell-month.-range-from- {
+        background: transparent;
     }
     &--cell-day.-disabled-.-other-month- {
         color: rgba(31, 32, 65, 0.25);
