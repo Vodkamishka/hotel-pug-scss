@@ -8,6 +8,7 @@ input[type="text"] {
   border: 0.0625rem solid rgba($shade25, 0.25);
   border-radius: 0.25rem;
   padding-left: 0.875rem;
+  padding-right: 2.125rem;
   padding-bottom: 0.125rem;
   font-size: 0.875rem;
   line-height: 1.125rem;
@@ -34,7 +35,7 @@ input[type="text"] {
     border: none;
     position: absolute;
     top: 2.1rem;
-    background: transparent;
+    background: $white;
     right: 1rem;
     &_without-label {
       top: 50%;
