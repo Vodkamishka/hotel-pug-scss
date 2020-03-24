@@ -25,12 +25,16 @@
         color: $white;
         background: $gradient-green;
     }
-    &--cell-day.-range-from-.-selected-,.-range-to-,.-focus-.-selected- {
+    &--cell-day.-range-from-.-selected-,.-range-to-,.-focus-.-selected-, &--cell-day.-range-from- {
       background: $gradient;
       border-radius: 50%;
+      border: none;
     }
     &--cell-day.-disabled-.-other-month- {
         color: rgba(31, 32, 65, 0.25);
+    }
+    &--cell-month.-disabled- {
+        color: lightgray;
     }
     &--cell-day.-in-range- {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
@@ -39,13 +43,13 @@
         background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%); 
       }
     }
-    .datepicker--cell-day.-range-to- {
+    &--cell-day.-range-to- {
       border: none;
       background-color: $gradient;
       border-radius: 50%;
       color: $white;
     }
-    .datepicker--cell-day.-range-from-:not(.-disabled-)::after {
+    &--cell-day.-range-from-:not(.-disabled-)::after {
       content: "";
       position: absolute;
       top: 0;
@@ -55,7 +59,7 @@
       height: 100%;
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
     }
-    .datepicker--cell-day.-range-to-:not(.-disabled-)::before {
+    &--cell-day.-range-to-:not(.-disabled-)::before {
       content: "";
       position: absolute;
       top: 0;
@@ -120,4 +124,17 @@
     &--nav-title i {
         color: $shade100;
     }
+    &--cell-month.-current- {
+        color: orange;
+        &:hover {
+            color: gray;
+        }
+    }
+    &--cell-month.-focus-.-selected- {
+        background: none;
+    }
+    &--cell-month {
+        width: 25%
+    }
+    
 }
