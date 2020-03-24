@@ -31,9 +31,7 @@
       border: none;
       color: $white;
     }
-    &--cell-month.-range-from- {
-        background: transparent;
-    }
+    
     &--cell-day.-disabled-.-other-month- {
         color: rgba(31, 32, 65, 0.25);
     }
@@ -128,14 +126,19 @@
     &--nav-title i {
         color: $shade100;
     }
-    &--cell-month.-current- {
+    &--cell-month.-current-,
+    &--cell-month.-current-.-selected-.-focus-.-range-to-.-range-from-,
+    &--cell-month.-current-.-selected-.-range-to-.-range-from-
+    {
         color: orange;
+        background: transparent;
         &:hover {
             color: gray;
         }
     }
-    &--cell-month.-focus-.-selected- {
-        background: none;
+    &--cell-month.-selected-.-range-to-.-range-from- {
+        background: transparent;
+        color: rgba(31,32,65,.5);
     }
     &--cell-month {
         width: 25%
