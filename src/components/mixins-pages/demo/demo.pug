@@ -1,10 +1,10 @@
 mixin demo (options)
-    - const {link, websiteTitles, uikitTitles} = options
+    - const {websiteTitles, uikitTitles} = options
     .demo
         .demo__see See demo
         .demo__title Website Pages
         for el in websiteTitles
-            a(href=`${link}/${el.link}.html` target="_blank" class="demo__a")= el.title
+            a(href=`/${el.link}.html` target="_blank" class="demo__a")= el.title
         .demo__title Ui Kit 
         for el in uikitTitles
-            a(href=`${link}/${el.link}.html` target="_blank" class="demo__a")= el.title   
+            a(href=`/${el.link}.html` target="_blank" class="demo__a")= el.title   
