@@ -36,14 +36,17 @@ class DoubleDateCalendar {
   addEventListeners() {
     $(this.$ticks[0]).on('click', () => this.$container.toggleClass(parentClassHide));
     $(this.$ticks[1]).on('click', () => this.$container.toggleClass(parentClassHide));
-    this.$apply.on('click', () => this.$container.toggleClass(parentClassHide));
+    this.$apply.on('click', () => {
+      this.$container.toggleClass(parentClassHide);
+      $(this.$inputs[0]).val(this.dates[0]);
+      $(this.$inputs[1]).val(this.dates[1]);
+    });
     this.$clear.on('click', () => this.data.clear());
   }
 
   select(stringDates) {
     const dates = stringDates.split('-');
-    $(this.$inputs[0]).val(dates[0]);
-    $(this.$inputs[1]).val(dates[1]);
+    this.dates = dates;
   }
 }
 
