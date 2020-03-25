@@ -3,7 +3,7 @@
 .header {
   background: $white;
   box-shadow: 0 0.625rem 1.25rem $shade05;
-  padding: 0.9375rem 9.72%;
+  padding: 0.9375rem 14.634146%;
   flex-wrap: wrap;
   @include space-between;
   &__span {
@@ -83,7 +83,7 @@
     }
   }
 }
-@media (max-width: 69rem) {
+@media (max-width: 81.25rem) {
   .header,
   .header_eng,
   .header_eng-second {

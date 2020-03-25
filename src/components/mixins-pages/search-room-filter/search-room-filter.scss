@@ -8,7 +8,7 @@ body {
     &__content {
         display: flex;
         justify-content: space-between;
-        padding: 1.875rem 9.72% 0 9.72%;
+        padding: 1.875rem 14.634% 0 14.634%;
         box-sizing: border-box;
         border-bottom: 0.0625rem solid rgba(31, 32, 65, 0.25);
     }
@@ -19,7 +19,7 @@ body {
       }
 }
 
-@media (max-width: 78.125rem) {
+@media (max-width: 96rem) {
     .search-room-filter__content {
         padding-left: 5%;
     }

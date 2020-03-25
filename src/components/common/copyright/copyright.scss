@@ -1,7 +1,7 @@
 @import "../../../assets/utils/main";
 
 .copyright {
-  padding: 1.489rem 9.72%;
+  padding: 1.489rem 14.634%;
   flex-wrap: wrap;
   @include space-between;
   &__text {
@@ -14,10 +14,7 @@
 @media (max-width: 44rem) {
   .copyright {
     justify-content: center;
-  }
-}
-@media (max-width: 36.0625rem) {
-  .copyright {
+    flex-direction: column;
     &__text {
       margin-bottom: 2rem;
     }
