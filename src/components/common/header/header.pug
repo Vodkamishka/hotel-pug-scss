@@ -5,7 +5,7 @@ include ../../elements/burger/burger
 mixin header (props)
     - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header js-header ${classHeader}`)
-        a(href= "/landing.html" class = 'header__a')
+        a(href= "/landing.html" class = 'header__a js-header__a')
             img(src='assets/img/logotypes/logo.svg', alt='logo')
         .header__burger.js-header__burger 
             +burger

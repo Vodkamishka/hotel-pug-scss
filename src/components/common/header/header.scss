@@ -15,6 +15,7 @@
   &__burger {
     position: absolute;
     right: 8.75rem;
+    top: 0;
     display: none;
   }
   &__container {
@@ -57,7 +58,6 @@
   .header_eng,
   .header_eng-second {
     .header__container {
-      margin-left: 2%;
       .header_li {
         font-size: 0.8125rem;
       }
@@ -82,6 +82,9 @@
       }
     }
   }
+  .header__third-element {
+    margin-top: 0.5rem;
+  }
 }
 @media (max-width: 81.3125rem) {
   .header,
@@ -101,7 +104,7 @@
         display: none;
       }
     }
-    .header__a, .header__navbar {
+    .header__bottom {
       margin-bottom: 0.8rem;
     }
     .header__navbar {
