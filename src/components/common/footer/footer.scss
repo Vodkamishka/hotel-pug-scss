@@ -3,9 +3,8 @@
 .footer {
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     &__text-block {
-    padding: 6.5rem 14.634% 6.35rem;
+    padding: 6.5rem 15.12327% 6.35rem;
     display: flex;
-    flex-wrap: wrap;
     }
     &__ul {
       list-style-type: none;
@@ -81,7 +80,15 @@
       }
     }
 }
-@media (max-width: 69.8125rem) {
+@media (max-width: 97rem) {
+  .footer,
+  .footer_eng {
+    &__text-block {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 80.625rem) {
   .footer,
   .footer_eng {
     .footer__ul {
@@ -91,7 +98,6 @@
       padding-bottom:  0;
     }
   }
-  
 }
 @media (max-width: 18.75rem) {
   .footer,
@@ -110,7 +116,7 @@
 .footer_eng {
   @extend .footer;
   .footer__text-block {
-    padding: 6.19375rem 14.634% 6.4rem;
+    padding: 6.19375rem 15.12327% 6.4rem;
   }
 }
 
