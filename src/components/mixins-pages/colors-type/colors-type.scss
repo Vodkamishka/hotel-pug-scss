@@ -22,14 +22,14 @@ body {
     margin-bottom: 1.25rem;
   }
   &__colors-title-wrapper {
-    margin-bottom: 3.125rem;
     &:first-child,
     &:nth-child(2) {
       margin-left: 0.5rem;
+      margin-bottom: 3.125rem;
     }
     &:nth-child(3) {
       margin-left: 1.125rem;
-      margin-bottom: 2.8rem;
+      margin-bottom: 2.95rem;
     }
   }
 }

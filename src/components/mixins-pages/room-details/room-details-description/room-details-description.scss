@@ -1,13 +1,12 @@
 @import "../../../../assets/utils/main";
 
 .room-details-description {
-    padding: 4.375rem 9.70873% 4.5625rem 15.12327%;
+    padding: 4.375rem 15.123271% 4.5625rem 15.12327%;
     display: flex;
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: $shade75;
     box-shadow: 0 0.0625rem 0 rgba(31, 32, 65, 0.1);
-    flex-wrap: wrap;
   &__data {
     width: 18.4375rem;
     margin-right: 4.3124rem;
