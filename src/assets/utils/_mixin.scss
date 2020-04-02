@@ -1,0 +1,80 @@
+  
+@import "./vars.scss";
+
+@mixin align-items {
+  display: flex;
+  align-items: center;
+}
+@mixin justify-content {
+  display: flex;
+  justify-content: center;
+}
+@mixin title-inputs {
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  text-transform: uppercase;
+  color: $shade100;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin cards {
+  box-shadow: 0 0 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
+  box-sizing: border-box;
+  &__title {
+    font-family: "Quicksand", Arial, sans-serif;
+    letter-spacing: 0.075rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $shade100;
+    margin-bottom: 1.25rem;
+  }
+}
+@mixin toxin {
+  &__toxin {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__text {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: $black;
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-right: 0.5rem;
+  }
+}
+@mixin container_execute {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.0625rem solid $shade50;
+  border-radius: 0 0 0.25rem 0.25rem;
+  border-top: transparent;
+  height: 7.4375rem;
+  padding: 0.375rem 0.375rem 0.5rem 0.875rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  background: $white;
+  color: $shade100;
+  text-transform: uppercase;
+  z-index: 10000;
+  .execute-panel {
+    &__increment, &__decrement {
+      cursor: pointer;
+    }
+  }
+}

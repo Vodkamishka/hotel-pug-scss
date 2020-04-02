@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-left: 15.12327%;
+  min-width: 20rem;
   &__logo-wrapper {
     position: absolute;
     left: 8.5%;
@@ -28,7 +29,6 @@ body {
 
 @media (max-width: 30rem) {
   .form-elements {
-    min-width: 22.5rem;
     justify-content: center;
     .form-elements__column {
       margin-right: 2rem;
