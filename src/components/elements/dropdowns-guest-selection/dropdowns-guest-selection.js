@@ -167,9 +167,9 @@ class Dropdowns {
     const sum = +this.result[0].innerHTML + +this.result[1].innerHTML + +this.result[2].innerHTML;
     if (this.clear !== null) {
       if (sum === 0) {
-        this.clear.classList.add('dropdowns-guest-selection_hide');
+        this.clear.classList.add('dropdowns-guest-selection_disappeared');
       } else {
-        this.clear.classList.remove('dropdowns-guest-selection_hide');
+        this.clear.classList.remove('dropdowns-guest-selection_disappeared');
       }
     }
   }

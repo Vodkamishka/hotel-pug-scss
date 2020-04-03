@@ -3,7 +3,6 @@
 .dropdowns-guest-selection {
   &__container-execute {
     @include container_execute;
-    height: 9.85rem;
     padding-top: 0.3475rem;
     .execute-panel {
       &_increment-decrement {
@@ -24,17 +23,21 @@
   }
   &__buttons {
     margin-top: 1.25rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__apply {
     color: $purple;
-    text-align: right;
-    float: right;
     cursor: pointer;
   }
   &__clear {
     color: $shade50;
-    float: left;
     cursor: pointer;
+  }
+  &_disappeared {
+    opacity: 0;
   }
 }
 

@@ -2,7 +2,7 @@ include ../input/input
 include ../execute-panel/execute-panel
 
 mixin dropdowns-guest-selection (props)
-    - const {placeholder, className, leftLabel, rightLabel, showButtonClear, classShowDropdown} = props
+    - const {placeholder, className, leftLabel, rightLabel, classShowDropdown} = props
     - let {x, y, z} = props
     - x = x || 0
     - y = y || 0
@@ -16,6 +16,5 @@ mixin dropdowns-guest-selection (props)
                         .dropdowns-guest-selection__wrapper-execute-panel
                             +execute-panel({title: people, result: number})
             .dropdowns-guest-selection__buttons
-                if showButtonClear === 'block'
-                    .dropdowns-guest-selection__clear Очистить
+                .dropdowns-guest-selection__clear Очистить
                 .dropdowns-guest-selection__apply Применить
