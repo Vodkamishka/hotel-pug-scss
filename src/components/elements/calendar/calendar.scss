@@ -120,8 +120,7 @@
         font-family: "Quicksand", Arial, Helvetica, sans-serif;
         text-align: center;
         color: $shade100;
-        white-space: nowrap;
-        padding: 0;
+        width: 100%;
     }
     &--nav-title i {
         color: $shade100;
