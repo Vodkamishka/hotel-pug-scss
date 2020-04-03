@@ -12,6 +12,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $white;
+    position: relative;
     &_short {
         background: $gradient;
         width: 6.1875rem;
@@ -44,13 +45,13 @@
     }
     &_long {
         width: 20rem;
-        background: url('../../../../assets/img/icons/arrow_forward_white.svg') no-repeat 18rem, $gradient;
+        background: $gradient;
         &:hover {
         background: $gradient;
         color: $white;
         opacity: 0.5;
         }
-        }
+    }
     &__text {
         color: $white;
         font-weight: bold;
@@ -58,14 +59,26 @@
         height: 0.9375rem;
         letter-spacing: 0.0625rem;
         padding: 0 1rem;
-        }
+    }
+    &__img {
+        position: absolute;
+        top: 30%;
+        right: 0.9rem;
+    }
 }
 
 @media (max-width: 30rem) {
     .button {
         &_long {
             width: 100%;
-            background: $gradient;
+        }
+    }
+}
+@media (max-width: 24rem) {
+    .button {
+        &__text {
+            margin-right: 10%;
+            font-size: 0.7rem;
         }
     }
 }
