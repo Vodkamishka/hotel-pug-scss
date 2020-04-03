@@ -6,12 +6,15 @@ body {
   height: 100%;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   padding-top: 9.0625rem;
-  padding-left: 15.565476%;
+  padding-left: 9%;
   display: flex;
   flex-wrap: wrap;
+  &__title {
+    margin-right: 1rem;
+  }
   &__logo-wrapper {
     position: absolute;
-    left: 8.5%;
+    left: 1.875rem;
     top: 1.875rem;
   }
   &__squares {

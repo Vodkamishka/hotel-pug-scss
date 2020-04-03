@@ -10,8 +10,19 @@ body {
         height: 42.75rem;
         background: url('../../../assets/img/rooms/sign-in.jpg');
         background-size: cover;
-        @include flex-center;
+        display: flex;
+        align-items: center;
+        padding-left: 31.87%;
         background-size: cover;
         width: 100%;
     }  
 }
+
+@media(max-width: 60rem) {
+    .sign-in {
+      &__image-wrapper {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }

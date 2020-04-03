@@ -2,7 +2,6 @@
 body {
   @include body;
 }
-
 .registration {
   height: 75.6875rem;
   min-width: 16rem;
@@ -11,7 +10,7 @@ body {
     background: url('../../../assets/img/rooms/registration.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    padding-left: 31.87%;
     padding-top: 1.875rem;
     padding-bottom: 1.5rem;
     box-sizing: border-box;
@@ -32,3 +31,11 @@ body {
 }
 
 
+@media(max-width: 60rem) {
+  .registration {
+    &__image-wrapper {
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+}

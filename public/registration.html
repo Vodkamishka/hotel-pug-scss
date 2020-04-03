@@ -59,10 +59,14 @@
           <div class="registration-account__title">Регистрация аккаунта</div>
           <div class="registration-account__two-fields">
             <div class="input input_undefined">
-              <input class="input__input js-input__input" type="text" placeholder="Имя">
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="Имя">
+              </div>
             </div>
             <div class="input input_undefined">
-              <input class="input__input js-input__input" type="text" placeholder="Фамилия">
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="Фамилия">
+              </div>
             </div>
           </div>
           <div class="radio">
@@ -83,7 +87,9 @@
                   <label class="label__text" for="forLab"></label>
                 </div>
               </div>
-              <input class="input__input js-input__input" type="text" placeholder="ДД.ММ.ГГГГ">
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="ДД.ММ.ГГГГ">
+              </div>
             </div>
           </div>
           <div class="registration-account__two-fields">
@@ -94,10 +100,14 @@
                   <label class="label__text" for="forLab"></label>
                 </div>
               </div>
-              <input class="input__input js-input__input" type="text" placeholder="Email">
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="Email">
+              </div>
             </div>
             <div class="input input_long">
-              <input class="input__input js-input__input" type="text" placeholder="Пароль">
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="Пароль">
+              </div>
             </div>
           </div>
           <div class="toggle-one">
@@ -105,7 +115,8 @@
             <label for="offer">Получать спецпредложения</label>
           </div>
           <div class="registration-account__button">
-            <button class="button button_long"><span class="button__text">Перейти к оплате</span></button>
+            <button class="button button_long"><span class="button__text">Перейти к оплате
+                <div class="button__img"><img src="assets/img/icons/arrow_forward_white.svg"></div></span></button>
           </div>
           <div class="registration-account__toxin">
             <div class="registration-account__text">Уже есть аккаунт на Toxin</div>
@@ -142,8 +153,10 @@
             <li class="footer__li">Подписка</li>
             <li class="footer__li">Получайте специальные предложения и новости сервиса</li>
             <div class="input input_little">
-              <input class="input__input js-input__input" type="text" placeholder="Email">
-              <button class="input__button input__button_without-label"><img src="assets/img/icons/arrow_forward.svg"></button>
+              <div class="input__container">
+                <input class="input__input js-input__input" type="text" placeholder="Email">
+                <button class="input__button input__button_without-label"><img src="assets/img/icons/arrow_forward.svg"></button>
+              </div>
             </div>
           </ul>
         </div>

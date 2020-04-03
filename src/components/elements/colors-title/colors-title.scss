@@ -19,7 +19,7 @@
     .colors-title__title {
       font-size: 1.5rem;
       line-height: 1.875rem;
-      width: 21rem;
+      max-width: 21rem;
       height: 3.75rem;
     }
   }
@@ -31,7 +31,7 @@
     .colors-title__title {
       font-size: 1.1875rem;
       line-height: 1.5rem;
-      width: 17.625rem;
+      max-width: 17.625rem;
       height: 3rem;
     }
   }
@@ -42,7 +42,7 @@
     .colors-title__title {
       font-size: 0.75rem;
       line-height: 0.9375rem;
-      width: 11.625rem;
+      max-width: 11.625rem;
       height: 0.9375rem;
       text-transform: uppercase;
       font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -57,7 +57,7 @@
     .colors-title__title {
       font-size: 0.875rem;
       line-height: 1.5rem;
-      width: 18.8125rem;
+      max-width: 18.8125rem;
       height: 3rem;
       font-weight: normal;
       color: $shade75;
