@@ -1,7 +1,6 @@
 @import "../../../assets/utils/main";
 
 .search-rooms {
-  min-height: 23.375rem;
   @include cards;
   max-width: 23.75rem;
   background: $white;
