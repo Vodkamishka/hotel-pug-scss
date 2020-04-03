@@ -6,11 +6,12 @@ mixin input (props)
         if leftLabel
             .input__label
                 +label(props)
-        input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly)
-        if expand && leftLabel
-            button.input__button
-                img(src=`assets/img/icons/${expand}.svg`)
-        if expand && !leftLabel
-            button.input__button.input__button_without-label
-                img(src=`assets/img/icons/${expand}.svg`)
-        
+        .input__container
+            input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly)
+            if expand && leftLabel
+                button.input__button
+                    img(src=`assets/img/icons/${expand}.svg`)
+            if expand && !leftLabel
+                button.input__button.input__button_without-label
+                    img(src=`assets/img/icons/${expand}.svg`)
+            

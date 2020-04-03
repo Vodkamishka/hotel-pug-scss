@@ -26,7 +26,6 @@ input[type="text"] {
 }
 
 .input {
-  position: relative;
   &__label {
     margin-bottom: 0.3125rem;
     width: 100%;
@@ -34,7 +33,7 @@ input[type="text"] {
   &__button {
     border: none;
     position: absolute;
-    top: 2.1rem;
+    top: 0.9rem;
     background: $white;
     right: 1rem;
     &_without-label {
@@ -42,7 +41,9 @@ input[type="text"] {
       transform: translateY(-50%);
     }
   }
-
+  &__container {
+    position: relative;
+  }
   &_long {
     color: $shade75;
     width: $long;
