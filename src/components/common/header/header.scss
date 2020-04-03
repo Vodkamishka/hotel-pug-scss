@@ -21,6 +21,7 @@
   &__container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__a {
     height: 2.5rem;

@@ -29,6 +29,13 @@ body {
     position: absolute;
   }
 }
+@media (max-width: 61rem) {
+  .landing {
+    &__text-frame {
+      display: none;
+    }
+  }
+}
 @media (max-width: 33.75rem) {
   .landing {
     &__search-rooms {
@@ -40,10 +47,4 @@ body {
     } 
   }
 }
-@media (max-width: 27rem) {
-  .landing {
-    &__text-frame {
-      display: none;
-    }
-  }
-}
+
