@@ -5,7 +5,7 @@
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
-    height: 2.75rem;
+    min-height: 2.75rem;
     border-radius: 1.375rem;
     box-sizing: border-box;
     border: none;
@@ -13,6 +13,7 @@
     text-transform: uppercase;
     color: $white;
     position: relative;
+    padding: 1rem 2.2rem;
     &_short {
         background: $gradient;
         width: 6.1875rem;
@@ -58,11 +59,11 @@
         font-size: 0.75rem;
         height: 0.9375rem;
         letter-spacing: 0.0625rem;
-        padding: 0 1rem;
     }
     &__img {
         position: absolute;
-        top: 30%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0.9rem;
     }
 }
