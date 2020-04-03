@@ -13,6 +13,8 @@ class Dropdowns {
     this.clearAll();
     this.applyed();
     this.drawDecrementAndInput();
+    this.showHideButtonClear();
+    this.drawResultInput();
   }
 
   findDom() {
@@ -96,17 +98,20 @@ class Dropdowns {
     this.tick.addEventListener('click', () => this.hideContainer());
   }
 
+  drawResultInput() {
+    if (this.dropdown.classList.contains('dropdowns-guest-selection')) {
+      this.setGuestsInInput(this.result);
+    } else {
+      this.setBedsInInput(this.result);
+    }
+  }
+
   drawDecrementAndInput() {
     this.result.forEach((el, index) => {
       if (el.innerHTML === '0') {
         this.decrement[index].style.opacity = 0;
       } else {
         this.decrement[index].style.opacity = 1;
-      }
-      if (this.dropdown.classList.contains('dropdowns-guest-selection')) {
-        this.setGuestsInInput(this.result);
-      } else {
-        this.setBedsInInput(this.result);
       }
     });
   }
@@ -115,6 +120,7 @@ class Dropdowns {
     const result = el.previousElementSibling;
     result.innerHTML = +result.innerHTML + 1;
     this.drawDecrementAndInput();
+    this.showHideButtonClear();
   }
 
   calculatedIncrement() {
@@ -129,6 +135,7 @@ class Dropdowns {
       result.innerHTML -= 1;
     }
     this.drawDecrementAndInput();
+    this.showHideButtonClear();
   }
 
   calculatedDecrement() {
@@ -142,6 +149,8 @@ class Dropdowns {
     });
     this.input.placeholder = 'Сколько гостей';
     this.drawDecrementAndInput();
+    this.drawResultInput();
+    this.showHideButtonClear();
   }
 
   clearAll() {
@@ -154,9 +163,24 @@ class Dropdowns {
     this.container.classList.toggle(this.className);
   }
 
+  showHideButtonClear() {
+    const sum = +this.result[0].innerHTML + +this.result[1].innerHTML + +this.result[2].innerHTML;
+    if (this.clear !== null) {
+      if (sum === 0) {
+        this.clear.classList.add('dropdowns-guest-selection_hide');
+      } else {
+        this.clear.classList.remove('dropdowns-guest-selection_hide');
+      }
+    }
+  }
+
   applyed() {
     if (this.apply !== null) {
-      this.apply.addEventListener('click', () => this.classListToggle());
+      this.apply.addEventListener('click', () => {
+        this.classListToggle();
+        this.drawResultInput();
+        this.showHideButtonClear();
+      });
     }
   }
 }
