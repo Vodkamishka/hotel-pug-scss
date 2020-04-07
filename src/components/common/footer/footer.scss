@@ -99,6 +99,14 @@
     }
   }
 }
+@media (max-width: 35.81rem) {
+  .footer,
+  .footer_eng {
+    &__text-block {
+      padding-top: 2rem;
+    }
+  }
+}
 @media (max-width: 18.75rem) {
   .footer,
   .footer_eng {
