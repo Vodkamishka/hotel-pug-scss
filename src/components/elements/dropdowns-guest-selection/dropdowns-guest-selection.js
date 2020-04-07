@@ -135,7 +135,6 @@ class Dropdowns {
       result.innerHTML -= 1;
     }
     this.drawDecrementAndInput();
-    this.showHideButtonClear();
   }
 
   calculatedDecrement() {
@@ -143,10 +142,6 @@ class Dropdowns {
   }
 
   clearResult() {
-    this.result.forEach((el) => {
-      const res = el;
-      res.innerHTML = '0';
-    });
     this.input.placeholder = 'Сколько гостей';
     this.drawDecrementAndInput();
     this.drawResultInput();
@@ -154,7 +149,11 @@ class Dropdowns {
   }
 
   clearAll() {
-    if (this.clear) {
+    let res = 0;
+    this.result.forEach((el) => {
+      res += +el.innerHTML;
+    });
+    if (this.clear && res === 0) {
       this.clear.addEventListener('click', () => this.clearResult());
     }
   }
