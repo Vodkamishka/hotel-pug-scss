@@ -42,9 +42,10 @@
     font-weight: normal;
     letter-spacing: 0.03125rem;
   }
+  * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
 }
-* {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
+
