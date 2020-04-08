@@ -1,9 +1,13 @@
 .social {
-  width: 7rem;
+  min-width: 7rem;
   display: flex;
+  flex-wrap: wrap;
   &__a {
     margin-right: 1.25rem;
     height: 1.4rem;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__image {
     width: 1.5rem;
