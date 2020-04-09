@@ -5,16 +5,17 @@ include ../../elements/burger/burger
 mixin header (props)
     - const {classHeader, titlesNavbar, log, register} = props
     div(class=`header js-header ${classHeader}`)
-        a(href= "/landing.html" class = 'header__a js-header__a')
-            img(src='assets/img/logotypes/logo.svg', alt='logo')
-        .header__burger.js-header__burger 
-            +burger
-        .header__container.js-header__container.header__container_hide
-            .header__navbar
-                +navbar(titlesNavbar)
-            .header__third-element
-                if classHeader === 'header_eng-second' 
-                    span.header__span Cosmin Negoita  
-                else
-                    +buttons-login-register(props)
+        .header__content
+            a(href= "/landing.html" class = 'header__a js-header__a')
+                img(src='assets/img/logotypes/logo.svg', alt='logo')
+            .header__burger.js-header__burger 
+                +burger
+            .header__container.js-header__container.header__container_hide
+                .header__navbar
+                    +navbar(titlesNavbar)
+                .header__third-element
+                    if classHeader === 'header_eng-second' 
+                        span.header__span Cosmin Negoita  
+                    else
+                        +buttons-login-register(props)
                 

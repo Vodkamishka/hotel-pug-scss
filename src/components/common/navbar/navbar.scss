@@ -12,7 +12,6 @@
     line-height: 1.0625rem;
     color: $shade50;
     margin-right: 1.3rem;
-    //white-space: nowrap;
     @include align-items;
     &:nth-child(3) {
       margin-right: 1.25rem;
@@ -34,7 +33,7 @@
   }
 }
 
-@media (max-width: 81.3125rem) {
+@media (max-width: 62rem) {
   .navbar {
     &__ul {
       flex-direction: column;
