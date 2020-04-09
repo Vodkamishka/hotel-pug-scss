@@ -1,9 +1,13 @@
 @import "../../../assets/utils/main";
 
 .copyright {
-  padding: 1.489rem 21.828% 1.489rem 8.4185%;
-  flex-wrap: wrap;
-  @include space-between;
+  padding: 1.489rem 2rem;
+  &__content {
+    max-width: 72.5rem;
+    flex-wrap: wrap;
+    @include space-between;
+    margin: 0 auto;
+  }
   &__text {
     font-size: 0.875rem;
     color: $shade75;
@@ -11,11 +15,12 @@
   }
 }
 
-@media (max-width: 44.5rem) {
+@media (max-width: 34.875rem) {
   .copyright {
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 8.4185%;
+    &__content {
+      justify-content: center;
+      flex-direction: column;
+    }
     &__text {
       margin-bottom: 2rem;
       text-align: center;

@@ -2,6 +2,7 @@ include ../../elements/social/social.pug
 
 mixin copyright(props)
     - const {text} = props
-    .copyright 
-        .copyright__text=text
-        +social
+    .copyright
+        .copyright__content 
+            .copyright__text=text
+            +social
