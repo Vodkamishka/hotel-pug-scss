@@ -7,12 +7,13 @@ mixin colors-type(options)
     - const {blocks, titles} = options
     .colors-type
         .colors-type__logo-wrapper
-            +logo-wrapper  
-        .colors-type__squares
-            for el in blocks
-                .colors-type__block-wrapper
-                    +block(el)
-        .colors-type__title
-            for el in titles
-                .colors-type__colors-title-wrapper
-                    +colors-title(el)
+            +logo-wrapper
+        .colors-type__content  
+            .colors-type__squares
+                for el in blocks
+                    .colors-type__block-wrapper
+                        +block(el)
+            .colors-type__title
+                for el in titles
+                    .colors-type__colors-title-wrapper
+                        +colors-title(el)

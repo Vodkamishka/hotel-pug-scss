@@ -5,12 +5,13 @@ body {
 .colors-type {
   height: 100%;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  padding-top: 9.0625rem;
-  padding-left: 9%;
-  display: flex;
-  flex-wrap: wrap;
-  &__title {
-    margin-right: 1rem;
+  padding: 9.0625rem 10.41666% 0;
+  min-width: 20rem;
+  &__content {
+    display: flex;
+    max-width: 68.6875rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__logo-wrapper {
     position: absolute;
@@ -18,7 +19,6 @@ body {
     top: 1.875rem;
   }
   &__squares {
-    margin-right: 26.8rem;
     margin-bottom: 2rem;
   }
   &__block-wrapper {
@@ -33,17 +33,6 @@ body {
     &:nth-child(3) {
       margin-left: 1.125rem;
       margin-bottom: 2.95rem;
-    }
-  }
-}
-@media (max-width: 42rem) {
-  .colors-type {
-    min-width: 20rem;
-    padding-left: 10%;
-    justify-content: flex-start;
-    &__squares {
-      margin-right: 0;
-      margin-left: 0;
     }
   }
 }

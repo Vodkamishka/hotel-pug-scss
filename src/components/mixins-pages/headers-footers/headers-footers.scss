@@ -39,9 +39,8 @@ body {
     text-align: center;
   }
   &__social {
-    .social {
-      margin: 0 auto;
-    }
+    display: flex;
+    justify-content: center;
   }
 }
 .footer_eng .footer__text-block {

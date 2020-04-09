@@ -6,47 +6,48 @@ include ../../../common/reservation/reservation
 mixin room-details-description(options)
     - const {bulletList, textOne, textTwo} = options
     .room-details-description
-        .room-details-description__data
-            .room-details-description__room-information 
-                .room-details-description__title Сведения о номере
-                    .room-details-description__wrapper-info-room 
-                        +info-room({img: 'insert_emoticon', title: 'Комфорт', text: 'Шумопоглащающие стены'})
-                    .room-details-description__wrapper-info-room 
-                        +info-room({img:'location_city', title: 'Удобство', text: 'Окно в каждой из спален'})
-                    .room-details-description__wrapper-info-room 
-                        +info-room({img: 'whatshot', title: 'Уют', text: 'Номер оснащен камином'})
-            .room-details-description__comments-consumer 
-                .room-details-description__title 
-                    .room-details-description__reviews
-                        .room-details-description__review Отзывы посетителей номера
-                        .room-details-description__review 2 отзыва
-                    .room-details-description__wrapper-consumer-comments
-                        +consumer-comments({img: "man", name: "Мурад Сарафанов", term: "5 дней назад", like: 12, text: textOne})
-                    .room-details-description__wrapper-consumer-comments.room-details-description__wrapper-consumer-comments_second
-                        +consumer-comments({img: "girl", name: "Патрисия Стёклышкова", term: "Неделю назад", like: 2, text: textTwo})
-            .room-details-description__rules 
-                .room-details-description__rules-title Правила
-                +bullet-list({bulletList})    
-        .room-details-description__circle-diagram
-            .room-details-description__room-impressions
-                .room-details-description__title Впечатления от номера
-                    .room-details-description__diagram
-                        .room-details-description__circle
-                            .room-details-description__wrapper-circles
-                                .room-details-description__circle-title 
-                                    span.room-details-description__circle-title-number 260
-                                    span.room-details-description__circle-title-word голосов
-                                .room-details-description__circle-template.room-details-description__circle-template_first
-                                .room-details-description__circle-template.room-details-description__circle-template_second
-                                .room-details-description__circle-template.room-details-description__circle-template_third
-                                .room-details-description__circle-template.room-details-description__circle-template_fourth
-                        .room-details-description__list
-                            ul.room-details-description__ul
-                                for el in ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
-                                    li.room-details-description__li= el
-            .room-details-description__room-escape
-                .room-details-description__title Отмена
-                p.room-details-description__room-escape-paragraph.
-                    Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-        .room-details-description__reservation
-            +reservation
+        .room-details-description__content
+            .room-details-description__data
+                .room-details-description__room-information 
+                    .room-details-description__title Сведения о номере
+                        .room-details-description__wrapper-info-room 
+                            +info-room({img: 'insert_emoticon', title: 'Комфорт', text: 'Шумопоглащающие стены'})
+                        .room-details-description__wrapper-info-room 
+                            +info-room({img:'location_city', title: 'Удобство', text: 'Окно в каждой из спален'})
+                        .room-details-description__wrapper-info-room 
+                            +info-room({img: 'whatshot', title: 'Уют', text: 'Номер оснащен камином'})
+                .room-details-description__comments-consumer 
+                    .room-details-description__title 
+                        .room-details-description__reviews
+                            .room-details-description__review Отзывы посетителей номера
+                            .room-details-description__review 2 отзыва
+                        .room-details-description__wrapper-consumer-comments
+                            +consumer-comments({img: "man", name: "Мурад Сарафанов", term: "5 дней назад", like: 12, text: textOne})
+                        .room-details-description__wrapper-consumer-comments.room-details-description__wrapper-consumer-comments_second
+                            +consumer-comments({img: "girl", name: "Патрисия Стёклышкова", term: "Неделю назад", like: 2, text: textTwo})
+                .room-details-description__rules 
+                    .room-details-description__rules-title Правила
+                    +bullet-list({bulletList})    
+            .room-details-description__circle-diagram
+                .room-details-description__room-impressions
+                    .room-details-description__title Впечатления от номера
+                        .room-details-description__diagram
+                            .room-details-description__circle
+                                .room-details-description__wrapper-circles
+                                    .room-details-description__circle-title 
+                                        span.room-details-description__circle-title-number 260
+                                        span.room-details-description__circle-title-word голосов
+                                    .room-details-description__circle-template.room-details-description__circle-template_first
+                                    .room-details-description__circle-template.room-details-description__circle-template_second
+                                    .room-details-description__circle-template.room-details-description__circle-template_third
+                                    .room-details-description__circle-template.room-details-description__circle-template_fourth
+                            .room-details-description__list
+                                ul.room-details-description__ul
+                                    for el in ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
+                                        li.room-details-description__li= el
+                .room-details-description__room-escape
+                    .room-details-description__title Отмена
+                    p.room-details-description__room-escape-paragraph.
+                        Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+            .room-details-description__reservation
+                +reservation

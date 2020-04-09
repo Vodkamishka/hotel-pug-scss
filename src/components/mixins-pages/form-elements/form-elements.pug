@@ -8,10 +8,11 @@ mixin form-elements(options)
     .form-elements
         .form-elements__logo-wrapper
             +logo-wrapper
-        .form-elements__column
-            +form-elements-inputs(list)
-        .form-elements__column
-            +form-elements-checkbox-radio(checkboxList)
-        .form-elements__column
-            +form-elements-slider-buttons(bulletList)
+        .form-elements__content
+            .form-elements__column
+                +form-elements-inputs(list)
+            .form-elements__column
+                +form-elements-checkbox-radio(checkboxList)
+            .form-elements__column
+                +form-elements-slider-buttons(bulletList)
 

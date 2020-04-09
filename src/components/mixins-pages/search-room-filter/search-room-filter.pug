@@ -9,10 +9,11 @@ mixin search-room-filter (options)
     .search-room-filter
         +header(header)
         .search-room-filter__content
-            .search-room-filter__wrapper-column
-                +search-room-filter-column(options)
-            .search-room-filter__wrapper-images
-                +search-room-filter-images
+            .search-room-filter__container
+                .search-room-filter__wrapper-column
+                    +search-room-filter-column(options)
+                .search-room-filter__wrapper-images
+                    +search-room-filter-images
         +footer(footer)
         +copyright(copyright)
 

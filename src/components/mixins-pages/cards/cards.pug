@@ -11,18 +11,19 @@ mixin cards(options)
     .cards
         .cards__logo-wrapper
             +logo-wrapper
-        .cards__wrapper
-            .cards__search-rooms
-                +search-rooms
-            .cards__registration
-                +registration-account
-        .cards__wrapper
-            +reservation
-            .cards__login
-                +login
-        .cards__wrapper
-            +calendar
-            .cards__middleware-card
-                +card-room(cardRoomFirst)
-            +card-room(cardRoomSecond) 
+        .cards__content 
+            .cards__wrapper
+                .cards__search-rooms
+                    +search-rooms
+                .cards__registration
+                    +registration-account
+            .cards__wrapper
+                +reservation
+                .cards__login
+                    +login
+            .cards__wrapper
+                +calendar
+                .cards__middleware-card
+                    +card-room(cardRoomFirst)
+                +card-room(cardRoomSecond) 
 
