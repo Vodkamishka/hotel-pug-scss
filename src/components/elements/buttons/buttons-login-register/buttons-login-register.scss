@@ -1,19 +1,26 @@
 .buttons-login-register {
   flex-wrap: wrap;
   display: flex;
-  &__login {
-    margin-right: 1.25rem;
+  &__button {
+    margin-left: 1.25rem;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
   }
 }
 @media (max-width: 81.3125rem) {
   .buttons-login-register {
     width: 100%;
     justify-content: space-between;
+    &__button {
+      margin-left: 0;
+    }
   }
+  
 }
 @media (max-width: 25.4375rem) {
   .buttons-login-register {
-    &__login {
+    &__button {
       margin-bottom: 0.8rem;
     }
   }

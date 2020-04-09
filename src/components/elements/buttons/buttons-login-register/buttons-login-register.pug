@@ -4,7 +4,8 @@ include ../button-register/button-register
 mixin buttons-login-register(props)
     - const {log, register} = props
     .buttons-login-register
-        .buttons-login-register__login
+        .buttons-login-register__button
             +button-login(log)
-        .buttons-login-register__register
+        .buttons-login-register__button
             +button-register(register)
+        
