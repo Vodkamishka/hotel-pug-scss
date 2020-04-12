@@ -12,11 +12,7 @@
   .buttons-login-register {
     width: 100%;
     justify-content: space-between;
-    &__button {
-      margin-left: 0;
-    }
   }
-  
 }
 @media (max-width: 25.4375rem) {
   .buttons-login-register {
