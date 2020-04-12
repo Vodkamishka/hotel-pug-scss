@@ -13,11 +13,15 @@
     width: 100%;
     justify-content: space-between;
   }
+  
 }
 @media (max-width: 25.4375rem) {
   .buttons-login-register {
     &__button {
-      margin-bottom: 0.8rem;
+      margin: 0 2rem 0.5rem 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
