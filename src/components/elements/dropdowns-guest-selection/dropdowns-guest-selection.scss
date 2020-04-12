@@ -1,6 +1,7 @@
 @import "../../../assets/utils/main";
 
 .dropdowns-guest-selection {
+  position: relative;
   &__container-execute {
     @include container_execute;
     padding-top: 0.3475rem;

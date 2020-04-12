@@ -71,6 +71,7 @@
   color: $shade100;
   text-transform: uppercase;
   z-index: 10000;
+  position: absolute;
   .execute-panel {
     &__increment, &__decrement {
       cursor: pointer;
