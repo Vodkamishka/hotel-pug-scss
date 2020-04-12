@@ -31,7 +31,17 @@
       border: none;
       color: $white;
     }
-    
+    &--cell-day.-disabled- {
+        &:hover {
+            background: none;
+        }
+    }
+    &--cell-month.-disabled- {
+        &:hover {
+            color: #d3d3d3;
+            background: none;
+        }
+    }
     &--cell-day.-disabled-.-other-month- {
         color: rgba(31, 32, 65, 0.25);
     }
