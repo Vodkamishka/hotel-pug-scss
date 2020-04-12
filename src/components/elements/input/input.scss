@@ -13,6 +13,7 @@ input[type="text"] {
   font-size: 0.875rem;
   line-height: 1.125rem;
   letter-spacing: -0.025rem;
+  color: $shade75;
   &::placeholder {
     color: $shade50;
     letter-spacing: 0.00625rem;
