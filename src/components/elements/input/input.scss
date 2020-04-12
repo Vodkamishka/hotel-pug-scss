@@ -57,6 +57,9 @@ input[type="text"] {
   &_small {
     width: $small;
   }
+  &_short {
+    width: 16.25rem;
+  }
   &_hover {
     border: 0.0625rem solid rgba($shade50, 0.5);
     color: $shade25;
