@@ -7,7 +7,7 @@ body {
     width: 100%;
     min-width: 16rem;
     &__image-wrapper {
-        height: 42.75rem;
+        min-height: 42.75rem;
         background: url('../../../assets/img/rooms/sign-in.jpg');
         background-size: cover;
         display: flex;

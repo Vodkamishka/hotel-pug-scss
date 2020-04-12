@@ -91,7 +91,7 @@
         display: flex;
         padding: 0 1.1875rem 0 1.2625rem;
     }
-    &--nav-title, &--nav-action {
+    &--nav-action {
         width: 1.495625rem;
     }
     &--nav-action {
@@ -120,7 +120,7 @@
         font-family: "Quicksand", Arial, Helvetica, sans-serif;
         text-align: center;
         color: $shade100;
-        width: 100%;
+        min-width: 40%;
     }
     &--nav-title i {
         color: $shade100;
