@@ -22,6 +22,7 @@ class DoubleDateCalendar {
     this.$calendar.datepicker({ ...props, onSelect: this.select.bind(this) });
     this.data = this.$calendar.data('datepicker');
     this.addEventListeners();
+    this.closeWindowOnClickOutside();
   }
 
   findDom() {
@@ -47,6 +48,15 @@ class DoubleDateCalendar {
   select(stringDates) {
     const dates = stringDates.split('-');
     this.dates = dates;
+  }
+
+  closeWindowOnClickOutside() {
+    $(document).on('mouseup', (e) => {
+      if (!this.$double.is(e.target) && this.$double.has(e.target).length === 0
+      && !$(this.$container).hasClass(parentClassHide)) {
+        this.$container.toggleClass(parentClassHide);
+      }
+    });
   }
 }
 

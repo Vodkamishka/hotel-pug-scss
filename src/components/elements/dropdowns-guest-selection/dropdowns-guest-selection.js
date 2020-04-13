@@ -15,6 +15,7 @@ class Dropdowns {
     this.drawDecrementAndInput();
     this.showHideButtonClear();
     this.drawResultInput();
+    this.closeWindowOnClickOutside();
   }
 
   findDom() {
@@ -171,6 +172,15 @@ class Dropdowns {
         this.clear.classList.remove('dropdowns-guest-selection_disappeared');
       }
     }
+  }
+
+  closeWindowOnClickOutside() {
+    $(document).on('mouseup', (e) => {
+      if (!$(this.dropdown).is(e.target) && $(this.dropdown).has(e.target).length === 0
+      && !$(this.container).hasClass(this.className)) {
+        this.hideContainer();
+      }
+    });
   }
 
   applyed() {
