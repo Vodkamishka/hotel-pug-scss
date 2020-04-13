@@ -115,6 +115,7 @@ class Dropdowns {
         this.decrement[index].style.opacity = 1;
       }
     });
+    this.showHideButtonClear();
   }
 
   increased(el) {
@@ -143,19 +144,17 @@ class Dropdowns {
   }
 
   clearResult() {
-    this.input.placeholder = 'Сколько гостей';
+    this.result.forEach((el) => {
+      const res = el;
+      res.innerHTML = '0';
+    });
     this.drawDecrementAndInput();
-    this.drawResultInput();
-    this.showHideButtonClear();
   }
 
   clearAll() {
-    let res = 0;
-    this.result.forEach((el) => {
-      res += +el.innerHTML;
-    });
-    if (this.clear && res === 0) {
+    if (this.clear) {
       this.clear.addEventListener('click', () => this.clearResult());
+      this.showHideButtonClear();
     }
   }
 
