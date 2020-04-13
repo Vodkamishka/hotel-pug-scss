@@ -110,7 +110,7 @@ class Dropdowns {
   drawDecrementAndInput() {
     this.result.forEach((el, index) => {
       if (el.innerHTML === '0') {
-        this.decrement[index].style.opacity = 0;
+        this.decrement[index].style.opacity = 0.5;
       } else {
         this.decrement[index].style.opacity = 1;
       }
