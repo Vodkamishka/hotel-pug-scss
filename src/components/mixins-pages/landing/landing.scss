@@ -42,10 +42,19 @@ body {
   .landing {
     &__search-rooms {
       padding: 0 1rem;
+      margin-top: 0;
     }
     &__image-wrapper {
       display: flex;
       justify-content: center;
+      align-items: center;
+    } 
+  }
+}
+@media (max-width: 20rem) {
+  .landing {
+    &__image-wrapper {
+      min-height: 40rem;
     } 
   }
 }
