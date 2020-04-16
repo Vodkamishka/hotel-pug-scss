@@ -14,7 +14,7 @@ body {
     background-size: cover;
   }
   &__search-rooms {
-    margin: 4.375rem auto;
+    margin: 4.375rem auto 0;
     width: 72.5rem;
   }
   &__text-frame {
@@ -32,16 +32,19 @@ body {
 @media (max-width: 78rem) {
   .landing {
     &__search-rooms {
-      padding: 0 2rem 0 2rem;
+      padding: 0 2rem;
     }
   }
 }
-@media (max-width: 29rem) {
+@media (max-width: 26.5rem) {
   .landing {
+    &__search-rooms {
+      padding: 0 3%;
+    }
     &__image-wrapper {
       display: flex;
       justify-content: center;
-      min-height: 38rem;
+      min-height: 46rem;
     } 
     &__text-frame {
       display: none;

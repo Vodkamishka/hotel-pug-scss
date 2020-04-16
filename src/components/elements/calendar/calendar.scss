@@ -152,5 +152,11 @@
     &--cell-month {
         width: 25%
     }
-    
+}
+
+@media (max-width: 26.5rem) {
+    .datepicker--content {
+        width: 100%;
+        margin: 0;
+    }
 }
