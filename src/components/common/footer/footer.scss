@@ -91,19 +91,12 @@
     padding: 5.19375rem 0 5.4rem;
   }
 }
-@media (max-width: 80.625rem) {
-  .footer,
-  .footer_eng {
-    .footer__text-block {
-      padding-bottom:  0;
-    }
-  }
-}
 @media (max-width: 35.3125rem) {
   .footer,
   .footer_eng {
     &__text-block {
       padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
     &__ul {
       &:nth-child(1) {
