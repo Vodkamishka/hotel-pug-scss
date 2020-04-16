@@ -32,15 +32,12 @@ body {
 @media (max-width: 78rem) {
   .landing {
     &__search-rooms {
-      padding: 0 2rem;
+      padding: 0 3%;
     }
   }
 }
 @media (max-width: 26.5rem) {
   .landing {
-    &__search-rooms {
-      padding: 0 3%;
-    }
     &__image-wrapper {
       display: flex;
       justify-content: center;
