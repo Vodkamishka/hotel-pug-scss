@@ -9,7 +9,6 @@ input[type="text"] {
   border-radius: 0.25rem;
   padding-left: 0.875rem;
   padding-right: 2.5rem;
-  padding-bottom: 0.125rem;
   font-size: 0.875rem;
   line-height: 1.125rem;
   letter-spacing: -0.025rem;
@@ -34,12 +33,12 @@ input[type="text"] {
   &__button {
     border: none;
     position: absolute;
-    top: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
     background: $white;
     right: 1rem;
     &_without-label {
-      top: 50%;
-      transform: translateY(-50%);
+      height: 1.125rem;
     }
   }
   &__container {
