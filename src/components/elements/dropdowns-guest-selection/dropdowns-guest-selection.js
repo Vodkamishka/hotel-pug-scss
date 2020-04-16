@@ -49,11 +49,11 @@ class Dropdowns {
       return word;
     }
     const humans = [
-      returnedTrueWord('guests', +result[0].innerHTML + +result[1].innerHTML),
+      returnedTrueWord('guests', +result[0].innerHTML + +result[1].innerHTML + +result[2].innerHTML),
       returnedTrueWord('baby', +result[2].innerHTML),
     ];
     const humansNumber = [
-      +result[0].innerHTML + +result[1].innerHTML,
+      +result[0].innerHTML + +result[1].innerHTML + +result[2].innerHTML,
       +result[2].innerHTML,
     ];
     peoples.forEach((_el, index) => {
