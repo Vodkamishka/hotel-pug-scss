@@ -99,11 +99,17 @@
     }
   }
 }
-@media (max-width: 35.81rem) {
+@media (max-width: 35.3125rem) {
   .footer,
   .footer_eng {
     &__text-block {
       padding-top: 2.5rem;
+    }
+    &__ul {
+      &:nth-child(1) {
+        max-width: 100%;
+        margin-right: 0;
+      }
     }
   }
 }
