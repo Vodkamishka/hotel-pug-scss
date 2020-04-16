@@ -41,7 +41,6 @@ body {
 @media (max-width: 27rem) {
   .landing {
     &__search-rooms {
-      padding: 0 1rem;
       margin-top: 0;
     }
     &__image-wrapper {
@@ -56,6 +55,10 @@ body {
     &__image-wrapper {
       min-height: 40rem;
     } 
+    &__text-frame {
+      display: none;
+    }
   }
+  
 }
 
