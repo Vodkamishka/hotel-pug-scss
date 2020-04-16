@@ -14,10 +14,8 @@ body {
     background-size: cover;
   }
   &__search-rooms {
-    margin: 0 auto;
-    margin-top: 4.375rem;
+    margin: 4.375rem auto;
     width: 72.5rem;
-    margin-bottom: 2rem;
   }
   &__text-frame {
     max-width: 18.5625rem;
@@ -34,31 +32,21 @@ body {
 @media (max-width: 78rem) {
   .landing {
     &__search-rooms {
-      padding: 0 2rem;
+      padding: 0 2rem 0 2rem;
     }
   }
 }
-@media (max-width: 27rem) {
+@media (max-width: 29rem) {
   .landing {
-    &__search-rooms {
-      margin-top: 0;
-    }
     &__image-wrapper {
       display: flex;
       justify-content: center;
-      align-items: center;
-    } 
-  }
-}
-@media (max-width: 20rem) {
-  .landing {
-    &__image-wrapper {
-      min-height: 40rem;
+      min-height: 38rem;
     } 
     &__text-frame {
       display: none;
     }
   }
-  
 }
+
 
