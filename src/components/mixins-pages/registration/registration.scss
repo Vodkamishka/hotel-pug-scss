@@ -1,10 +1,16 @@
 @import "../../../assets/utils/main";
-body {
-  @include body;
-}
+
 .registration {
-  height: 75.6875rem;
+  min-height: 100%;
   min-width: 16rem;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    flex-grow: 1;
+  }
+  &__wrapper {
+    flex-grow: 0;
+  }
   &__image-wrapper {
     min-height: 43.875rem;
     background: url('../../../assets/img/rooms/registration.jpg');

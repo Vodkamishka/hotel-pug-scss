@@ -7,9 +7,11 @@ include ./room-details-images/room-details-images
 mixin room-details(options)
     - const {header, footer, copyright} = options
     .room-details
-        +header(header)
-        +room-details-images
-        +room-details-description(options)
-        +footer(footer)
-        +copyright(copyright)
+        .room-details__content
+            +header(header)
+            +room-details-images
+            +room-details-description(options)
+        .room-details__wrapper
+            +footer(footer)
+            +copyright(copyright)
 

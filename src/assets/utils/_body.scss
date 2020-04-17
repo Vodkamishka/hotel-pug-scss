@@ -1,7 +1,10 @@
 @import "./_vars.scss";
 
-
-@mixin body {
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
   position: relative;
   max-width: 120rem;
   min-width: 20rem;

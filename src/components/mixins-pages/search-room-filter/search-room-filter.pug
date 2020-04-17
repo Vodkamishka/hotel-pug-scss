@@ -7,13 +7,15 @@ include ./search-room-filter-images/search-room-filter-images
 mixin search-room-filter (options)
     - const {header, footer, copyright} = options
     .search-room-filter
-        +header(header)
         .search-room-filter__content
-            .search-room-filter__container
-                .search-room-filter__wrapper-column
-                    +search-room-filter-column(options)
-                .search-room-filter__wrapper-images
-                    +search-room-filter-images
-        +footer(footer)
-        +copyright(copyright)
+            +header(header)
+            .search-room-filter__contents
+                .search-room-filter__container
+                    .search-room-filter__wrapper-column
+                        +search-room-filter-column(options)
+                    .search-room-filter__wrapper-images
+                        +search-room-filter-images
+        .search-room-filter__wrapper
+            +footer(footer)
+            +copyright(copyright)
 

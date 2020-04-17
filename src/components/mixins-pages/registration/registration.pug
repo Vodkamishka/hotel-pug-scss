@@ -6,9 +6,11 @@ include ../../common/registration-account/registration-account
 mixin registration(options)
     - const {header, footer, copyright} = options
     .registration
-        +header(header)
-        .registration__image-wrapper
-            +registration-account       
-        +footer(footer)
-        +copyright(copyright)
+        .registration__content
+            +header(header)
+            .registration__image-wrapper
+                +registration-account
+        .registration__wrapper       
+            +footer(footer)
+            +copyright(copyright)
 

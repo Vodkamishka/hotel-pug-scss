@@ -6,11 +6,13 @@ include ../../common/copyright/copyright
 mixin landing (options)
     - const {header, footer, copyright} = options
     .landing
-        +header(header)
-        .landing__image-wrapper
-            .landing__search-rooms
-                +search-rooms  
-            .landing__text-frame Лучшие номера для вашей работы, отдыха и просто вдохновения     
-        +footer(footer)
-        +copyright(copyright)
+        .landing__content
+            +header(header)
+            .landing__image-wrapper
+                .landing__search-rooms
+                    +search-rooms  
+                .landing__text-frame Лучшие номера для вашей работы, отдыха и просто вдохновения
+        .landing__footer     
+            +footer(footer)
+            +copyright(copyright)
     

@@ -6,10 +6,12 @@ include ../../common/login/login
 mixin sign-in(options)
     - const {header, footer, copyright} = options
     .sign-in
-        +header(header)
-        .sign-in__image-wrapper
-            +login 
-        +footer(footer)
-        +copyright(copyright)
+        .sign-in__content
+            +header(header)
+            .sign-in__image-wrapper
+                +login 
+        .sign-in__wrapper
+            +footer(footer)
+            +copyright(copyright)
 
 

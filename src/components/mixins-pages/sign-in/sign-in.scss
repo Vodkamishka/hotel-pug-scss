@@ -1,11 +1,17 @@
 @import '../../../assets/utils/main';
-body {
-    @include body
-}
+
 .sign-in {
-    height: 75.6875rem;
+    min-height: 100%;
     width: 100%;
     min-width: 16rem;
+    display: flex;
+    flex-direction: column;
+    &__content {
+      flex-grow: 1;
+    }
+    &__wrapper {
+      flex-grow: 0;
+    }
     &__image-wrapper {
         min-height: 42.75rem;
         background: url('../../../assets/img/rooms/sign-in.jpg');
