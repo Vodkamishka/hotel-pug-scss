@@ -14,74 +14,101 @@
         margin: 0 1.24625rem 1.2rem 1.30875rem;
         padding: 0;
     }
-    &--cell-day {
-        border-radius: 50%;
-        box-sizing: border-box;
-        height: 2.5rem;
-        width: 14.2857%;
-        color: $shade50;
-    }
-    &--cell-day.-current- {
-        color: $white;
-        background: $gradient-green;
-    }
-    &--cell-day.-range-from-.-selected-,.-range-to-,.-focus-.-selected-, &--cell-day.-range-from- {
-      background: $gradient;
-      border-radius: 50%;
-      border: none;
-      color: $white;
-    }
-    &--cell-day.-disabled- {
-        &:hover {
-            background: none;
+    &--cell {
+        &.-selected-.-focus-, &.-selected-, &.-selected-.-other-month-, &.-selected-.-other-month-.-focus-, &.-other-month-.-focus- {
+            border: none;
+            background: $gradient;
+            color: $white;
+        }
+        &-day {
+            border-radius: 50%;
+            box-sizing: border-box;
+            height: 2.5rem;
+            width: 14.2857%;
+            color: $shade50;
+            &:hover {
+                background: $gradient; 
+                color: $white;
+            }
+            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-in-range- {
+                color: $white;
+                background: $gradient-green;
+                border-radius: 50%;
+                &:hover {
+                    color: $white;
+                    background: $gradient-green;
+                }
+            }
+            &.-in-range-, &.-in-range-.-other-month- {
+                background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+                border: none;
+                color: rgba(31,32,65,.5);
+                &:hover {
+                background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%); 
+                }
+            }
+            &.-range-to-, &.-range-from-, &.-range-to-.-other-month-, &.-range-from-.-other-month- {
+                border: none;
+                background-color: $gradient;
+                border-radius: 50%;
+                color: $white;
+            }
+            &.-range-from-:not(.-disabled-)::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+            }
+            &.-range-to-:not(.-disabled-)::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+            }
+            &.-disabled-, &.-disabled-.-other-month- {
+                background: none;
+            }
+            &.-disabled-.-other-month- {
+                color: rgba(31, 32, 65, 0.25);
+            }
+        }
+        &-month {
+            width: 25%;
+            &.-disabled- {
+                color: lightgray;
+                &:hover {
+                    color: #d3d3d3;
+                    background: none;
+                }
+            }
+            &.-selected-.-range-to-.-range-from- {
+                background: transparent;
+                color: rgba(31,32,65,.5);
+            }
+            
         }
     }
-    &--cell-month.-disabled- {
+
+    &--cell-month.-current-,
+    &--cell-month.-current-.-selected-.-focus-.-range-to-.-range-from-,
+    &--cell-month.-current-.-selected-.-range-to-.-range-from-,
+    &--cell.-selected-.-current-
+    {
+        color: orange;
+        background: transparent;
         &:hover {
-            color: #d3d3d3;
-            background: none;
+            color: gray;
         }
     }
-    &--cell-day.-disabled-.-other-month- {
-        color: rgba(31, 32, 65, 0.25);
-    }
-    &--cell-month.-disabled- {
-        color: lightgray;
-    }
-    &--cell-day.-in-range- {
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
-      border: none;
-      &:hover {
-        background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%); 
-      }
-    }
-    &--cell-day.-range-to- {
-      border: none;
-      background-color: $gradient;
-      border-radius: 50%;
-      color: $white;
-    }
-    &--cell-day.-range-from-:not(.-disabled-)::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
-    }
-    &--cell-day.-range-to-:not(.-disabled-)::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
-    }
-    
+
     &--days-names {
         height: 2.5rem;
         margin: 0;
@@ -118,7 +145,6 @@
         background: url('/public/assets/img/icons/arrow_forward_purple.svg')
             no-repeat center center;
     }
-    
     &--nav-action svg {
         width: 1.495625rem;
         height: 1.5rem;
@@ -135,25 +161,8 @@
     &--nav-title i {
         color: $shade100;
     }
-    &--cell-month.-current-,
-    &--cell-month.-current-.-selected-.-focus-.-range-to-.-range-from-,
-    &--cell-month.-current-.-selected-.-range-to-.-range-from-
-    {
-        color: orange;
-        background: transparent;
-        &:hover {
-            color: gray;
-        }
-    }
-    &--cell-month.-selected-.-range-to-.-range-from- {
-        background: transparent;
-        color: rgba(31,32,65,.5);
-    }
-    &--cell-month {
-        width: 25%
-    }
+    
 }
-
 @media (max-width: 26.5rem) {
     .datepicker--content {
         width: 100%;
