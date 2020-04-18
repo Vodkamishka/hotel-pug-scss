@@ -38,6 +38,9 @@
                     color: $white;
                     background: $gradient-green;
                 }
+                &:after {
+                    background: none;
+                }
             }
             &.-in-range-, &.-in-range-.-other-month- {
                 background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
