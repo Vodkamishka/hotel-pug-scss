@@ -16,10 +16,13 @@
     background: url('../../../assets/img/rooms/registration.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
-    padding-top: 1.875rem;
-    padding-bottom: 1.5rem;
     box-sizing: border-box;
+    padding-top: 1.875rem;
+    justify-content: center;
+    padding-bottom: 1.625rem;
+  }
+  &__container-registration {
+    margin: 0 0.5rem;
   }
   .footer {
     &_inner {
