@@ -21,9 +21,17 @@
     width: 100%;
     background: $white;
     border-radius: 1.7rem;
+    &_fat {
+      padding: 0.74rem 1rem;
+    }
   }
   &_rus {
     min-width: 5.4375rem;
+  }
+  &_fat {
+    min-height: 2.75rem;
+    min-width: 6.1875rem;
+    
   }
 }
 

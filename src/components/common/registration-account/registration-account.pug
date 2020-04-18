@@ -1,7 +1,7 @@
 include ../../elements/input/input.pug
 include ../../elements/toggle-one/toggle-one.pug
 include ../../elements/buttons/button/button.pug
-include ../../elements/buttons/button/button.pug
+include ../../elements/buttons/button-login/button-login.pug
 include ../../elements/radio/radio.pug
 
 mixin registration-account
@@ -21,7 +21,7 @@ mixin registration-account
             +button({text: 'Перейти к оплате'})
         .registration-account__toxin
             .registration-account__text Уже есть аккаунт на Toxin
-            +button({text: "Войти", className: "white"})
+            +button-login("Войти", "fat")
     
 
     

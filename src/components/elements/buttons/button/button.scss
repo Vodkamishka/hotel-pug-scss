@@ -3,7 +3,6 @@
 .button {
     font-family: "Montserrat";
     font-weight: bold;
-    
     line-height: 0.9375rem;
     min-height: 2.75rem;
     border-radius: 1.375rem;
@@ -16,7 +15,7 @@
     padding: 0.5rem 1rem;
     &_short {
         background: $gradient;
-        width: 6.1875rem;
+        min-width: 6.1875rem;
         &_purple {
             &:hover {
                 opacity: 0.5;
@@ -27,12 +26,12 @@
         }
         &_white {
         color: $purple;
-        border: 0.125rem solid transparent;
+        border: 0.125rem solid $purple;
         background-origin: border-box;
         background-image: $gradient;
         box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
             &:hover {
-                border: 0.0625rem solid rgba($purple, 0.5);
+                border: 0.125rem solid rgba($purple, 0.5);
             }
         }
         &_shade-white {
@@ -41,7 +40,7 @@
         background-origin: border-box;
         background-image: $gradient;
         box-shadow: 0.0625rem 6.25rem 0.0625rem #fff inset;
-        border: 0.0625rem solid rgba($purple, 0.5);
+        border: 0.125rem solid rgba($purple, 0.5);
         }
     }
     &_long {

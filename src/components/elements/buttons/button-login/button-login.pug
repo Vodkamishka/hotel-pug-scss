@@ -1,10 +1,10 @@
-mixin button-login (log)
+mixin button-login (log, clas ='')
     if log === 'войти'
-        button.button-login(class='button-login_rus')
-            .button-login__text=log 
+        button.button-login(class=`button-login_rus button-login_${clas}`)
+            .button-login__text(class=`button-login__text_${clas}`)= log
     else
-        button.button-login
-            .button-login__text=log 
+        button.button-login(class=`button-login_${clas}`)
+            .button-login__text(class=`button-login__text_${clas}`)= log 
 
   
         

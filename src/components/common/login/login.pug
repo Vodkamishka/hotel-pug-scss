@@ -1,6 +1,6 @@
 include ../../elements/input/input.pug
 include ../../elements/buttons/button/button
-include ../../elements/buttons/button/button
+include ../../elements/buttons/button-login/button-login
 
 mixin login
     .login
@@ -12,4 +12,4 @@ mixin login
             +button({text: "Войти"})
         .login__toxin
             .login__text Нет аккаунта на Toxin?
-            +button({text: "Создать", className: "white"})
+            +button-login("Создать", "fat")
