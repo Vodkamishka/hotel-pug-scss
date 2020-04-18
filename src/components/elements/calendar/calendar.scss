@@ -14,6 +14,9 @@
         margin: 0 1.24625rem 1.2rem 1.30875rem;
         padding: 0;
     }
+    &--days, &--days-names, &--cells-days {
+        width: 100%;
+    }
     &--cell {
         &.-selected-.-focus-, &.-selected-, &.-selected-.-other-month-, &.-selected-.-other-month-.-focus-, &.-other-month-.-focus- {
             border: none;
@@ -37,9 +40,6 @@
                 &:hover {
                     color: $white;
                     background: $gradient-green;
-                }
-                &:after {
-                    background: none;
                 }
             }
             &.-in-range-, &.-in-range-.-other-month- {
@@ -166,7 +166,7 @@
     }
     
 }
-@media (max-width: 26.5rem) {
+@media (max-width: 21.125rem) {
     .datepicker--content {
         width: 100%;
         margin: 0;
