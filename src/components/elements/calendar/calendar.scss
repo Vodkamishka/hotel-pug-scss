@@ -26,7 +26,8 @@
         &-day {
             border-radius: 50%;
             box-sizing: border-box;
-            height: 2.5rem;
+            padding-top: 7.15%;
+            padding-bottom: 7.15%;
             width: 14.2857%;
             color: $shade50;
             &:hover {
@@ -165,10 +166,4 @@
         color: $shade100;
     }
     
-}
-@media (max-width: 21.125rem) {
-    .datepicker--content {
-        width: 100%;
-        margin: 0;
-    }
 }
