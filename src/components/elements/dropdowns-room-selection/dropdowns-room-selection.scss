@@ -1,6 +1,9 @@
 @import "../../../assets/utils/main";
 
 .dropdowns-room-selection {
+  input {
+    cursor: default;
+  }
   &__container-execute {
     @include container_execute;
     width: 100%;

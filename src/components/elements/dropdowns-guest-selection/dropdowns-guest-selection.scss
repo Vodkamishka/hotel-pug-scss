@@ -2,6 +2,9 @@
 
 .dropdowns-guest-selection {
   position: relative;
+  input {
+    cursor: default;
+  }
   &__container-execute {
     @include container_execute;
     padding-top: 0.3475rem;

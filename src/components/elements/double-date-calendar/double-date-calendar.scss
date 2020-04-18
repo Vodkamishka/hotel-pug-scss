@@ -1,6 +1,9 @@
 @import "../../../assets/utils/main";
 
 .double-date-calendar {
+  input {
+    cursor: default;
+  }
   position: relative;
   &__inputs-wrapper {
     display: flex;
