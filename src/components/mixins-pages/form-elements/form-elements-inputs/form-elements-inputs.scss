@@ -91,11 +91,12 @@
       &_location-city {
         .info-room__image {
           margin-right: 1rem;
+          
         }
       }
     }
 }
-@media (max-width: 30rem) {
+@media (max-width: 75.4375rem) {
   .form-elements-inputs {
     &__container {
       &_eighth {

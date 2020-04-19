@@ -41,6 +41,7 @@
       }
       &__bullet {
         margin-top: 6.2rem;
+        margin-bottom: 1rem;
       }
       &-dropdown {
         .dropdowns-guest-selection {
@@ -51,10 +52,10 @@
       }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 75.4375rem) {
   .form-elements-slider-buttons {
     &__range-slider {
-      margin-top: 3rem;
+      margin-top: 0;
     }
     &__pagination {
       margin-bottom: 3rem;

@@ -1,7 +1,6 @@
 @import "../../../assets/utils/main";
 
 .consumer-comments {
-  letter-spacing: 0.064375rem;
   &__image-wrapper {
     @include align-items;
     margin-bottom: 0.75rem;
@@ -36,14 +35,15 @@
     margin-bottom: 0.1875rem;
     .like {
       margin-left: 0.1875rem;
+      margin-right: 0.894375rem;
     }
   }
   &__text {
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: $shade75;
-    width: 40.8125rem;
-    margin-left: 0.894375rem;
+    max-width: 40.8125rem;
+    
     font-weight: 400;
     position: relative;
     &_review {
@@ -57,9 +57,6 @@
     &__likes {
       width: 100%;
     }
-    &__text {
-      width: 100%;
-      
-    }
+    
   }
 }

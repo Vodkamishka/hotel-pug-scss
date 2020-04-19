@@ -1,4 +1,5 @@
 include ../../../elements/buttons/button/button
+include ../../../elements/buttons/button-login/button-login
 include ../../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 include ../../../common/slider/slider
 include ../../../elements/pagination/pagination.pug
@@ -11,9 +12,11 @@ mixin form-elements-slider-buttons(bulletList)
         .form-elements-slider-buttons__buttons
             .form-elements-slider-buttons__buttons-title Buttons
             .form-elements-slider-buttons__buttons-group
-                - const propButtons = ['purple', 'shade-purple', 'white', 'shade-white']
+                - const propButtons = ['purple', 'shade-purple']
                 for className in propButtons
                     +button({text : "click me", className})
+                +button-login("click me", "fat")
+                +button-login("click me", "fat")
             .form-elements-slider-buttons__buttons-clickmes
                 span.form-elements-slider-buttons__buttons-clickme click me
                 span.form-elements-slider-buttons__buttons-clickme click me

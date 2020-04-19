@@ -19,27 +19,24 @@
       }
       &__murad {
         margin-top: 14.45rem;
-        .consumer-comments {
-          letter-spacing: 0;
-        }
+        margin-bottom: 3rem;
       }
 }
 
-
-@media (max-width: 30rem) {
+@media (max-width: 56.375rem) {
   .form-elements-checkbox-radio {
-    &__checkbox {
-      margin-top: 2rem;
+      &__checkbox {
+        margin-top: 3rem;
+      }
+      &__rate {
+        margin-bottom: 3rem;
+      }
+      &__rich {
+        margin-top: 3rem;
+      }
+      &__murad {
+        margin-top: 3rem;
+      }
     }
-    &__rate {
-      margin-bottom: 2rem;
-    }
-    &__rich {
-      margin-top: 2rem;
-    }
-    &__murad {
-      margin-top: 3rem;
-    }
-  }
-    
 }
+
