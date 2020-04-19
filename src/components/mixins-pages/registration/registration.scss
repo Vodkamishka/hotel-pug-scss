@@ -24,21 +24,7 @@
   &__container-registration {
     margin: 0 0.5rem;
   }
-  .footer {
-    &_inner {
-      padding: 6.1rem 9.72% 6.21rem !important;
-      ul:last-child {
-        li:first-child {
-          margin-bottom: 1.0625rem;
-        }
-        li:nth-child(2) {
-          margin-bottom: 1.4rem;
-        }
-      }
-    }
-  }
 }
-
 
 @media(max-width: 60rem) {
   .registration {
