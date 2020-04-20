@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="keywords" content="sign in">
-    <meta name="description" content="sign in">
+    <meta name="keywords" content="Sign in">
+    <meta name="description" content="Sign in">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="{&quot;default&quot;:&quot;assets/img/safari-pinned-tab.svg&quot;}" color="#5bbad5">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
     <title>Sign in</title>
@@ -47,8 +47,8 @@
               <div class="header__third-element">
                 <div class="buttons-login-register">
                   <div class="buttons-login-register__button">
-                    <button class="button-login button-login_rus">
-                      <div class="button-login__text">войти</div>
+                    <button class="button-login button-login_rus button-login_">
+                      <div class="button-login__text button-login__text_">войти</div>
                     </button>
                   </div>
                   <div class="buttons-login-register__button">
@@ -60,34 +60,38 @@
           </div>
         </div>
         <div class="sign-in__image-wrapper">
-          <div class="login">
-            <div class="login__title">Войти</div>
-            <div class="login__fields">
-              <div class="input input_undefined">
-                <div class="input__container">
-                  <input class="input__input js-input__input" type="text" placeholder="Email">
+          <div class="sign-in__container-login">
+            <div class="login">
+              <div class="login__title">Войти</div>
+              <div class="login__fields">
+                <div class="input input_undefined">
+                  <div class="input__container">
+                    <input class="input__input js-input__input" type="text" placeholder="Email">
+                  </div>
+                </div>
+                <div class="input input_undefined">
+                  <div class="input__container">
+                    <input class="input__input js-input__input" type="text" placeholder="Пароль">
+                  </div>
                 </div>
               </div>
-              <div class="input input_undefined">
-                <div class="input__container">
-                  <input class="input__input js-input__input" type="text" placeholder="Пароль">
-                </div>
+              <div class="login__button">
+                <button class="button button_long"><span class="button__text">Войти
+                    <div class="button__img"><img src="assets/img/icons/arrow_forward_white.svg"></div></span></button>
               </div>
-            </div>
-            <div class="login__button">
-              <button class="button button_long"><span class="button__text">Войти
-                  <div class="button__img"><img src="assets/img/icons/arrow_forward_white.svg"></div></span></button>
-            </div>
-            <div class="login__toxin">
-              <div class="login__text">Нет аккаунта на Toxin?</div>
-              <button class="button button_short button_short_white">Создать</button>
+              <div class="login__toxin">
+                <div class="login__text">Нет аккаунта на Toxin?</div>
+                <button class="button-login button-login_fat">
+                  <div class="button-login__text button-login__text_fat">Создать</div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="sign-in__wrapper">
         <div class="footer ">
-          <div class="footer__text-block">
+          <div class="footer__text-block footer__text-block_">
             <ul class="footer__ul"><a href="/landing.html">  <img src="assets/img/logotypes/logo.svg" alt="logo"></a>
               <p class="footer__paragraph">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
             </ul>
