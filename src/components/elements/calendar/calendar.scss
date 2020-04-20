@@ -34,13 +34,16 @@
                 background: $gradient; 
                 color: $white;
             }
-            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-in-range- {
+            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-range-from-.-focus- {
                 color: $white;
                 background: $gradient-green;
                 border-radius: 50%;
                 &:hover {
                     color: $white;
                     background: $gradient-green;
+                }
+                &:after, &:before {
+                    background: none;
                 }
             }
             &.-in-range-, &.-in-range-.-other-month- {
