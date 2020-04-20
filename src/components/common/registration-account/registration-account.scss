@@ -33,6 +33,10 @@
     &__two-fields, &__bithday {
       width: 100%;
     }
+  }
+}
+@media (max-width: 23.1875rem) {
+  .registration-account {
     &__toxin {
       justify-content: center;
     }

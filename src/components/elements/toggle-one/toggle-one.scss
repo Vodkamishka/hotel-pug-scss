@@ -6,7 +6,6 @@
   line-height: 1.25rem;
   color: $shade75;
   box-sizing: border-box;
-  flex-wrap: wrap;
   &__input {
     margin: 0 0.625rem 0 0;
     -webkit-appearance: none;
@@ -37,10 +36,8 @@
   }
 }
 
-@media (max-width: 23.625rem) {
+@media (max-width: 21.0625rem) {
   .toggle-one {
-    &__input {
-      margin-bottom: 0.5rem;
-    }
+    font-size: 0.8rem;
   }
 }

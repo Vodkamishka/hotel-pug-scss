@@ -1,5 +1,5 @@
 mixin label (props)
-    - const {leftLabel, rightLabel} = props
+    - const {leftLabel, rightLabel, id} = props
     .label
-        label(for="forLab").label__text= leftLabel
-        label(for="forLab").label__text= rightLabel
+        label(for=id).label__text= leftLabel
+        label(for=id).label__text= rightLabel

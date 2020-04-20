@@ -48,9 +48,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
   }
   &__text {
-    margin-top: 0.75rem;
+    //margin-top: 0.75rem;
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: $black;

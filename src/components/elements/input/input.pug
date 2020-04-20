@@ -1,13 +1,13 @@
 include ../label/label
 
 mixin input (props)
-    - const {placeholder, className, leftLabel, readonly= false, expand = ''} = props
+    - const {placeholder, className, leftLabel, readonly= false, id, expand = ''} = props
     .input(class=`input_${className}`)
         if leftLabel
             .input__label
                 +label(props)
         .input__container
-            input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly)
+            input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly id=id)
             if expand && leftLabel
                 button.input__button
                     img(src=`assets/img/icons/${expand}.svg`)
