@@ -16,6 +16,7 @@
     border: 0.0625rem solid $shade25;
     border-radius: 0.625rem;
     outline: none;
+    cursor: pointer;
     &:checked[type="checkbox"] {
       border: 0.0625rem solid $purple;
       &:before {

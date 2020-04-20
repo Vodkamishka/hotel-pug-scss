@@ -11,6 +11,7 @@
   @include align-items;
   &__image {
     margin: 0 0.3rem 0 0.3125rem;
+    cursor: pointer;
   }
   &_left {
     border: 0.0625rem solid $shade25;

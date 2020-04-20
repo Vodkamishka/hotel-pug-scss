@@ -23,6 +23,7 @@
     line-height: 0.9375rem;
     color: $shade50;
     @include flex-center;
+    cursor: pointer;
   }
   &__img-container {
     border-radius: 50%;
