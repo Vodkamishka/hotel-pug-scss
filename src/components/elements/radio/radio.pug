@@ -3,9 +3,9 @@ mixin radio(show)
         if show
             .radio__title Radio Buttons
         .radio__buttons
-            label.radio__buttons-container Мужчина
-                input(type="radio" checked name='gender' class="radio__input")
+            label(class="radio__buttons-container" for="input__man") Мужчина
+                input(type="radio" checked name='gender' class="radio__input" id="input__man")
                 span.radio__checkmark
-            label.radio__buttons-container Женщина    
-                input(type="radio" name='gender' class="radio__input")
+            label(class="radio__buttons-container" for ="input__woman") Женщина    
+                input(type="radio" name='gender' class="radio__input" id="input__woman")
                 span.radio__checkmark

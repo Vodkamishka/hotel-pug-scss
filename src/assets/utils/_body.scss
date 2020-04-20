@@ -8,7 +8,7 @@ body {
   position: relative;
   max-width: 120rem;
   min-width: 20rem;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   ul {
@@ -27,7 +27,7 @@ body {
     text-decoration: none;
     color: $shade50;
   }
-  button, a {
+  button, a, label, input[type="checkbox"] {
     cursor: pointer;
   }
   li, p, h1 {

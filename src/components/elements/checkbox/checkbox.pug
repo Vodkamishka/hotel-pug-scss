@@ -6,7 +6,7 @@ mixin checkbox(checkboxList)
         .checkbox__title checkbox buttons
         for el in checkboxList
             .checkbox__input
-                +checkbox-cell(el.checked)
-                +checkbox-label(el.text)
+                +checkbox-cell(el.checked, el.id)
+                +checkbox-label(el.text, el.id)
             
     

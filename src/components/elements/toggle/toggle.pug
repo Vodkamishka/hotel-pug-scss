@@ -1,14 +1,14 @@
 include ../toggle-one/toggle-one
 
-mixin toggle (show)
+mixin toggle (show, id="toggle1", idSecond="toggle2")
     .toggle
         if show
             .toggle__title Toggle
         .toggle__buttons
             .toggle__button
-                +toggle-one(true)
+                +toggle-one(true, id)
             .toggle__button
-                +toggle-one(false)
+                +toggle-one(false, idSecond)
         
 
 

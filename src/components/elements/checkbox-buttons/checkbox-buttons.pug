@@ -4,10 +4,10 @@ mixin checkbox-buttons(text)
     .checkbox-buttons  
         .checkbox-buttons__title= text
         .checkbox-buttons__input-description
-            +checkbox-cell
-            .checkbox-buttons__description Широкий коридор
+            +checkbox-cell(false, "corridor")
+            label(class="checkbox-buttons__label" for="corridor") Широкий коридор
         .checkbox-buttons__text Ширина коридоров в номере не менее 91 см.
         .checkbox-buttons__input-description
-            +checkbox-cell
-            .checkbox-buttons__description Помошник для инвалидов
+            +checkbox-cell(false, "helper")
+            label(class="checkbox-buttons__label" for="helper") Помошник для инвалидов
         .checkbox-buttons__text.checkbox-buttons__text_wide На 1 этаже вас встретит специалист и проводит до номера.

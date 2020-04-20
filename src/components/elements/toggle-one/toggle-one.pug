@@ -1,4 +1,4 @@
-mixin toggle-one(checked) 
+mixin toggle-one(checked, id= "toggle") 
     .toggle-one
-        input(type="checkbox" checked= checked class="toggle-one__input")
-        label(for="offer") Получать спецпредложения
+        input(type="checkbox" checked= checked class="toggle-one__input" id=id)
+        label(for=id) Получать спецпредложения
