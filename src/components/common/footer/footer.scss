@@ -3,6 +3,7 @@
 .footer {
   padding: 0 2rem;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  background: $white;
     &__text-block {
     padding: 5.5rem 0 5.2rem 0;
     display: flex;
@@ -89,7 +90,7 @@
 .footer_eng {
   @extend .footer;
   .footer__text-block {
-    padding: 5.19375rem 0 5.4rem;
+    padding: 5.5rem 0 5.2rem;
   }
 }
 @media (max-width: 35.3125rem) {

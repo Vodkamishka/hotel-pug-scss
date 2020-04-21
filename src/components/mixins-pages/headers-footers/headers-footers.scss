@@ -2,6 +2,7 @@
 
 .headers-footers {
   overflow: hidden;
+  background: $grey;
   &__logo-wrapper {
     position: absolute;
     left: 1.875rem;
@@ -14,6 +15,7 @@
     }
     &_third {
       margin-top: 2.5rem;
+      margin-bottom: 0.0625rem;
     }
     &_fifth {
       margin-top: 2.5rem;
@@ -22,6 +24,7 @@
       justify-content: center;
       height: 22.9375rem;
       box-sizing: border-box;
+      background: $white;
     }
   }
   &__image {
@@ -40,9 +43,6 @@
     display: flex;
     justify-content: center;
   }
-}
-.footer_eng .footer__text-block {
-  padding-top: 6.5625rem;
 }
 
 @media (max-width: 35rem) {

@@ -3,7 +3,7 @@ include ../../elements/input/input.pug
 mixin footer (props)
     - const {classFooter, titlesFooter, textTop, textBottom, email, registrationPage = ''} = props
     div(class =`footer ${classFooter}`)
-        .footer__text-block(class=`footer__text-block_${registrationPage}`)
+        .footer__text-block(class=`footer__text-block${registrationPage}`)
             ul.footer__ul
                 a(href="/landing.html")   
                     img(src="assets/img/logotypes/logo.svg", alt="logo")
