@@ -55,13 +55,3 @@
   }
 }
 
-@media (max-width: 22rem) {
-  .radio {
-    &__buttons {
-      flex-wrap: wrap;
-      &-container:first-child {
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-}
