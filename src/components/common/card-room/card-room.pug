@@ -6,11 +6,10 @@ mixin card-room(props)
     .card-room
         .card-room__image
             img(src=`assets/img/rooms/${img}.jpg` class='card-room__img')
-            if img === 888
-                .card-room__image-side.card-room__image-side_left
-                    .card-room__arrow
-                .card-room__image-side.card-room__image-side_right
-                    .card-room__arrow
+            .card-room__image-side.card-room__image-side_left
+                .card-room__arrow
+            .card-room__image-side.card-room__image-side_right
+                .card-room__arrow
             .card-room__group-balls
                 .card-room__ball.card-room__ball_full
                 .card-room__ball.card-room__ball_empty

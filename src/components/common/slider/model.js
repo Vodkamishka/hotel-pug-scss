@@ -37,7 +37,7 @@ class Model {
       if (right > left) {
         this.between.style.marginLeft = `${left + btnWidth / 2}px`;
       } else {
-        this.between.style.marginLeft = btn2.style.marginLeft + btnWidth / 2 + 2;
+        this.between.style.marginLeft = `${btn2.style.marginLeft + btnWidth / 2 + 2}px`;
       }
       this.between.style.width = `${Math.abs(right - left)}px`;
 
