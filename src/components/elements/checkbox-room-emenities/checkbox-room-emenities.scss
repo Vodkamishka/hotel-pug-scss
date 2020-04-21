@@ -6,11 +6,11 @@
   }
   &__mainline {
     margin-bottom: 0.1525rem;
+    display: flex;
+    justify-content: space-between;
   }
   &__title {
     @include title-inputs;
-    margin-right: 1.9rem;
-    white-space: nowrap;
   }
   &__button {
     background: url('../../../assets/img/icons/expand.svg')
