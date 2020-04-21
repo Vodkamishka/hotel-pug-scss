@@ -1,7 +1,7 @@
 @import "../../../assets/utils/main";
 
 .slider {
-  height: 2.9375rem;
+  min-height: 2.9375rem;
   width: 16.625rem;
   @include title-inputs;
   &__inner {
@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.4375rem;
+    flex-wrap: wrap;
   }
   &__size {
     color: $shade50;
