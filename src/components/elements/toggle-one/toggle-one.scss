@@ -5,6 +5,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: $shade75;
+  flex-wrap: wrap;
   box-sizing: border-box;
   &__input {
     margin: 0 0.625rem 0 0;
