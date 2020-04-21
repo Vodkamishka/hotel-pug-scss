@@ -194,7 +194,6 @@ class Dropdowns {
 }
 
 const long = document.querySelectorAll('.dropdowns-guest-selection');
-const short = document.querySelectorAll('.dropdowns-room-selection');
-
 long.forEach((el) => new Dropdowns(el, 'guest'));
-short.forEach((el) => new Dropdowns(el, 'room'));
+
+export default Dropdowns;
