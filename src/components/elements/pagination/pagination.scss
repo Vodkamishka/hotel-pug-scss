@@ -1,13 +1,16 @@
 @import "../../../assets/utils/main";
 
 .pagination {
+  max-width: 15rem;
   &__title {
     @include title-inputs;
     margin-bottom: 1.0275rem;
+    
   }
   &__numbers {
     display: flex;
     margin-bottom: 0.67rem;
+    flex-wrap: wrap;
     &-span:first-child {
       border-radius: 50%;
       color: $white;
@@ -16,8 +19,8 @@
   }
   &__numbers-span,
   &__img-container {
-    width: 2.5rem;
-    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
     font-weight: bold;
     font-size: 0.75rem;
     line-height: 0.9375rem;
@@ -34,5 +37,6 @@
     font-size: 0.875rem;
     color: $shade75;
     margin-left: 0.3125rem;
+    width: 15rem;
   }
 }
