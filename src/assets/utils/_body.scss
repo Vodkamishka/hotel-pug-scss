@@ -27,7 +27,7 @@ body {
     text-decoration: none;
     color: $shade50;
   }
-  button, a, input[type="checkbox"] {
+  button, a, input[type="checkbox"], label {
     cursor: pointer;
   }
   li, p, h1 {

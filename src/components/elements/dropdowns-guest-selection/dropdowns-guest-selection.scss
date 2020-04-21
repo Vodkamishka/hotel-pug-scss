@@ -2,7 +2,7 @@
 
 .dropdowns-guest-selection {
   position: relative;
-  input {
+  input, label {
     cursor: default;
   }
   &__container-execute {
