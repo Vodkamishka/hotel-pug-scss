@@ -9,6 +9,7 @@
     margin-bottom: 1.28125rem;
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     letter-spacing: 0.04375rem;
+    max-width: 52.125rem;
   }
   &__rooms-wrapper {
     display: grid;
@@ -37,11 +38,18 @@
     width: 16.625rem;
   }
 }
-@media (max-width: 75rem) {
+@media (max-width: 75.0625rem) {
   .search-room-filter-images {
     &__rooms-wrapper {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+    }
+    &__pagination {
+      margin: 2.625rem 0 4.65rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
   }
 }
