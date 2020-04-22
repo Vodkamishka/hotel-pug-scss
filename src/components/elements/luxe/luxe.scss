@@ -2,11 +2,15 @@
 
 .luxe {
   display: flex;
-  align-items: flex-end;
+ 
   justify-content: space-between;
+  flex-wrap: wrap;
   &__room-number {
     font-weight: bold;
     text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
     &-text {
       &:nth-child(1) {
         color: $shade100;
@@ -18,10 +22,12 @@
         padding-right: 0.3125rem;
         font-family: "Quicksand", Arial, Helvetica, sans-serif;
         font-size: 1.1875rem;
+        line-height: 1.3125rem;
       }
       &:nth-child(3) {
         font-size: 0.75rem;
         color: $purple;
+        line-height: 1rem;
       }
     }
   }
@@ -32,18 +38,22 @@
     color: $shade50;
     margin-bottom: 0.125rem;
     letter-spacing: -0.01875rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
     &-text {
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3) {
         font-size: 0.9375rem;
         font-weight: bold;
+        line-height: 1rem;
       }
       &:nth-child(1) {
         margin-right: 0.1875rem;
       }
       &:nth-child(3) {
-        margin-right: 0.03125rem;
+        margin-right: 0.3rem;
       }
       &:nth-child(4) {
         font-size: 0.75rem;

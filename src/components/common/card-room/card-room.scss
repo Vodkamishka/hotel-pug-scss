@@ -1,13 +1,12 @@
 @import "../../../assets/utils/main";
 
 .card-room {
-  
   width: 16.875rem;
-  height: 16.0625rem;
+  min-height: 16.0625rem;
   box-shadow: 0 0.625rem 1.25rem $shade05;
   background: $white;
   &__image {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.45rem;
     width: 16.875rem;
     height: 9.46125rem;
     border-radius: 0.25rem 0.25rem 0 0;
@@ -75,12 +74,8 @@
   }
  
   &__luxe {
-    margin-bottom: 1.125rem;
+    margin-bottom: 1.2rem;
     padding: 0 1.125rem 0 1.25rem;
-    .luxe__luxe {
-      display: flex;
-      align-items: flex-end;
-    }
   }
   &__stars {
     padding-left: 1.285rem;
