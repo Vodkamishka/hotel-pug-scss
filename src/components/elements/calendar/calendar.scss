@@ -18,6 +18,8 @@
         width: 100%;
     }
     &--cell {
+        z-index: 1;
+        position: relative;
         &.-selected-.-focus-, &.-selected-, &.-selected-.-other-month-, &.-selected-.-other-month-.-focus-, &.-other-month-.-focus- {
             border: none;
             background: $gradient;
@@ -34,7 +36,7 @@
                 background: $gradient; 
                 color: $white;
             }
-            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-range-from-.-focus- {
+            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-range-from-.-focus-, &.-current-.-in-range- {
                 color: $white;
                 background: $gradient-green;
                 border-radius: 50%;
@@ -42,9 +44,7 @@
                     color: $white;
                     background: $gradient-green;
                 }
-                &:after, &:before {
-                    background: none;
-                }
+                
             }
             &.-in-range-, &.-in-range-.-other-month- {
                 background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
