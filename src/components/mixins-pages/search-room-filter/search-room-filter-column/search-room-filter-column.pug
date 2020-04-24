@@ -10,7 +10,7 @@ mixin search-room-filter-column(options)
     - const {checkboxList, list} = options
     .search-room-filter-column
         .search-room-filter-column__input
-            +input({placeholder: '19 авг - 23 авг', className: 'little', leftLabel: 'даты пребывания в отеле', expand: 'expand'})
+            +input({placeholder: '19 авг - 23 авг', className: 'little', leftLabel: 'даты пребывания в отеле', expand: 'expand', readonly: true})
         .search-room-filter-column__dropdowns
             +dropdowns-guest-selection({placeholder: '3 гостя, 1 младенец', className: 'little', leftLabel: 'гости', rightLabel: '', showButtonClear: 'block', classShowDropdown: 'dropdowns-guest-selection_hide', x: 3, y: 0, z: 1})
         .search-room-filter-column__slider

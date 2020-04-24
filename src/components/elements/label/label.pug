@@ -1,5 +1,9 @@
 mixin label (props)
     - const {leftLabel, rightLabel, id} = props
     .label
-        label(for=id).label__text= leftLabel
-        label(for=id).label__text= rightLabel
+        if id 
+            label(for=id).label__text= leftLabel
+            label(for=id).label__text= rightLabel
+        else 
+            label(class='label__cursor-default').label__text= leftLabel
+            label(class='label__cursor-default').label__text= rightLabel

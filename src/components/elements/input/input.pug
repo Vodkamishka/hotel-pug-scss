@@ -7,7 +7,12 @@ mixin input (props)
             .input__label
                 +label(props)
         .input__container
-            input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly id=id)
+            if id 
+                input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly id=id)
+            else if readonly
+                input(type="text" placeholder=placeholder class=`input__input js-input__input input__cursor-default` readonly= readonly) 
+            else
+                input(type="text" placeholder=placeholder class=`input__input js-input__input`) 
             if expand && leftLabel
                 button.input__button
                     img(src=`assets/img/icons/${expand}.svg`)

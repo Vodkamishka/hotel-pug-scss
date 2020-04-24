@@ -16,6 +16,9 @@
       color: $shade50;
     }
   }
+  &__cursor-default {
+    cursor: default;
+  }
 }
 
 @media (max-width: 24rem) {

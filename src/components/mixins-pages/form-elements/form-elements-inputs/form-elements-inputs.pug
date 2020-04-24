@@ -15,11 +15,11 @@ mixin form-elements-inputs(list)
             +input({placeholder: 'ДД.ММ.ГГГГ', className: 'long', leftLabel: 'masked text field', rightLabel: 'default', id: "fourth"})
         .form-elements-inputs__container.form-elements-inputs__container_sixth
             .form-elements-inputs__dropdown
-                +input({placeholder: 'ДД.ММ.ГГГГ', className: 'small', leftLabel: 'date dropdown', expand: 'expand', id: "fifth"})
+                +input({placeholder: 'ДД.ММ.ГГГГ', className: 'small', leftLabel: 'date dropdown', expand: 'expand', readonly: true})
             .form-elements-inputs__dropdown
-                +input({placeholder: '19.08.2019', className: 'small', leftLabel:'date dropdown', expand: 'expand', id: "sixth"})
+                +input({placeholder: '19.08.2019', className: 'small', leftLabel:'date dropdown', expand: 'expand', readonly: true})
         .form-elements-inputs__container.form-elements-inputs__container_seventh
-            +input({placeholder: '19 авг - 23 авг', className: 'little', leftLabel:'filter date dropdown', expand: 'expand', id: "seventh"})
+            +input({placeholder: '19 авг - 23 авг', className: 'little', leftLabel:'filter date dropdown', expand: 'expand', readonly: true})
         .form-elements-inputs__container.form-elements-inputs__container_eighth
             +input({placeholder: 'Email', className: 'little', leftLabel:'subscription text field', expand: 'arrow_forward', id: "eighth"})
         .form-elements-inputs__container.form-elements-inputs__container_ninth    
