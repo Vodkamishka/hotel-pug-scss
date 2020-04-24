@@ -65,7 +65,7 @@ class Dropdowns {
 
   setBedsInInput(result) {
     const array = [];
-    const rooms = ['Спальни', 'Кровати'];
+    const rooms = ['Спальни', 'Кровати', 'Ванные комнаты'];
     function returnTrueWord(name, bedNumbers) {
       let bed;
       let num = bedNumbers;
@@ -73,17 +73,34 @@ class Dropdowns {
         num %= 10;
       }
       if (num === 0 || (num > 4 && num <= 20)) {
-        bed = name === 'спальни' ? ' спален' : ' кроватей';
+        if (name === 'спальни') {
+          bed = ' спален';
+        } else if (name === 'кровати') {
+          bed = 'кроватей';
+        } else {
+          bed = 'ванных комнат';
+        }
       } else if (num === 1) {
-        bed = name === 'спальни' ? ' спальня' : ' кровать';
+        if (name === 'спальни') {
+          bed = ' спальня';
+        } else if (name === 'кровати') {
+          bed = 'кровать';
+        } else {
+          bed = 'ванная комната';
+        }
+      } else if (name === 'спальни') {
+        bed = ' спальни';
+      } else if (name === 'кровати') {
+        bed = 'кровати';
       } else {
-        bed = name === 'спальни' ? ' спальни' : ' кровати';
+        bed = 'ванные комнаты';
       }
       return bed;
     }
     const goods = [
       returnTrueWord('спальни', +result[0].innerHTML),
       returnTrueWord('кровати', +result[1].innerHTML),
+      returnTrueWord('ванные комнаты', +result[2].innerHTML),
     ];
     rooms.forEach((el, index) => {
       array.push(`${result[index].innerHTML} ${goods[index]}`);
