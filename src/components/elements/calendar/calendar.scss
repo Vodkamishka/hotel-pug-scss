@@ -36,15 +36,22 @@
                 background: $gradient; 
                 color: $white;
             }
-            &.-current-, &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-range-from-.-focus-, &.-current-.-in-range- {
+            &.-current- {
                 color: $white;
                 background: $gradient-green;
                 border-radius: 50%;
                 &:hover {
                     color: $white;
                     background: $gradient-green;
-                }
-                
+                } 
+            }
+            &.-current-.-selected-.-range-from-, &.-current-.-selected-, &.-current-.-in-range-, &.-current-.-range-from-.-focus- {
+                background: $gradient;
+                color: $white;
+                &:hover {
+                    background: $gradient;
+                    color: $white;
+                } 
             }
             &.-in-range-, &.-in-range-.-other-month- {
                 background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
