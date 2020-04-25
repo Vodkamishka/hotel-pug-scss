@@ -5,7 +5,8 @@ include ../../elements/dropdowns-guest-selection/dropdowns-guest-selection
 
 mixin reservation
     .reservation
-        +luxe({img: 888, firstNumberPrice: 9, price: 990, clas: '', fontSize: 1.5})
+        .reservation__luxe
+            +luxe({img: 888, firstNumberPrice: 9, price: 990, clas: '', fontSize: 1.5})
         .reservation__incoming
             +double-date-calendar       
         .reservation__guests
