@@ -5,18 +5,22 @@
   width: 23.75rem;
   @include cards;
   &__title,
-  &__two-fields {
+  &__two-fields, &__fields {
     font-size: 1.5rem;
     margin-bottom: 0.6525rem;
-    .input:first-child {
-      margin-bottom: 0.625rem;
-    }
+  }
+  &__input-container:first-child, &__container-input {
+    margin-bottom: 0.625rem;
+  }
+
+  &__fields-title {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
   }
   &__title {
     margin-bottom: 1.2rem;
-  }
-  &__two-fields:nth-child(2) {
-    margin-bottom: 0.65rem;
   }
   &__bithday {
     margin: 1.4725rem 0 1.25rem 0;
