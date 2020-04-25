@@ -69,5 +69,11 @@
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
     }
+    &__card-room {
+      margin: 0 auto;
+      &:nth-child(n){
+        margin: 0 auto;
+      }
+    }
   }
 }
