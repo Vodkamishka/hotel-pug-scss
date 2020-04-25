@@ -1,17 +1,21 @@
 include ../label/label
 
 mixin input (props)
-    - const {placeholder, className, leftLabel, readonly= false, id, expand = ''} = props
+    - const {placeholder, className, leftLabel, readonly= false, id, expand = '', pale = false} = props
     .input(class=`input_${className}`)
         if leftLabel
             .input__label
                 +label(props)
         .input__container
-            if id 
-                input(type="text" placeholder=placeholder class=`input__input js-input__input` readonly= readonly id=id)
+            if pale && id 
+                input(type="text" placeholder=placeholder class=`input__input input__input_placeholder_pale js-input__input` id=id) 
             else if readonly
-                input(type="text" placeholder=placeholder class=`input__input js-input__input input__cursor-default` readonly= readonly) 
-            else
+                input(type="text" placeholder=placeholder class=`input__input js-input__input input__input_cursor-default` readonly= readonly) 
+            else if pale
+                input(type="text" placeholder=placeholder class=`input__input input__input_placeholder_pale js-input__input`) 
+            else if id 
+                input(type="text" placeholder=placeholder class=`input__input js-input__input` id=id) 
+            else 
                 input(type="text" placeholder=placeholder class=`input__input js-input__input`) 
             if expand && leftLabel
                 button.input__button

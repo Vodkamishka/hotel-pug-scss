@@ -12,16 +12,11 @@ input[type="text"] {
   font-size: 0.875rem;
   line-height: 1.125rem;
   letter-spacing: -0.025rem;
-  color: $shade75;
   &::placeholder {
-    color: $shade50;
     letter-spacing: 0.00625rem;
   }
   &:hover {
     border: 0.0625rem solid rgba($shade50, 0.5);
-    &::placeholder {
-      color: $shade75;
-    }
   }
 }
 
@@ -30,8 +25,19 @@ input[type="text"] {
     margin-bottom: 0.3125rem;
     width: 100%;
   }
-  &__cursor-default {
-    cursor: default;
+  &__input {
+    color: $shade75;
+    &::placeholder {
+      color: $shade75;
+    }
+    &_cursor-default {
+      cursor: default;
+    }
+    &_placeholder_pale {
+      &::placeholder {
+        color: $shade25;
+      } 
+    }
   }
   &__button {
     border: none;
@@ -43,6 +49,9 @@ input[type="text"] {
     &_without-label {
       height: 1.125rem;
     }
+  }
+  &__pale-placeholder {
+    color: $shade25;
   }
   &__container {
     position: relative;

@@ -9,17 +9,17 @@ mixin registration-account
         .registration-account__title Регистрация аккаунта
         .registration-account__two-fields
             .registration-account__input-container
-                +input({placeholder:'Имя'})
+                +input({placeholder:'Имя', pale: true})
             .registration-account__input-container
-                +input({placeholder:'Фамилия'})
+                +input({placeholder:'Фамилия', pale: true})
         +radio 
         .registration-account__bithday
-            +input({placeholder: 'ДД.ММ.ГГГГ', className: 'long', leftLabel: 'Дата рождения', id: "birthday"})
+            +input({placeholder: 'ДД.ММ.ГГГГ', className: 'long', leftLabel: 'Дата рождения', id: "birthday", pale: true})
         .registration-account__fields
             .registration-account__fields-title Данные для входа в сервис
             .registration-account__container-input
-                +input({placeholder: 'Email', className: 'long'})
-            +input({placeholder:'Пароль', className: 'long'})
+                +input({placeholder: 'Email', className: 'long', pale: true})
+            +input({placeholder:'Пароль', className: 'long', pale: true})
         +toggle-one(false)
         .registration-account__button
             +button({text: 'Перейти к оплате'})
