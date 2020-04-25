@@ -32,6 +32,9 @@
     transform: translateY(-50%);
     border: 0.125rem solid $white;
     cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
   }
   &__range {
     display: flex;
