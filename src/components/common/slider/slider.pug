@@ -1,5 +1,5 @@
-mixin slider(text)
-    .slider.js-slider 
+mixin slider(text, className = 'short')
+    .slider.js-slider(class=`slider_${className}`)
         .slider__range.js-slider__range
             .slider__title.js-slider__title= text 
             .slider__size.js-slider__size

@@ -39,7 +39,7 @@
       grid-template-columns: 1fr 1fr;
     }
     &__pagination {
-      margin: 2.625rem 0 4.65rem 0;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,25 +47,27 @@
     }
   }
 }
-@media (max-width: 56.875rem) {
+@media (max-width: 60rem) {
   .search-room-filter-images {
-    &__title {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      max-width: 16.685rem;
-    }
     &__rooms-wrapper {
-      display: block;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    &__pagination {
-      margin: 0 auto;
+  }
+}
+@media (max-width: 55rem) {
+  .search-room-filter-images {
+    &__rooms-wrapper {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
-    &__card-room {
-      margin-right: 0;
-      &:nth-child(n) {
-        margin-bottom: 0.75rem;
-      }
-      
+  }
+}
+@media (max-width: 38rem) {
+  .search-room-filter-images {
+    &__rooms-wrapper {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
     }
   }
 }

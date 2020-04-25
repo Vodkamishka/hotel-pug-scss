@@ -1,7 +1,12 @@
 @import "../../../assets/utils/main";
 
 .checkbox-room-emenities {
-  width: 16.625rem;
+  &_short {
+    width: 16.625rem;
+  }
+  &_wide {
+    width: 100%;
+  }
   &__mainline {
     @include align-items;
   }

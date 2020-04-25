@@ -27,6 +27,16 @@
       margin-right: 3.75rem;
     }
 }
+@media (max-width: 60rem) {
+  .search-room-filter {
+    &__container {
+     flex-direction: column;
+    }
+    &__wrapper-column {
+      margin-right: 0;
+    }
+  }
+}
 
 @media (max-width: 42rem) {
   .search-room-filter {

@@ -1,8 +1,8 @@
 include ../checkbox-list/checkbox-list.pug
 
-mixin checkbox-room-emenities (props)
-    - const {list, title, clas } = props
-    .checkbox-room-emenities    
+mixin checkbox-room-emenities(props)
+    - const {list, title, clas, className = 'short' } = props
+    .checkbox-room-emenities(class= `checkbox-room-emenities_${className}`)    
         .checkbox-room-emenities__mainline
             .checkbox-room-emenities__title= title
             if (!clas)

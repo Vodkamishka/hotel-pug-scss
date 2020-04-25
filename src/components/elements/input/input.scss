@@ -62,9 +62,9 @@ input[type="text"] {
   }
   &_little {
     width: $little;
-    &::placeholder {
-      color: $shade75;
-    }
+  }
+  &_wide {
+    width: 100%;
   }
   &_small {
     width: $small;
